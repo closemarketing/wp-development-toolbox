@@ -1,0 +1,40 @@
+{
+	"name": "wp-development-toolbox",
+	"displayName": "WordPress Development ToolBox for Visual Code",
+	"description": "Functions and filter snippets to develop WordPress and Genesis for Visual Studio",
+	"version": "1.0.0",
+	"publisher": "closemarketing",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"wordpress", "development", "genesis"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "php",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"icon": "",
+	"license": "MIT",
+	"homepage": "https://github.com/closemarketing/wp-development-toolbox",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/closemarketing/wp-development-toolbox"
+	},
+	"bugs": {
+		"url": "https://github.com/closemarketing/wp-development-toolbox/issues",
+		"email": "david@closemarketing.es"
+	},
+	"__metadata": {
+		"id": "",
+		"publisherId": "closemarketing",
+		"publisherDisplayName": "Closemarketing"
+	}
+}
