@@ -2,7 +2,7 @@
 	"name": "wp-development-toolbox",
 	"displayName": "WordPress Development ToolBox for Visual Code",
 	"description": "Functions and filter snippets to develop WordPress and Genesis for Visual Studio",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "closemarketing",
 	"engines": {
 		"vscode": "^1.19.0"
@@ -11,7 +11,7 @@
 		"Snippets"
 	],
 	"keywords": [
-		"wordpress", "development", "genesis"
+		"wordpress", "development", "genesis", "closemarketing", "metabox", "woocommerce"
 	],
 	"contributes": {
 		"snippets": [
