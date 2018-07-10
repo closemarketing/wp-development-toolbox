@@ -1,10 +1,10 @@
 # WordPress Development Toolbox for Visual Code
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/anthonydiametrix.ACF-Snippet.svg)](https://marketplace.visualstudio.com/items?itemName=anthonydiametrix.ACF-Snippet)
-[![Badge for version for Visual Studio Code extension anthonydiametrix.ACF-Snippet](https://vsmarketplacebadge.apphb.com/version/anthonydiametrix.ACF-Snippet.svg)](https://marketplace.visualstudio.com/items?itemName=anthonydiametrix.ACF-Snippet)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/hubsta/acf-snippet-vsc/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/hubsta/wp-metabox-snippets-vscode.svg)](https://GitHub.com/hubsta/wp-metabox-snippets-vscode/graphs/contributors/)
+[![Installs](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
+[![Badge for version for Visual Studio Code extension closemarketing.wp-development-toolbox](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/closemarketing/wp-development-toolbox/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/closemarketing/wp-development-toolbox.svg)](https://GitHub.com/closemarketing/wp-development-toolbox/graphs/contributors/)
 
 
 ## Introduction
