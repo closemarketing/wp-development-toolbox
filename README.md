@@ -7,5 +7,29 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/hubsta/wp-metabox-snippets-vscode.svg)](https://GitHub.com/hubsta/wp-metabox-snippets-vscode/graphs/contributors/)
 
 
-## Requirements
+## Introduction
 
+This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations. 
+
+The sintaxis of the snippets is:
+2-3 digits - Environment as WordPress and Plugins.
+1 - Action: A - Adding, R - Remove, T - Setup a setting, S - Show HTML
+
+For example: 
+metafun - Met is for plugin Metabox, A for adding a function and Fun is the name of the snippet. 
+
+All snippets will respect WordPress Standards. 
+
+## List of Snippets
+
+### Metabox WordPress Post Types (MET) ###
+| **Rule**		|	**Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **metafun**	|	Adds Metabox Function 
+| **metatext**	| 	Adds text field
+| **metagal**	| 	Adds Images Gallery Field
+| **metaicon**	| 	Adds Icon field
+| **metasel**	| 	Adds select field
+| **metadir**	| 	Adds Address field
+| **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
+| **metsimg**	| 	Shows Gallery in public page

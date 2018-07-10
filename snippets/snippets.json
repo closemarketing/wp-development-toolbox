@@ -155,7 +155,7 @@
 			"),"
 		]
 	},
-	"MetaBox | Campo URL Enlace": {
+	"MetaBox | Adds URL Field": {
 		"prefix": "metaurl",
 		"body": [
 			"// URL",
