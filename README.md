@@ -18,112 +18,88 @@ The sintaxis of the snippets is:
 For example: 
 metafun - Met is for plugin Metabox, A for adding a function and Fun is the name of the snippet. 
 
-All snippets will respect WordPress Standards. 
+All snippets will respect **WordPress Coding Standards**. 
 
 ## List of Snippets
 
 ## WordPress (WP) ##
-| **Regla**		| **Significado**	|
+| **Rule**		| **Action**	|
 | ------------------- |------------------------------------------------------------------|
-| **wpaac**		| Añade la accion en functions con función incluida
-| **wpaex**		| Añade soporte de extractos en páginas
-| **wpstitbr**	| Inserta un br en la primera palabra del título
-| **wpsgf**		| Muestra un formulario Gravity Forms
-| **wprcomurl**	| Deshabilita la URL en comentarios
-| **wpsgmt**	| Muestra meta valor
-| **wpajs**		| Contenedor JavaScript para WordPress
-| **wpstit**	| Muestra el título y su enlace de un post
-| **wpscm**		| Muestra menú páginas hijas
-| **wpstxt**	| Muestra los términos de una taxonomía en un post
+
 | ** ** |
 | **Querys** 	|
-| **wpqgen** 	| Query completo para Genesis
-| **wpquery**	| Query completo
-| **wpqtm** 	| Query para mostrar términos de una taxonomía
-| **wpqda** 	| Argumentos Query con un meta valor tipo fecha
-| **wpqta** 	| Argumentos Query para una taxonomía
 
 
-## WordPress Funciones internas (WP) ##
-| **Regla**               | **Significado**     |
+## WordPress Internal Functions (WP) ##
+| **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpaclass**	| Añade una clase tipo para WordPress con carga
-| **wpastyl** 	| Para carga directory tema
-| **wpcv** 		| Plantilla WP Config producción
-| **wploc**		| Plantilla WP Config local
-| **wpaev** 	| Muestra un texto para multidioma versión dentro de echo
-| **wpae** 		| Muestra un texto para multidioma
-| **wpinc** 	| Incluye un archivo en plugin o en tema
-| **wpagpm** 	| Recoge el valor de un meta valor
-| **wpupdatemeta**| Rutina para actualizar meta valores
-| **wpaddexc** 	| Añade soporte extracto a páginas
+
 | ** ** |
-| **Facebook** |
-| **wpafb** 	| Añade Facebook Pixel
-| **wpafbc** 	| Añade Facebook Pixel para conversiones
+| **Facebook** 	|
+| **wpafb** 	| 
+| **wpafbc** 	| 
 | ** ** |
 | **Widgets** |
-| **wpwidget** 	| Estructura completa de un widget
-| **wpwf** 		| Cambia before_widget para que sea ancho completo
-| **wpwpag** 	| Recoge todas las páginas para mostrarlo en opciones widget
+| **wpwidget** 	| 
+| **wpwf** 		| 
+| **wpwpag** 	| 
 | ** ** |
 | **Post2Posts** |
-| **wpap2p** 	| Función registro post2posts
-| **wpsp2p** 	|  Muestra entradas relacionadas
+| **wpap2p** 	| 
+| **wpsp2p** 	|  
 | ** ** |
-| **Plugins** |
+| **Plugins** 	|
 | **wpphead** 	| Plantilla Cabecera para un plugin
 | ** ** |
-| **Post Types** |
-| **wpcptpag** | Crea un Post Type tipo página
-| **wpcptpost** | Crea un Post Type tipo entrada
-| **wpcptcol** | Añade columnas en el post type del admin
-| **wpatax** | Añade una taxonomía para un post type
-| **wpataxcpt** | Añade una taxonomía para un post type ya creado
-| **WPO** | (no utilizar si el tema es nuestro)
-| **wprdash** | Quita carga dashicons
-| **wprem** | Elimina versiones en los estilos
+| **Post Types** 	|
+| **wpcptpag** 	| 
+| **wpcptpost** 	| 
+| **wpcptcol** 	| 
+| **wpatax** 	|
+| **wpataxcpt** 	| 
+| **WPO** 		| 
+| **wprdash** 	| 
+| **wprem** 	| 
 
-## WordPress Otras ##
-| **Regla**               | **Significado**     |
+## WordPress Other functions ##
+| **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpssoc** | Muestra iconos Font Awesome de Redes sociales (url de Yoast)
-| **gfavib** | Habilita opción Visibilidad en GravityForms
-| **hts** | htaccess recomendado con SSL
+| **wpssoc** 	| 
+| **gfavib** 	| 
+| **hts** 		| 
 
 ## Genesis (GEN) ##
-| **Regla**			| **Significado**	|
+| **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **Additions** 		|
-| **genaclass** 		| Adds classes and elements to HTML element
-
+| **genaclass** 	| 	Adds classes and elements to HTML element
 | **Shows to public** 	|
-| **gensmsoc** | Adds social icons to main menu
+| **gensmsoc** 	| 	Adds social icons to main menu
 
 
 ## WooCommerce (WOO) ##
-| **Regla**               | **Significado**     |
+| **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wootacc** | Creación de cuenta marcada por defecto
-| **wootbre** | Cambia las migas de pan después de la descripción del producto
-| **wootchc** | Cambia el texto del botón del carrito
-| **wootquan** | Establece la cantidad por defecto
-| **woorprivar** | Elimina el rango precios en producto variable
-| **woorbut** | Elimina leer más en productos sin stock
-| **woorsd** | Elimina la descripción corta
-| **woorpdes** | Elimina el título Descripcion en la pestaña descripción
-| **worst** | Elimina el texto de stock
-| **woomdes** | Mueve la descripción después del precio
+| **wootacc** 	| 
+| **wootbre** 	| 
+| **wootchc** 	| 
+| **wootquan** 	| 
+| **woorprivar** 	| 
+| **woorbut** 	| 
+| **woorsd** 	| 
+| **woorpdes** 	| 
+| **worst** 	| 
+| **woomdes** 	| 
 
 ## Download Monitor ##
-| **Regla**               | **Significado**     |
+| **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **dmhsty** | Simplifica el admin del plugin
-| **dmsbut** | Plantilla botón
-| **dmsbox** | Plantilla Caja
+| **dmhsty** 	| 
+| **dmsbut** 	| 
+| **dmsbox** 	| 
 
 ### Metabox WordPress Post Types (MET) ###
-| **Rule**		|	**Action**     |
+| **Rule**	|	**Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **metafun**	|	Adds Metabox Function 
 | **metatext**	| 	Adds text field
@@ -135,24 +111,22 @@ All snippets will respect WordPress Standards.
 | **metsimg**	| 	Shows Gallery in public page
 
 ### WPML (WPML) ###
-| **Regla**			  | **Significado**	|
+| **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
-| **wpmlsup** | Añade para WP Query Suppress filters
-| **wpmllang** | Constante del actual idioma activo
-| **wpmldis** | Desactiva JS y CSS en functions
-| **wpmlalink** | Enlace de un post ID en el idioma actual
+| **wpmlsup** 	| 	
+| **wpmllang** 	|	
+| **wpmldis** 	|
+| **wpmlalink** 	|	
 
+### WC Market Place (WOC) ###
+| **Rule**			  | **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **wocrrep** 	| 	Remove report abuse
+| **woctven** 	| 	Customize Name Sold by
 
 ### CSS (CSS) ###
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
-| **csswidget** | Añade una sección widget en CSS
-
-___
-
-Syntaxis:
-* 2-3 primeros dígitos nombre plugin/software
-* a -> añadir
-* s -> mostrar
-* r -> eliminar
-* t -> establece
+| **cssawid** 	|	Adds Subsection for a Widget
+| **cssamed** 	|	Media Queries responsive
+| **woorspin** 	|	WooCommerce Removes Spin from input

@@ -1,0 +1,9 @@
+{
+	"WC Market Place | Remove report abuse": {
+		"prefix": "wocrrep",
+		"body": [
+			"// * Remove report abuse.",
+			"add_filter ( 'wcmp_show_report_abuse_link', '__return_false' );"
+		]
+	    }
+}
