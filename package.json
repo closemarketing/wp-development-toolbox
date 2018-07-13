@@ -11,17 +11,41 @@
 		"Snippets"
 	],
 	"keywords": [
-		"wordpress", "development", "genesis", "closemarketing", "metabox", "woocommerce"
+		"wordpress", "development", "genesis", "plugins"
 	],
 	"contributes": {
 		"snippets": [
 			{
 				"language": "php",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/metabox.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress-dev.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress-cpt.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/woocommerce.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/genesis.json"
 			}
 		]
 	},
-	"icon": "",
+	"icon": "images/icon.png",
 	"license": "MIT",
 	"homepage": "https://github.com/closemarketing/wp-development-toolbox",
 	"repository": {

@@ -1,0 +1,44 @@
+{
+
+	"WordPress | Adds Custom columns in Admin Custom Post Type": {
+		"prefix": "wpacptcol",
+		"body": [
+			"/** Add columns to post type ${1:post_type} **/",
+			"// Add filter to first row",
+			"",
+			"function add_new_${1:post_type}_columns(\\$${1:post_type}_columns) {",
+			"\t\\$new_columns['cb'] = '<input type=\"checkbox\" />';",
+			"\t\\$new_columns['title'] = '';",
+			"\t\\$new_columns['${2:variable}'] = '${3:columna}';",
+			"",
+			"",
+			"\t\\$new_columns['wpseo-score'] = __( 'SEO', 'wordpress-seo' );",
+			"\t\\$new_columns['wpseo-score-readability'] = __( 'Readability', 'wordpress-seo' );",
+			"\t\\$new_columns['wpseo-title']\t= __( 'SEO Title', 'wordpress-seo' );",
+			"\t\\$new_columns['wpseo-metadesc'] = __( 'Meta Desc.', 'wordpress-seo' );",
+			"\t\\$new_columns['wpseo-focuskw']  = __( 'Focus KW', 'wordpress-seo' );",
+			"",
+			"\treturn \\$new_columns;",
+			"}",
+			"add_filter('manage_edit-${1:post_type}_columns', 'add_new_${1:post_type}_columns');",
+			"",
+			"// Add columns content",
+			"",
+			"",
+			"function manage_${1:post_type}_columns(\\$column_name, \\$id) {",
+			"\t\\$${2:variable} = get_post_meta(\\$id, '${2:variable}', true);",
+			"",
+			"\tswitch (\\$column_name) {",
+			"",
+			"\tcase '${2:variable}':",
+			"\t\techo \\$${2:variable};",
+			"\t\tbreak;",
+			"",
+			"\tdefault:",
+			"\t\tbreak;",
+			"\t} // end switch",
+			"}",
+			"add_action('manage_${1:post_type}_posts_custom_column', 'manage_${1:post_type}_columns', 10, 2);"
+		]
+	}
+}

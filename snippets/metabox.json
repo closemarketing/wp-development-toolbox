@@ -1,21 +1,4 @@
-{
-	"WordPress | Force updates and upgrades": {
-		"prefix": "wptupd",
-		"body": [
-			"defined('ABSPATH') or die('Bye bye!');",
-			"add_filter('auto_update_core', '__return_true');",
-			"add_filter('auto_update_plugin', '__return_true');",
-			"add_filter('auto_update_theme', '__return_true');",
-			"add_filter('auto_update_translation', '__return_true');",
-			"add_filter('auto_core_update_send_email', '__return_true');"
-		],
-		"description": "WordPress | Force updates and upgrades"
-	},
-
-
-
-
-	
+{	
 	"MetaBox | Adds main function to load MetaBox": {
 		"prefix": "metafun",
 		"body": [
@@ -270,40 +253,7 @@
 			"\techo '<img src=\"'.\\$image['url'].'\" alt=\"'.\\$image['alt'].'\" width=\"'.\\$image['width'].'\" height=\"'.\\$image['height'].'\" /></a>';",
 			"\t}",
 			"}"
-		],
-		"description": "MetaBox | Shows Gallery in public page"
-	},
+		]
+	}
 
-
-
-
-
-	"WooCommerce | Removes Product Tag": {
-		"prefix": "woorptag",
-		"body": [
-			"/**",
-			" * Overwrite product_tag taxonomy properties to effectively hide it from WP admin ..",
-			" */",
-			"add_action( 'init', function() {",
-			"\tregister_taxonomy('product_tag', 'product', [",
-			"\t\t'public'            => false,",
-			"\t\t'show_ui'           => false,",
-			"\t\t'show_admin_column' => false,",
-			"\t\t'show_in_nav_menus' => false,",
-			"\t\t'show_tagcloud'     => false,",
-			"\t]);",
-			"}, 100 );",
-			"",
-			"/**",
-			" * .. and also remove the column from Products table - it's also hardcoded there.",
-			" */",
-			"add_action( 'admin_init', function() {",
-			"\tadd_filter('manage_product_posts_columns', function( $columns ) {",
-			"\t\tunset( $columns['product_tag'] );",
-			"\t\treturn $columns;",
-			"\t}, 100);",
-			"});"
-		],
-		"description": "WooCommerce | Removes Product Tag"
-	    }
 }
