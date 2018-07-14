@@ -1,0 +1,45 @@
+{
+	"CSS | Adds Subsection for a Widget": {
+		"prefix": "cssawid",
+		"body": [
+			"/* ## ${1:title}",
+			"--------------------------------------------- */",
+			"",
+			"\t.widget_${2:slug} {",
+			"",
+			"}",
+			"\t.widget_${2:slug} .item {",
+			"",
+			"}"
+		]
+	},
+	"CSS | Media Queries responsive": {
+		"prefix": "cssamed",
+		"body": [
+			"//* Tablet vertical",
+			"@media only screen and (max-width: 860px) {",
+			"}",
+			"//* Phablet",
+			"@media only screen and (max-width: 414px) and  (min-width: 280px) {",
+			"}",
+			"//* Phones 6\"",
+			"@media only screen and (max-width: 380px) {",
+			"}"
+		]
+	},
+	"WooCommerce | Removes Spin from input": {
+		"prefix": "woorspin",
+		"body": [
+			"/* ## WooCommerce Advanced Quantity",
+			"--------------------------------------------- */",
+			"input[type='number'] {",
+			"\t-moz-appearance:textfield;",
+			"}",
+			"",
+			"input::-webkit-outer-spin-button,",
+			"input::-webkit-inner-spin-button {",
+			"\t-webkit-appearance: none;",
+			"}"
+		]
+	}
+}

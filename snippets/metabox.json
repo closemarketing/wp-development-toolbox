@@ -1,21 +1,4 @@
-{
-	"WordPress | Force updates and upgrades": {
-		"prefix": "wptupd",
-		"body": [
-			"defined('ABSPATH') or die('Bye bye!');",
-			"add_filter('auto_update_core', '__return_true');",
-			"add_filter('auto_update_plugin', '__return_true');",
-			"add_filter('auto_update_theme', '__return_true');",
-			"add_filter('auto_update_translation', '__return_true');",
-			"add_filter('auto_core_update_send_email', '__return_true');"
-		],
-		"description": "WordPress | Force updates and upgrades"
-	},
-
-
-
-
-	
+{	
 	"MetaBox | Adds main function to load MetaBox": {
 		"prefix": "metafun",
 		"body": [
@@ -168,12 +151,12 @@
 			"),"
 		]
 	},
-	"MetaBox | Adds Address field": {
+	"MetaBox | Adds Address group fields": {
 		"prefix": "metadir",
 		"body": [
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('Address', 'clmkg'),",
+			"\t'name'    => __('Address', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}dir1\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -181,7 +164,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('Address 2', 'clmkg'),",
+			"\t'name'    => __('Address 2', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}dir2\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -189,7 +172,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('ZIP', 'clmkg'),",
+			"\t'name'    => __('ZIP', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}zip\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -197,7 +180,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('City', 'clmkg'),",
+			"\t'name'    => __('City', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}city\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -205,7 +188,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('State', 'clmkg'),",
+			"\t'name'    => __('State', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}state\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -213,7 +196,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'    => __('Teléfono', 'clmkg'),",
+			"\t'name'    => __('Phone number', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}tel\",",
 			"\t'type'    => 'text',",
 			"\t'clone'   => false,",
@@ -221,7 +204,7 @@
 			"),",
 			"// URL",
 			"array(",
-			"\t'name'    => __('URL', 'your-prefix'),",
+			"\t'name'    => __('URL', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}url\",",
 			"\t'desc'    => __('Web Page', 'your-prefix'),",
 			"\t'type'    => 'url',",
@@ -229,7 +212,7 @@
 			"),",
 			"// TEXT",
 			"array(",
-			"\t'name'  => __('ID Google My Business', 'clmkg'),",
+			"\t'name'  => __('ID Google My Business', '${1:slug-translation}'),",
 			"\t'id'    => \"{\\$$prefix}gbusiness\",",
 			"\t'desc'  => '<a href=\"https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder?hl=es-419\" target=\"_blank\">In order to Generate the ID</a>',",
 			"\t'type'  => 'text',",
@@ -270,40 +253,7 @@
 			"\techo '<img src=\"'.\\$image['url'].'\" alt=\"'.\\$image['alt'].'\" width=\"'.\\$image['width'].'\" height=\"'.\\$image['height'].'\" /></a>';",
 			"\t}",
 			"}"
-		],
-		"description": "MetaBox | Shows Gallery in public page"
-	},
+		]
+	}
 
-
-
-
-
-	"WooCommerce | Removes Product Tag": {
-		"prefix": "woorptag",
-		"body": [
-			"/**",
-			" * Overwrite product_tag taxonomy properties to effectively hide it from WP admin ..",
-			" */",
-			"add_action( 'init', function() {",
-			"\tregister_taxonomy('product_tag', 'product', [",
-			"\t\t'public'            => false,",
-			"\t\t'show_ui'           => false,",
-			"\t\t'show_admin_column' => false,",
-			"\t\t'show_in_nav_menus' => false,",
-			"\t\t'show_tagcloud'     => false,",
-			"\t]);",
-			"}, 100 );",
-			"",
-			"/**",
-			" * .. and also remove the column from Products table - it's also hardcoded there.",
-			" */",
-			"add_action( 'admin_init', function() {",
-			"\tadd_filter('manage_product_posts_columns', function( $columns ) {",
-			"\t\tunset( $columns['product_tag'] );",
-			"\t\treturn $columns;",
-			"\t}, 100);",
-			"});"
-		],
-		"description": "WooCommerce | Removes Product Tag"
-	    }
 }
