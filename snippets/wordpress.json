@@ -20,7 +20,7 @@
 			"add_action( '${1:action}', 'cmk_${2:function}' );"
 		]
 	},
-	"WordPress | Muestra título entrada con Permalink": {
+	"WordPress | Shows the entry title with permalink": {
 		"prefix": "wpstit",
 		"body": [
 		  "<h2 class=\"entry-title\">",
@@ -28,7 +28,7 @@
 		  "</h2>"
 		]
 	},
-	"WordPress | Muestra Términos de una taxonomía de actual entrada": {
+	"WordPress | Shows taxonomy terms of actual entry": {
 		"prefix": "wpstrtax",
 		"body": [
 		  "//* Shows taxonomy",
@@ -42,54 +42,21 @@
 		  "echo \\$html;"
 		]
 	},
-	"WordPress | Muestra valor meta": {
+	"WordPress | Shows a meta value": {
 		"prefix": "wpsgmt",
 		"body": [
 		  "$${1:variable} = get_post_meta(get_the_id(),'${1:variable}',true);",
 		  "if($${1:variable}) {",
 		  "\techo $${1:variable};",
 		  "}//if meta"
-		],
-		"description": "WordPress | Muestra valor meta"
-	},
-	"WordPress | Registra una taxonomía": {
-		"prefix": "wpatax",
-		"body": [
-		  "/**",
-		  " * Register Taxonomy ${1:name taxonomy plural}",
-		  " *",
-		  " */",
-		  "add_action( 'init', 'cmk_register_tax_${3:name taxonomy}', 0 );",
-		  "function cmk_register_tax_${3:name taxonomy}() {",
-		  "",
-		  "\\$labels = array(",
-		  "\t'name' => '${1:name taxonomy plural}',",
-		  "\t'singular_name' => '${2:Taxonomy Name Singular}',",
-		  "\t'search_items' =>  'Buscar ${2:Taxonomy Name Singular}',",
-		  "\t'all_items' => 'Todos los ${1:name taxonomy plural}',",
-		  "\t'edit_item' => 'Editar ${2:Taxonomy Name Singular}',",
-		  "\t'update_item' => 'Actualizar ${2:Taxonomy Name Singular}',",
-		  "\t'add_new_item' => 'Añadir nuevo ${2:Taxonomy Name Singular}',",
-		  "\t'new_item_name' => 'Nuevo ${2:Taxonomy Name Singular}',",
-		  ");",
-		  "",
-		  "register_taxonomy( '${3:name taxonomy}', array( '${4:post-type}' ), array(",
-		  "\t'hierarchical' => true,",
-		  "\t'labels' => \\$labels,",
-		  "\t'show_ui' => true,",
-		  "\t'show_admin_column' => true,",
-		  "\t'query_var' => true,",
-		  "\t'rewrite' => array( 'slug' => '${5:slug taxonomy}' ),",
-		  "));",
-		  "}"
 		]
 	},
-	"WordPress | Crea un widget": {
+	"WordPress | Creates a widget": {
 		"prefix": "wpawid",
 		"body": [
 			"/*",
-			"Widget Name: ${1:Nombre Widget}",
-			"Description: ${2:Descripción Widget}.",
+			"Widget Name: ${1:Widget Name}",
+			"Description: ${2:Widget Description}.",
 			"Author: davidperez",
 			"Author URI: https://www.closemarketing.es",
 			"*/",
@@ -104,10 +71,10 @@
 			"\tfunction __construct() {",
 			"\t\t\\$widget_ops = array(",
 			"\t\t\t'classname'\t => 'widget_${3:slug}',",
-			"\t\t\t'description' => '${2:Descripción Widget}',",
+			"\t\t\t'description' => '${2:Widget Description}',",
 			"\t\t\t'panels_icon' => 'dashicons dashicons-layout',",
 			"\t\t);",
-			"\t\tparent::__construct( 'widget_${3:slug}', '${1:Nombre Widget}', \\$widget_ops );",
+			"\t\tparent::__construct( 'widget_${3:slug}', '${1:Widget Name}', \\$widget_ops );",
 			"\t}",
 			"",
 			"\t// CREATE WIDGET FORM (WORDPRESS DASHBOARD)",

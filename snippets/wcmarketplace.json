@@ -5,5 +5,20 @@
 			"// * Remove report abuse.",
 			"add_filter ( 'wcmp_show_report_abuse_link', '__return_false' );"
 		]
+	},
+	"WC Market Place | Customize Name Sold by": {
+		"prefix": "woctven",
+		"body": [
+			"/**",
+			" * Customize Name Sold by.",
+			" *",
+			" * @return html $name Text for Sold by",
+			" */",
+			"function cmk_custom_name_vendor() {",
+			"  return '${1:name}';",
+			"}",
+			"add_filter( 'wcmp_sold_by_text', 'cmk_custom_name_vendor' );"
+		],
+		"description": "WC Market Place | Customize Name Sold by"
 	    }
 }

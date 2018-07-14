@@ -1,7 +1,8 @@
 # Change Log
-## 1.2.0 - July 19, 2018
+## 1.2.0 - July 14, 2018
 - Added CSS, Genesis, WooCoomerce, WordPress.
-- Added some snippets for WC Market Place.
+- Added some snippets for WC Market Place, WPML.
+- Documented all snippets in readme.
 
 ## 1.1.0 - July 10, 2018
 - Minor changes and updated description.

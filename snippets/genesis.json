@@ -196,7 +196,7 @@
 			"add_filter( 'wp_nav_menu_items', 'cmk_menu_add_social', 10, 2 );"
 		]
 	},
-	"Genesis | Loop Index i para First": {
+	"Genesis | Loop Index i to add class first": {
 		"prefix": "genslf",
 		"body": [
 		  "\\$i = 1;",

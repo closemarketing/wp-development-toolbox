@@ -23,98 +23,65 @@ All snippets will respect **WordPress Coding Standards**.
 ## WordPress (WP) ##
 | **Rule**		| **Action**	|
 | ------------------- |------------------------------------------------------------------|
+| **wptupd** 	|	Force updates and upgrades
+| **wpaac** 	|	Adds an action with function
+| **wpstit** 	|	Shows the entry title with permalink
+| **wpstrtax** 	|	Shows taxonomy terms of actual entry
+| **wpsgmt** 	|	Shows a meta value
+| **wpawid** 	|	Creates a widget	
 
-| ** ** |
-| **Querys** 	|
-
-
-## WordPress Internal Functions (WP) ##
+## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
+| **wpatax** 	|	Register a taxonomy
 
-| ** ** |
-| **Facebook** 	|
-| **wpafb** 	| 
-| **wpafbc** 	| 
-| ** ** |
-| **Widgets** |
-| **wpwidget** 	| 
-| **wpwf** 		| 
-| **wpwpag** 	| 
-| ** ** |
-| **Post2Posts** |
-| **wpap2p** 	| 
-| **wpsp2p** 	|  
-| ** ** |
-| **Plugins** 	|
-| **wpphead** 	| Plantilla Cabecera para un plugin
-| ** ** |
-| **Post Types** 	|
-| **wpcptpag** 	| 
-| **wpcptpost** 	| 
-| **wpcptcol** 	| 
-| **wpatax** 	|
-| **wpataxcpt** 	| 
-| **WPO** 		| 
-| **wprdash** 	| 
-| **wprem** 	| 
-
-## WordPress Other functions ##
+## WordPress Functions for Developer (WP) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpssoc** 	| 
-| **gfavib** 	| 
-| **hts** 		| 
+| **wpaloc** 	| 	Configuration for Local development
+| **wpaop** 	| 	Removes CSS and JS for optimization
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **Additions** 		|
-| **genaclass** 	| 	Adds classes and elements to HTML element
-| **Shows to public** 	|
+| **genacl** 	| 	Adds classes and elements to HTML element
+| **genafpt** 	| 	Adds functions to Custom Post Type
+| **gensmen** 	| 	Adds HTML elements to main menu
+| **gensimgh** 	| 	Adds Header image from featured
 | **gensmsoc** 	| 	Adds social icons to main menu
+| **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
+| **genslf** 	| 	Loop Index i to add class first
+| **genmmh** 	| 	Move menu from Header
 
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wootacc** 	| 
-| **wootbre** 	| 
-| **wootchc** 	| 
-| **wootquan** 	| 
-| **woorprivar** 	| 
-| **woorbut** 	| 
-| **woorsd** 	| 
-| **woorpdes** 	| 
-| **worst** 	| 
-| **woomdes** 	| 
-
-## Download Monitor ##
-| **Rule**               | **Action**     |
-| ------------------- |------------------------------------------------------------------|
-| **dmhsty** 	| 
-| **dmsbut** 	| 
-| **dmsbox** 	| 
+| **wootord** 	|	Creates new status for Orders
+| **woorptag** 	| 	Removes Product Tag
+| **woorsku** 	| 	Removes SKU in detail page
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **metafun**	|	Adds Metabox Function 
+| **metapost**	| 	Adds field select for posts
 | **metatext**	| 	Adds text field
 | **metagal**	| 	Adds Images Gallery Field
+| **metaurl**	| 	Adds URL Field
+| **metanum**	| 	Adds Number field
 | **metaicon**	| 	Adds Icon field
 | **metasel**	| 	Adds select field
-| **metadir**	| 	Adds Address field
+| **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
 | **metsimg**	| 	Shows Gallery in public page
 
 ### WPML (WPML) ###
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
-| **wpmlsup** 	| 	
-| **wpmllang** 	|	
-| **wpmldis** 	|
-| **wpmlalink** 	|	
+| **wpmltdis** 	| 	Disable Javascript and CSS in front
 
 ### WC Market Place (WOC) ###
 | **Rule**			  | **Action**	|

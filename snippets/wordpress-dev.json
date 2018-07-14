@@ -1,6 +1,6 @@
 {
 	"WordPress | Configuration for Local development": {
-		"prefix": "wploc",
+		"prefix": "wpaloc",
 		"body": [
 		  "<?php",
 		  "define('DB_NAME', '${1:database}');",
