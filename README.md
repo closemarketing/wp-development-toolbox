@@ -41,6 +41,7 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **wpaloc** 	| 	Configuration for Local development
 | **wpaop** 	| 	Removes CSS and JS for optimization
+| **wpapuh** 	| 	Adds Plugin Header
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
@@ -54,6 +55,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
 | **genslf** 	| 	Loop Index i to add class first
 | **genmmh** 	| 	Move menu from Header
+| **Remove elements** |
+| **genrpi**	|	Remove Entry Post Info
 
 
 ## WooCommerce (WOO) ##
