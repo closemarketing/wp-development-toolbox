@@ -234,9 +234,91 @@
 	"Genesis | Remove Entry Post Info": {
 		"prefix": "genrpi",
 		"body": [
-			"//* Remove the entry meta in the entry header (requires HTML5 theme support)",
+			"// * Remove the entry meta in the entry header (requires HTML5 theme support)",
 			"remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );"
 		]
+	},
+	"Genesis | Customize Entry Post Info": {
+		"prefix": "genspsi",
+		"body": [
+			"/**",
+			" * Customize the post info function",
+			" *",
+			" * @param [type] $post_info String with post info.",
+			" * @return $post_info Modified post info.",
+			" */",
+			"function post_info_filter( $post_info ) {",
+			"\t$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
+			"\treturn $post_info;",
+			"}",
+			"add_filter( 'genesis_post_info', 'post_info_filter' );"
+		]
+	},
+	"Genesis | Move Menu from After menu to Header right": {
+		"prefix": "genmmah",
+		"body": [
+		  "// * Reposition the primary navigation menu",
+		  "remove_action( 'genesis_after_header', 'genesis_do_nav' );",
+		  "add_action( 'genesis_header_right', 'genesis_do_nav' );",
+		  "add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );"
+		]
+	},
+	"Genesis | Adds topbar with menu": {
+		"prefix": "genstopbar",
+		"body": [
+			"/**",
+			" * Adds topbar before header",
+			" *",
+			" * @return void",
+			" */",
+			"function topbar_menu() {",
+			"\tif ( is_page_template( 'page_landing.php' ) ) {",
+			"\t\treturn;",
+			"\t}",
+			"\t?>",
+			"\t<div class=\"topbar\">",
+			"\t\t<div class=\"wrap\">",
+			"\t\t\t<div class=\"top-search-form-wrapper\"><?php get_search_form(); ?></div>",
+			"\t\t\t<?php",
+			"\t\t\twp_nav_menu(",
+			"\t\t\t\tarray(",
+			"\t\t\t\t\t'theme_location' => 'top-menu',",
+			"\t\t\t\t\t'menu_class'     => 'genesis-nav-menu third-menu',",
+			"\t\t\t\t)",
+			"\t\t\t);",
+			"\t\t\t?>",
+			"\t\t</div>",
+			"\t</div>",
+			"\t<?php",
+			"}",
+			"add_action( 'genesis_before_header', 'topbar_menu' );",
+			"",
+			"/**",
+			" * Adds additional menu for tobpar",
+			" *",
+			" * @return void",
+			" */",
+			"function cmk_register_additional_menu() {",
+			"\tregister_nav_menu( 'top-menu', '${1:menu-name}' );",
+			"}",
+			"add_action( 'init', 'cmk_register_additional_menu' );",
+			""
+			]
+	},
+	"Genesis | Adds WPML Language selector to Footer": {
+		"prefix": "genswpmls",
+		"body": [
+			"/**",
+			" * Adds WPML Language selector to Footer Genesis",
+			" *",
+			" * @return void",
+			" */",
+			"function cmk_language_selector() {",
+			"\tdo_action( 'wpml_add_language_selector' );",
+			"}",
+			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
+		]
 	    }
+
 
 }

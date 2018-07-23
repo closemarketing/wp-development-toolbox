@@ -55,6 +55,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
 | **genslf** 	| 	Loop Index i to add class first
 | **genmmh** 	| 	Move menu from Header
+| **Shows to public** |
+| **genspsi**	|	Customize Entry Post Info
+| **genstopbar**	|	Adds topbar with menu
+| **genswpmls**	|	Adds WPML Language selector to Footer
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
 
@@ -65,6 +69,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootord** 	|	Creates new status for Orders
 | **woorptag** 	| 	Removes Product Tag
 | **woorsku** 	| 	Removes SKU in detail page
+| **woorcomp** 	| 	Remove Company name in checkout
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
