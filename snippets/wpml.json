@@ -8,5 +8,41 @@
 			"define( 'ICL_DONT_LOAD_LANGUAGES_JS', true );",
 			"define( 'ICL_DONT_PROMOTE', true );"
 		]
+	},
+	"WPML | Actual Language code": {
+		"prefix": "wpmlslg",
+		"body": [
+		  	"ICL_LANGUAGE_CODE"
+		],
+		"description": "WPML | Actual Language code"
+	},
+	"WPML | Adds Language selector in genesis footer": {
+		"prefix": "wpmlsgmg",
+		"body": [
+			"/**",
+			" * Adds Language selector in genesis footer",
+			" *",
+			" * @return void",
+			" */",
+			"function wpml_footer_language_selector() {",
+			"\tdo_action( 'wpml_add_language_selector' );",
+			"}",
+			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
+		],
+		"description": "WPML | Adds Language selector in genesis footer"
+	},
+	"WPML | Link from ID": {
+		"prefix": "wpmlalink",
+		"body": [
+		  	"<?php apply_filters( 'wpml_element_link', ${1:id}, '${2:post_type}', __( '${3:text}', 'cmk' ) ); ?>"
+		],
+		"description": "WPML | Link from ID"
+	},
+	"WPML | Suppress filter for Query in array": {
+		"prefix": "wpmlasup",
+		"body": [
+		  	"'suppress_filters' => false,"
+		],
+		"description": "WPML | Suppress filter for Query in array"
 	}
 }

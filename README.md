@@ -91,6 +91,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wpmltdis** 	| 	Disable Javascript and CSS in front
+| **wpmlslg** 	| 	Actual Language code
+| **wpmlsgmg** 	| 	Adds Language selector in genesis footer
+| **wpmlalink** 	| 	Link from ID
+| **wpmlasup** 	| 	Suppress filter for Query in array
 
 ### WC Market Place (WOC) ###
 | **Rule**			  | **Action**	|
