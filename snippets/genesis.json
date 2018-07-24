@@ -122,43 +122,6 @@
 			"add_action( 'genesis_after_header', 'cmk_feature_img' );"
 		]
 	},
-	"Genesis | Adds social icons to main menu": {
-		"prefix": "gensmsoc",
-		"body": [
-			"/**",
-			" * Adds custom social icons html elements to the main menu.",
-			" *",
-			" * @param void",
-			" * @return void",
-			" */",
-			"//* ",
-			"function cmk_menu_add_social ( \\$items, \\$args ) {",
-			"\t\\$wpseo_social = get_option('wpseo_social'); ",
-			"\tif (\\$args->theme_location == 'primary') {",
-			"\t\t\\$menu_html = '';",
-			"\t\tif(\\$wpseo_social['facebook_site'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-fb\"><a href=\"'.\\$wpseo_social['facebook_site'].'\"><i class=\"icon icon-facebook\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['twitter_site'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-tw\"><a href=\"https://twitter.com/'.\\$wpseo_social['twitter_site'].'\"><i class=\"icon icon-twitter\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['linkedin_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-lk\"><a href=\"'.\\$wpseo_social['linkedin_url'].'\"><i class=\"icon icon-linkedin\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['instagram_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-in\"><a href=\"'.\\$wpseo_social['instagram_url'].'\"><i class=\"icon icon-instagram\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['google_plus_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-gp\"><a href=\"'.\\$wpseo_social['google_plus_url'].'\"><i class=\"icon icon-google-plus\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['youtube_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-yt\"><a href=\"'.\\$wpseo_social['youtube_url'].'\"><i class=\"icon icon-youtube\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['pinterest_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-pt\"><a href=\"'.\\$wpseo_social['pinterest_url'].'\"><i class=\"icon icon-pinterest\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(isset(\\$tripadvisor))",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-tp\"><a href=\"'.\\$tripadvisor.'\"><i class=\"icon icon-tripadvisor\" rel=\"nofollow\"></i></a></li>';",
-			"\t\t\\$items = \\$items.\\$menu_html;",
-			"\t}",
-			"\treturn \\$items;",
-			"}",
-			"add_filter( 'wp_nav_menu_items', 'cmk_menu_add_social', 10, 2 );"
-		]
-	},
 	"Genesis | Adds custom Yoast social icons html elements to the main menu": {
 		"prefix": "genssm",
 		"body": [

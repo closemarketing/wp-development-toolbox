@@ -29,6 +29,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
+| **Shows to public** |
+| **wpssoc**	|	Shows Icons Social from Yoast
 
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
@@ -51,7 +53,6 @@ All snippets will respect **WordPress Coding Standards**.
 | **genafpt** 	| 	Adds functions to Custom Post Type
 | **gensmen** 	| 	Adds HTML elements to main menu
 | **gensimgh** 	| 	Adds Header image from featured
-| **gensmsoc** 	| 	Adds social icons to main menu
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
 | **genslf** 	| 	Loop Index i to add class first
 | **genmmh** 	| 	Move menu from Header

@@ -167,5 +167,36 @@
 			"",
 			"} //class widget"
 		]
+	},
+	"WordPress | Shows Icons Social from Yoast": {
+		"prefix": "wpssoc",
+		"body": [
+			"<div class=\"social\">",
+			"\t<?php",
+			"\t$wpseo_social = get_option( 'wpseo_social' );",
+			"\tif ( $wpseo_social['facebook_site'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['facebook_site'] ) . '\" target=\"_blank\"><i class=\"icon icon-facebook\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['twitter_site'] ) {",
+			"\t\techo '<a href=\"https://twitter.com/' . esc_url( $wpseo_social['twitter_site'] ) . '\" target=\"_blank\"><i class=\"icon icon-twitter\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['linkedin_url'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['linkedin_url'] ) . '\" target=\"_blank\"><i class=\"icon icon-linkedin\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['instagram_url'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['instagram_url'] ) . '\" target=\"_blank\"><i class=\"icon icon-instagram\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['google_plus_url'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['google_plus_url'] ) . '\" target=\"_blank\"><i class=\"icon icon-google-plus\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['youtube_url'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['youtube_url'] ) . '\" target=\"_blank\"><i class=\"icon icon-youtube\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\tif ( $wpseo_social['pinterest_url'] ) {",
+			"\t\techo '<a href=\"' . esc_url( $wpseo_social['pinterest_url'] ) . '\" target=\"_blank\"><i class=\"icon icon-pinterest\" rel=\"nofollow\"></i></a>';",
+			"\t}",
+			"\t?>",
+			"</div>"
+		]
 	}
 }
