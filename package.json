@@ -16,6 +16,10 @@
 	"contributes": {
 		"snippets": [
 			{
+				"language": "plaintext",
+				"path": "./snippets/text.json"
+			},
+			{
 				"language": "php",
 				"path": "./snippets/metabox.json"
 			},

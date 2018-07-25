@@ -44,6 +44,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpaloc** 	| 	Configuration for Local development
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
+| **wparead**	|	Create readme.txt
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
