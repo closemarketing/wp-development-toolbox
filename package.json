@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "wp-development-toolbox",
   "displayName": "WordPress Development ToolBox for Visual Code",
   "description": "Functions and filter snippets to develop WordPress and Genesis for Visual Studio",
@@ -68,3 +69,75 @@
     "email": "david@closemarketing.es"
   }
 }
+=======
+	"name": "wp-development-toolbox",
+	"displayName": "WordPress Development ToolBox for Visual Code",
+	"description": "Functions and filter snippets to develop WordPress and Genesis for Visual Studio",
+	"version": "1.4.0",
+	"publisher": "closemarketing",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"wordpress", "development", "genesis", "plugins"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "plaintext",
+				"path": "./snippets/text.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/metabox.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress-dev.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wordpress-cpt.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/woocommerce.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/genesis.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wcmarketplace.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/wpml.json"
+			}
+		]
+	},
+	"icon": "images/icon.png",
+	"license": "MIT",
+	"homepage": "https://github.com/closemarketing/wp-development-toolbox",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/closemarketing/wp-development-toolbox"
+	},
+	"bugs": {
+		"url": "https://github.com/closemarketing/wp-development-toolbox/issues",
+		"email": "david@closemarketing.es"
+	}
+}
+>>>>>>> develop

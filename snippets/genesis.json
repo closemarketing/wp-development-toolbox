@@ -122,43 +122,6 @@
 			"add_action( 'genesis_after_header', 'cmk_feature_img' );"
 		]
 	},
-	"Genesis | Adds social icons to main menu": {
-		"prefix": "gensmsoc",
-		"body": [
-			"/**",
-			" * Adds custom social icons html elements to the main menu.",
-			" *",
-			" * @param void",
-			" * @return void",
-			" */",
-			"//* ",
-			"function cmk_menu_add_social ( \\$items, \\$args ) {",
-			"\t\\$wpseo_social = get_option('wpseo_social'); ",
-			"\tif (\\$args->theme_location == 'primary') {",
-			"\t\t\\$menu_html = '';",
-			"\t\tif(\\$wpseo_social['facebook_site'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-fb\"><a href=\"'.\\$wpseo_social['facebook_site'].'\"><i class=\"icon icon-facebook\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['twitter_site'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-tw\"><a href=\"https://twitter.com/'.\\$wpseo_social['twitter_site'].'\"><i class=\"icon icon-twitter\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['linkedin_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-lk\"><a href=\"'.\\$wpseo_social['linkedin_url'].'\"><i class=\"icon icon-linkedin\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['instagram_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-in\"><a href=\"'.\\$wpseo_social['instagram_url'].'\"><i class=\"icon icon-instagram\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['google_plus_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-gp\"><a href=\"'.\\$wpseo_social['google_plus_url'].'\"><i class=\"icon icon-google-plus\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['youtube_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-yt\"><a href=\"'.\\$wpseo_social['youtube_url'].'\"><i class=\"icon icon-youtube\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(\\$wpseo_social['pinterest_url'])",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-pt\"><a href=\"'.\\$wpseo_social['pinterest_url'].'\"><i class=\"icon icon-pinterest\" rel=\"nofollow\"></i></a></li>';",
-			"\t\tif(isset(\\$tripadvisor))",
-			"\t\t\t\\$menu_html.= '<li class=\"menu-item menu-item-social menu-item-tp\"><a href=\"'.\\$tripadvisor.'\"><i class=\"icon icon-tripadvisor\" rel=\"nofollow\"></i></a></li>';",
-			"\t\t\\$items = \\$items.\\$menu_html;",
-			"\t}",
-			"\treturn \\$items;",
-			"}",
-			"add_filter( 'wp_nav_menu_items', 'cmk_menu_add_social', 10, 2 );"
-		]
-	},
 	"Genesis | Adds custom Yoast social icons html elements to the main menu": {
 		"prefix": "genssm",
 		"body": [
@@ -230,6 +193,95 @@
 			"\tgenesis_entry_header_markup_close();",
 			"}"
 		]
+	},
+	"Genesis | Remove Entry Post Info": {
+		"prefix": "genrpi",
+		"body": [
+			"// * Remove the entry meta in the entry header (requires HTML5 theme support)",
+			"remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );"
+		]
+	},
+	"Genesis | Customize Entry Post Info": {
+		"prefix": "genspsi",
+		"body": [
+			"/**",
+			" * Customize the post info function",
+			" *",
+			" * @param [type] $post_info String with post info.",
+			" * @return $post_info Modified post info.",
+			" */",
+			"function post_info_filter( $post_info ) {",
+			"\t$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
+			"\treturn $post_info;",
+			"}",
+			"add_filter( 'genesis_post_info', 'post_info_filter' );"
+		]
+	},
+	"Genesis | Move Menu from After menu to Header right": {
+		"prefix": "genmmah",
+		"body": [
+		  "// * Reposition the primary navigation menu",
+		  "remove_action( 'genesis_after_header', 'genesis_do_nav' );",
+		  "add_action( 'genesis_header_right', 'genesis_do_nav' );",
+		  "add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );"
+		]
+	},
+	"Genesis | Adds topbar with menu": {
+		"prefix": "genstopbar",
+		"body": [
+			"/**",
+			" * Adds topbar before header",
+			" *",
+			" * @return void",
+			" */",
+			"function topbar_menu() {",
+			"\tif ( is_page_template( 'page_landing.php' ) ) {",
+			"\t\treturn;",
+			"\t}",
+			"\t?>",
+			"\t<div class=\"topbar\">",
+			"\t\t<div class=\"wrap\">",
+			"\t\t\t<div class=\"top-search-form-wrapper\"><?php get_search_form(); ?></div>",
+			"\t\t\t<?php",
+			"\t\t\twp_nav_menu(",
+			"\t\t\t\tarray(",
+			"\t\t\t\t\t'theme_location' => 'top-menu',",
+			"\t\t\t\t\t'menu_class'     => 'genesis-nav-menu third-menu',",
+			"\t\t\t\t)",
+			"\t\t\t);",
+			"\t\t\t?>",
+			"\t\t</div>",
+			"\t</div>",
+			"\t<?php",
+			"}",
+			"add_action( 'genesis_before_header', 'topbar_menu' );",
+			"",
+			"/**",
+			" * Adds additional menu for tobpar",
+			" *",
+			" * @return void",
+			" */",
+			"function cmk_register_additional_menu() {",
+			"\tregister_nav_menu( 'top-menu', '${1:menu-name}' );",
+			"}",
+			"add_action( 'init', 'cmk_register_additional_menu' );",
+			""
+			]
+	},
+	"Genesis | Adds WPML Language selector to Footer": {
+		"prefix": "genswpmls",
+		"body": [
+			"/**",
+			" * Adds WPML Language selector to Footer Genesis",
+			" *",
+			" * @return void",
+			" */",
+			"function cmk_language_selector() {",
+			"\tdo_action( 'wpml_add_language_selector' );",
+			"}",
+			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
+		]
 	    }
+
 
 }

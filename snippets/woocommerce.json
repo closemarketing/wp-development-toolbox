@@ -86,5 +86,21 @@
 			"}",
 			"add_filter( 'wc_product_sku_enabled', 'cmk_remove_product_page_skus' );"
 		]
-	}
+	},
+	"WooCommerce | Remove Company name in checkout": {
+		"prefix": "woorcomp",
+		"body": [
+			"/**",
+			" * Removes Company Name in Checkout.",
+			" *",
+			" * @param array \\$fields Fiels of checkout in WooCommerce.",
+			" * @return array \\$fields",
+			" */",
+			"function custom_override_checkout_fields( \\$fields ) {",
+			"\tunset(\\$fields['billing']['billing_company']);",
+			"\treturn \\$fields;",
+			"}",
+			"add_filter( 'woocommerce_checkout_fields', 'custom_override_checkout_fields' );"
+		]
+	    }
 }

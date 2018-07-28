@@ -1,0 +1,34 @@
+{
+	"WordPress | Create readme.txt": {
+		"prefix": "wparead",
+		"body": [
+		  "=== ${1:Name Plugin} ===",
+		  "Contributors: ${2:Authors}",
+		  "Tags: ${3:tags}",
+		  "Donate link: ",
+		  "Requires at least: 4.0",
+		  "Tested up to: ${4:tested}",
+		  "Stable tag: ${5:Version}",
+		  "Version: ${5:Version}",
+		  "",
+		  "${6:Short Description}",
+		  "",
+		  "== Description ==",
+		  "",
+		  "== Installation ==",
+		  "",
+		  "Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.",
+		  "",
+		  "== Developers ==",
+		  "",
+		  "== Changelog =",
+		  "= 0.1 =",
+		  "*\tInitial release",
+		  "",
+		  "== Links ==",
+		  "*\t[name](link_url)",
+		  ""
+		],
+		"description": "WordPress | Create readme.txt"
+	    }
+}

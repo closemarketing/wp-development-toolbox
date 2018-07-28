@@ -29,6 +29,15 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
+| **Shows to public** |
+| **wpssoc**	|	Shows Icons Social from Yoast
+| **Querys** |
+| **wpqda**		|	Query Arguments for Date
+| **wpqueul**	|	Query entries with UL wrapper
+| **wpquediv**	|	Query entries with DIV wrapper
+| **wpqta**		|	Query entries from a taxonomy
+| **wpqtm**		|	Query Terms from a taxonomy
+| **wpqtmp**	|	Query Terms from actual post
 
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
@@ -41,6 +50,8 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **wpaloc** 	| 	Configuration for Local development
 | **wpaop** 	| 	Removes CSS and JS for optimization
+| **wpapuh** 	| 	Adds Plugin Header
+| **wparead**	|	Create readme.txt
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
@@ -50,10 +61,15 @@ All snippets will respect **WordPress Coding Standards**.
 | **genafpt** 	| 	Adds functions to Custom Post Type
 | **gensmen** 	| 	Adds HTML elements to main menu
 | **gensimgh** 	| 	Adds Header image from featured
-| **gensmsoc** 	| 	Adds social icons to main menu
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
 | **genslf** 	| 	Loop Index i to add class first
 | **genmmh** 	| 	Move menu from Header
+| **Shows to public** |
+| **genspsi**	|	Customize Entry Post Info
+| **genstopbar**	|	Adds topbar with menu
+| **genswpmls**	|	Adds WPML Language selector to Footer
+| **Remove elements** |
+| **genrpi**	|	Remove Entry Post Info
 
 
 ## WooCommerce (WOO) ##
@@ -62,6 +78,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootord** 	|	Creates new status for Orders
 | **woorptag** 	| 	Removes Product Tag
 | **woorsku** 	| 	Removes SKU in detail page
+| **woorcomp** 	| 	Remove Company name in checkout
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
@@ -82,6 +99,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wpmltdis** 	| 	Disable Javascript and CSS in front
+| **wpmlslg** 	| 	Actual Language code
+| **wpmlsgmg** 	| 	Adds Language selector in genesis footer
+| **wpmlalink** 	| 	Link from ID
+| **wpmlasup** 	| 	Suppress filter for Query in array
 
 ### WC Market Place (WOC) ###
 | **Rule**			  | **Action**	|
