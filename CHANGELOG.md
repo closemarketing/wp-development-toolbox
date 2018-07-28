@@ -1,5 +1,5 @@
 # Change Log
-## 1.4.0 - July 28, 2018
+## 1.5.0 - July 28, 2018
 - Added new snippets for Genesis, WordPress, Plugin Header, Readme.txt, WPML.
 - Snippets to create queries in WordPress.
 - Upadated all snippets in readme.
