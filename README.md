@@ -31,6 +31,13 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpawid** 	|	Creates a widget	
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
+| **Querys** |
+| **wpqda**		|	Query Arguments for Date
+| **wpqueul**	|	Query entries with UL wrapper
+| **wpquediv**	|	Query entries with DIV wrapper
+| **wpqta**		|	Query entries from a taxonomy
+| **wpqtm**		|	Query Terms from a taxonomy
+| **wpqtmp**	|	Query Terms from actual post
 
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
