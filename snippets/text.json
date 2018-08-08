@@ -30,5 +30,45 @@
 		  ""
 		],
 		"description": "WordPress | Create readme.txt"
-	    }
+	},
+	"WordPress | htaccess recommended for HTPPS sites": {
+		"prefix": "htacc",
+		"body": [
+		  "<snippet>",
+		  "\t<content><![CDATA[",
+		  "<IfModule mod_deflate.c>",
+		  "AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript",
+		  "</IfModule>",
+		  "",
+		  "<IfModule mod_expires.c>",
+		  "ExpiresActive On",
+		  "ExpiresByType image/jpg \"access 1 year\"",
+		  "ExpiresByType image/jpeg \"access 1 year\"",
+		  "ExpiresByType image/gif \"access 1 year\"",
+		  "ExpiresByType image/png \"access 1 year\"",
+		  "ExpiresByType text/css \"access 1 month\"",
+		  "ExpiresByType application/pdf \"access 1 month\"",
+		  "ExpiresByType application/javascript \"access 1 month\"",
+		  "ExpiresByType text/x-javascript \"access 1 month\"",
+		  "ExpiresByType application/x-shockwave-flash \"access 1 month\"",
+		  "ExpiresByType image/x-icon \"access 1 year\"",
+		  "ExpiresDefault \"access 2 days\"",
+		  "</IfModule>",
+		  "",
+		  "<IfModule mod_rewrite.c>",
+		  "RewriteEngine On",
+		  "RewriteCond %{HTTPS} off",
+		  "RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]",
+		  "RewriteBase /",
+		  "RewriteRule ^index\\.php$ - [L]",
+		  "RewriteCond %{REQUEST_FILENAME} !-f",
+		  "RewriteCond %{REQUEST_FILENAME} !-d",
+		  "RewriteRule . /index.php [L]",
+		  "</IfModule>",
+		  "]]></content>",
+		  "\t<tabTrigger>hts</tabTrigger>",
+		  "</snippet>"
+		],
+		"description": "WordPress | htaccess recommended for HTPPS sites"
+	}
 }
