@@ -53,6 +53,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
+| **htacc**	|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
