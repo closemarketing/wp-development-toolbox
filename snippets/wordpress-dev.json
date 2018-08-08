@@ -1,5 +1,5 @@
 {
-	"WordPress | Plugin Header": {
+	"WordPress | Comments Plugin Header": {
 		"prefix": "wpapuh",
 		"body": [
 			"/**",
@@ -36,6 +36,37 @@
 			"\tload_plugin_textdomain( '${10:Plugin Slug}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );",
 			"}",
 			"add_action( 'plugins_loaded', '${11:Plugin Functions Prefix}_plugin_init' );"	
+		]
+	},
+	"Wordpress | Comments Plugin File Header": {
+		"prefix": "wpahfil",
+		"body": [
+			"/**",
+			" * ${1:name-file}",
+			" *",
+			" * ${2:description}",
+			" *",
+			" * @author   ${3:author}",
+			" * @category ${4:category}",
+			" * @package  ${5:package}",
+			" * @version  ${6:version}",
+			" */"
+		]
+	},
+	"Comments - New section": {
+		"prefix": "coasec",
+		"body": [
+			"/**",
+			" * # $1",
+			" * ---------------------------------------------------------------------------------------------------- */",
+		]
+	},
+	"Comments - New subsection": {
+		"prefix": "coassec",
+		"body": [
+			"/**",
+			" * ## $1",
+			" * --------------------------- */"
 		]
 	},
 	"WordPress | Configuration for Local development": {
@@ -89,5 +120,27 @@
 			"\twp_dequeue_style('taxonomy-image-plugin-public');",
 			"}"
 		]
+	},
+	"PHP | Echo a variable": {
+		"prefix": "phpecho",
+		"body":"<?php echo \\$${1:var}; ?>"
+	},
+
+	"PHP | Echo variable with wrap PRE": {
+		"prefix": "phpechopre",
+		"body": [
+			"echo '<pre>';",
+			"print_r(\\$${1:var});",
+			"echo '</pre>';"
+		]
+	},
+
+	"Developer | Loads a Composer Library": {
+		"prefix": "devtcomp",
+		"body": [
+			"/* Load Composer Dependency Libraries */",
+			"require plugin_dir_path( __FILE__) . 'vendor/autoload.php';"
+		]
 	}
+
 }
