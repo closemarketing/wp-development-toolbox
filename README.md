@@ -42,6 +42,7 @@ All snippets will respect **WordPress Coding Standards**.
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wpacptpag** 	|	Creates a new Custom Post Type for Pages
 | **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
@@ -52,6 +53,9 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
+| **wpahfil**	|	Comments Plugin File Header
+| **coasec**	|	Comments for new section
+| **coassec**	|	Comments for new subsection
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
@@ -116,3 +120,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **cssawid** 	|	Adds Subsection for a Widget
 | **cssamed** 	|	Media Queries responsive
 | **woorspin** 	|	WooCommerce Removes Spin from input
+
+### PHP (PHP) ###
+| **Rule** | **Action** |
+| ------------------- |------------------------------------------------------------------|
+| **phpecho** 	|	Echo a variable
+| **phpechopre** 	|	Echo variable with wrap PRE
+| **devtcomp** 	|	Loads a Composer Library

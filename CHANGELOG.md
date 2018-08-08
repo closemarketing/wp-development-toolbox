@@ -1,4 +1,12 @@
 # Change Log
+
+## 1.6.0 - August 13, 2018
+Added 8 new snippets:
+- Added Developer Snippets: (phpecho) Echo a variable, (phpechopre) Echo variable with wrap PRE, (devtcomp) Loads a Composer Library
+- Added WordPress Comments: (wpahfil) Comments Plugin File Header,
+- Snippets for comments: (coasec) Comments for new section, (coassec) Comments for new subsection.
+- Snippets to create Custom Post Type: (wpacptpag) Creates a new Custom Post Type for Pages, (wpacptpost) Creates a new Custom Post Type for Posts.
+
 ## 1.5.0 - July 28, 2018
 - Added new snippets for Genesis, WordPress, Plugin Header, Readme.txt, WPML.
 - Snippets to create queries in WordPress.
