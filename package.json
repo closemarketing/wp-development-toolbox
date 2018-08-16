@@ -57,6 +57,10 @@
 			{
 				"language": "php",
 				"path": "./snippets/wpml.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/schema.json"
 			}
 		]
 	},

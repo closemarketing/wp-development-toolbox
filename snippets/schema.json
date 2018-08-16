@@ -1,0 +1,16 @@
+{
+	"WordPress Schema | Make wrap for functions.php": {
+		"prefix": "scsscw",
+		"body": [
+			"/**",
+			" * Shows Schema depeding of post type in header with LD JSON",
+			" *",
+			" * @return void",
+			" */",
+			"function cmk_add_schema_pages() {",
+			"\t// Add schemas.",
+			"}",
+			"add_action( 'wp_head', 'cmk_add_schema_pages', 20 );"
+		]
+	}
+}
