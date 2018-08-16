@@ -75,7 +75,7 @@
 		"prefix": "genafpt",
 		"body": [
 			"/**",
-			" * Loads functions in custom post type",
+			" * Loads functions in custom post type for ${1:post_type}",
 			" *",
 			" * @return void",
 			" */",
@@ -85,6 +85,47 @@
 			"\t}",
 			"}",
 			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );"
+		]
+	},
+	"Genesis | Register Custom Sidebar": {
+		"prefix": "genasid",
+		"body": [
+		  "// Register new sidebar",
+		  "genesis_register_sidebar( array(",
+		  "\t'id' => '${1:id}',",
+		  "\t'name' => '${2:name}',",
+		  "\t'description' => '${3:description}',",
+		  ") );",
+		  "function ${0:prefix-function}_genesis_sidebar() {",
+		  "\tif ( is_singular('${4:description}')) { ",
+		  "\t\tremove_action( 'genesis_sidebar', 'genesis_do_sidebar' ); ",
+		  "\t\tadd_action( 'genesis_sidebar', '${0:prefix-function}_do_sidebar' ); ",
+		  "\t}",
+		  "}",
+		  "add_action('get_header','${0:prefix-function}_genesis_sidebar');",
+		  "",
+		  "//Function to output my custom sidebar",
+		  "function ${0:prefix-function}_do_sidebar() {",
+		  "\tdynamic_sidebar( '${1:id}' );",
+		  "}"
+		]
+	},
+
+	"Genesis | Custom Sidebar Function": {
+		"prefix": "genasidf",
+		"body": [
+		  "function ${0:prefix-function}_genesis_sidebar() {",
+		  "\tif ( is_singular('${4:description}')) { ",
+		  "\t\tremove_action( 'genesis_sidebar', 'genesis_do_sidebar' ); ",
+		  "\t\tadd_action( 'genesis_sidebar', '${0:prefix-function}_do_sidebar' ); ",
+		  "\t}",
+		  "}",
+		  "add_action('get_header','${0:prefix-function}_genesis_sidebar');",
+		  "",
+		  "//Function to output my custom sidebar",
+		  "function ${0:prefix-function}_do_sidebar() {",
+		  "",
+		  "}"
 		]
 	},
 
