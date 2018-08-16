@@ -266,6 +266,13 @@
 			"remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );"
 		]
 	},
+	"Genesis | Remove the post content": {
+		"prefix": "genremec",
+		"body": [
+			"//* Remove the post content",
+			"remove_action( 'genesis_entry_content', 'genesis_do_post_content' );"
+		]
+	},
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
@@ -289,6 +296,13 @@
 		  "remove_action( 'genesis_after_header', 'genesis_do_nav' );",
 		  "add_action( 'genesis_header_right', 'genesis_do_nav' );",
 		  "add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );"
+		]
+	},
+	"Genesis | Display author box on single posts": {
+		"prefix": "gensaut",
+		"body": [
+		  "//* Display author box on single posts.",
+		  "add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );"
 		]
 	},
 	"Genesis | Adds topbar with menu": {

@@ -412,5 +412,24 @@
 			"</div>",
 			""
 		]
-	}
+	},
+	"WordPress | Change arguments of registered post type": {
+		"prefix": "wptarg",
+		"body": [
+			"/**",
+			" * Change arguments of registered post type",
+			" *",
+			" * @param array  $args Arguments of registered post type.",
+			" * @param string $post_type Post type slug.",
+			" * @return array $args",
+			" */",
+			"function cmk_custom_post_type_args( $args, $post_type ) {",
+			"\tif ( '${1:post-type-slug}' === $post_type ) {",
+			"\t\t$args['${2:args-slug}'] = ${2:value};",
+			"\t}",
+			"\treturn $args;",
+			"}",
+			"add_filter( 'register_post_type_args', 'cmk_custom_post_type_args', 20, 2 );"
+		]
+	    }
 }

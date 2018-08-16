@@ -40,6 +40,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
+| **Change Settings** |
+| **wptarg**	|	Change arguments of registered post type
 
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
@@ -82,9 +84,11 @@ All snippets will respect **WordPress Coding Standards**.
 | **genspsi**	|	Customize Entry Post Info
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer
+| **gensaut**	|	Display author box on single posts
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
+| **genremec**	|	Remove the post content
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
