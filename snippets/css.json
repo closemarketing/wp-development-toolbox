@@ -16,15 +16,26 @@
 	"CSS | Media Queries responsive": {
 		"prefix": "cssamed",
 		"body": [
-			"//* Tablet vertical",
+			"/* Tablet vertical */",
 			"@media only screen and (max-width: 860px) {",
 			"}",
-			"//* Phablet",
+			"/* Phablet */",
 			"@media only screen and (max-width: 414px) and  (min-width: 280px) {",
 			"}",
-			"//* Phones 6\"",
+			"/* Phones 6\" */",
 			"@media only screen and (max-width: 380px) {",
 			"}"
+		]
+	},
+	"CSS | Adds Grid container for Columns and rows": {
+		"prefix": "cssagrid",
+		"body": [
+		  ".${1:css-container} {",
+		  "\tdisplay: grid;",
+		  "\tgrid-column-gap: ${2:column-gap};",
+		  "\tgrid-row-gap: ${3:row-gap};",
+		  "\tgrid-template-columns: 1fr 1fr 1fr 1fr 1fr;",
+		  "}"
 		]
 	},
 	"WooCommerce | Removes Spin from input": {
