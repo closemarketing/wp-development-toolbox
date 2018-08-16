@@ -29,8 +29,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
+| **wpawf** 	|	Before Widget with Full Width wrapper
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
+| **wpstab**	|	Show tabs for content
 | **Querys** |
 | **wpqda**		|	Query Arguments for Date
 | **wpqueul**	|	Query entries with UL wrapper

@@ -322,7 +322,5 @@
 			"}",
 			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
 		]
-	    }
-
-
+	}
 }
