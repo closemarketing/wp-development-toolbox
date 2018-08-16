@@ -235,6 +235,30 @@
 			"}"
 		]
 	},
+	"Genesis | Remove Web input field from comments": {
+		"prefix": "genrcow",
+		"body": [
+			"/**",
+			" * Remove Web input field from comments",
+			" *",
+			" * @param array $fields Fields of comment form.",
+			" * @return array $fields",
+			" */",
+			"function url_filtered( $fields ) {",
+			"\tif ( isset( $fields['url'] ) ) {",
+			"\t\tunset( $fields['url'] );",
+			"\t}",
+			"",
+			"\tif ( isset( $fields['fields']['url'] ) ) {",
+			"\t\tunset( $fields['fields']['url'] );",
+			"\t}",
+			"",
+			"\treturn $fields;",
+			"}",
+			"add_filter( 'genesis_comment_form_args', 'url_filtered' );",
+			"add_filter( 'comment_form_default_fields', 'url_filtered' );"
+		]
+	},
 	"Genesis | Remove Entry Post Info": {
 		"prefix": "genrpi",
 		"body": [

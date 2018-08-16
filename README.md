@@ -84,6 +84,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genswpmls**	|	Adds WPML Language selector to Footer
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
+| **genrco**	|	Remove Web input field from comments
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
