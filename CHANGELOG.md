@@ -1,5 +1,14 @@
 # Change Log
 
+## 1.7.0 - August 18, 2018
+New section added: Schema.org. The objective is create Schemas JSON LD to be added in functions.php of your theme or plugin, depending of the post type.
+
+Added 7 new snippets:
+- Added to show Schemas: (scsscw) Make wrap for functions.php, 
+- Added Plugin Posts 2 Posts: (p2pacon) Register Connections with post types, (p2pscon) Shows connected posts.
+- Added Genesis Framework Snippets: (genasid) Register Custom Sidebar, (genasidf) Custom Sidebar Function
+- Added CSS Grids: (cssagrid) Adds Grid container for Columns and rows
+
 ## 1.6.0 - August 8, 2018
 Added 9 new snippets:
 - Added Developer Snippets: (phpecho) Echo a variable, (phpechopre) Echo variable with wrap PRE, (devtcomp) Loads a Composer Library, (htacc) htaccess recommended for HTPPS sites
