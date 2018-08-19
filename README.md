@@ -29,8 +29,10 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
+| **wpawf** 	|	Before Widget with Full Width wrapper
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
+| **wpstab**	|	Show tabs for content
 | **Querys** |
 | **wpqda**		|	Query Arguments for Date
 | **wpqueul**	|	Query entries with UL wrapper
@@ -38,6 +40,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
+| **Change Settings** |
+| **wptarg**	|	Change arguments of registered post type
 
 ## WordPress Functions for Custom Post Type (WP) ##
 | **Rule**               | **Action**     |
@@ -58,6 +62,11 @@ All snippets will respect **WordPress Coding Standards**.
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
 
+## WordPress to Show Schemas in JSON LD (SC) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **scsscw** 	| 	Make wrap Schema for functions.php
+
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
@@ -69,13 +78,17 @@ All snippets will respect **WordPress Coding Standards**.
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
 | **genslf** 	| 	Loop Index i to add class first
 | **genmmh** 	| 	Move menu from Header
+| **genasid** 	| 	Register Custom Sidebar
+| **genasidf** 	| 	Custom Sidebar Function
 | **Shows to public** |
 | **genspsi**	|	Customize Entry Post Info
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer
+| **gensaut**	|	Display author box on single posts
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
-
+| **genrco**	|	Remove Web input field from comments
+| **genremec**	|	Remove the post content
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
@@ -84,6 +97,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorptag** 	| 	Removes Product Tag
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
+| **woorspin** 	|	WooCommerce Removes Spin from input in CSS
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
@@ -120,7 +134,7 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **cssawid** 	|	Adds Subsection for a Widget
 | **cssamed** 	|	Media Queries responsive
-| **woorspin** 	|	WooCommerce Removes Spin from input
+| **cssagrid** 	|	Adds Grid container for Columns and rows
 
 ### PHP (PHP) ###
 | **Rule** | **Action** |
@@ -128,3 +142,9 @@ All snippets will respect **WordPress Coding Standards**.
 | **phpecho** 	|	Echo a variable
 | **phpechopre** 	|	Echo variable with wrap PRE
 | **devtcomp** 	|	Loads a Composer Library
+
+### Several Plugins ###
+| **Rule** | **Action** |
+| ------------------- |------------------------------------------------------------------|
+| **p2pacon** 	|	Plugin Posts 2 Posts - Register Connections with post types
+| **p2pscon** 	|	Shows connected posts

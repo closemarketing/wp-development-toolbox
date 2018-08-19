@@ -75,7 +75,7 @@
 		"prefix": "genafpt",
 		"body": [
 			"/**",
-			" * Loads functions in custom post type",
+			" * Loads functions in custom post type for ${1:post_type}",
 			" *",
 			" * @return void",
 			" */",
@@ -85,6 +85,47 @@
 			"\t}",
 			"}",
 			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );"
+		]
+	},
+	"Genesis | Register Custom Sidebar": {
+		"prefix": "genasid",
+		"body": [
+		  "// Register new sidebar",
+		  "genesis_register_sidebar( array(",
+		  "\t'id' => '${1:id}',",
+		  "\t'name' => '${2:name}',",
+		  "\t'description' => '${3:description}',",
+		  ") );",
+		  "function ${0:prefix-function}_genesis_sidebar() {",
+		  "\tif ( is_singular('${4:description}')) { ",
+		  "\t\tremove_action( 'genesis_sidebar', 'genesis_do_sidebar' ); ",
+		  "\t\tadd_action( 'genesis_sidebar', '${0:prefix-function}_do_sidebar' ); ",
+		  "\t}",
+		  "}",
+		  "add_action('get_header','${0:prefix-function}_genesis_sidebar');",
+		  "",
+		  "//Function to output my custom sidebar",
+		  "function ${0:prefix-function}_do_sidebar() {",
+		  "\tdynamic_sidebar( '${1:id}' );",
+		  "}"
+		]
+	},
+
+	"Genesis | Custom Sidebar Function": {
+		"prefix": "genasidf",
+		"body": [
+		  "function ${0:prefix-function}_genesis_sidebar() {",
+		  "\tif ( is_singular('${4:description}')) { ",
+		  "\t\tremove_action( 'genesis_sidebar', 'genesis_do_sidebar' ); ",
+		  "\t\tadd_action( 'genesis_sidebar', '${0:prefix-function}_do_sidebar' ); ",
+		  "\t}",
+		  "}",
+		  "add_action('get_header','${0:prefix-function}_genesis_sidebar');",
+		  "",
+		  "//Function to output my custom sidebar",
+		  "function ${0:prefix-function}_do_sidebar() {",
+		  "",
+		  "}"
 		]
 	},
 
@@ -194,11 +235,42 @@
 			"}"
 		]
 	},
+	"Genesis | Remove Web input field from comments": {
+		"prefix": "genrcow",
+		"body": [
+			"/**",
+			" * Remove Web input field from comments",
+			" *",
+			" * @param array $fields Fields of comment form.",
+			" * @return array $fields",
+			" */",
+			"function url_filtered( $fields ) {",
+			"\tif ( isset( $fields['url'] ) ) {",
+			"\t\tunset( $fields['url'] );",
+			"\t}",
+			"",
+			"\tif ( isset( $fields['fields']['url'] ) ) {",
+			"\t\tunset( $fields['fields']['url'] );",
+			"\t}",
+			"",
+			"\treturn $fields;",
+			"}",
+			"add_filter( 'genesis_comment_form_args', 'url_filtered' );",
+			"add_filter( 'comment_form_default_fields', 'url_filtered' );"
+		]
+	},
 	"Genesis | Remove Entry Post Info": {
 		"prefix": "genrpi",
 		"body": [
 			"// * Remove the entry meta in the entry header (requires HTML5 theme support)",
 			"remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );"
+		]
+	},
+	"Genesis | Remove the post content": {
+		"prefix": "genremec",
+		"body": [
+			"//* Remove the post content",
+			"remove_action( 'genesis_entry_content', 'genesis_do_post_content' );"
 		]
 	},
 	"Genesis | Customize Entry Post Info": {
@@ -224,6 +296,13 @@
 		  "remove_action( 'genesis_after_header', 'genesis_do_nav' );",
 		  "add_action( 'genesis_header_right', 'genesis_do_nav' );",
 		  "add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );"
+		]
+	},
+	"Genesis | Display author box on single posts": {
+		"prefix": "gensaut",
+		"body": [
+		  "//* Display author box on single posts.",
+		  "add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );"
 		]
 	},
 	"Genesis | Adds topbar with menu": {
@@ -281,7 +360,5 @@
 			"}",
 			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
 		]
-	    }
-
-
+	}
 }
