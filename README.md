@@ -89,6 +89,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
 | **genremec**	|	Remove the post content
+| **genreh**	|	Remove the entry header
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |

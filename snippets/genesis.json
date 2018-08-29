@@ -273,6 +273,15 @@
 			"remove_action( 'genesis_entry_content', 'genesis_do_post_content' );"
 		]
 	},
+	"Genesis | Remove the entry header": {
+		"prefix": "genreh",
+		"body": [
+			"// * Remove the entry header markup.",
+			"remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );",
+			"remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );"
+		],
+		"description": "Genesis | Remove the entry header"
+	},
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
