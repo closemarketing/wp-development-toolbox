@@ -45,8 +45,8 @@
 	"WordPress | Shows a meta value": {
 		"prefix": "wpsgmt",
 		"body": [
-		  "$${1:variable} = get_post_meta(get_the_id(),'${1:variable}',true);",
-		  "if($${1:variable}) {",
+		  "$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
+		  "if ( $${1:variable} ) {",
 		  "\techo $${1:variable};",
 		  "}//if meta"
 		]
