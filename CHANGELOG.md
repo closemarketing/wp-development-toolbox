@@ -1,8 +1,9 @@
 # Change Log
 
 ## 1.8.0 - September 2, 2018
-Added 1 new snippets:
+Added 2 new snippets:
 - Added Genesis Framework Snippets: (genreh) Remove the entry header
+- Added for WordPress: (wpaex) Adds excerpt to pages
 
 ## 1.7.0 - August 19, 2018
 New section added: Schema.org. The objective is create Schemas JSON LD to be added in functions.php of your theme or plugin, depending of the post type.

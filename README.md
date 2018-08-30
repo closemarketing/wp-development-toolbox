@@ -30,6 +30,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
 | **wpawf** 	|	Before Widget with Full Width wrapper
+| **wpaex** 	|	Adds excerpt to pages
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
