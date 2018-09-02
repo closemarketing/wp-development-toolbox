@@ -110,6 +110,68 @@
 		  "}"
 		]
 	},
+	"Genesis | Adds a Topbar in site": {
+		"prefix": "genstopb",
+		"body": [
+		  "",
+		  "// * In functions",
+		  "/**",
+		  " * # Topbar with two sidebars",
+		  " * ---------------------------------------------------------------------------------------------------- */",
+		  "",
+		  "// Register new sidebar topbar-left.",
+		  "genesis_register_sidebar(",
+		  "\tarray(",
+		  "\t\t'id'   => 'topbar-left',",
+		  "\t\t'name' => 'Barra Superior Izquierda',",
+		  "\t)",
+		  ");",
+		  "",
+		  "// Register new sidebar topbar-left.",
+		  "genesis_register_sidebar(",
+		  "\tarray(",
+		  "\t\t'id'   => 'topbar-right',",
+		  "\t\t'name' => 'Barra Superior Derecha',",
+		  "\t)",
+		  ");",
+		  "",
+		  "// Adds superior menu.",
+		  "add_action( 'genesis_before_header', 'cmk_topbar' );",
+		  "function cmk_topbar() {",
+		  "",
+		  "\tif ( is_page_template( 'page_landing.php' ) ) {",
+		  "\t\treturn;",
+		  "\t}",
+		  "\t?>",
+		  "\t<div class=\"topbar\">",
+		  "\t\t<div class=\"wrap\">",
+		  "\t\t\t\t<div class=\"topbar-left one-half first\">",
+		  "\t\t\t\t\t<?php dynamic_sidebar( 'topbar-left' ); ?>",
+		  "\t\t\t\t</div>",
+		  "\t\t\t\t<div class=\"topbar-right one-half\">",
+		  "\t\t\t\t\t<?php dynamic_sidebar( 'topbar-right' ); ?>",
+		  "\t\t\t\t</div>",
+		  "",
+		  "\t\t</div>",
+		  "\t</div>",
+		  "\t<?php",
+		  "}",
+		  "",
+		  "",
+		  "// * In style",
+		  "/*",
+		  " ## Topbar",
+		  "--------------------------------------------- */",
+		  ".topbar .topbar-left .widget{",
+		  "\t  float: left;",
+		  "}",
+		  ".topbar .topbar-right .widget{",
+		  "\t  float: right;",
+		  "}",
+		  ""
+		],
+		"description": "Genesis | Adds a Topbar in site"
+	},
 
 	"Genesis | Custom Sidebar Function": {
 		"prefix": "genasidf",
@@ -212,6 +274,27 @@
 		  "</div>"
 		]
 	},
+	"Genesis | Adds Revolution slider in home": {
+		"prefix": "gensrev",
+		"body": [
+			"add_action( 'genesis_after_header', '${1:prefix}_home_rev' );",
+			"/**",
+			" * Adds Revolution slider in home",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_home_rev() {",
+			"\tif ( is_home() || is_front_page() ) {",
+			"\t\techo '<section class=\"slider-home\">';",
+			"\t\tif ( function_exists( 'putRevSlider' ) ) {",
+			"\t\t\tputRevSlider( 'inicio', 'homepage' );",
+			"\t\t}",
+			"\t\techo '</section>';",
+			"\t}",
+			"}"
+		],
+		"description": "Genesis | Adds Revolution slider in home"
+	},
 
 	"Genesis | Move menu from Header": {
 		"prefix": "genmmh",
@@ -234,6 +317,22 @@
 			"\tgenesis_entry_header_markup_close();",
 			"}"
 		]
+	},
+	"Genesis | Remove Header Right": {
+		"prefix": "genrhr",
+		"body": [
+			"// * Genesis Remove Header Right",
+			"unregister_sidebar( 'header-right' );"
+		],
+		"description": "Genesis | Remove Header Right"
+	},
+	"Genesis | Remove Entry meta": {
+		"prefix": "genremem",
+		"body": [
+			"// * Remove the entry meta in the entry header.",
+			"remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );"
+		],
+		"description": "Genesis | Remove Entry meta"
 	},
 	"Genesis | Remove Web input field from comments": {
 		"prefix": "genrcow",

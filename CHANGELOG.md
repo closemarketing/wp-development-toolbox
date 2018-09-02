@@ -1,8 +1,8 @@
 # Change Log
 
 ## 1.8.0 - September 2, 2018
-Added 2 new snippets:
-- Added Genesis Framework Snippets: (genreh) Remove the entry header
+Added 7 new snippets:
+- Added Genesis Framework Snippets: (genreh) Remove the entry header, (gensrev) Adds Revolution slider in home, (genrhr) Remove Header Right, (genrsec) Remove Secondary Sidebar, (genremem) Remove Entry meta, (genstopb) Adds a Topbar in site
 - Added for WordPress: (wpaex) Adds excerpt to pages
 
 ## 1.7.0 - August 19, 2018

@@ -86,11 +86,16 @@ All snippets will respect **WordPress Coding Standards**.
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer
 | **gensaut**	|	Display author box on single posts
+| **gensrev**	|	Adds Revolution slider in home
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
 | **genremec**	|	Remove the post content
 | **genreh**	|	Remove the entry header
+| **genrhr**	|	Remove Header Right
+| **genrsec**	|	Remove Secondary Sidebar
+| **genremem**	|	Remove Entry meta
+| **genstopb**	|	Adds a Topbar in site
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
