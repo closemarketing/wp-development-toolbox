@@ -40,7 +40,14 @@
 			"}"
 		]
 	},
-
+	"WooCommerce | Sets Products per page": {
+		"prefix": "wootpprod",
+		"body": [
+			"// * WooCommerce Sets Display ${1:num_prod} products per page",
+			"add_filter( 'loop_shop_per_page', create_function( '$cols', 'return ${1:num_prod};' ), 20 );"
+		],
+		"description": "WooCommerce | Sets Products per page"
+	},
 	"WooCommerce | Removes Product Tag": {
 		"prefix": "woorptag",
 		"body": [
@@ -102,5 +109,68 @@
 			"}",
 			"add_filter( 'woocommerce_checkout_fields', 'custom_override_checkout_fields' );"
 		]
-	    }
+	},
+	"WooCommerce | Remove Showing results": {
+		"prefix": "woors",
+		"body": [
+			"// Removes showing results.",
+			"remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );"
+		],
+		"description": "WooCommerce | Remove Showing results"
+	},
+	"WooCommerce | Remove Sorting dropdown": {
+		"prefix": "woord",
+		"body": [
+		  "// WooCommerce Remove default sorting dropdown.",
+		  "remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );"
+		],
+		"description": "WooCommerce | Remove Sorting dropdown"
+	    },
+	"WooCommerce | Remove Count subcategories": {
+		"prefix": "woorco",
+		"body": [
+			"add_filter( 'woocommerce_subcategory_count_html', '${1:prefix}_hide_category_count' );",
+			"/**",
+			" * Remove Count Subcategories",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_hide_category_count() {",
+			"\t// No count",
+			"}"
+		],
+		"description": "WooCommerce | Remove Count subcategories"
+	},
+	"WooCommerce | Remove add to cart in loop": {
+		"prefix": "woorcart",
+		"body": [
+			"// * Remove add to cart in loop.",
+			"remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );"
+		],
+		"description": "WooCommerce | Remove add to cart in loop"
+	},
+	"WooCommerce | Hide Shipping rates when free shipping": {
+		"prefix": "woorfree",
+		"body": [
+			"add_filter( 'woocommerce_package_rates', '${1:prefix}_hide_shipping_when_free_is_available', 100 );",
+			"/**",
+			" * Hide shipping rates when free shipping is available.",
+			" * Updated to support WooCommerce 2.6 Shipping Zones.",
+			" *",
+			" * @param array $rates Array of rates found for the package.",
+			" * @return array",
+			" */",
+			"function ${1:prefix}_hide_shipping_when_free_is_available( \\$rates ) {",
+			"\t\\$free = array();",
+			"\tforeach ( \\$rates as \\$rate_id => \\$rate ) {",
+			"\t\tif ( 'free_shipping' === \\$rate->method_id ) {",
+			"\t\t\t\\$free[ \\$rate_id ] = \\$rate;",
+			"\t\t\tbreak;",
+			"\t\t}",
+			"\t}",
+			"\treturn ! empty( \\$free ) ? \\$free : \\$rates;",
+			"}"
+		],
+		"description": "WooCommerce | Hide Shipping rates when free shipping"
+	}
 }

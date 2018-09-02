@@ -101,10 +101,16 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wootord** 	|	Creates new status for Orders
+| **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
 | **woorspin** 	|	WooCommerce Removes Spin from input in CSS
+| **woors** 	|	Remove Showing results
+| **woord** 	|	Remove Sorting dropdown
+| **woorco** 	|	Remove Count subcategories
+| **woorcart** 	|	Remove add to cart in loop
+| **woorfree** 	|	Hide Shipping rates when free shipping
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
