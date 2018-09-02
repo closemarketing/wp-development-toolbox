@@ -161,3 +161,5 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **p2pacon** 	|	Plugin Posts 2 Posts - Register Connections with post types
 | **p2pscon** 	|	Shows connected posts
+| **gfavib** 	|	GravityForms - Enable field option Visibility
+| **gfsform** 	|	GravityForms - Shows form
