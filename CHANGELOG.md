@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.8.0 - September 9, 2018
+Added 20 new snippets:
+- Added Genesis Framework Snippets: (genreh) Remove the entry header, (gensrev) Adds Revolution slider in home, (genrhr) Remove Header Right, (genrsec) Remove Secondary Sidebar, (genremem) Remove Entry meta, (genstopb) Adds a Topbar in site, (genrem) Remove Entry Meta in post type
+- Added for WordPress: (wpaex) Adds excerpt to pages
+- Added for WooCommerce: (woors) Remove Showing results, (woord) Remove Sorting dropdown, (woorco) Remove Count subcategories, (woorcart) Remove add to cart in loop, (woorfree) Hide Shipping rates when free shipping, (wootpprod) Sets Products per page, (wootzero) Trim Zeros in Price, (woorbad) Remove Offert Badge in products, (woorsto) Removes stock text in Product page, (woorarimg) Remove product thumbnails in archive pages
+- Added for Gravity Forms: (gfavib) Enable field option Visibility, (gfsform) Shows form
+
 ## 1.7.0 - August 19, 2018
 New section added: Schema.org. The objective is create Schemas JSON LD to be added in functions.php of your theme or plugin, depending of the post type.
 

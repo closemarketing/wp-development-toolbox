@@ -28,6 +28,21 @@
 		  "</h2>"
 		]
 	},
+	"WordPress | WordPress Add excerpts to Pages": {
+		"prefix": "wpaex",
+		"body": [
+			"add_action( 'init', '${1:prefix}add_excerpts_to_pages' );",
+			"/**",
+			" * Adds excerpt to pages",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}add_excerpts_to_pages() {",
+			"\tadd_post_type_support( 'page', 'excerpt' );",
+			"}"
+		],
+		"description": "WordPress | WordPress Add excerpts to Pages"
+	},
 	"WordPress | Shows taxonomy terms of actual entry": {
 		"prefix": "wpstrtax",
 		"body": [
@@ -45,8 +60,8 @@
 	"WordPress | Shows a meta value": {
 		"prefix": "wpsgmt",
 		"body": [
-		  "$${1:variable} = get_post_meta(get_the_id(),'${1:variable}',true);",
-		  "if($${1:variable}) {",
+		  "$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
+		  "if ( $${1:variable} ) {",
 		  "\techo $${1:variable};",
 		  "}//if meta"
 		]

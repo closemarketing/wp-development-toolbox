@@ -43,12 +43,12 @@
 			"",
 			"// SELECT BOX post type ${1:post-type}",
 			"array(",
-			"\t'name'\t=> 'Selecciona ${2:cpt-name}',",
-			"\t'id'\t  => \"{$prefix}${1:post-type}\",",
-			"\t'type'\t=> 'select',",
+			"\t'name'        => 'Selecciona ${2:cpt-name}',",
+			"\t'id'          => \"{\\$prefix}${1:post-type}\",",
+			"\t'type'        => 'select',",
 			"\t'options'     => \\$posts_options,",
 			"\t'multiple'    => false,",
-			"\t'std'\t => '',",
+			"\t'std'         => '',",
 			"\t'placeholder' => 'Selecciona ${2:cpt-name}',",
 			"),"
 		]

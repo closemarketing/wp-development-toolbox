@@ -1,0 +1,65 @@
+{
+	"Posts 2 Posts  | Register Connections": {
+		"prefix": "p2pacon",
+		"body": [
+		  "/**",
+		  " * Register Connections with P2P ${1:post_type_1} and ${2:post_type_2}",
+		  " *",
+		  " * @param void",
+		  " * @return void",
+		  " */",
+		  "function ${0:prefix}_connection_types() {",
+		  "\tp2p_register_connection_type( array(",
+		  "\t\t'name' => '${1:post_type_1}_to_${2:post_type_2}',",
+		  "\t\t'from' => '${1:post_type_1}',",
+		  "\t\t'to' => '${2:post_type_2}',",
+		  "\t\t'title' => 'Conexión ${1:post_type_1} - ${2:post_type_2}'",
+		  "\t) );",
+		  "",
+		  "}",
+		  "add_action( 'p2p_init', '${0:prefix}_connection_types' );"
+		]
+	},
+	"Posts 2 Posts  | Shows connected posts": {
+		"prefix": "p2pscon",
+		"body": [
+		  "// Find connected pages",
+		  "\\$connected = new WP_Query( array(",
+		  "\t'connected_type' => '${1:post_type_1}_to_${2:post_type_2}',",
+		  "\t'connected_items' => get_queried_object(),",
+		  "\t'nopaging' => true,",
+		  ") );",
+		  "",
+		  "// Display connected pages",
+		  "if ( \\$connected->have_posts() ) :",
+		  "?>",
+		  "\t<h3>Related pages:</h3>",
+		  "\t<ul>",
+		  "<?php while ( \\$connected->have_posts() ) : \\$connected->the_post(); ?>",
+		  "\t\t<li><a href=\"<?php the_permalink(); ?>\"><?php the_title(); ?></a></li>",
+		  "<?php endwhile; ?>",
+		  "</ul>",
+		  "",
+		  "<?php",
+		  "wp_reset_postdata();",
+		  "",
+		  "endif;"
+		]
+	},
+	"GravityForms | Enable Visibility": {
+		"prefix": "gfavib",
+		"body": [
+			"//* Enable Field visibility",
+			"add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );"
+		],
+		"description": "GravityForms | Enable Visibility"
+	},
+	"GravityForms | Shows form": {
+		"prefix": "gfsform",
+		"body": [
+			"//* Adds gravity form",
+			"gravity_form( ${1:id}, ${2:display-title-boolean}, ${3:display-description-boolean});"
+		],
+		"description": "GravityForms | Shows form"
+	}
+}

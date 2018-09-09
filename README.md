@@ -30,6 +30,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget	
 | **wpawf** 	|	Before Widget with Full Width wrapper
+| **wpaex** 	|	Adds excerpt to pages
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
@@ -85,19 +86,36 @@ All snippets will respect **WordPress Coding Standards**.
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer
 | **gensaut**	|	Display author box on single posts
+| **gensrev**	|	Adds Revolution slider in home
+| **genstopb**	|	Adds a Topbar in site
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
 | **genremec**	|	Remove the post content
+| **genreh**	|	Remove the entry header
+| **genrhr**	|	Remove Header Right
+| **genrsec**	|	Remove Secondary Sidebar
+| **genremem**	|	Remove Entry meta
+| **genrem**	|	Remove Entry Meta in post type
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wootord** 	|	Creates new status for Orders
+| **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
+| **wootzero** 	| 	Trim Zeros in Price
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
 | **woorspin** 	|	WooCommerce Removes Spin from input in CSS
+| **woors** 	|	Remove Showing results
+| **woord** 	|	Remove Sorting dropdown
+| **woorco** 	|	Remove Count subcategories
+| **woorcart** 	|	Remove add to cart in loop
+| **woorfree** 	|	Hide Shipping rates when free shipping
+| **woorbad** 	|	Remove Offert Badge in products
+| **woorsto** 	|	Removes stock text in Product page
+| **woorarimg** 	|	Remove product thumbnails in archive pages
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
@@ -148,3 +166,5 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **p2pacon** 	|	Plugin Posts 2 Posts - Register Connections with post types
 | **p2pscon** 	|	Shows connected posts
+| **gfavib** 	|	GravityForms - Enable field option Visibility
+| **gfsform** 	|	GravityForms - Shows form

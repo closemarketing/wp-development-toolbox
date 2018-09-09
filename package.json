@@ -60,6 +60,10 @@
 			},
 			{
 				"language": "php",
+				"path": "./snippets/plugins.json"
+			},
+			{
+				"language": "php",
 				"path": "./snippets/schema.json"
 			}
 		]
