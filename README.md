@@ -87,6 +87,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genswpmls**	|	Adds WPML Language selector to Footer
 | **gensaut**	|	Display author box on single posts
 | **gensrev**	|	Adds Revolution slider in home
+| **genstopb**	|	Adds a Topbar in site
 | **Remove elements** |
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
@@ -95,7 +96,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genrhr**	|	Remove Header Right
 | **genrsec**	|	Remove Secondary Sidebar
 | **genremem**	|	Remove Entry meta
-| **genstopb**	|	Adds a Topbar in site
+| **genrem**	|	Remove Entry Meta in post type
 
 ## WooCommerce (WOO) ##
 | **Rule**               | **Action**     |
@@ -103,6 +104,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootord** 	|	Creates new status for Orders
 | **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
+| **wootzero** 	| 	Trim Zeros in Price
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
 | **woorspin** 	|	WooCommerce Removes Spin from input in CSS
@@ -111,6 +113,9 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorco** 	|	Remove Count subcategories
 | **woorcart** 	|	Remove add to cart in loop
 | **woorfree** 	|	Hide Shipping rates when free shipping
+| **woorbad** 	|	Remove Offert Badge in products
+| **woorsto** 	|	Removes stock text in Product page
+| **woorarimg** 	|	Remove product thumbnails in archive pages
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |

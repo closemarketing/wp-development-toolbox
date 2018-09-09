@@ -40,6 +40,14 @@
 			"}"
 		]
 	},
+	"WooCommerce | Trim Zeros in Price": {
+		"prefix": "wootzero",
+		"body": [
+		  "//* Trim zeros in price decimals.",
+		  "add_filter( 'woocommerce_price_trim_zeros', '__return_true' );"
+		],
+		"description": "WooCommerce | Trim Zeros in Price"
+	},
 	"WooCommerce | Sets Products per page": {
 		"prefix": "wootpprod",
 		"body": [
@@ -47,6 +55,32 @@
 			"add_filter( 'loop_shop_per_page', create_function( '$cols', 'return ${1:num_prod};' ), 20 );"
 		],
 		"description": "WooCommerce | Sets Products per page"
+	},
+	"WooCommerce | Remove Badge in products": {
+		"prefix": "woorbad",
+		"body": [
+		  "// * Remove Sales Flash.",
+		  "add_filter( 'woocommerce_sale_flash', function() {",
+		  "\treturn false;",
+		  "} );"
+		],
+		"description": "WooCommerce | Remove Badge in products"
+	},
+	"WooCommerce | Remove product thumbnails in archive pages": {
+		"prefix": "woorarimg",
+		"body": [
+		  "// * Remove Woocommerce thumbnails in archive pages",
+		  "remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );"
+		],
+		"description": "WooCommerce | Remove product thumbnails in archive pages"
+	},
+	"WooCommerce | Removes stock text in Product page": {
+		"prefix": "woorsto",
+		"body": [
+		  "// * Woocommerce removes stock html.",
+		  "add_filter( 'woocommerce_get_stock_html', '__return_empty_string' );"
+		],
+		"description": "WooCommerce | Removes stock text in Product page"
 	},
 	"WooCommerce | Removes Product Tag": {
 		"prefix": "woorptag",

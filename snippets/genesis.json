@@ -381,6 +381,22 @@
 		],
 		"description": "Genesis | Remove the entry header"
 	},
+	"Genesis | Remove Entry Meta in post type": {
+		"prefix": "genrem",
+		"body": [
+		  "add_action( 'init', '${1:prefix}_remove_entry_meta', 11 );",
+		  "/**",
+		  " * Remove entry meta for post types",
+		  " * ",
+		  " * @link https://gist.github.com/nathanrice/03a5871e5e5a27f22747",
+		  " */",
+		  "function ${1:prefix}_remove_entry_meta() {",
+		  "\tremove_post_type_support( '${2:post-type}', 'genesis-entry-meta-before-content' );",
+		  "\tremove_post_type_support( '${2:post-type}', 'genesis-entry-meta-after-content' );",
+		  "}"
+		],
+		"description": "Genesis | Remove Entry Meta in post type"
+	},
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
