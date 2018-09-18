@@ -53,6 +53,27 @@
 			"),"
 		]
 	},
+	"MetaBox | Adds Field date": {
+		"prefix": "metadate",
+		"body": [
+		  "// DATE",
+		  "array(",
+		  "\t'name'       => '${1:title}'",
+		  "\t'id'         => \"{\\$prefix}${2:field-name}\",",
+		  "\t'type'       => 'date',",
+		  "",
+		  "\t// jQuery date picker options. See here http://api.jqueryui.com/datepicker",
+		  "\t'js_options' => array(",
+		  "\t\t'appendText'      => esc_html__( '(yyyy-mm-dd)', '${3:prefix-lang}' ),",
+		  "\t\t'dateFormat'      => esc_html__( 'yy-mm-dd', '${3:prefix-lang}' ),",
+		  "\t\t'changeMonth'     => true,",
+		  "\t\t'changeYear'      => true,",
+		  "\t\t'showButtonPanel' => true,",
+		  "\t),",
+		  "),"
+		],
+		"description": "MetaBox | Adds Field date"
+	},
 	"MetaBox | Adds field for Gallery": {
 		"prefix": "metagal",
 		"body": [

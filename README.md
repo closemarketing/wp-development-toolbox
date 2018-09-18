@@ -130,6 +130,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **metasel**	| 	Adds select field
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
+| **metadate**	| 	Adds Field date
 | **metsimg**	| 	Shows Gallery in public page
 
 ### WPML (WPML) ###

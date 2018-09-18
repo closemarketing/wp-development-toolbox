@@ -1,4 +1,7 @@
 # Change Log
+## 1.9.0 - September 9, 2018
+Added 1 new snippets:
+- Added for MetaBox: (metadate) Adds Field date
 
 ## 1.8.0 - September 9, 2018
 Added 20 new snippets:
