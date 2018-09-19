@@ -240,6 +240,25 @@
 		],
 		"description": "WordPress | Query Args for Date"
 	},
+	"WordPress | Arguments for Query Meta value checkbox active": {
+		"prefix": "wpqmc",
+		"body": [
+		  "// * Arguments for Query Meta value checkbox active",
+		  "$args_query = array(",
+		  "	'post_type'      => '${1:post_type}',",
+		  "	'posts_per_page' => 10,",
+		  "	'orderby'        => '${2:order_by}', // menu_order, rand, date",
+		  "	'order'          => 'ASC',",
+		  "	'meta_query'     => array(",
+		  "		array(",
+		  "			'key'     => '${3:meta_key}',",
+		  "			'value'   => '1',",
+		  "		),",
+		  "	),",
+		  ");"
+		],
+		"description": "WordPress | Arguments for Query Meta value checkbox active"
+	},
 	"WordPress | Query entries with UL wrapper": {
 		"prefix": "wpqueul",
 		"body": [

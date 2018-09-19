@@ -41,6 +41,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
+| **wpqmc** 	|	Arguments for Query Meta value checkbox active
 | **Change Settings** |
 | **wptarg**	|	Change arguments of registered post type
 
@@ -105,6 +106,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
 | **wootzero** 	| 	Trim Zeros in Price
+| **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
 | **woorspin** 	|	WooCommerce Removes Spin from input in CSS
