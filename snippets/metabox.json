@@ -58,7 +58,7 @@
 		"body": [
 		  "// DATE",
 		  "array(",
-		  "\t'name'       => '${1:title}'",
+		  "\t'name'       => '${1:title}',",
 		  "\t'id'         => \"{\\$prefix}${2:field-name}\",",
 		  "\t'type'       => 'date',",
 		  "",

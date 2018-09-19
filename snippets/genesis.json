@@ -75,6 +75,10 @@
 		"prefix": "genafpt",
 		"body": [
 			"/**",
+			" * # Page ${1:post_type}",
+			" * ---------------------------------------------------------------------------------------------------- */",
+			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );",
+			"/**",
 			" * Loads functions in custom post type for ${1:post_type}",
 			" *",
 			" * @return void",
@@ -83,8 +87,7 @@
 			"\tif( is_singular( '${1:post_type}' ) ) {",
 			"\t\t// Custom actions.",
 			"\t}",
-			"}",
-			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );"
+			"}"
 		]
 	},
 	"Genesis | Register Custom Sidebar": {
