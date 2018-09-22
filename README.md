@@ -83,6 +83,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
 | **Shows to public** |
+| **genslogo**	|	Shows Logo instead Site Title and Description
 | **genspsi**	|	Customize Entry Post Info
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer

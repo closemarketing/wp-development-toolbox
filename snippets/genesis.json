@@ -113,6 +113,31 @@
 		  "}"
 		]
 	},
+	"Genesis | Shows Logo instead Site Title and Description": {
+		"prefix": "genslogo",
+		"body": [
+		  "remove_action( 'genesis_site_title', 'genesis_seo_site_title' );",
+		  "remove_action( 'genesis_site_description', 'genesis_seo_site_description' );",
+		  "add_action( 'genesis_site_title', '${1:prefix}_logo' );",
+		  "/**",
+		  " * Replaces Site Title with Logo",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_logo() { ?>",
+		  "\t<?php if ( ! is_front_page() && ! is_home() ) { ?>",
+		  "\t<a class=\"navbar-brand\" title=\"<?php echo esc_html( get_bloginfo( 'description' ) ); ?>\" href=\"<?php echo esc_url( home_url() ); ?>\">",
+		  "\t<?php } ?>",
+		  "\t\t<img src=\"<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/logo.svg\" class=\"img-responsive\" alt=\"<?php bloginfo( 'description' ); ?>\" width=\"${2:width}\" height=\"${3:height}\"/>",
+		  "\t<?php",
+		  "\tif ( ! is_front_page() && ! is_home() ) {",
+		  "\t\t?>",
+		  "\t\t</a><?php } ?>",
+		  "\t<?php",
+		  "}"
+		],
+		"description": "Genesis | Shows Logo instead Site Title and Description"
+	},
 	"Genesis | Adds a Topbar in site": {
 		"prefix": "genstopb",
 		"body": [
