@@ -9,7 +9,7 @@
 			"",
 			"\t// 2nd meta box",
 			"\t\\$meta_boxes[] = array(",
-			"\t\t'id'\t\t => 'standard',",
+			"\t\t'id'\t\t => 'standard-${3:post-type}',",
 			"\t\t'title'\t  => '${2:title-metabox}',",
 			"\t\t'post_types' => array( '${3:post-type}' ),",
 			"\t\t'context'\t=> '${4:orientation}', //side / normal",
