@@ -355,6 +355,28 @@
 		],
 		"description": "Genesis | Remove Header Right"
 	},
+	"Genesis | Remove Site Title in Home Page": {
+		"prefix": "genrhtit",
+		"body": [
+		  "/**",
+		  " * # Page home",
+		  " * ---------------------------------------------------------------------------------------------------- */",
+		  "",
+		  " add_action( 'get_header', '${1:prefix}_load_home_page' );",
+		  "/**",
+		  " * Loads functions in custom post type for home",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_load_home_page() {",
+		  "\tif ( is_home() || is_front_page() ) {",
+		  "\t\t// Custom actions.",
+		  "\t\tremove_action( 'genesis_entry_header', 'genesis_do_post_title' );",
+		  "\t}",
+		  "}"
+		],
+		"description": "Genesis | Remove Site Title in Home Page"
+	},
 	"Genesis | Remove Entry meta": {
 		"prefix": "genremem",
 		"body": [

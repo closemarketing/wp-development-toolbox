@@ -91,6 +91,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **gensrev**	|	Adds Revolution slider in home
 | **genstopb**	|	Adds a Topbar in site
 | **Remove elements** |
+| **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
 | **genremec**	|	Remove the post content
