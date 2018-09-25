@@ -1,9 +1,10 @@
 # Change Log
 ## 1.9.0 - September 9, 2018
-Added 4 new snippets:
+Added 5 new snippets:
 - Added for MetaBox: (metadate) Adds Field date
 - Added for WordPress: (wpqmc) Arguments for Query Meta value checkbox active
 - Added for Genesis: (genslogo) Shows Logo instead Site Title and Description, (genrhtit) Remove Site Title in Home Page
+- Addedo for Gutenberg: (gutacol) Set Color Palette
 
 ## 1.8.0 - September 9, 2018
 Added 20 new snippets:

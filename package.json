@@ -36,6 +36,10 @@
 			},
 			{
 				"language": "php",
+				"path": "./snippets/gutenberg-php.json"
+			},
+			{
+				"language": "php",
 				"path": "./snippets/wordpress-dev.json"
 			},
 			{

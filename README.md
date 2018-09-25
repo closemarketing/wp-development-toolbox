@@ -49,6 +49,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpacptpag** 	|	Creates a new Custom Post Type for Pages
+| **wpacptpost** 	|	Creates a new Custom Post Type for Posts
 | **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
@@ -59,10 +60,15 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
-| **htacc**	|	htaccess recommended for HTPPS sites
+| **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
+
+## Gutenberg (GUT) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **gutacol** 	| 	Set Color Palette
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
