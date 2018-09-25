@@ -141,5 +141,13 @@
 			"/* Load Composer Dependency Libraries */",
 			"require plugin_dir_path( __FILE__) . 'vendor/autoload.php';"
 		]
+	},
+	"WordPress | Loads Plugin Text Domain": {
+		"prefix": "wpalpt",
+		"body": [
+			"// Loads translation.",
+			"load_plugin_textdomain( '${1:text-domain}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );"
+		],
+		"description": "WordPress | Loads Plugin Text Domain"
 	}
 }
