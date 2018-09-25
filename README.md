@@ -141,6 +141,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
 | **metadate**	| 	Adds Field date
+| **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
 
 ### WPML (WPML) ###

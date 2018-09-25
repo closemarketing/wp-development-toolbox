@@ -77,26 +77,15 @@
 	"MetaBox | Adds field for Gallery": {
 		"prefix": "metagal",
 		"body": [
-			"// GALLERY IMAGES",
+			"// GALLERY IMAGE ADVANCED",
 			"array(",
-			"\t'name'\t\t\t => 'Galería',",
-			"\t'id'\t\t\t   => \"{\\$prefix}${3:slug}\",",
-			"\t'type'\t\t\t => 'image_advanced',",
-			"\t'max_file_uploads' => 10,",
-			"),",
-			"",
-			"//* in functions.php / single",
-			"\\$images_meta = get_post_meta( get_the_ID(), '{\\$prefix}${3:slug}', false );",
-			"",
-			"\\$image_ids = '';",
-			"",
-			"if ( !empty( \\$images_meta ) ) {",
-			"\tforeach ( \\$images_meta as \\$image ) {",
-			"\t\t\\$image_ids .= \\$image.',';",
-			"\t}",
-			"\t\\$image_ids = rtrim(\\$image_ids, \",\");",
-			"\techo do_shortcode( '[smart-grid captions=\"false\"][gallery ids=\"'.\\$image_ids.'\"][/smart-grid]', false );",
-			"}   "
+			"\t'name'             => '${1:name}',",
+			"\t'id'               => \"{\\$prefix}${2:slug}\",",
+			"\t'type'             => 'image_advanced',",
+			"\t'force_delete'     => false,",
+			"\t'max_file_uploads' => ${1:max-files},",
+			"\t'max_status'       => false,",
+			"),"
 		]
 	},
 	"MetaBox | Adds Icon field": {
