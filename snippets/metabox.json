@@ -2,7 +2,6 @@
 	"MetaBox | Adds main function to load MetaBox": {
 		"prefix": "metafun",
 		"body": [
-			"//* Adds Metabox function",
 			"add_filter( 'rwmb_meta_boxes', 'cmk_register_meta_boxes_${1:cpt}' );",
 			"/**",
 			" * Adds Metabox Function",
@@ -18,13 +17,13 @@
 			"\t\t'id'         => 'standard-${3:post-type}',",
 			"\t\t'title'      => '${2:title-metabox}',",
 			"\t\t'post_types' => array( '${3:post-type}' ),",
-			"\t\t'context'    => '${4:orientation}', //side / normal",
+			"\t\t'context'    => '${4:orientation}', // side / normal. ",
 			"\t\t'priority'   => 'high',",
 			"\t\t'autosave'   => true,",
 			"\t\t'fields'     => array(",
 			"",
 			"",
-			"\t\t) //fields",
+			"\t\t), // fields.",
 			"\t);",
 			"",
 			"\treturn \\$meta_boxes;",
