@@ -6,6 +6,7 @@ Added 5 new snippets:
 - Added for Genesis: (genslogo) Shows Logo instead Site Title and Description, (genrhtit) Remove Site Title in Home Page
 - Added for Gutenberg: (gutacol) Set Color Palette
 - Added for Search Filter Pro: (sfsres) Results page
+- Added for WordPress Mulsite: (wpmacon) Adds line in wpconfig
 
 ## 1.8.0 - September 9, 2018
 Added 20 new snippets:

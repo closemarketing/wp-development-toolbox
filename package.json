@@ -48,6 +48,10 @@
 			},
 			{
 				"language": "php",
+				"path": "./snippets/wordpress-mu.json"
+			},
+			{
+				"language": "php",
 				"path": "./snippets/woocommerce.json"
 			},
 			{

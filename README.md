@@ -67,6 +67,11 @@ All snippets will respect **WordPress Coding Standards**.
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
 
+## WordPress Multisite (WPM) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **wpmacon** 	| 	Adds line in wpconfig
+
 ## Gutenberg (GUT) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
