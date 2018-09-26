@@ -1,6 +1,6 @@
 # Change Log
-## 1.9.0 - September 9, 2018
-Added 5 new snippets:
+## 1.9.0 - September 26, 2018
+Added 9 new snippets:
 - Added for MetaBox: (metadate) Adds Field date, (metagal) Adds field for a Gallery
 - Added for WordPress: (wpqmc) Arguments for Query Meta value checkbox active, (wpalpt) Loads Plugin Text Domain, (wpadhc) Doc Header comment
 - Added for Genesis: (genslogo) Shows Logo instead Site Title and Description, (genrhtit) Remove Site Title in Home Page
