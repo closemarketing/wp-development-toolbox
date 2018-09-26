@@ -1,0 +1,10 @@
+{
+	"WordPress Multisite | Adds line in wpconfig": {
+		"prefix": "wpmacon",
+		"body": [
+			"/* Multisite */",
+			"define( 'WP_ALLOW_MULTISITE', true );"
+		],
+		"description": "WordPress Multisite | Adds line in wpconfig"
+	}
+}

@@ -75,6 +75,10 @@
 		"prefix": "genafpt",
 		"body": [
 			"/**",
+			" * # Page ${1:post_type}",
+			" * ---------------------------------------------------------------------------------------------------- */",
+			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );",
+			"/**",
 			" * Loads functions in custom post type for ${1:post_type}",
 			" *",
 			" * @return void",
@@ -83,8 +87,7 @@
 			"\tif( is_singular( '${1:post_type}' ) ) {",
 			"\t\t// Custom actions.",
 			"\t}",
-			"}",
-			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );"
+			"}"
 		]
 	},
 	"Genesis | Register Custom Sidebar": {
@@ -109,6 +112,32 @@
 		  "\tdynamic_sidebar( '${1:id}' );",
 		  "}"
 		]
+	},
+	"Genesis | Shows Logo instead Site Title and Description": {
+		"prefix": "genslogo",
+		"body": [
+		  "remove_action( 'genesis_site_title', 'genesis_seo_site_title' );",
+		  "remove_action( 'genesis_site_description', 'genesis_seo_site_description' );",
+		  "add_action( 'genesis_site_title', '${1:prefix}_logo' );",
+		  "/**",
+		  " * Replaces Site Title with Logo",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_logo() {",
+		  "\t?>",
+		  "\t<?php if ( ! is_front_page() && ! is_home() ) { ?>",
+		  "\t<a class=\"navbar-brand\" title=\"<?php echo esc_html( get_bloginfo( 'description' ) ); ?>\" href=\"<?php echo esc_url( home_url() ); ?>\">",
+		  "\t<?php } ?>",
+		  "\t\t<img src=\"<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/logo.svg\" class=\"img-responsive\" alt=\"<?php bloginfo( 'description' ); ?>\" width=\"${2:width}\" height=\"${3:height}\"/>",
+		  "\t<?php",
+		  "\tif ( ! is_front_page() && ! is_home() ) {",
+		  "\t\t?>",
+		  "\t\t</a><?php } ?>",
+		  "\t<?php",
+		  "}"
+		],
+		"description": "Genesis | Shows Logo instead Site Title and Description"
 	},
 	"Genesis | Adds a Topbar in site": {
 		"prefix": "genstopb",
@@ -326,6 +355,28 @@
 		],
 		"description": "Genesis | Remove Header Right"
 	},
+	"Genesis | Remove Site Title in Home Page": {
+		"prefix": "genrhtit",
+		"body": [
+		  "/**",
+		  " * # Page home",
+		  " * ---------------------------------------------------------------------------------------------------- */",
+		  "",
+		  " add_action( 'get_header', '${1:prefix}_load_home_page' );",
+		  "/**",
+		  " * Loads functions in custom post type for home",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_load_home_page() {",
+		  "\tif ( is_home() || is_front_page() ) {",
+		  "\t\t// Custom actions.",
+		  "\t\tremove_action( 'genesis_entry_header', 'genesis_do_post_title' );",
+		  "\t}",
+		  "}"
+		],
+		"description": "Genesis | Remove Site Title in Home Page"
+	},
 	"Genesis | Remove Entry meta": {
 		"prefix": "genremem",
 		"body": [
@@ -340,19 +391,19 @@
 			"/**",
 			" * Remove Web input field from comments",
 			" *",
-			" * @param array $fields Fields of comment form.",
-			" * @return array $fields",
+			" * @param array \\$fields Fields of comment form.",
+			" * @return array \\$fields",
 			" */",
-			"function url_filtered( $fields ) {",
-			"\tif ( isset( $fields['url'] ) ) {",
-			"\t\tunset( $fields['url'] );",
+			"function url_filtered( \\$fields ) {",
+			"\tif ( isset( \\$fields['url'] ) ) {",
+			"\t\tunset( \\$fields['url'] );",
 			"\t}",
 			"",
-			"\tif ( isset( $fields['fields']['url'] ) ) {",
-			"\t\tunset( $fields['fields']['url'] );",
+			"\tif ( isset( \\$fields['fields']['url'] ) ) {",
+			"\t\tunset( \\$fields['fields']['url'] );",
 			"\t}",
 			"",
-			"\treturn $fields;",
+			"\treturn \\$fields;",
 			"}",
 			"add_filter( 'genesis_comment_form_args', 'url_filtered' );",
 			"add_filter( 'comment_form_default_fields', 'url_filtered' );"

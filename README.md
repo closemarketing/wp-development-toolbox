@@ -41,6 +41,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
+| **wpqmc** 	|	Arguments for Query Meta value checkbox active
 | **Change Settings** |
 | **wptarg**	|	Change arguments of registered post type
 
@@ -48,6 +49,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpacptpag** 	|	Creates a new Custom Post Type for Pages
+| **wpacptpost** 	|	Creates a new Custom Post Type for Posts
 | **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
@@ -58,10 +60,22 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
-| **htacc**	|	htaccess recommended for HTPPS sites
+| **wpalpt**	|	Loads Plugin Text Domain
+| **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
+| **wpadhc**	|	Doc Header comment
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
+
+## WordPress Multisite (WPM) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **wpmacon** 	| 	Adds line in wpconfig
+
+## Gutenberg (GUT) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **gutacol** 	| 	Set Color Palette
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
@@ -82,6 +96,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
 | **Shows to public** |
+| **genslogo**	|	Shows Logo instead Site Title and Description
 | **genspsi**	|	Customize Entry Post Info
 | **genstopbar**	|	Adds topbar with menu
 | **genswpmls**	|	Adds WPML Language selector to Footer
@@ -89,6 +104,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **gensrev**	|	Adds Revolution slider in home
 | **genstopb**	|	Adds a Topbar in site
 | **Remove elements** |
+| **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info
 | **genrco**	|	Remove Web input field from comments
 | **genremec**	|	Remove the post content
@@ -105,6 +121,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
 | **wootzero** 	| 	Trim Zeros in Price
+| **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
 | **woorspin** 	|	WooCommerce Removes Spin from input in CSS
@@ -130,6 +147,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **metasel**	| 	Adds select field
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
+| **metadate**	| 	Adds Field date
+| **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
 
 ### WPML (WPML) ###
@@ -168,3 +187,4 @@ All snippets will respect **WordPress Coding Standards**.
 | **p2pscon** 	|	Shows connected posts
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
+| **sfsres** 	|	Results Page
