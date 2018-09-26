@@ -63,6 +63,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpalpt**	|	Loads Plugin Text Domain
 | **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
+| **wpadhc**	|	Doc Header comment
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
 

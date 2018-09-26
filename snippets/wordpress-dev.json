@@ -149,5 +149,21 @@
 			"load_plugin_textdomain( '${1:text-domain}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );"
 		],
 		"description": "WordPress | Loads Plugin Text Domain"
+	},
+	"WordPress | Doc Header comment": {
+		"prefix": "wpadhc",
+		"body": [
+		  "/**",
+		  " * ${1:Short Description}",
+		  " *",
+		  " * ${2:Long Description}",
+		  " *",
+		  " * @package    ${3:packace-name}",
+		  " * @author     ${4:example} <${5:email}>",
+		  " * @copyright  ${6:year} ${7:Company}",
+		  " * @version    ${8:Version}",
+		  " */"
+		],
+		"description": "PHP | Doc Header comment"
 	}
 }
