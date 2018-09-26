@@ -1,4 +1,7 @@
 # Change Log
+## 1.10.0 - September 26, 2018
+Added  new snippets:
+
 ## 1.9.0 - September 26, 2018
 Added 9 new snippets:
 - Added for MetaBox: (metadate) Adds Field date, (metagal) Adds field for a Gallery
