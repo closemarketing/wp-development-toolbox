@@ -182,3 +182,4 @@ All snippets will respect **WordPress Coding Standards**.
 | **p2pscon** 	|	Shows connected posts
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
+| **sfsres** 	|	Results Page
