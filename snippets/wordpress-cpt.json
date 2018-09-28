@@ -2,6 +2,7 @@
 	"WordPress | Creates a new Custom Post Type for Pages": {
 		"prefix": "wpacptpag",
 		"body": [
+			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
 			" * Register Post Type PAGE ${3:Name CPT}",
 			" *",
@@ -38,13 +39,13 @@
 			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes' ),",
 			"\t);",
 			"\tregister_post_type( '${2:post-type}', \\$args );",
-			"}",
-			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );"
+			"}"
 		]
 	},
 	"WordPress | Creates a new Custom Post Type for Posts": {
 		"prefix": "wpacptpost",
 		"body": [
+			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
 			" * Register Post Type POST ${3:Name CPT}",
 			" *",
@@ -81,13 +82,13 @@
 			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),",
 			"\t);",
 			"\tregister_post_type( '${2:post-type}', \\$args );",
-			"}",
-			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );"
+			"}"
 		]
 	},
 	"WordPress | Adds Custom columns in Admin Custom Post Type": {
 		"prefix": "wpacptcol",
 		"body": [
+			"add_filter( 'manage_edit-${1:post_type}_columns', 'add_new_${1:post_type}_columns' );",
 			"/**",
 			" * Adds columns to post type marcas",
 			" *",
@@ -107,8 +108,8 @@
 			"",
 			"\treturn \\$new_columns;",
 			"}",
-			"add_filter( 'manage_edit-${1:post_type}_columns', 'add_new_${1:post_type}_columns' );",
 			"",
+			"add_action( 'manage_${1:post_type}_posts_custom_column', 'manage_${1:post_type}_columns', 10, 2 );",
 			"/**",
 			" * Add columns content",
 			" *",
@@ -127,40 +128,39 @@
 			"\t\tdefault:",
 			"\t\t\tbreak;",
 			"\t\t} // end switch",
-			"}",
-			"add_action( 'manage_${1:post_type}_posts_custom_column', 'manage_${1:post_type}_columns', 10, 2 );"
+			"}"
 		]
 	},
 	"WordPress | Register a taxonomy": {
 		"prefix": "wpatax",
 		"body": [
-		  "/**",
-		  " * Register Taxonomy ${1:name taxonomy plural}",
-		  " *",
-		  " */",
-		  "function cmk_register_tax_${3:name taxonomy}() {",
-		  "",
-		  "\\$labels = array(",
-		  "\t'name' => '${1:name taxonomy plural}',",
-		  "\t'singular_name' => '${2:Taxonomy Name Singular}',",
-		  "\t'search_items' =>  'Buscar ${2:Taxonomy Name Singular}',",
-		  "\t'all_items' => 'Todos los ${1:name taxonomy plural}',",
-		  "\t'edit_item' => 'Editar ${2:Taxonomy Name Singular}',",
-		  "\t'update_item' => 'Actualizar ${2:Taxonomy Name Singular}',",
-		  "\t'add_new_item' => 'Añadir nuevo ${2:Taxonomy Name Singular}',",
-		  "\t'new_item_name' => 'Nuevo ${2:Taxonomy Name Singular}',",
-		  ");",
-		  "add_action( 'init', 'cmk_register_tax_${3:name taxonomy}', 0 );",
-		  "",
-		  "register_taxonomy( '${3:name taxonomy}', array( '${4:post-type}' ), array(",
-		  "\t'hierarchical' => true,",
-		  "\t'labels' => \\$labels,",
-		  "\t'show_ui' => true,",
-		  "\t'show_admin_column' => true,",
-		  "\t'query_var' => true,",
-		  "\t'rewrite' => array( 'slug' => '${5:slug taxonomy}' ),",
-		  "));",
-		  "}"
+			"add_action( 'init', 'cmk_register_tax_${3:name taxonomy}', 0 );",
+			"/**",
+			" * Register Taxonomy ${1:name taxonomy plural}",
+			" *",
+			" */",
+			"function cmk_register_tax_${3:name taxonomy}() {",
+			"",
+			"\\$labels = array(",
+			"\t'name' => '${1:name taxonomy plural}',",
+			"\t'singular_name' => '${2:Taxonomy Name Singular}',",
+			"\t'search_items' =>  'Buscar ${2:Taxonomy Name Singular}',",
+			"\t'all_items' => 'Todos los ${1:name taxonomy plural}',",
+			"\t'edit_item' => 'Editar ${2:Taxonomy Name Singular}',",
+			"\t'update_item' => 'Actualizar ${2:Taxonomy Name Singular}',",
+			"\t'add_new_item' => 'Añadir nuevo ${2:Taxonomy Name Singular}',",
+			"\t'new_item_name' => 'Nuevo ${2:Taxonomy Name Singular}',",
+			");",
+			"",
+			"register_taxonomy( '${3:name taxonomy}', array( '${4:post-type}' ), array(",
+			"\t'hierarchical' => true,",
+			"\t'labels' => \\$labels,",
+			"\t'show_ui' => true,",
+			"\t'show_admin_column' => true,",
+			"\t'query_var' => true,",
+			"\t'rewrite' => array( 'slug' => '${5:slug taxonomy}' ),",
+			"));",
+			"}"
 		]
 	}
 }
