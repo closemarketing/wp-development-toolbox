@@ -121,6 +121,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wootpprod** 	|	Sets Products per page
 | **woorptag** 	| 	Removes Product Tag
 | **wootzero** 	| 	Trim Zeros in Price
+| **wooastb** 	| 	Add Settings Tab Class
 | **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout

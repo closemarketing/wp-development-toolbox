@@ -1,6 +1,7 @@
 # Change Log
 ## 1.10.0 - September 26, 2018
 Added  new snippets:
+- Added for WooCommerce: (wooastb) Add Settings Tab
 
 ## 1.9.0 - September 26, 2018
 Added 9 new snippets:
