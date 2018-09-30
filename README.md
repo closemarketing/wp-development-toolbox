@@ -172,6 +172,7 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **cssawid** 	|	Adds Subsection for a Widget
 | **cssamed** 	|	Media Queries responsive
+| **cssaflx** 	|	Adds Flex Box container
 | **cssagrid** 	|	Adds Grid container for Columns and rows
 
 ### PHP (PHP) ###

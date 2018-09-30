@@ -52,5 +52,16 @@
 			"\t-webkit-appearance: none;",
 			"}"
 		]
+	},
+	"CSS | Adds Flex Box container": {
+		"prefix": "cssaflx",
+		"body": [
+			".${1:name-container} {",
+			"\tdisplay:flex;",
+			"\tflex-direction: ${1:flex-direction}; // column or row",
+			"\tflex-wrap: wrap;",
+			"}"
+		],
+		"description": "CSS | Adds Flex Box container"
 	}
 }
