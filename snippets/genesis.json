@@ -223,17 +223,25 @@
 	"Genesis | Adds HTML elements to main menu": {
 		"prefix": "gensmen",
 		"body": [
-			"//* Adds custom html elements to the main menu",
-			"add_filter( 'wp_nav_menu_items', 'cmk_menu_add_element', 10, 2 );",
-			"function cmk_menu_add_element ( \\$items, \\$args ) {",
-			"\tif (\\$args->theme_location == 'primary') {",
+			"add_filter( 'wp_nav_menu_items', '${1:prefix}_menu_add_element', 10, 2 );",
+			"/**",
+			" * Adds custom html elements to the main menu",
+			" *",
+			" * @param array  \\$items Items menu html.",
+			" * @param object \\$args Arguments of menu.",
+			" * @return array \\$items",
+			" */",
+			"function ${1:prefix}_menu_add_element( \\$items, \\$args ) {",
+			"\tif ( 'primary' === \\$args->theme_location ) {",
 			"\t\t\\$menu_html = '';",
-			"\t\t\\$items = \\$items.\\$menu_html;",
+			"\t\t\\$items     = \\$items . $menu_html;",
 			"\t}",
 			"\treturn \\$items;",
 			"}"
-		]
+		],
+		"description": "Genesis | Adds HTML elements to main menu"
 	},
+
 	"Genesis | Adds Header image from featured": {
 		"prefix": "gensimgh",
 		"body": [
