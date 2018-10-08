@@ -145,6 +145,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **metaurl**	| 	Adds URL Field
 | **metanum**	| 	Adds Number field
 | **metaicon**	| 	Adds Icon field
+| **metachec**	| 	Adds Checkbox field
 | **metasel**	| 	Adds select field
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms

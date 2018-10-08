@@ -166,6 +166,19 @@
 			"),"
 		]
 	},
+	"MetaBox | Adds Checkbox field": {
+		"prefix": "metachec",
+		"body": [
+			"// Checkbox",
+			"array(",
+			"\t'name'  => '${1:name}',",
+			"\t'id'\t=> \"{\\$prefix}${3:slug}\",",
+			"\t'type'  => 'checkbox',",
+			"\t'std'   => 0, // Value can be 0 or 1.", 
+			"),"
+		]
+	},
+
 	"MetaBox | Adds Address group fields": {
 		"prefix": "metadir",
 		"body": [
