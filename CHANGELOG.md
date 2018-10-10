@@ -3,7 +3,7 @@
 Added  new snippets:
 - Added for WooCommerce: (wooastb) Add Settings Tab
 - Added for CSS: (cssaflx) Adds Flex Box container
-- Added for Metabox: (metachec) Adds Checkbox field
+- Added for Metabox: (metachec) Adds Checkbox field, (metapid) Get actual post in filter function
 
 ## 1.9.0 - September 26, 2018
 Added 9 new snippets:

@@ -150,6 +150,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
 | **metadate**	| 	Adds Field date
+| **metapid**	| 	Get actual post in filter function
 | **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
 
