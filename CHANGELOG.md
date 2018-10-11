@@ -2,7 +2,7 @@
 ## 1.10.0 - October 11, 2018
 Added 4 new snippets:
 - Added for WooCommerce: (wooastb) Add Settings Tab
-- Added for CSS: (cssaflx) Adds Flex Box container
+- Added for CSS: (cssaflexr) Adds Flexbox Row Wrap, (cssaflexc) Adds Flexbox Column Wrap
 - Added for Metabox: (metachec) Adds Checkbox field, (metapid) Get actual post in filter function
 - Fixes in WordPress Queries.
 

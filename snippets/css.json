@@ -38,6 +38,31 @@
 		  "}"
 		]
 	},
+	"CSS | Adds Flexbox Row Wrap": {
+		"prefix": "cssaflexr",
+		"body": [
+			".${1:wrap-name-flex} {",
+			"\tdisplay: -ms-flexbox;",
+			"\tdisplay: flex;",
+			"\tflex-wrap: nowrap;",
+			"\tjustify-content: center;",
+			"}"
+		],
+		"description": "CSS | Adds Flexbox Row Wrap"
+	},
+	"CSS | Adds Flexbox Column Wrap": {
+		"prefix": "cssaflexc",
+		"body": [
+			".${1:wrap-name-flex} {",
+			"\tdisplay: -ms-flexbox;",
+			"\tdisplay: flex;",
+			"\tflex-wrap: nowrap;",
+			"\tflex-direction: column;",
+			"\talign-items: center;",
+			"}"
+		],
+		"description": "CSS | Adds Flexbox Column Wrap"
+	},
 	"WooCommerce | Removes Spin from input": {
 		"prefix": "woorspin",
 		"body": [
@@ -52,16 +77,5 @@
 			"\t-webkit-appearance: none;",
 			"}"
 		]
-	},
-	"CSS | Adds Flex Box container": {
-		"prefix": "cssaflx",
-		"body": [
-			".${1:name-container} {",
-			"\tdisplay:flex;",
-			"\tflex-direction: ${1:flex-direction}; // column or row",
-			"\tflex-wrap: wrap;",
-			"}"
-		],
-		"description": "CSS | Adds Flex Box container"
 	}
 }
