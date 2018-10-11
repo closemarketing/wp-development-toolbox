@@ -1,9 +1,10 @@
 # Change Log
-## 1.10.0 - September 26, 2018
-Added  new snippets:
+## 1.10.0 - October 11, 2018
+Added 4 new snippets:
 - Added for WooCommerce: (wooastb) Add Settings Tab
 - Added for CSS: (cssaflx) Adds Flex Box container
 - Added for Metabox: (metachec) Adds Checkbox field, (metapid) Get actual post in filter function
+- Fixes in WordPress Queries.
 
 ## 1.9.0 - September 26, 2018
 Added 9 new snippets:
