@@ -77,6 +77,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **gutacol** 	| 	Set Color Palette
+| **gutafwi** 	| 	Add Theme support Wide align images
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |

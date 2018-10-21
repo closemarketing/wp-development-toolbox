@@ -24,5 +24,13 @@
 			"}"
 		],
 		"description": "Gutenberg | Set Color Palette"
+	},
+	"Gutenberg | Add Theme support Wide align images": {
+		"prefix": "gutafwi",
+		"body": [
+			"// Add support for full and wide align images.",
+			"add_theme_support( 'align-wide' );"
+		],
+		"description": "Gutenberg | Add Theme support Wide align images"
 	}
 }

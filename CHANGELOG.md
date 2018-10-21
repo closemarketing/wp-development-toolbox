@@ -1,4 +1,8 @@
 # Change Log
+## 1.11.0 - October 29, 2018
+Added # new snippets:
+- Added for Gutenberg: (gutafwi) Add Theme support Wide align images
+
 ## 1.10.0 - October 14, 2018
 Added 6 new snippets:
 - Added for WooCommerce: (wooastb) Add Settings Tab
