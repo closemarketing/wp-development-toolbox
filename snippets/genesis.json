@@ -299,6 +299,22 @@
 			"add_filter( 'wp_nav_menu_items', 'cmk_menu_add_social', 10, 2 );"
 		]
 	},
+	"Genesis | Adds Favicon from Child theme": {
+		"prefix": "gensfav",
+		"body": [
+			"add_filter( 'genesis_pre_load_favicon', '${1:prefix}_favicon_filter' );",
+			"/**",
+			" * Adds Genesis favicon",
+			" *",
+			" * @param string $favicon_url Favicon of url.",
+			" * @return string $favicon_url",
+			" */",
+			"function ${1:prefix}_favicon_filter( \\$favicon_url ) {",
+			"\treturn get_stylesheet_directory_uri() . '/images/favicon.png';",
+			"}"
+		],
+		"description": "Genesis | Adds Favicon from Child theme"
+	},
 	"Genesis | Loop Index i to add class first": {
 		"prefix": "genslf",
 		"body": [

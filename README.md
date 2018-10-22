@@ -105,6 +105,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **gensaut**	|	Display author box on single posts
 | **gensrev**	|	Adds Revolution slider in home
 | **genstopb**	|	Adds a Topbar in site
+| **gensfav**	|	Adds Favicon from Child theme
 | **Remove elements** |
 | **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info

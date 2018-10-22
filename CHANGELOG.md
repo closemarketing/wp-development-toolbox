@@ -1,7 +1,8 @@
 # Change Log
 ## 1.11.0 - October 29, 2018
-Added # new snippets:
+Added 2 new snippets:
 - Added for Gutenberg: (gutafwi) Add Theme support Wide align images
+- Added for Genesis: (gensfav) Adds Favicon from Child theme
 
 ## 1.10.0 - October 14, 2018
 Added 6 new snippets:
