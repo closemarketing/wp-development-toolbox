@@ -169,16 +169,16 @@
 	"MetaBox | Get actual post in filter function": {
 		"prefix": "metapid",
 		"body": [
-		  "if ( isset( $_GET['post'] ) ) {",
-		  "\t$post_id = intval( $_GET['post'] );",
-		  "} elseif ( isset( $_POST['post_ID'] ) ) {",
-		  "\t$post_id = intval( $_POST['post_ID'] );",
+		  "if ( isset( \\$_GET['post'] ) ) {",
+		  "\t\\$post_id = intval( \\$_GET['post'] );",
+		  "} elseif ( isset( \\$_POST['post_ID'] ) ) {",
+		  "\t\\$post_id = intval( \\$_POST['post_ID'] );",
 		  "} else {",
-		  "\t$post_id = false;",
+		  "\t\\$post_id = false;",
 		  "}",
-		  "$post_edit_id = (int) $post_id;",
-		  "$post_edit = get_post( $post_edit_id );",
-		  "$post_edit_parent = $post_edit->post_parent;"
+		  "\\$post_edit_id = (int) \\$post_id;",
+		  "\\$post_edit = get_post( \\$post_edit_id );",
+		  "\\$post_edit_parent = \\$post_edit->post_parent;"
 		],
 		"description": "MetaBox | Get actual post in filter function"
 	},
