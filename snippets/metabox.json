@@ -46,7 +46,7 @@
 			"\t\\$posts_options[\\$post_single->ID] = \\$post_single->post_title;",
 			"endforeach;",
 			"",
-			"// SELECT BOX post type ${1:post-type}",
+			"// SELECT BOX post type ${1:post-type}.",
 			"array(",
 			"\t'name'        => 'Selecciona ${2:cpt-name}',",
 			"\t'id'          => \"{\\$prefix}${1:post-type}\",",
@@ -61,7 +61,7 @@
 	"MetaBox | Adds Field date": {
 		"prefix": "metadate",
 		"body": [
-		  "// DATE",
+		  "// DATE.",
 		  "array(",
 		  "\t'name'       => '${1:title}',",
 		  "\t'id'         => \"{\\$prefix}${2:field-name}\",",
@@ -82,7 +82,7 @@
 	"MetaBox | Adds field for Gallery": {
 		"prefix": "metagal",
 		"body": [
-			"// GALLERY IMAGE ADVANCED",
+			"// GALLERY IMAGE ADVANCED.",
 			"array(",
 			"\t'name'             => '${1:name}',",
 			"\t'id'               => \"{\\$prefix}${2:slug}\",",
@@ -96,7 +96,7 @@
 	"MetaBox | Adds Icon field": {
 		"prefix": "metaicon",
 		"body": [
-			"// ICON IMAGE ADVANCED",
+			"// ICON IMAGE ADVANCED.",
 			"array(",
 			"\t'name'             => 'Icono',",
 			"\t'id'               => \"{\\$prefix}${3:slug}\",",
@@ -110,7 +110,7 @@
 	"MetaBox | Adds Number field": {
 		"prefix": "metanum",
 		"body": [
-			"// NUMBER",
+			"// NUMBER.",
 			"array(",
 			"\t'name' => '${1:name}',",
 			"\t'id'   => \"{\\$prefix}${2:slug}\",",
@@ -123,7 +123,7 @@
 	"MetaBox | Adds select field": {
 		"prefix": "metasel",
 		"body": [
-			"// SELECT BOX",
+			"// SELECT BOX.",
 			"array(",
 			"\t'name'        => '${1:name}',",
 			"\t'id'          => \"{\\$prefix}select\",",
@@ -141,25 +141,25 @@
 	"MetaBox | Adds text field": {
 		"prefix": "metatext",
 		"body": [
-			"// TEXT",
+			"// TEXT.",
 			"array(",
-			"\t'name'  => '${1:name}',",
+			"\t'name'              => '${1:name}',",
 			"\t'label_description' => '${2:descripcion-label}',",
-			"\t'id'\t=> \"{\\$prefix}${3:slug}\",",
-			"\t'desc'  => '${4:descripcion}',",
-			"\t'type'  => 'text',",
-			"\t'std'   => '',",
-			"\t'clone' => false,",
+			"\t'id'                => \"{\\$prefix}${3:slug}\",",
+			"\t'desc'              => '${4:descripcion}',",
+			"\t'type'              => 'text',",
+			"\t'std'               => '',",
+			"\t'clone'             => false,",
 			"),"
 		]
 	},
 	"MetaBox | Adds URL Field": {
 		"prefix": "metaurl",
 		"body": [
-			"// URL",
+			"// URL.",
 			"array(",
 			"\t'name'  => '${1:name}',",
-			"\t'id'\t=> \"{\\$prefix}${3:slug}\",",
+			"\t'id'    => \"{\\$prefix}${3:slug}\",",
 			"\t'desc'  => '${4:descripcion}',",
 			"\t'type'  => 'url',",
 			"\t'std'   => '',",
@@ -188,10 +188,10 @@
 	"MetaBox | Adds Checkbox field": {
 		"prefix": "metachec",
 		"body": [
-			"// Checkbox",
+			"// CHECKBOX.",
 			"array(",
 			"\t'name'  => '${1:name}',",
-			"\t'id'\t=> \"{\\$prefix}${3:slug}\",",
+			"\t'id'    => \"{\\$prefix}${3:slug}\",",
 			"\t'type'  => 'checkbox',",
 			"\t'std'   => 0, // Value can be 0 or 1.", 
 			"),"
@@ -201,7 +201,7 @@
 	"MetaBox | Adds Address group fields": {
 		"prefix": "metadir",
 		"body": [
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('Address', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}dir1\",",
@@ -209,7 +209,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('Address 2', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}dir2\",",
@@ -217,7 +217,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('ZIP', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}zip\",",
@@ -225,7 +225,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('City', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}city\",",
@@ -233,7 +233,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('State', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}state\",",
@@ -241,7 +241,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'    => __('Phone number', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}tel\",",
@@ -249,7 +249,7 @@
 			"\t'clone'   => false,",
 			"\t'columns' => 3,",
 			"),",
-			"// URL",
+			"// URL.",
 			"array(",
 			"\t'name'    => __('URL', '${1:slug-translation}'),",
 			"\t'id'      => \"{\\$$prefix}url\",",
@@ -257,7 +257,7 @@
 			"\t'type'    => 'url',",
 			"\t'columns' => 3,",
 			"),",
-			"// TEXT",
+			"// TEXT.",
 			"array(",
 			"\t'name'  => __('ID Google My Business', '${1:slug-translation}'),",
 			"\t'id'    => \"{\\$$prefix}gbusiness\",",
@@ -278,7 +278,7 @@
 			"endforeach;",
 			"",
 			"",
-			"// SELECT BOX Forms",
+			"// SELECT BOX Forms.",
 			"array(",
 			"\t'name'\t\t=> 'Selecciona Formulario',",
 			"\t'id'\t\t  => \"{\\$prefix}${1:slug}\",",
