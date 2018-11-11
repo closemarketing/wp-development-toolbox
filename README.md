@@ -76,6 +76,7 @@ All snippets will respect **WordPress Coding Standards**.
 ## Gutenberg (GUT) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
 | **gutafwi** 	| 	Add Theme support Wide align images
 
