@@ -10,7 +10,7 @@
 			"// Add support for full and wide align images.",
 			"add_theme_support( 'align-wide' );",
 			"",
-			"add_action( 'enqueue_block_assets', '${1:prefix}_gutenberg_editor_scripts' );",
+			"add_action( 'enqueue_block_editor_assets', '${1:prefix}_gutenberg_editor_scripts' );",
 			"/**",
 			" * Hook scripts function into block editor hook",
 			" *",
@@ -49,7 +49,7 @@
 			"}"
 		],
 		"description": "Gutenberg | Functions init for a theme"
-	}
+	},
 	"Gutenberg | Set Color Palette": {
 		"prefix": "gutacol",
 		"body": [
