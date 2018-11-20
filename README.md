@@ -197,3 +197,4 @@ All snippets will respect **WordPress Coding Standards**.
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
 | **sfsres** 	|	Results Page
+| **revrmet** 	|	Remove metabox in all post types

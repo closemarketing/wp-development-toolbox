@@ -97,5 +97,27 @@
 			"}"
 		],
 		"description": "Search Filter Pro | Results Page"
+	},
+	"revrmet": {
+		"prefix": "Revolution Slider | Remove metabox in all post types",
+		"body": [
+			"if ( is_admin() ) {",
+			"\t/**",
+			"\t * Remove Revolution slider metabox",
+			"\t *",
+			"\t * @return void",
+			"\t */",
+			"\tfunction remove_revolution_slider_meta_boxes() {",
+			"\t\t$post_types = get_post_types();",
+			"\t\tforeach ( $post_types as $post_type ) {",
+			"\t\t\tif ( 'page' !== $post_type && 'post' !== $post_type ) {",
+			"\t\t\t\tremove_meta_box( 'mymetabox_revslider_0', $post_type, 'normal' );",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"\tadd_action( 'do_meta_boxes', 'remove_revolution_slider_meta_boxes' );",
+			"}"
+		],
+		"description": "revrmet"
 	}
 }
