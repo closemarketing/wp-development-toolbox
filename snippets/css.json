@@ -77,5 +77,13 @@
 			"\t-webkit-appearance: none;",
 			"}"
 		]
+	},
+	"CSS | Adds SCSS responsive wrapper": {
+		"prefix": "cssar",
+		"body": [
+			"@media only screen and (min-width: $standard-screen-width) {",
+			"\t",
+			"}",
+		]
 	}
 }

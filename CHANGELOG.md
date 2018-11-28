@@ -1,4 +1,8 @@
 # Change Log
+## 1.12.0 - November 28, 2018
+Added # new snippets:
+- Added for CSS: (cssar) CSS Wrapper for responsive mobile first
+
 ## 1.11.0 - November 28, 2018
 Added 5 new snippets:
 - Added for Gutenberg: (gutafwi) Add Theme support Wide align images, (gutain) Gutenberg new functions for initiate a theme
