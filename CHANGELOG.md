@@ -1,8 +1,8 @@
 # Change Log
-## 1.11.0 - October 29, 2018
-Added 2 new snippets:
+## 1.11.0 - November 28, 2018
+Added 5 new snippets:
 - Added for Gutenberg: (gutafwi) Add Theme support Wide align images, (gutain) Gutenberg new functions for initiate a theme
-- Added for Genesis: (gensfav) Adds Favicon from Child theme
+- Added for Genesis: (gensfav) Adds Favicon from Child theme, (genshm) Adds Hamburger menu animation
 - Added for Plugins: (revrmet) Remove metabox in all post types
 
 ## 1.10.0 - October 14, 2018
