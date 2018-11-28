@@ -323,7 +323,7 @@
 		  "\t\t),",
 		  "\t);",
 		  "  ",
-		  "\treturn $settings;",
+		  "\treturn \\$settings;",
 		  "  ",
 		  "}",
 		  "//* in Style",
