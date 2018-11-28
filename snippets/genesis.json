@@ -427,7 +427,7 @@
 		  "@media only screen and (min-width: 401px)",
 		  "and (orientation : portrait) { ",
 		  "\t.menu-toggle {",
-		  "\t\ttop: -10px;!important",
+		  "\t\ttop: -10px !important;",
 		  "\t} ",
 		  "}"
 		],
