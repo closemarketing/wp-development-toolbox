@@ -76,7 +76,9 @@ All snippets will respect **WordPress Coding Standards**.
 ## Gutenberg (GUT) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
+| **gutafwi** 	| 	Add Theme support Wide align images
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
@@ -104,6 +106,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **gensaut**	|	Display author box on single posts
 | **gensrev**	|	Adds Revolution slider in home
 | **genstopb**	|	Adds a Topbar in site
+| **gensfav**	|	Adds Favicon from Child theme
+| **genshm**	|	Adds Hamburger menu animation
 | **Remove elements** |
 | **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info
@@ -194,3 +198,4 @@ All snippets will respect **WordPress Coding Standards**.
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
 | **sfsres** 	|	Results Page
+| **revrmet** 	|	Remove metabox in all post types

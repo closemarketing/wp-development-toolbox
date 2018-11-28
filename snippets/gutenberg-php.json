@@ -1,4 +1,55 @@
 {
+	"Gutenberg | Functions init for a theme": {
+		"prefix": "gutain",
+		"body": [
+			"",
+			"/**",
+			" * # Gutenberg - Visual Editor",
+			" * ---------------------------------------------------------------------------------------------------- */",
+			"",
+			"// Add support for full and wide align images.",
+			"add_theme_support( 'align-wide' );",
+			"",
+			"add_action( 'enqueue_block_editor_assets', '${1:prefix}_gutenberg_editor_scripts' );",
+			"/**",
+			" * Hook scripts function into block editor hook",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_gutenberg_editor_scripts() {",
+			"\t// Enqueue theme style for gutenberg.",
+			"\twp_enqueue_style(",
+			"\t\t'style-gutenberg',",
+			"\t\tesc_url( get_stylesheet_directory_uri() ) . '/style-editor.css', ",
+			"\t\tarray(),",
+			"\t\tCHILD_THEME_VERSION",
+			"\t);",
+			"}",
+			"",
+			"// Adds default style",
+			"add_theme_support( 'wp-block-styles' );",
+			"",
+			"add_action( 'after_setup_theme', '${1:prefix}_setup_theme_supported_features' );",
+			"/**",
+			" * Colour setup for the theme",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_setup_theme_supported_features() {",
+			"\tadd_theme_support(",
+			"\t\t'editor-color-palette',",
+			"\t\tarray(",
+			"\t\t\tarray(",
+			"\t\t\t\t'name' => '',",
+			"\t\t\t\t'slug' => '',",
+			"\t\t\t\t'color' => '', // Hexadecimal value.",
+			"\t\t\t),",
+			"\t\t)",
+			"\t);",
+			"}"
+		],
+		"description": "Gutenberg | Functions init for a theme"
+	},
 	"Gutenberg | Set Color Palette": {
 		"prefix": "gutacol",
 		"body": [
@@ -24,5 +75,13 @@
 			"}"
 		],
 		"description": "Gutenberg | Set Color Palette"
+	},
+	"Gutenberg | Add Theme support Wide align images": {
+		"prefix": "gutafwi",
+		"body": [
+			"// Add support for full and wide align images.",
+			"add_theme_support( 'align-wide' );"
+		],
+		"description": "Gutenberg | Add Theme support Wide align images"
 	}
 }
