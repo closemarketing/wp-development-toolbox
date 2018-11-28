@@ -304,7 +304,7 @@
 		]
 	},
 	"Genesis | Adds Hamburger menu animation": {
-		"prefix": "genamen",
+		"prefix": "genshm",
 		"body": [
 		  "// Replace function from Genesis Sample",
 		  "function genesis_sample_responsive_menu_settings() {",
