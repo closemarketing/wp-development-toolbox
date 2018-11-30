@@ -2,6 +2,7 @@
 ## 1.12.0 - November 28, 2018
 Added # new snippets:
 - Added for CSS: (cssar) CSS Wrapper for responsive mobile first
+- Added (wooacm) Add Column in My Account page. Thanks to https://www.skyverge.com/blog/adding-columns-woocommerce-orders-list/
 
 ## 1.11.0 - November 28, 2018
 Added 5 new snippets:

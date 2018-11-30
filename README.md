@@ -127,6 +127,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorptag** 	| 	Removes Product Tag
 | **wootzero** 	| 	Trim Zeros in Price
 | **wooastb** 	| 	Add Settings Tab Class
+| **wooacm** 	| 	Add Column in My Account page
 | **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
@@ -182,7 +183,11 @@ All snippets will respect **WordPress Coding Standards**.
 | **cssaflexr** 	|	Adds Flexbox Row Wrap
 | **cssaflexc** 	|	Adds Flexbox Column Wrap
 | **cssagrid** 	|	Adds Grid container for Columns and rows
-| **cssar** 	|	Adds SCSS responsive wrapper
+
+### SCSS (SCSS) ###
+| **Rule** | **Action** |
+| ------------------- |------------------------------------------------------------------|
+| **scssar** 	|	Adds responsive wrapper
 
 ### PHP (PHP) ###
 | **Rule** | **Action** |
