@@ -3,6 +3,9 @@
 Added # new snippets:
 - Added for CSS: (cssar) CSS Wrapper for responsive mobile first
 - Added (wooacm) Add Column in My Account page. Thanks to https://www.skyverge.com/blog/adding-columns-woocommerce-orders-list/
+- Added Gutenberg support in Register Post type
+- Added (wpagit) Gitignore file recommeded for WordPress
+- Added (genspref) Adds an imagen in div before footer
 
 ## 1.11.0 - November 28, 2018
 Added 5 new snippets:

@@ -440,8 +440,8 @@
 			"/**",
 			" * Adds Genesis favicon",
 			" *",
-			" * @param string $favicon_url Favicon of url.",
-			" * @return string $favicon_url",
+			" * @param string \\$favicon_url Favicon of url.",
+			" * @return string \\$favicon_url",
 			" */",
 			"function ${1:prefix}_favicon_filter( \\$favicon_url ) {",
 			"\treturn get_stylesheet_directory_uri() . '/images/favicon.png';",
@@ -693,5 +693,29 @@
 			"}",
 			"add_action( 'genesis_footer', 'cmk_language_selector', 2 );"
 		]
-	}
+	},
+	"Genesis | Adds an imagen in div before footer": {
+		"prefix": "genspref",
+		"body": [
+		  "add_action( 'genesis_before_footer', '${1:function-prefix}_prefooter', 5 );",
+		  "/**",
+		  " * Loads the sidebar in prefooter",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:function-prefix}_prefooter() {",
+		  "\techo '<div class=\"prefooter-image\"></div>';",
+		  "}",
+		  "",
+		  "/**",
+		  " * in Style.css",
+		  " * /",
+		  ".prefooter-image {",
+		  "\tbackground: white url(images/prefooter.svg) top right repeat-x;",
+		  "\twidth: 100%;",
+		  "\theight: 45rem;",
+		  "}"
+		],
+		"description": "Genesis | Adds an imagen in div before footer"
+	    }
 }

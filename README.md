@@ -62,6 +62,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
 | **wpalpt**	|	Loads Plugin Text Domain
+| **wpagit**	|	Gitignore configuration for WordPress
 | **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
 | **wpadhc**	|	Doc Header comment
@@ -108,6 +109,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genstopb**	|	Adds a Topbar in site
 | **gensfav**	|	Adds Favicon from Child theme
 | **genshm**	|	Adds Hamburger menu animation
+| **genspref**	|	Adds an imagen in div before footer
 | **Remove elements** |
 | **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info
