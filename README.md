@@ -99,6 +99,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **genmmh** 	| 	Move menu from Header
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
+| **Sets** |
+| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
 | **Shows to public** |
 | **genslogo**	|	Shows Logo instead Site Title and Description
 | **genspsi**	|	Customize Entry Post Info
