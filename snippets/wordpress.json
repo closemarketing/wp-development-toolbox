@@ -14,10 +14,15 @@
 	"WordPress | Adds an action with function ": {
 		"prefix": "wpaac",
 		"body": [
-			"function cmk_${2:function}() {",
+			"add_action( '${1:action}', '${2:prefix}_${3:function}' );",
+			"/**",
+			" * ${4:function_description}",
+			" *",
+			" * @return void",
+			" */",			    
+			"function ${2:prefix}_${3:function}() {",
 			"\t",
-			"}",
-			"add_action( '${1:action}', 'cmk_${2:function}' );"
+			"}"
 		]
 	},
 	"WordPress | Shows the entry title with permalink": {
