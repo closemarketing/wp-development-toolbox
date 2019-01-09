@@ -117,6 +117,23 @@
 			"}"
 		]
 	},
+	"Genesis | Adds Tag Manager from Plugin Duracell": {
+		"prefix": "genatag",
+		"body": [
+			"add_action( 'genesis_before', '${1:prefix}_tag_manager' );",
+			"/**",
+			" * Adds Tag manager to body tag",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_tag_manager() {",
+			"\tif ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {",
+			"\t\tgtm4wp_the_gtm_tag();",
+			"\t}",
+			"}"
+		],
+		"description": "Closemarketing | Añade Tag Manager en Genesis"
+	},
 	"Genesis | Shows Logo instead Site Title and Description": {
 		"prefix": "genslogo",
 		"body": [

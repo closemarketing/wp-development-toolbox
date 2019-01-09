@@ -5,8 +5,7 @@ Added # new snippets:
 - Added (wooacm) Add Column in My Account page. Thanks to https://www.skyverge.com/blog/adding-columns-woocommerce-orders-list/
 - Added Gutenberg support in Register Post type
 - Added (wpagit) Gitignore file recommeded for WordPress
-- Added (genspref) Adds an imagen in div before footer
-- Added (gentflay) Forces full width layout with conditionals and WooCommerce support
+- Added for Genesis : (genspref) Adds an imagen in div before footer, (gentflay) Forces full width layout with conditionals and WooCommerce support, (gensmp) Adds submenu parent/child Pages, (genatag) Adds Tag Manager from Plugin Duracell
 
 ## 1.11.0 - November 28, 2018
 Added 5 new snippets:
@@ -17,6 +16,7 @@ Added 5 new snippets:
 ## 1.10.0 - October 14, 2018
 Added 6 new snippets:
 - Added for WooCommerce: (wooastb) Add Settings Tab
+
 - Added for CSS: (cssaflexr) Adds Flexbox Row Wrap, (cssaflexc) Adds Flexbox Column Wrap
 - Added for Metabox: (metachec) Adds Checkbox field, (metapid) Get actual post in filter function
 - Fixes in WordPress Queries.

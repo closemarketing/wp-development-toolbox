@@ -92,6 +92,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **Additions** 		|
 | **genacl** 	| 	Adds classes and elements to HTML element
 | **genafpt** 	| 	Adds functions to Custom Post Type
+| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
+| **Shows to public** |
 | **gensmen** 	| 	Adds HTML elements to main menu
 | **gensimgh** 	| 	Adds Header image from featured
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
