@@ -1,0 +1,10 @@
+{
+	"SCSS | Adds SCSS responsive wrapper": {
+		"prefix": "scssar",
+		"body": [
+			"@media only screen and (min-width: $standard-screen-width) {",
+			"\t",
+			"}",
+		]
+	}
+}
