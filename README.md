@@ -62,6 +62,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpapuh** 	| 	Adds Plugin Header
 | **wparead**	|	Create readme.txt
 | **wpalpt**	|	Loads Plugin Text Domain
+| **wpagit**	|	Gitignore configuration for WordPress
 | **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
 | **wpadhc**	|	Doc Header comment
@@ -91,6 +92,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **Additions** 		|
 | **genacl** 	| 	Adds classes and elements to HTML element
 | **genafpt** 	| 	Adds functions to Custom Post Type
+| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
+| **Shows to public** |
 | **gensmen** 	| 	Adds HTML elements to main menu
 | **gensimgh** 	| 	Adds Header image from featured
 | **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
@@ -98,6 +101,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **genmmh** 	| 	Move menu from Header
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
+| **Sets** |
+| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
 | **Shows to public** |
 | **genslogo**	|	Shows Logo instead Site Title and Description
 | **genspsi**	|	Customize Entry Post Info
@@ -108,6 +113,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **genstopb**	|	Adds a Topbar in site
 | **gensfav**	|	Adds Favicon from Child theme
 | **genshm**	|	Adds Hamburger menu animation
+| **genspref**	|	Adds an imagen in div before footer
 | **Remove elements** |
 | **genrhtit**	|	Remove Site Title in Home Page
 | **genrpi**	|	Remove Entry Post Info
@@ -127,6 +133,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorptag** 	| 	Removes Product Tag
 | **wootzero** 	| 	Trim Zeros in Price
 | **wooastb** 	| 	Add Settings Tab Class
+| **wooacm** 	| 	Add Column in My Account page
 | **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout
@@ -182,6 +189,12 @@ All snippets will respect **WordPress Coding Standards**.
 | **cssaflexr** 	|	Adds Flexbox Row Wrap
 | **cssaflexc** 	|	Adds Flexbox Column Wrap
 | **cssagrid** 	|	Adds Grid container for Columns and rows
+| **cssatw** 	|	Tweaks for Genesis CSS
+
+### SCSS (SCSS) ###
+| **Rule** | **Action** |
+| ------------------- |------------------------------------------------------------------|
+| **scssar** 	|	Adds responsive wrapper
 
 ### PHP (PHP) ###
 | **Rule** | **Action** |

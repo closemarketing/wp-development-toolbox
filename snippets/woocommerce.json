@@ -293,5 +293,43 @@
 			"$woo_settings_tab_new = new ${1:class-name}();",
 		],
 		"description": "WooCommerce | Add Settings Tab"
+	},
+	"WooCommerce | Add Column in My Account page": {
+		"prefix": "wooacmy",
+		"body": [
+			"add_filter( 'woocommerce_my_account_my_orders_columns', '${1:prefix}_wc_add_my_account_orders_column' );",
+			"/**",
+			" * Adds a new column to the \"My Orders\" table in the account.",
+			" *",
+			" * @param string[] $columns the columns in the orders table",
+			" * @return string[] updated columns",
+			" */",
+			"function ${1:prefix}_wc_add_my_account_orders_column( \\$columns ) {",
+			"",
+			"\t\\$new_columns = array();",
+			"\tforeach ( \\$columns as \\$key => \\$name ) {",
+			"\t\t\\$new_columns[ \\$key ] = \\$name;",
+			"\t",
+			"\t\t// add ship-to after order status column",
+			"\t\tif ( 'order-status' === \\$key ) {",
+			"\t\t	\\$new_columns['${2:column_slug}'] = __( '${3:column_title}', 'textdomain' );",
+			"\t\t}",
+			"\t}",
+			"",
+			"\treturn \\$new_columns;",
+			"}",
+			"",
+			"",
+			"add_action( 'woocommerce_my_account_my_orders_column_${2:column_slug}', '${1:prefix}_wc_my_${2:column_slug}_column' );",
+			"/**",
+			" * Adds data to the custom \"ship to\" column in \"My Account > Orders\".",
+			" *",
+			" * @param \\WC_Order \\$order the order object for the row",
+			" */",
+			"function ${1:prefix}_wc_my_${2:column_slug}_column( $order ) {",
+			"\techo '';",
+			"}"
+		],
+		"description": "WooCommerce | Add Column in My Account page"
 	}
 }
