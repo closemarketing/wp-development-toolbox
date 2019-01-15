@@ -189,6 +189,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **cssaflexr** 	|	Adds Flexbox Row Wrap
 | **cssaflexc** 	|	Adds Flexbox Column Wrap
 | **cssagrid** 	|	Adds Grid container for Columns and rows
+| **cssatw** 	|	Tweaks for Genesis CSS
 
 ### SCSS (SCSS) ###
 | **Rule** | **Action** |

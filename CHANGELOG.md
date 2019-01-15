@@ -6,6 +6,8 @@ Added # new snippets:
 - Added Gutenberg support in Register Post type
 - Added (wpagit) Gitignore file recommeded for WordPress
 - Added for Genesis : (genspref) Adds an imagen in div before footer, (gentflay) Forces full width layout with conditionals and WooCommerce support, (gensmp) Adds submenu parent/child Pages, (genatag) Adds Tag Manager from Plugin Duracell
+- Added IE in media queries
+- Added (cssatw) Tweaks for Genesis CSS
 
 ## 1.11.0 - November 28, 2018
 Added 5 new snippets:
