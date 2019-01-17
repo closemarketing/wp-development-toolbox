@@ -134,6 +134,36 @@
 			"echo '</pre>';"
 		]
 	},
+	"PHP | DocBlocks file header": {
+		"prefix": "phpahead",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @link ${3:URL}",
+			" *",
+			" * @package WordPress",
+			" * @subpackage Component",
+			" * @since ${4:Version}",
+			" */"
+		],
+		"description": "PHP | Component file header"
+	},
+	"PHP | DocBlocks for Classes": {
+		"prefix": "phpache",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @since ${3:Version 3 digits}",
+			" */"
+		],
+		"description": "PHP | DocBlocks for Classes"
+	},
 
 	"Developer | Loads a Composer Library": {
 		"prefix": "devtcomp",

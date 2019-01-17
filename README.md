@@ -201,6 +201,8 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **phpecho** 	|	Echo a variable
 | **phpechopre** 	|	Echo variable with wrap PRE
+| **phpahead** 	|	DocBock file header as Coding Standards
+| **phpache** 	|	DocBlock DocBlocks for Classes header
 | **devtcomp** 	|	Loads a Composer Library
 
 ### Several Plugins ###
