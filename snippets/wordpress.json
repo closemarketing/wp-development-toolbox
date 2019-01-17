@@ -356,9 +356,9 @@
 	"WordPress | Query Terms from actual post": {
 		"prefix": "wpqtmp",
 		"body": [
-			"$term_list = wp_get_post_terms(get_the_ID(), '${1:tax-name}', array(\"fields\" => \"all\"));",
-			"foreach($term_list as $term_single) {",
-			"\techo $term_single->name;",
+			"\\$term_list = wp_get_post_terms( get_the_ID(), '${1:tax-name}', array( \"fields\" => \"all\" ) );",
+			"foreach ( \\$term_list as \\$term_single ) {",
+			"\techo \\$term_single->name;",
 			"}"
 		]
 	},
@@ -368,7 +368,7 @@
 		"body": [
 			"//* In functions",
 			"//* Enqueue tab js including jQuery UI Tabs",
-			"add_action('wp_enqueue_scripts', '${1:prefix}_load_tab_script');",
+			"add_action( 'wp_enqueue_scripts', '${1:prefix}_load_tab_script' );",
 			"function ${1:prefix}_load_tab_script() {",
 			"\twp_enqueue_script('${1:prefix}-tabs', get_stylesheet_directory_uri() . '/js/tabs.js', array('jquery-ui-tabs'), '1.0.0', true);",
 			"}",
