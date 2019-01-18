@@ -134,6 +134,33 @@
 			"echo '</pre>';"
 		]
 	},
+	"PHP | Adds Class": {
+		"prefix": "phpacl",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @since ${3:Version 3 digits}",
+			" */"
+			"class ${4:Class Name} {",
+			"",
+			"\t/**",
+			"\t * Construct of Class",
+			"\t */",
+			"\tpublic function __construct() {",
+			"\t}",
+			"",
+			"\t/**",
+			"\t * # Functions",
+			"\t * ---------------------------------------------------------------------------------------------------- */",
+			"}",
+			"",
+			"new ${4:Class Name};"
+		],
+		"description": "PHP | Adds Class"
+	},
 	"PHP | DocBlocks file header": {
 		"prefix": "phpahead",
 		"body": [

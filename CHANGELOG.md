@@ -1,7 +1,7 @@
 # Change Log
 ## 1.13.0 - January 30, 2019
 Added new snippets:
-- Added for PHP Coding Standards: (phpahead) DocBlocks file header, (phpache) DocBlocks for Classes header
+- Added for PHP Coding Standards: (phpahead) DocBlocks file header, (phpache) DocBlocks for Classes header, (phpacl) Adds class
 
 ## 1.12.0 - January 15, 2019
 Added # new snippets:

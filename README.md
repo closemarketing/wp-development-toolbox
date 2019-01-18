@@ -203,6 +203,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **phpechopre** 	|	Echo variable with wrap PRE
 | **phpahead** 	|	DocBock file header as Coding Standards
 | **phpache** 	|	DocBlock DocBlocks for Classes header
+| **phpacl** 	|	Adds class
 | **devtcomp** 	|	Loads a Composer Library
 
 ### Several Plugins ###
