@@ -146,6 +146,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorbad** 	|	Remove Offert Badge in products
 | **woorsto** 	|	Removes stock text in Product page
 | **woorarimg** 	|	Remove product thumbnails in archive pages
+| **woordes** 	|	Removes Description tab title
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |

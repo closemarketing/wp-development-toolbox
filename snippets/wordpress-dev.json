@@ -174,7 +174,10 @@
 			" * @package WordPress",
 			" * @subpackage Component",
 			" * @since ${4:Version}",
-			" */"
+			" */",
+			"",
+			"defined( 'ABSPATH' ) || exit;",
+			""
 		],
 		"description": "PHP | Component file header"
 	},
