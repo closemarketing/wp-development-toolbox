@@ -3,6 +3,7 @@
 Added new snippets:
 - Added for PHP Coding Standards: (phpahead) DocBlocks file header, (phpache) DocBlocks for Classes header, (phpacl) Adds class
 - Added for WooCommerce: (woordes) Removes Description tab title
+- Added for WordPress Dev: (wpajs) Adds jQuery wrap
 
 ## 1.12.0 - January 15, 2019
 Added # new snippets:

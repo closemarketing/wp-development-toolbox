@@ -68,6 +68,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpadhc**	|	Doc Header comment
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
+| **wpajs**		|	Adds jQuery wrap
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |

@@ -239,5 +239,16 @@
 			"add_filter( 'auto_core_update_send_email', '__return_true' );"
 		],
 		"description": "WordPress | Foces automatic updates in WordPress"
+	},
+	"WordPress | Adds jQuery wrap": {
+		"prefix": "wpajs",
+		"body": [
+		  "<script>",
+		  "    (function (\\$) {",
+		  "",
+		  "    }(jQuery));",
+		  "</script>"
+		],
+		"description": "WordPress | Adds jQuery wrap"
 	}
 }
