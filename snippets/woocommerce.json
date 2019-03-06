@@ -51,11 +51,22 @@
 	"WooCommerce | Sets Products per page": {
 		"prefix": "wootpprod",
 		"body": [
-			"// * WooCommerce Sets Display ${1:num_prod} products per page",
-			"add_filter( 'loop_shop_per_page', create_function( '$cols', 'return ${1:num_prod};' ), 20 );"
+		  "add_filter( 'loop_shop_per_page', '${1:prefix}_loop_shop_per_page', 20 );",
+		  "/**",
+		  " * Change number of products that are displayed per page (shop page)",
+		  " *",
+		  " * @param number \\$cols Products per loop.",
+		  " * @return number \\$cols",
+		  " */",
+		  "function ${1:prefix}_loop_shop_per_page( $cols ) {",
+		  "\t// $cols contains the current number of products per page based on the value stored on Options -> Reading",
+		  "\t// Return the number of products you wanna show per page.",
+		  "\t\\$cols = ${2:num_prod};",
+		  "\treturn \\$cols;",
+		  "}"
 		],
 		"description": "WooCommerce | Sets Products per page"
-	},
+	    }
 	"WooCommerce | Remove Badge in products": {
 		"prefix": "woorbad",
 		"body": [
