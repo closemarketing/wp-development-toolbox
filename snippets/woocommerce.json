@@ -66,7 +66,7 @@
 		  "}"
 		],
 		"description": "WooCommerce | Sets Products per page"
-	    }
+	},
 	"WooCommerce | Remove Badge in products": {
 		"prefix": "woorbad",
 		"body": [
@@ -309,7 +309,7 @@
 			"}",
 			"",
 			"global $woo_settings_tab_new;",
-			"$woo_settings_tab_new = new ${1:class-name}();",
+			"$woo_settings_tab_new = new ${1:class-name}();"
 		],
 		"description": "WooCommerce | Add Settings Tab"
 	},
@@ -331,7 +331,7 @@
 			"\t",
 			"\t\t// add ship-to after order status column",
 			"\t\tif ( 'order-status' === \\$key ) {",
-			"\t\t	\\$new_columns['${2:column_slug}'] = __( '${3:column_title}', 'textdomain' );",
+			"\t\t\\$new_columns['${2:column_slug}'] = __( '${3:column_title}', 'textdomain' );",
 			"\t\t}",
 			"\t}",
 			"",
