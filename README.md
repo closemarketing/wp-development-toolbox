@@ -68,6 +68,8 @@ All snippets will respect **WordPress Coding Standards**.
 | **wpadhc**	|	Doc Header comment
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
+| **wpajs**		|	Adds jQuery wrap
+| **wpssh**		|	Create a Shortcode
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |
@@ -146,6 +148,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **woorbad** 	|	Remove Offert Badge in products
 | **woorsto** 	|	Removes stock text in Product page
 | **woorarimg** 	|	Remove product thumbnails in archive pages
+| **woordes** 	|	Removes Description tab title
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
@@ -201,6 +204,9 @@ All snippets will respect **WordPress Coding Standards**.
 | ------------------- |------------------------------------------------------------------|
 | **phpecho** 	|	Echo a variable
 | **phpechopre** 	|	Echo variable with wrap PRE
+| **phpahead** 	|	DocBock file header as Coding Standards
+| **phpache** 	|	DocBlock DocBlocks for Classes header
+| **phpacl** 	|	Adds class
 | **devtcomp** 	|	Loads a Composer Library
 
 ### Several Plugins ###

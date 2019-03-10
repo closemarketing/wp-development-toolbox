@@ -134,6 +134,66 @@
 			"echo '</pre>';"
 		]
 	},
+	"PHP | Adds Class": {
+		"prefix": "phpacl",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @since ${3:Version 3 digits}",
+			" */",
+			"class ${4:Class Name} {",
+			"",
+			"\t/**",
+			"\t * Construct of Class",
+			"\t */",
+			"\tpublic function __construct() {",
+			"\t}",
+			"",
+			"\t/**",
+			"\t * # Functions",
+			"\t * ---------------------------------------------------------------------------------------------------- */",
+			"}",
+			"",
+			"new ${4:Class Name};"
+		],
+		"description": "PHP | Adds Class"
+	},
+	"PHP | DocBlocks file header": {
+		"prefix": "phpahead",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @link ${3:URL}",
+			" *",
+			" * @package WordPress",
+			" * @subpackage Component",
+			" * @since ${4:Version}",
+			" */",
+			"",
+			"defined( 'ABSPATH' ) || exit;",
+			""
+		],
+		"description": "PHP | Component file header"
+	},
+	"PHP | DocBlocks for Classes": {
+		"prefix": "phpache",
+		"body": [
+			"/**",
+			" * ${1:Summary}.",
+			" *",
+			" * ${2:Description}.",
+			" *",
+			" * @since ${3:Version 3 digits}",
+			" */"
+		],
+		"description": "PHP | DocBlocks for Classes"
+	},
 
 	"Developer | Loads a Composer Library": {
 		"prefix": "devtcomp",
@@ -179,5 +239,45 @@
 			"add_filter( 'auto_core_update_send_email', '__return_true' );"
 		],
 		"description": "WordPress | Foces automatic updates in WordPress"
-	}
+	},
+	"WordPress | Adds jQuery wrap": {
+		"prefix": "wpajs",
+		"body": [
+		  "<script>",
+		  "    (function (\\$) {",
+		  "",
+		  "    }(jQuery));",
+		  "</script>"
+		],
+		"description": "WordPress | Adds jQuery wrap"
+	},
+	"WordPress | Create a Shortcode": {
+		"prefix": "wpssh",
+		"body": [
+			"add_shortcode( '${1:shorcode_name}', '${1:shorcode_name}_shortcode' );",
+			"/**",
+			" * Shortocode",
+			" *",
+			" * @param array  \\$atts Attributes of shortcode.",
+			" * @param string \\$content Content for shortode.",
+			" * @return html",
+			" */",
+			"function ${1:shorcode_name}_shortcode( \\$atts, \\$content = null ) {",
+			"",
+			"\t\\$att = shortcode_atts(",
+			"\t\tarray(",
+			"\t\t\t'att1' => 'value_default1',",
+			"\t\t\t'att2' => 'value_default2',",
+			"\t\t),",
+			"\t\t\\$atts",
+			"\t);",
+			"",
+			"\t\\$html = '';",
+			"\t\\$att1 = esc_attr( \\$att['att1'] );",
+			"",
+			"\treturn \\$html;",
+			"}"
+		],
+		"description": "WordPress | Create a Shortcode"
+	    }
 }
