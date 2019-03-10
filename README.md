@@ -69,6 +69,7 @@ All snippets will respect **WordPress Coding Standards**.
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
 | **wpajs**		|	Adds jQuery wrap
+| **wpssh**		|	Create a Shortcode
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |
