@@ -189,8 +189,8 @@
 	"WooCommerce | Removes Description tab title": {
 		"prefix": "woordes",
 		"body": [
-		  "// Removes Description tab title",
-		  "add_filter(‘woocommerce_product_description_heading’, ‘__return_null’);"
+			"// Removes Description tab title.",
+			"add_filter( 'woocommerce_product_description_heading', '__return_null' );"
 		],
 		"description": "WooCommerce | Removes Description tab title"
 	},
