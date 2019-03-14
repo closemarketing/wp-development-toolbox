@@ -350,5 +350,36 @@
 			"}"
 		],
 		"description": "WooCommerce | Add Column in My Account page"
+	},
+	"WooCommerce | Adds Custom Styles for Emails": {
+		"prefix": "wootems",
+		"body": [
+			"add_action( 'woocommerce_email_header', 'add_css_to_email' );",
+			"/**",
+			" * Email custom style",
+			" *",
+			" * @return void",
+			" */",
+			"function add_css_to_email() {",
+			"\techo '",
+			"\t<style type=\"text/css\">",
+			"\t\tbody {",
+			"\t\t\tbackground-color: black;",
+			"\t\t}",
+			"\t\t#template_container {",
+			"\t\t\tbackground-color: white;",
+			"\t\t}",
+			"\t\t#header_wrapper {",
+			"\t\t\tpadding-bottom: 10px;",
+			"\t\t}",
+			"\t\th1,a {",
+			"\t\t\tcolor: #33c0c7 !important;",
+			"\t\t\ttext-shadow: none;",
+			"\t\t}",
+			"\t</style>",
+			"\t';",
+			"}"
+		],
+		"description": "WooCommerce | Adds Custom Styles for Emails"
 	}
 }

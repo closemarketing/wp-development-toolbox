@@ -1,6 +1,7 @@
 # Change Log
 ## 1.14.0 - March 30, 2019
 Added new snippets:
+- Added for WooCommerce: (wootems) Adds Custom Styles for Emails
 
 ## 1.13.0 - March 10, 2019
 Added new snippets:

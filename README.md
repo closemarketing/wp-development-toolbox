@@ -151,6 +151,16 @@ Developed By David Perez (https://davidperezgar.com).
 | **woorsto** 	|	Removes stock text in Product page
 | **woorarimg** 	|	Remove product thumbnails in archive pages
 | **woordes** 	|	Removes Description tab title
+| **Settings** |
+| **wootems** 	|	Adds Custom Styles for Emails
+
+
+## WooCommerce StoreFront (WOS) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **** 	|	
+| **** 	|	
+| **** 	| 	
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
