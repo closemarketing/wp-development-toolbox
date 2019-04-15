@@ -2,7 +2,8 @@
 ## 1.14.0 - March 30, 2019
 Added new snippets:
 - Added for WooCommerce: (wootems) Adds Custom Styles for Emails
-
+- Added for Gutenberg: (gutacpt) Adds Gutenberg support to a registered post type
+ 
 ## 1.13.0 - March 10, 2019
 Added new snippets:
 - Added for PHP Coding Standards: (phpahead) DocBlocks file header, (phpache) DocBlocks for Classes header, (phpacl) Adds class

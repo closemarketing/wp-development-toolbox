@@ -60,6 +60,10 @@
 			},
 			{
 				"language": "php",
+				"path": "./snippets/woocommerce-storefront.json"
+			},
+			{
+				"language": "php",
 				"path": "./snippets/genesis.json"
 			},
 			{

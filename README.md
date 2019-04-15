@@ -84,6 +84,7 @@ Developed By David Perez (https://davidperezgar.com).
 | **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
 | **gutafwi** 	| 	Add Theme support Wide align images
+| **gutacpt** 	| 	Adds Gutenberg support to a registered post type
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |

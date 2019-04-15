@@ -83,5 +83,32 @@
 			"add_theme_support( 'align-wide' );"
 		],
 		"description": "Gutenberg | Add Theme support Wide align images"
+	},
+	"Gutenberg | Adds Gutenberg support to a registered post type": {
+		"prefix": "gutacpt",
+		"body": [
+		  "add_filter( 'register_post_type_args', '${1:prefix}_gutenberg_filter_cpt', 10, 2 );",
+		  "/**",
+		  " * Filter the Products CPT to register more options.",
+		  " *",
+		  " * @param $args       array    The original CPT args.",
+		  " * @param $post_type  string   The CPT slug.",
+		  " *",
+		  " * @return array",
+		  " */",
+		  "function ${1:prefix}_gutenberg_filter_cpt( $args, $post_type ) {",
+		  "\t// If not Products CPT, bail.",
+		  "\tif ( '${2:cpt-slug}' !== $post_type ) {",
+		  "\t\treturn $args;",
+		  "\t}",
+		  "\t// Add additional Products CPT options.",
+		  "\t$array_args = array(",
+		  "\t\t'show_in_rest' => true,",
+		  "\t);",
+		  "\t// Merge args together.",
+		  "\treturn array_merge( $args, $array_args );",
+		  "}"
+		],
+		"description": "Gutenberg | Adds Gutenberg support to a registered post type"
 	}
 }
