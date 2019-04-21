@@ -280,12 +280,12 @@
 			"",
 			"// SELECT BOX Forms.",
 			"array(",
-			"\t'name'\t\t=> 'Selecciona Formulario',",
-			"\t'id'\t\t  => \"{\\$prefix}${1:slug}\",",
-			"\t'type'\t\t=> 'select',",
-			"\t'options'\t => \\$forms_options,",
-			"\t'multiple'\t=> false,",
-			"\t'std'\t\t => '',",
+			"\t'name'        => 'Selecciona Formulario',",
+			"\t'id'          => \"{\\$prefix}${1:slug}\",",
+			"\t'type'        => 'select',",
+			"\t'options'     => \\$forms_options,",
+			"\t'multiple'    => false,",
+			"\t'std'         => '',",
 			"\t'placeholder' => 'Selecciona un formulario',",
 			"),"
 		]
@@ -297,7 +297,7 @@
 			"",
 			"if ( !empty( \\$images ) ) {",
 			"\tforeach ( \\$images as \\$image ) {",
-			"\techo '<img src=\"'.\\$image['url'].'\" alt=\"'.\\$image['alt'].'\" width=\"'.\\$image['width'].'\" height=\"'.\\$image['height'].'\" /></a>';",
+			"\techo '<img src=\"' . \\$image['url'] . '\" alt=\"' . \\$image['alt'] . '\" width=\"' . \\$image['width'] . '\" height=\"' . \\$image['height'] . '\" /></a>';",
 			"\t}",
 			"}"
 		]
