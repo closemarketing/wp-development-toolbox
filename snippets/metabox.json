@@ -180,8 +180,8 @@
 			"if ( \\$post_id ) {",
 			"\t\\$post_edit_id = (int) \\$post_id;",
 			"\t\\$post_edit = get_post( \\$post_edit_id );",
-			"\t\\$post_edit_parent = \\$post_edit->post_parent;"
-			"}",
+			"\t\\$post_edit_parent = \\$post_edit->post_parent;",
+			"}"
 		],
 		"description": "MetaBox | Get actual post in filter function"
 	},
