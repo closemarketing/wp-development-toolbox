@@ -1,5 +1,5 @@
 # Change Log
-## 1.14.0 - March 30, 2019
+## 1.14.0 - April 21, 2019
 Added new snippets:
 - Added for WooCommerce: (wootems) Adds Custom Styles for Emails.
 - Added for Gutenberg: (gutacpt) Adds Gutenberg support to a registered post type.
