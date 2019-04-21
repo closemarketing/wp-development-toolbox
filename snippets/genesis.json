@@ -255,7 +255,7 @@
 			"function ${1:prefix}_menu_add_element( \\$items, \\$args ) {",
 			"\tif ( 'primary' === \\$args->theme_location ) {",
 			"\t\t\\$menu_html = '';",
-			"\t\t\\$items     = \\$items . $menu_html;",
+			"\t\t\\$items     = \\$items . \\$menu_html;",
 			"\t}",
 			"\treturn \\$items;",
 			"}"
