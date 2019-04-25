@@ -356,9 +356,15 @@
 	"WordPress | Query Terms from actual post": {
 		"prefix": "wpqtmp",
 		"body": [
-			"\\$term_list = wp_get_post_terms( get_the_ID(), '${1:tax-name}', array( \"fields\" => \"all\" ) );",
+			"\\$term_list = wp_get_post_terms(",
+			"\tget_the_ID(),",
+			"\t'${1:tax-name}',",
+			"\tarray(",
+			"\t\t'fields' => 'all'",
+			"\t)",
+			");",
 			"foreach ( \\$term_list as \\$term_single ) {",
-			"\techo \\$term_single->name;",
+			"\techo esc_html( \\$term_single->name );",
 			"}"
 		]
 	},
