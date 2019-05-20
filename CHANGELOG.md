@@ -4,6 +4,7 @@
 
 Added Storefront Hooks and filters for developing themes in WordPress. New snippets:
 - (sttbread) Changes Storefront Breadcrum label
+- (stmbread) Move Breadcrumb from header to before footer
 
 Added Gulp for developing themes in WordPress. New snippets:
 - (glag) Generates the content of file gulpfile.js in theme

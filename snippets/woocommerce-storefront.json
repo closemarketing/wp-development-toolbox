@@ -16,5 +16,21 @@
 			"}"
 		],
 		"description": "StoreFront | Changes Storefront Breadcrum label"
-	    }
+	},
+	"StoreFront | Move Breadcrumb from header to before footer": {
+	"prefix": "stmbread",
+	"body": [
+		"add_action( 'init', '${1:prefix}_remove_wc_breadcrumbs' );",
+		"/**",
+		" * Move Breadcrumps to before footer",
+		" *",
+		" * @return void",
+		" */",
+		"function ${1:prefix}_remove_wc_breadcrumbs() {",
+		"\tremove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );",
+		"\tadd_action( 'storefront_before_footer', 'woocommerce_breadcrumb', 10 );",
+		"}"
+	],
+	"description": "StoreFront | Move Breadcrumb from header to before footer"
+	}
 }

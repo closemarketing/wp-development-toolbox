@@ -159,6 +159,7 @@ Developed By David Perez (https://davidperezgar.com).
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrum label
+| **stmbread** 	|	Move Breadcrumb from header to before footer
 
 ## Gulp (GL) ##
 In order to use Gulp for develop a theme in WordPress, you will need to have NPM installed. Create the files gulpfile.js and package.json in your theme, and run npm install. Since you have installed the node modules, now you can use gulp. It has other orders: gulp images compress the images files in folder images.
