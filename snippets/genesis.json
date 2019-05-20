@@ -84,7 +84,7 @@
 			" * @return void",
 			" */",
 			"function cmk_load_${1:post_type}_page() {",
-			"\tif( is_singular( '${1:post_type}' ) ) {",
+			"\tif ( is_singular( '${1:post_type}' ) ) {",
 			"\t\t// Custom actions.",
 			"\t}",
 			"}"
