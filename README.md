@@ -155,6 +155,18 @@ Developed By David Perez (https://davidperezgar.com).
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
+## WooCommerce Storefront (ST) ##
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **sttbread** 	|	Changes Storefront Breadcrum label
+
+## Gulp (GL) ##
+In order to use Gulp for develop a theme in WordPress, you will need to have NPM installed. Create the files gulpfile.js and package.json in your theme, and run npm install. Since you have installed the node modules, now you can use gulp. It has other orders: gulp images compress the images files in folder images.
+
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **glag** 	|	Generates the content for gulpfile.js for the theme
+| **glap** 	|	Generates the content for package.json for the theme
 
 ## WooCommerce StoreFront (WOS) ##
 | **Rule**               | **Action**     |

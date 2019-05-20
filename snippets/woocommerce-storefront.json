@@ -1,3 +1,20 @@
 {
-	
+	"StoreFront | Changes Storefront Breadcrum label": {
+		"prefix": "sttbread",
+		"body": [
+			"add_filter( 'woocommerce_breadcrumb_defaults', '${1:prefix}_change_breadcrumb_home_text' );",
+			"/**",
+			" * Rename \"home\" in breadcrumb",
+			" *",
+			" * @param  array $defaults Defaults of breadcrumb settings.",
+			" * @return array $defaults",
+			" */",
+			"function ${1:prefix}_change_breadcrumb_home_text( \\$defaults ) {",
+			"\t// Change the breadcrumb home text from 'Home' to '${2:Label Breadcrum}'.",
+			"\t\\$defaults['home'] = '${2:Label Breadcrum}';",
+			"\treturn \\$defaults;",
+			"}"
+		],
+		"description": "StoreFront | Changes Storefront Breadcrum label"
+	    }
 }
