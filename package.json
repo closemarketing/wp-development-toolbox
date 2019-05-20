@@ -81,6 +81,14 @@
 			{
 				"language": "php",
 				"path": "./snippets/schema.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/wordpress-js.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/json.json"
 			}
 		]
 	},
