@@ -32,5 +32,41 @@
 		"}"
 	],
 	"description": "StoreFront | Move Breadcrumb from header to before footer"
+	},
+	"Storefront | Show Excerpt instead full article in archives": {
+		"prefix": "stsex",
+		"body": [
+			"add_action( 'init', '${1:prefix}_customise_storefront' );",
+			"/**",
+			" * Customize storefront loop",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_customise_storefront() {",
+			"\t// Remove the storefromt post content function",
+			"\tremove_action( 'storefront_loop_post', 'storefront_post_content', 30 );",
+			"",
+			"\t// Add our own custom function",
+			"\tadd_action( 'storefront_loop_post', '${1:prefix}_custom_storefront_post_content', 30 );",
+			"}",
+			"/**",
+			" * Customized loop",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_custom_storefront_post_content() {",
+			"\t?>",
+			"\t<div class=\"entry-content\" itemprop=\"articleBody\">",
+			"\t\t<?php",
+			"\t\t\tif ( has_post_thumbnail() ) {",
+			"\t\t\t\tthe_post_thumbnail( 'thumbnail', array( 'itemprop' => 'image' ) );",
+			"\t\t\t}",
+			"\t\t?>",
+			"\t\t<?php the_excerpt(); ?>",
+			"\t</div><!-- .entry-content -->",
+			"\t<?php",
+			"}"
+		],
+		"description": "Storefront | Show Excerpt instead full article in archives"    
 	}
 }
