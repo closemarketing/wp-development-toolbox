@@ -36,6 +36,7 @@ Developed By David Perez (https://davidperezgar.com).
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
+| **wpsfav**	|	Shows favicon from theme directory
 | **Querys** |
 | **wpqda**		|	Query Arguments for Date
 | **wpqueul**	|	Query entries with UL wrapper

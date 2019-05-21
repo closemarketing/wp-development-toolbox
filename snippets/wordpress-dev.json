@@ -279,5 +279,21 @@
 			"}"
 		],
 		"description": "WordPress | Create a Shortcode"
+	},
+	"WordPress | Shows favicon from theme directory ": {
+		"prefix": "wpsfav",
+		"body": [
+		  "add_action( 'wp_head', '${1:prefix}_add_my_favicon' );",
+		  "add_action( 'admin_head', '${1:prefix}_add_my_favicon' );",
+		  "/**",
+		  " * Adds favicon to WordPress",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_add_my_favicon() {",
+		  "\techo '<link rel=\"shortcut icon\" href=\"' . esc_url( get_stylesheet_directory_uri() ) . '/images/favicon.png\" >';",
+		  "}"
+		],
+		"description": "WordPress | Shows favicon from theme directory "
 	}
 }

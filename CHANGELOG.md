@@ -2,6 +2,9 @@
 ## 1.15.0 - May 21, 2019
 - Fixes Coding Standards for Custom Post types snippets.
 
+Added Snippets:
+- (wpsfav) Shows favicon from theme directory
+
 Added Storefront Hooks and filters for developing themes in WordPress. New snippets:
 - (sttbread) Changes Storefront Breadcrum label
 - (stmbread) Move Breadcrumb from header to before footer
