@@ -16,6 +16,7 @@
 			"const gulp = require('gulp');",
 			"const pixrem = require('gulp-pixrem');",
 			"const imagemin = require('gulp-imagemin');",
+			"const minify = require('gulp-minify');",
 			"const plumber = require('gulp-plumber');",
 			"const minify = require('gulp-minify');",
 			"",
