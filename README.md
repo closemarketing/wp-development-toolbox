@@ -18,7 +18,7 @@ metafun - Met is for plugin Metabox, A for adding a function and Fun is the name
 
 All snippets will respect **WordPress Coding Standards**. 
 
-Developed By David Perez (https://davidperezgar.com).
+Developed By David Perez (https://davidperezgar.com/en/).
 
 ## List of Snippets
 
