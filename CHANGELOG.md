@@ -14,8 +14,6 @@ Added Gulp for developing themes in WordPress. New snippets:
 - (glag) Generates the content of file gulpfile.js in theme
 - (glap) Generates the content of file package.json from Gulp in theme
 
-Added new snippets:
-
 ## 1.14.0 - April 21, 2019
 Added new snippets:
 - Added for WooCommerce: (wootems) Adds Custom Styles for Emails.

@@ -18,7 +18,7 @@
 			"const imagemin = require('gulp-imagemin');",
 			"const minify = require('gulp-minify');",
 			"const plumber = require('gulp-plumber');",
-			"const minify = require('gulp-minify');",
+			"const notify = require('gulp-notify');",
 			"",
 			"// Project specific variables - CHANGE THESE",
 			"const siteName = '${1:url}'; // set your siteName here",
