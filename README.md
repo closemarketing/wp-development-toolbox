@@ -107,6 +107,7 @@ Developed By David Perez (https://davidperezgar.com/en/).
 | **genmmh** 	| 	Move menu from Header
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
+| **genspref** 	| 	Register and shows a sidebar before footer
 | **Sets** |
 | **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
 | **Shows to public** |
