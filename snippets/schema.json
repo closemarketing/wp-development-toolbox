@@ -1,16 +1,26 @@
 {
 	"WordPress Schema | Make wrap for functions.php": {
-		"prefix": "scsscw",
+		"prefix": "scswrap",
 		"body": [
-			"/**",
-			" * Shows Schema depeding of post type in header with LD JSON",
-			" *",
-			" * @return void",
-			" */",
-			"function cmk_add_schema_pages() {",
-			"\t// Add schemas.",
-			"}",
-			"add_action( 'wp_head', 'cmk_add_schema_pages', 20 );"
-		]
+		  "add_action( 'wp_head', 'cmk_add_schema_${1:post-type}', 20 );",
+		  "/**",
+		  " * Shows Schema depeding of post type ${1:post-type} in header with LD JSON",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function cmk_add_schema_${1:post-type}() {",
+		  "\t$post_id = get_the_ID();",
+		  "\tif ( is_singular( '${1:post-type}' ) ) {",
+		  "\t\t$sch = '<script type=\"application/ld+json\">';",
+		  "\t\t$sch .= '{';",
+		  "\t\t$sch .= '\"@context\": \"http://schema.org\",';",
+		  "\t\t$sch .= '}';",
+		  "\t\t$sch .= '</script>';",
+		  "",
+		  "\t\techo $sch;",
+		  "\t} // ${1:post-type} schema",
+		  "}"
+		],
+		"description": "WordPress Schema | Make wrap for functions.php"
 	}
 }
