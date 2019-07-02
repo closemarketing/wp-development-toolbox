@@ -16,6 +16,7 @@
 			"nav-secondary               genesis_attr_nav-secondary",
 			"nav-header                  genesis_attr_nav-header",
 			"structural-wrap             genesis_attr_structural-wrap",
+			"site-inner                  genesis_attr_site-inner",
 			"content                     genesis_attr_content",
 			"entry                       genesis_attr_entry",
 			"entry-image                 genesis_attr_entry-image",
@@ -57,6 +58,7 @@
 			"posts-page-description          genesis_attr_posts-page-description",
 			"**/",
 			"",
+			"add_filter( 'genesis_attr_entry-title', 'cmk_add_class_${1:slug}' );",
 			"/**",
 			" * Add classes to a html element.",
 			" *",
@@ -66,8 +68,7 @@
 			"function cmk_add_class_${1:slug}( \\$attributes ) {",
 			"\t\\$attributes['class'] .= ' full-width';",
 			"\treturn \\$attributes;",
-			"}",
-			"add_filter( 'genesis_attr_entry-title', 'cmk_add_class_${1:slug}' );"
+			"}"
 		]
 	},
 
