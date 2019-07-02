@@ -1,9 +1,6 @@
 # Change Log
 ## 1.16.0 - #, 2019
-- Fixes Coding Standards for Custom Post types snippets.
-
-Added Snippets:
-- (genspref) Register and shows a sidebar before footer
+- 
 
 ## 1.15.0 - Jun 2, 2019
 - Fixes Coding Standards for Custom Post types snippets.
