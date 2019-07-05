@@ -73,6 +73,7 @@ Developed By David Perez (https://davidperezgar.com/en/).
 | **coassec**	|	Comments for new subsection
 | **wpajs**		|	Adds jQuery wrap
 | **wpssh**		|	Create a Shortcode
+| **wprpf**		|	Disables Post format for the theme
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |

@@ -295,5 +295,13 @@
 		  "}"
 		],
 		"description": "WordPress | Shows favicon from theme directory "
+	},
+	"WordPress | Disables Post format for the theme": {
+		"prefix": "wprpf",
+		"body": [
+			"// Disables Post Format for the theme.",
+			"remove_theme_support( 'post-formats' );"
+		],
+		"description": "WordPress | Disables Post format for the theme"
 	}
 }
