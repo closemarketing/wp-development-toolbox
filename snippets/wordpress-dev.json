@@ -111,13 +111,19 @@
 	"WordPress | Removes CSS and JS for optimization": {
 		"prefix": "wpaop",
 		"body": [
-			"/* # Optimization",
+			"/**",
+			" * # Optimization",
 			"---------------------------------------------------------------------------------------------------- */",
 			"add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet_js', 20 );",
+			"/**",
+			" * Removes and deregister styles and scripts from plugins",
+			" *",
+			" * @return void",
+			" */",
 			"function remove_default_stylesheet_js() {",
-			"\twp_deregister_style('wpmenucart-fontawesome');",
-			"\twp_dequeue_style('wpmenucart-icons' );",
-			"\twp_dequeue_style('taxonomy-image-plugin-public');",
+			"\twp_deregister_style( 'wpmenucart-fontawesome' );",
+			"\twp_dequeue_style( 'wpmenucart-icons' );",
+			"\twp_dequeue_style( 'taxonomy-image-plugin-public' );",
 			"}"
 		]
 	},
