@@ -108,6 +108,7 @@
 			"wp-content/languages/",
 			"wp-content/themes/genesis/",
 			"wp-content/themes/closemarketing/node_modules/",
+			"wp-content/db.php",
 			"package-lock.json",
 			"",
 			"# Ignore docs files",
