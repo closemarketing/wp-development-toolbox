@@ -74,6 +74,7 @@ Developed By David Perez (https://davidperezgar.com/en/).
 | **wpajs**		|	Adds jQuery wrap
 | **wpssh**		|	Create a Shortcode
 | **wprpf**		|	Disables Post format for the theme
+| **wptre**		|	Replace already registered post type
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |

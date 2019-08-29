@@ -309,5 +309,26 @@
 			"remove_theme_support( 'post-formats' );"
 		],
 		"description": "WordPress | Disables Post format for the theme"
+	},
+	"WordPress | Replace already registered post type": {
+		"prefix": "wptre",
+		"body": [
+		  "add_filter( 'register_post_type_args', '${1:prefix}_change_post_types_slug', 10, 2 );",
+		  "/**",
+		  " * Replace already registered post type slug",
+		  " *",
+		  " * @param array  $args Arguments of post type.",
+		  " * @param string $post_type Post type.",
+		  " * @return $args",
+		  " */",
+		  "function ${1:prefix}_change_post_types_slug( $args, $post_type ) {",
+		  "\t// * Item post type slug",
+		  "\tif ( '${2:name-post-type}' === $post_type ) {",
+		  "\t\t$args['rewrite']['slug'] = '${4:slug-post-type}';",
+		  "\t}",
+		  "\treturn $args;",
+		  "}"
+		],
+		"description": "WordPress | Replace already registered post type"
 	}
 }
