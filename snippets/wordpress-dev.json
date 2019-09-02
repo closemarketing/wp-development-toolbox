@@ -226,6 +226,24 @@
 		],
 		"description": "PHP | Doc Header comment"
 	},
+	"WordPress | Function comment":{
+		"prefix": "wpafc",
+		"body": [
+			"/**",
+			" * ${1:Function Short Description}",
+			" *",
+			" * ${2:Function Long Description}",
+			" *",
+			" * @param ${3:Type} $${4:var} ${5:Description}",
+			" * @return ${6:type}",
+			" * @throws ${7:conditon}",
+			" **/",
+			" ${8:public} function ${9:FunctionName}( ${3:Type} $${4:var} = ${10:null} ) {",
+			" \t# code...",
+			"}"
+		],
+		"description": "PHP | Function comment"
+	},
 	"WordPress | Foces automatic updates in WordPress": {
 		"prefix": "wpaupd",
 		"body": [
