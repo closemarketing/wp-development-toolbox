@@ -156,6 +156,7 @@ Developed By David Perez (https://davidperezgar.com/en/).
 | **woorsto** 	|	Removes stock text in Product page
 | **woorarimg** 	|	Remove product thumbnails in archive pages
 | **woordes** 	|	Removes Description tab title
+| **woorpa** 	|	Hide prices in archive pages
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 

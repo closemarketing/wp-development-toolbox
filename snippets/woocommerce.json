@@ -381,5 +381,26 @@
 			"}"
 		],
 		"description": "WooCommerce | Adds Custom Styles for Emails"
-	}
+	},
+	"WooCommerce | Hide prices in archive pages": {
+		"prefix": "woorpa",
+		"body": [
+		  "add_filter( 'woocommerce_get_price_html', '${1:prefix}_hide_prices_archive', 10, 2 );",
+		  "/**",
+		  " * Hide prices in archive pages",
+		  " *",
+		  " * @param  string $price Price of product.",
+		  " * @param  string $product Product ID.",
+		  " * @return string $price",
+		  " */",
+		  "function ${1:prefix}_hide_prices_archive( $price, $product ) {",
+		  "\tif ( is_shop() || is_product_category() ) {",
+		  "\t\treturn ''; // Empty string = no price!",
+		  "\t}",
+		  "",
+		  "\treturn $price;",
+		  "}"
+		],
+		"description": "WooCommerce | Hide prices in archive pages"
+	    }
 }
