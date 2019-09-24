@@ -1,12 +1,14 @@
 # WordPress Development Toolbox for Visual Code
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+[![](http://vsmarketplacebadge.apphb.com/downloads/closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
+[![](http://vsmarketplacebadge.apphb.com/installs/closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/closemarketing/wp-development-toolbox/graphs/commit-activity)
 [![GitHub contributors](https://img.shields.io/github/contributors/closemarketing/wp-development-toolbox.svg)](https://GitHub.com/closemarketing/wp-development-toolbox/graphs/contributors/)
 
 ## Introduction
 
-This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations. 
+This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations and plugins. 
 
 The sintaxis of the snippets is:
 * 2-3 digits - Environment as WordPress and Plugins.
@@ -19,6 +21,11 @@ metafun - Met is for plugin Metabox, A for adding a function and Fun is the name
 All snippets will respect **WordPress Coding Standards**. 
 
 Developed By David Perez (https://davidperezgar.com/en/).
+
+## Contributors &#x1F64F;&#x2764;
+
+A big thanks to the people that have contributed to this project:
+- Fernando G.Rebolledo ([@Fgrweb](https://github.com/fgrweb)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb)
 
 ## List of Snippets
 

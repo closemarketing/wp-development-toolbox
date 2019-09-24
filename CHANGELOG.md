@@ -1,6 +1,7 @@
 # Change Log
-## 1.16.0 - #, 2019
+## 1.16.0 - Sep 24, 2019
 - Added Snippets: (cssamf) Media Query mobile first, (wprpf) Disables Post format for the theme, (wptre) Replace already registered post type, (woorpa) WooCommerce Hide prices in archive pages
+- First pull request from [Fernando G.Rebolledo](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb) Function comment (wpafc)
 
 ## 1.15.0 - Jun 2, 2019
 - Fixes Coding Standards for Custom Post types snippets.
