@@ -20,7 +20,7 @@ metafun - Met is for plugin Metabox, A for adding a function and Fun is the name
 
 All snippets will respect **WordPress Coding Standards**. 
 
-Developed By David Perez (https://davidperezgar.com/en/).
+Developed By [David Perez](https://davidperezgar.com/en/).
 
 ## Contributors &#x1F64F;&#x2764;
 
@@ -76,6 +76,7 @@ A big thanks to the people that have contributed to this project:
 | **htacc**		|	htaccess recommended for HTPPS sites
 | **wpahfil**	|	Comments Plugin File Header
 | **wpadhc**	|	Doc Header comment
+| **wpafc**		|	Function comment
 | **coasec**	|	Comments for new section
 | **coassec**	|	Comments for new subsection
 | **wpajs**		|	Adds jQuery wrap
@@ -232,6 +233,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **cssaflexc** 	|	Adds Flexbox Column Wrap
 | **cssagrid** 	|	Adds Grid container for Columns and rows
 | **cssatw** 	|	Tweaks for Genesis CSS
+| **cssamf** 	|	Media Query mobile first
 
 ### SCSS (SCSS) ###
 | **Rule** | **Action** |
