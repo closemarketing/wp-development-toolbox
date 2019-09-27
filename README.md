@@ -96,6 +96,7 @@ A big thanks to the people that have contributed to this project:
 | **gutacol** 	| 	Set Color Palette
 | **gutafwi** 	| 	Add Theme support Wide align images
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
+| **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
