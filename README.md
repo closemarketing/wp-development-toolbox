@@ -95,6 +95,7 @@ A big thanks to the people that have contributed to this project:
 | **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
 | **gutafwi** 	| 	Add Theme support Wide align images
+| **gutaim** 	| 	Name Image Sizes
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 
