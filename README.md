@@ -87,7 +87,8 @@ A big thanks to the people that have contributed to this project:
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpmacon** 	| 	Adds line in wpconfig
+| **wmacon** 	| 	Adds line in wpconfig
+| **wmfup** 	| 	Filter Myme types allowed in Multisite
 
 ## Gutenberg (GUT) ##
 | **Rule**               | **Action**     |

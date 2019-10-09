@@ -1,6 +1,6 @@
 # Change Log
 ## 1.17.0 - #, 2019
-- Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes
+- Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite
 
 ## 1.16.0 - Sep 24, 2019
 - Added Snippets: (cssamf) Media Query mobile first, (wprpf) Disables Post format for the theme, (wptre) Replace already registered post type, (woorpa) WooCommerce Hide prices in archive pages
