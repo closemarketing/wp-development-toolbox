@@ -76,7 +76,7 @@
 		  "/**",
 		  " * Image sizes for a Storefront child theme - WooCommerce 3.3",
 		  " *",
-		  " * @param array  \\$args Arguments to override.",
+		  " * @param  array \\$args Arguments to override.",
 		  " * @return array \\$args",
 		  " */",
 		  "function ${1:prefix}_override_storefront_woocommerce_args( \\$args ) {",
