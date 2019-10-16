@@ -99,6 +99,7 @@ A big thanks to the people that have contributed to this project:
 | **gutaim** 	| 	Name Image Sizes
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
+| **gutasa** 	| 	Adds Align style Full and Wide
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
