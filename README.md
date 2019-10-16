@@ -177,6 +177,7 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrum label
 | **stmbread** 	|	Move Breadcrumb from header to before footer
+| **sttim** 	|	Image sizes for a Storefront child theme
 | **stsex** 	|	Show Excerpt instead full article in archives
 
 ## Gulp (GL) ##
