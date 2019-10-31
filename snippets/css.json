@@ -224,5 +224,21 @@
 		  "}"
 		],
 		"description": "Gutenberg | Adds Align style Full and Wide"
+	},
+	"MetaBox | Creates the block template style": {
+		"prefix": "mebas",
+		"body": [
+			"/* MetaBox Block Style",
+			"--------------------------------------------- */",
+			"",
+			".wpblock-${1:block-slug} .class {",
+			"",
+			"}",
+			"",
+			"@media only screen and (min-width: 870px) {",
+			"",
+			"}"
+		],
+		"description": "MetaBox | Creates the block template style"
 	}
 }

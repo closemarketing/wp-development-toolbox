@@ -213,6 +213,10 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metapid**	| 	Get actual post in filter function
 | **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
+| **MetaBox Blocks** |
+| **mebab**		| 	Registers a new block
+| **mebat**		| 	Creates the block template php
+| **mebas**		| 	Creates the block template style
 
 ### WPML (WPML) ###
 | **Rule**			  | **Action**	|
