@@ -87,7 +87,8 @@ A big thanks to the people that have contributed to this project:
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpmacon** 	| 	Adds line in wpconfig
+| **wmacon** 	| 	Adds line in wpconfig
+| **wmfup** 	| 	Filter Myme types allowed in Multisite
 
 ## Gutenberg (GUT) ##
 | **Rule**               | **Action**     |
@@ -95,7 +96,10 @@ A big thanks to the people that have contributed to this project:
 | **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
 | **gutafwi** 	| 	Add Theme support Wide align images
+| **gutaim** 	| 	Name Image Sizes
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
+| **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
+| **gutasa** 	| 	Adds Align style Full and Wide
 
 ## WordPress to Show Schemas in JSON LD (SC) ##
 | **Rule**               | **Action**     |
@@ -173,6 +177,7 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrum label
 | **stmbread** 	|	Move Breadcrumb from header to before footer
+| **sttim** 	|	Image sizes for a Storefront child theme
 | **stsex** 	|	Show Excerpt instead full article in archives
 
 ## Gulp (GL) ##
@@ -208,6 +213,10 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metapid**	| 	Get actual post in filter function
 | **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
+| **MetaBox Blocks** |
+| **mebab**		| 	Registers a new block
+| **mebat**		| 	Creates the block template php
+| **mebas**		| 	Creates the block template style
 
 ### WPML (WPML) ###
 | **Rule**			  | **Action**	|

@@ -1,4 +1,9 @@
 # Change Log
+## 1.17.0 - #, 2019
+- Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite, (gutasa) Adds Align style Full and Wide for Gutenberg, (sttim) Image sizes for a Storefront child theme for Storefront
+
+- Added Support for Metabox Blocks! : (mebab) Registers a new block, (mebat) Creates the block template php, (mebas) Creates the block template style
+
 ## 1.16.0 - Sep 24, 2019
 - Added Snippets: (cssamf) Media Query mobile first, (wprpf) Disables Post format for the theme, (wptre) Replace already registered post type, (woorpa) WooCommerce Hide prices in archive pages
 - First pull request from [Fernando G.Rebolledo](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb) Function comment (wpafc)

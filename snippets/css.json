@@ -200,4 +200,45 @@
 			" * --------------------------- */"
 		]
 	},
+	"Gutenberg | Adds Align style Full and Wide": {
+		"prefix": "gutasa",
+		"body": [
+		  ".alignfull {",
+		  "\tmargin: 32px calc(50% - 50vw);",
+		  "\tmax-width: 100vw;",
+		  "\twidth: 100vw;",
+		  "}",
+		  "",
+		  ".entry-content .alignwide {",
+		  "\tmargin-left: -105px !important;",
+		  "\tmargin-right: -105px !important;",
+		  "\tmax-width: 1200px;",
+		  "}",
+		  "",
+		  "@media only screen and (max-width: 860px) {",
+		  "\t.entry-content .alignwide {",
+		  "\t\tmargin-left: 0 !important;",
+		  "\t\tmargin-right: 0 !important;",
+		  "\t\tmax-width: 100%;",
+		  "\t}",
+		  "}"
+		],
+		"description": "Gutenberg | Adds Align style Full and Wide"
+	},
+	"MetaBox | Creates the block template style": {
+		"prefix": "mebas",
+		"body": [
+			"/* MetaBox Block Style",
+			"--------------------------------------------- */",
+			"",
+			".wpblock-${1:block-slug} .class {",
+			"",
+			"}",
+			"",
+			"@media only screen and (min-width: 870px) {",
+			"",
+			"}"
+		],
+		"description": "MetaBox | Creates the block template style"
+	}
 }

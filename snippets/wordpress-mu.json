@@ -1,10 +1,27 @@
 {
 	"WordPress Multisite | Adds line in wpconfig": {
-		"prefix": "wpmacon",
+		"prefix": "wmacon",
 		"body": [
 			"/* Multisite */",
 			"define( 'WP_ALLOW_MULTISITE', true );"
 		],
 		"description": "WordPress Multisite | Adds line in wpconfig"
+	},
+	"WordPress Multisite | Allowed Myme types": {
+		"prefix": "wmfup",
+		"body": [
+		  "add_filter( 'upload_mimes', '${1:prefix}_myme_types', 1, 1 );",
+		  "/**",
+		  " * Filter Myme types allowed in Multisite",
+		  " *",
+		  " * @param array \\$mime_types Mime types allowed.",
+		  " * @return array \\$mime_types",
+		  " */",
+		  "function ${1:prefix}_myme_types( \\$mime_types ) {",
+		  "\t\\$mime_types['json'] = 'application/json';",
+		  "\treturn \\$mime_types;",
+		  "}"
+		],
+		"description": "WordPress Multisite | Allowed Myme types"
 	}
 }

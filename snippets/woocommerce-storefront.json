@@ -68,5 +68,23 @@
 			"}"
 		],
 		"description": "Storefront | Show Excerpt instead full article in archives"    
+	},
+	"StoreFront | Image sizes for a Storefront child theme": {
+		"prefix": "sttim",
+		"body": [
+		  "add_filter( 'storefront_woocommerce_args', '${1:prefix}_override_storefront_woocommerce_args' );",
+		  "/**",
+		  " * Image sizes for a Storefront child theme - WooCommerce 3.3",
+		  " *",
+		  " * @param  array \\$args Arguments to override.",
+		  " * @return array \\$args",
+		  " */",
+		  "function ${1:prefix}_override_storefront_woocommerce_args( \\$args ) {",
+		  "\t\\$args['single_image_width']    = ${2:single_image_width};",
+		  "\t\\$args['thumbnail_image_width'] = ${3:thumbnail_width};",
+		  "\treturn \\$args;",
+		  "}"
+		],
+		"description": "StoreFront | Image sizes for a Storefront child theme"
 	}
 }

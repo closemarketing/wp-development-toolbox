@@ -110,5 +110,42 @@
 		  "}"
 		],
 		"description": "Gutenberg | Adds Gutenberg support to a registered post type"
-	}
+	},
+	"gutrfont": {
+		"prefix": "Removes Noto Font from Frontend in Gutenberg",
+		"body": [
+		  "add_filter( 'gettext_with_context', 'my_remove_gutenberg_styles', 10, 4 );",
+		  "/**",
+		  " * Removes Noto Font in frontend of Gutenberg",
+		  " *",
+		  " * @param string $translation Translation.",
+		  " * @param string $text Text to translate.",
+		  " * @param string $context Context.",
+		  " * @param string $domain Domain of context.",
+		  " * @return $translation",
+		  " */",
+		  "function my_remove_gutenberg_styles( $translation, $text, $context, $domain ) {",
+		  "	if ( 'Google Font Name and Variants' !== $context || 'Noto Serif:400,400i,700,700i' !== $text ) {",
+		  "		return $translation;",
+		  "	}",
+		  "	return 'off';",
+		  "}"
+		],
+		"description": "gutrfont"
+	    },
+	"Gutenberg | Name Image Sizes": {
+		"prefix": "gutaim",
+		"body": [
+			"add_filter( 'image_size_names_choose', '${1:prefix}_custom_sizes' );",
+			"function ${1:prefix}_custom_sizes( $sizes ) {",
+			"\treturn array_merge( $sizes,",
+			"\t\tarray(",
+			"\t\t\t'${2:name-image-size}' => '${2:name-image-size}',",
+			"\t\t\t'${3:name-image-size}' => '${3:name-image-size}',",
+			"\t\t)",
+			"\t);",
+			"}"
+		],
+		"description": "Gutenberg | Name Image Sizes"
+	    }
 }
