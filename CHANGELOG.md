@@ -1,5 +1,7 @@
 # Change Log
-## 1.17.0 - #, 2019
+## 1.18.0 - #, 2019
+
+## 1.17.0 - 31 October, 2019
 - Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite, (gutasa) Adds Align style Full and Wide for Gutenberg, (sttim) Image sizes for a Storefront child theme for Storefront
 
 - Added Support for Metabox Blocks! : (mebab) Registers a new block, (mebat) Creates the block template php, (mebas) Creates the block template style
