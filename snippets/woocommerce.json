@@ -402,5 +402,13 @@
 		  "}"
 		],
 		"description": "WooCommerce | Hide prices in archive pages"
-	    }
+	},
+	"WooCommerce | Remove Image in Single product": {
+		"prefix": "wooris",
+		"body": [
+		  "// Remove Image in Single product.",
+		  "remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );"
+		],
+		"description": "WooCommerce | Remove Image in Single product"
+	}
 }
