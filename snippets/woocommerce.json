@@ -43,7 +43,7 @@
 	"WooCommerce | Trim Zeros in Price": {
 		"prefix": "wootzero",
 		"body": [
-		  "//* Trim zeros in price decimals.",
+		  "// Trim zeros in price decimals.",
 		  "add_filter( 'woocommerce_price_trim_zeros', '__return_true' );"
 		],
 		"description": "WooCommerce | Trim Zeros in Price"
