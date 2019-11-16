@@ -128,12 +128,12 @@
 		]
 	},
 	"PHP | Echo a variable": {
-		"prefix": "phpecho",
+		"prefix": "phpec",
 		"body":"<?php echo \\$${1:var}; ?>"
 	},
 
 	"PHP | Echo variable with wrap PRE": {
-		"prefix": "phpechopre",
+		"prefix": "phpep",
 		"body": [
 			"echo '<pre>';",
 			"print_r(\\$${1:var});",
@@ -168,7 +168,7 @@
 		"description": "PHP | Adds Class"
 	},
 	"PHP | DocBlocks file header": {
-		"prefix": "phpahead",
+		"prefix": "phpah",
 		"body": [
 			"/**",
 			" * ${1:Summary}.",
