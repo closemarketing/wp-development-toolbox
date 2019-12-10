@@ -228,7 +228,9 @@
 		  " * @author     ${4:example} <${5:email}>",
 		  " * @copyright  ${6:year} ${7:Company}",
 		  " * @version    ${8:Version}",
-		  " */"
+		  " */",
+		  "",
+		  "defined( 'ABSPATH' ) || exit;"
 		],
 		"description": "PHP | Doc Header comment"
 	},
