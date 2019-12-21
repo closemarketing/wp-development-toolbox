@@ -251,6 +251,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **phpah** 	|	DocBock file header as Coding Standards
 | **phpache** 	|	DocBlock DocBlocks for Classes header
 | **phpacl** 	|	Adds class
+| **phpavi** 	|	Create variable with isset verification
 | **devtcomp** 	|	Loads a Composer Library
 
 ### Several Plugins ###

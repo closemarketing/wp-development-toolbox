@@ -200,6 +200,13 @@
 		],
 		"description": "PHP | DocBlocks for Classes"
 	},
+	"PHP | Create variable with isset verification": {
+		"prefix": "phpavi",
+		"body": [
+		  "$${1:name_variable} = isset( ${2:test_variable} ) ? ${2:test_variable} : '';"
+		],
+		"description": "PHP | Create variable with isset verification"
+	},
 
 	"Developer | Loads a Composer Library": {
 		"prefix": "devtcomp",

@@ -1,6 +1,6 @@
 # Change Log
 ## 1.18.0 - #, 2019
-- Added Snippets: (wooris) Remove Image in Single product
+- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification
 - PHP Coding standards fixes.
 
 ## 1.17.0 - 31 October, 2019
