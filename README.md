@@ -83,6 +83,8 @@ A big thanks to the people that have contributed to this project:
 | **wpssh**		|	Create a Shortcode
 | **wprpf**		|	Disables Post format for the theme
 | **wptre**		|	Replace already registered post type
+| **API Snippets** |
+| **wpgfu**	|	API Get function
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |

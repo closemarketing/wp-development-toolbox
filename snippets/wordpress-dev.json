@@ -357,5 +357,23 @@
 		  "}"
 		],
 		"description": "WordPress | Replace already registered post type"
+	},
+	"WordPress | API Get function": {
+		"prefix": "wpgfu",
+		"body": [
+			"\\$args = array(",
+			"\t'headers' => array(",
+			"\t\t'key' => '',",
+			"\t),",
+			");",
+			"\\$response = wp_remote_get( '${1:api_url}', \\$args );",
+			"if ( 200 === \\$response['response']['code'] ) {",
+			"\t$body = wp_remote_retrieve_body( \\$response );",
+			"\treturn \\$body;",
+			"} else {",
+			"\treturn false;",
+			"}"
+		],
+		"description": "WordPress | API Get function"
 	}
 }

@@ -2,6 +2,7 @@
 ## 1.18.0 - #, 2019
 - Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification
 - PHP Coding standards fixes.
+- New Snippets for API Remote access: (wpgfu) WordPress API Get function
 
 ## 1.17.0 - 31 October, 2019
 - Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite, (gutasa) Adds Align style Full and Wide for Gutenberg, (sttim) Image sizes for a Storefront child theme for Storefront
