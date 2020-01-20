@@ -284,6 +284,27 @@
 			"}"
 		]
 	},
+	"Genesis | Adds featured image as entry header background": {
+		"prefix": "gensfib",
+		"body": [
+		  "add_image_size( '${2:image_name}', ${3:width}, ${4:height}, true );",
+		  "",
+		  "add_filter( 'genesis_attr_entry-header', '${1:prefix}_add_class_header_page' );",
+		  "/**",
+		  " * Add background image to a entry header element.",
+		  " *",
+		  " * @param array \\$attributes Array attributes for html element.",
+		  " * @return array \\$atributes",
+		  " */",
+		  "function ${1:prefix}_add_class_header_page( \\$attributes ) {",
+		  "\t\\$post_id             = get_the_ID();",
+		  "\t\\$background_img      = wp_get_attachment_image_src( get_post_thumbnail_id( \\$post_id ), '${2:image_name}' );",
+		  "\t\\$attributes['style'] = 'background: top center url(\"' . \\$background_img[0] . '\") no-repeat; min-height: ${4:height}px;';",
+		  "\treturn \\$attributes;",
+		  "}"
+		],
+		"description": "Genesis | Adds featured image as entry header background"
+	    },
 	"Genesis | Adds custom Yoast social icons html elements to the main menu": {
 		"prefix": "genssm",
 		"body": [

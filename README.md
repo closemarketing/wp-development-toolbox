@@ -124,6 +124,7 @@ A big thanks to the people that have contributed to this project:
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
 | **genspref** 	| 	Register and shows a sidebar before footer
+| **gensfib** 	| 	Adds featured image as entry header background
 | **Sets** |
 | **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
 | **Shows to public** |

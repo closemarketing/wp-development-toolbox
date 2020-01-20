@@ -1,6 +1,6 @@
 # Change Log
 ## 1.18.0 - #, 2019
-- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification
+- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background
 - PHP Coding standards fixes.
 - New Snippets for API Remote access: (wpgfu) WordPress API Get function
 
