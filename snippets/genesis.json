@@ -267,21 +267,21 @@
 	"Genesis | Adds Header image from featured": {
 		"prefix": "gensimgh",
 		"body": [
-			"add_image_size('imagen-cabecera', ${1:ancho}, ${2:alot}, true );",
+			"add_image_size( '${4:featured_image_name}', ${2:width}, ${3:height}, true );",
 			"",
+			"add_action( 'genesis_after_header', '${1:prefix}_feature_img' );",
 			"/**",
 			" * Adds Header image from feature.",
 			" *",
 			" * @return void",
 			" */",
-			"function cmk_feature_img() {",
-			"\tif(has_post_thumbnail()) {",
+			"function ${1:prefix}_feature_img() {",
+			"\tif ( has_post_thumbnail() ) {",
 			"\t\techo '<div class=\"header-image\">';",
-			"\t\tthe_post_thumbnail('header-image');",
+			"\t\tthe_post_thumbnail( '${4:featured_image_name}' );",
 			"\t\techo '</div>';",
 			"\t}",
-			"}",
-			"add_action( 'genesis_after_header', 'cmk_feature_img' );"
+			"}"
 		]
 	},
 	"Genesis | Adds custom Yoast social icons html elements to the main menu": {
