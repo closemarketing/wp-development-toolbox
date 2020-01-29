@@ -1,0 +1,12 @@
+{
+	"GeneratePress | Filter Logo": {
+		"prefix": "gpslo",
+		"body": [
+		  "add_filter( 'generate_logo','${1:prefix}_custom_logo' );",
+		  "function ${1:prefix}_custom_logo( \\$logo ) {",
+		  "\treturn esc_url( get_stylesheet_directory_uri() ) . '/images/logo.svg';",
+		  "}"
+		],
+		"description": "GeneratePress | Filter Logo"
+	}
+}

@@ -68,6 +68,10 @@
 			},
 			{
 				"language": "php",
+				"path": "./snippets/generatepress.json"
+			},
+			{
+				"language": "php",
 				"path": "./snippets/wcmarketplace.json"
 			},
 			{

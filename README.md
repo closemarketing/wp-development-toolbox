@@ -108,6 +108,12 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **scsscw** 	| 	Make wrap Schema for functions.php
 
+## GeneratePress (GP) ##
+| **Rule**			| **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **Shows to public** |
+| **gpslo** 	| 	Filter main logo
+
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
