@@ -15,7 +15,7 @@
 		],
 		"description": "GeneratePress | Filter Logo"
 	},
-	"Generate | Shows Featured image from WooCommerce": {
+	"Generate | Shows Featured image from WooCommerce to Page Hero": {
 		"prefix": "gpswc",
 		"body": [
 			"// Generate WooCommerce URL.",
