@@ -648,17 +648,17 @@
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
+			"add_filter( 'genesis_post_info', 'post_info_filter' );",
 			"/**",
 			" * Customize the post info function",
 			" *",
-			" * @param [type] $post_info String with post info.",
-			" * @return $post_info Modified post info.",
+			" * @param [type] \\$post_info String with post info.",
+			" * @return \\$post_info Modified post info.",
 			" */",
-			"function post_info_filter( $post_info ) {",
-			"\t$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
-			"\treturn $post_info;",
-			"}",
-			"add_filter( 'genesis_post_info', 'post_info_filter' );"
+			"function post_info_filter( \\$post_info ) {",
+			"\t\\$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
+			"\treturn \\$post_info;",
+			"}"
 		]
 	},
 	"Genesis | Move Menu from After menu to Header right": {
