@@ -40,6 +40,7 @@ A big thanks to the people that have contributed to this project:
 | **wpawid** 	|	Creates a widget	
 | **wpawf** 	|	Before Widget with Full Width wrapper
 | **wpaex** 	|	Adds excerpt to pages
+| **wpamen** 	|	Register additional menu
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content

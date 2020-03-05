@@ -375,5 +375,20 @@
 			"}"
 		],
 		"description": "WordPress | API Get function"
+	},
+	"WordPress | Register additional menu": {
+		"prefix": "wpamen",
+		"body": [
+		  "add_action( 'init', '${1:prefix}_register_additional_menu' );",
+		  "/**",
+		  " * Adds additional menu for ${2:menu-slug}",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_register_additional_menu() {",
+		  "\tregister_nav_menu( '${2:menu-slug}', '${3:menu-label}' );",
+		  "}"
+		],
+		"description": "WordPress | Register additional menu"
 	}
 }
