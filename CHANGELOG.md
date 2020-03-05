@@ -1,7 +1,7 @@
 # Change Log
 ## 1.18.0 - #, 2019
 - Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
-- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background
+- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background, (gutagr) Gutenberg Adds Gradient Presets, (gutrgr) Disable Custom Gradients.
 - PHP Coding standards fixes.
 - New Snippets for API Remote access: (wpgfu) WordPress API Get function
 
