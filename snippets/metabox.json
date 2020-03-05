@@ -158,11 +158,11 @@
 		"body": [
 			"// URL.",
 			"array(",
-			"\t'name'  => '${1:name}',",
-			"\t'id'    => \"{\\$prefix}${3:slug}\",",
-			"\t'desc'  => '${4:descripcion}',",
-			"\t'type'  => 'url',",
-			"\t'std'   => '',",
+			"\t'name' => '${1:name}',",
+			"\t'id'   => \"{\\$prefix}${3:slug}\",",
+			"\t'desc' => '${4:descripcion}',",
+			"\t'type' => 'url',",
+			"\t'std'  => '',",
 			"),"
 		]
 	},

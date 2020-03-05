@@ -83,6 +83,8 @@ A big thanks to the people that have contributed to this project:
 | **wpssh**		|	Create a Shortcode
 | **wprpf**		|	Disables Post format for the theme
 | **wptre**		|	Replace already registered post type
+| **API Snippets** |
+| **wpgfu**	|	API Get function
 
 ## WordPress Multisite (WPM) ##
 | **Rule**               | **Action**     |
@@ -95,6 +97,8 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **gutain** 	| 	Iniate a theme for Gutenberg
 | **gutacol** 	| 	Set Color Palette
+| **gutagr** 	| 	Adds Gradient Presets
+| **gutrgr** 	| 	Disable Custom Gradients
 | **gutafwi** 	| 	Add Theme support Wide align images
 | **gutaim** 	| 	Name Image Sizes
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
@@ -105,6 +109,13 @@ A big thanks to the people that have contributed to this project:
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **scsscw** 	| 	Make wrap Schema for functions.php
+
+## GeneratePress (GP) ##
+| **Rule**			| **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **Shows to public** |
+| **gpslo** 	| 	Filter main logo
+| **gpswc** 	| 	Shows Featured image from WooCommerce
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|
@@ -122,6 +133,7 @@ A big thanks to the people that have contributed to this project:
 | **genasid** 	| 	Register Custom Sidebar
 | **genasidf** 	| 	Custom Sidebar Function
 | **genspref** 	| 	Register and shows a sidebar before footer
+| **gensfib** 	| 	Adds featured image as entry header background
 | **Sets** |
 | **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
 | **Shows to public** |
@@ -169,13 +181,14 @@ A big thanks to the people that have contributed to this project:
 | **woorarimg** 	|	Remove product thumbnails in archive pages
 | **woordes** 	|	Removes Description tab title
 | **woorpa** 	|	Hide prices in archive pages
+| **wooris** 	|	Remove Image in Single product
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
 ## WooCommerce Storefront (ST) ##
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **sttbread** 	|	Changes Storefront Breadcrum label
+| **sttbread** 	|	Changes Storefront Breadcrumb label
 | **stmbread** 	|	Move Breadcrumb from header to before footer
 | **sttim** 	|	Image sizes for a Storefront child theme
 | **stsex** 	|	Show Excerpt instead full article in archives
@@ -187,13 +200,6 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | ------------------- |------------------------------------------------------------------|
 | **glag** 	|	Generates the content for gulpfile.js for the theme
 | **glap** 	|	Generates the content for package.json for the theme
-
-## WooCommerce StoreFront (WOS) ##
-| **Rule**               | **Action**     |
-| ------------------- |------------------------------------------------------------------|
-| **** 	|	
-| **** 	|	
-| **** 	| 	
 
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
@@ -252,11 +258,12 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 ### PHP (PHP) ###
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
-| **phpecho** 	|	Echo a variable
-| **phpechopre** 	|	Echo variable with wrap PRE
-| **phpahead** 	|	DocBock file header as Coding Standards
+| **phpec** 	|	Echo a variable
+| **phpep** 	|	Echo variable with wrap PRE
+| **phpah** 	|	DocBock file header as Coding Standards
 | **phpache** 	|	DocBlock DocBlocks for Classes header
 | **phpacl** 	|	Adds class
+| **phpavi** 	|	Create variable with isset verification
 | **devtcomp** 	|	Loads a Composer Library
 
 ### Several Plugins ###

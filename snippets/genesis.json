@@ -58,14 +58,14 @@
 			"posts-page-description          genesis_attr_posts-page-description",
 			"**/",
 			"",
-			"add_filter( 'genesis_attr_entry-title', 'cmk_add_class_${1:slug}' );",
+			"add_filter( 'genesis_attr_entry-title', '${1:prefix}_add_class_${2:slug}' );",
 			"/**",
 			" * Add classes to a html element.",
 			" *",
 			" * @param array \\$attributes Array attributes for html element.",
 			" * @return array \\$atributes",
 			" */",
-			"function cmk_add_class_${1:slug}( \\$attributes ) {",
+			"function ${1:prefix}_add_class_${2:slug}( \\$attributes ) {",
 			"\t\\$attributes['class'] .= ' full-width';",
 			"\treturn \\$attributes;",
 			"}"
@@ -267,23 +267,44 @@
 	"Genesis | Adds Header image from featured": {
 		"prefix": "gensimgh",
 		"body": [
-			"add_image_size('imagen-cabecera', ${1:ancho}, ${2:alot}, true );",
+			"add_image_size( '${4:featured_image_name}', ${2:width}, ${3:height}, true );",
 			"",
+			"add_action( 'genesis_after_header', '${1:prefix}_feature_img' );",
 			"/**",
 			" * Adds Header image from feature.",
 			" *",
 			" * @return void",
 			" */",
-			"function cmk_feature_img() {",
-			"\tif(has_post_thumbnail()) {",
+			"function ${1:prefix}_feature_img() {",
+			"\tif ( has_post_thumbnail() ) {",
 			"\t\techo '<div class=\"header-image\">';",
-			"\t\tthe_post_thumbnail('header-image');",
+			"\t\tthe_post_thumbnail( '${4:featured_image_name}' );",
 			"\t\techo '</div>';",
 			"\t}",
-			"}",
-			"add_action( 'genesis_after_header', 'cmk_feature_img' );"
+			"}"
 		]
 	},
+	"Genesis | Adds featured image as entry header background": {
+		"prefix": "gensfib",
+		"body": [
+		  "add_image_size( '${2:image_name}', ${3:width}, ${4:height}, true );",
+		  "",
+		  "add_filter( 'genesis_attr_entry-header', '${1:prefix}_add_class_header_page' );",
+		  "/**",
+		  " * Add background image to a entry header element.",
+		  " *",
+		  " * @param array \\$attributes Array attributes for html element.",
+		  " * @return array \\$atributes",
+		  " */",
+		  "function ${1:prefix}_add_class_header_page( \\$attributes ) {",
+		  "\t\\$post_id             = get_the_ID();",
+		  "\t\\$background_img      = wp_get_attachment_image_src( get_post_thumbnail_id( \\$post_id ), '${2:image_name}' );",
+		  "\t\\$attributes['style'] = 'background: top center url(\"' . \\$background_img[0] . '\") no-repeat; min-height: ${4:height}px;';",
+		  "\treturn \\$attributes;",
+		  "}"
+		],
+		"description": "Genesis | Adds featured image as entry header background"
+	    },
 	"Genesis | Adds custom Yoast social icons html elements to the main menu": {
 		"prefix": "genssm",
 		"body": [
@@ -627,17 +648,17 @@
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
+			"add_filter( 'genesis_post_info', 'post_info_filter' );",
 			"/**",
 			" * Customize the post info function",
 			" *",
-			" * @param [type] $post_info String with post info.",
-			" * @return $post_info Modified post info.",
+			" * @param [type] \\$post_info String with post info.",
+			" * @return \\$post_info Modified post info.",
 			" */",
-			"function post_info_filter( $post_info ) {",
-			"\t$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
-			"\treturn $post_info;",
-			"}",
-			"add_filter( 'genesis_post_info', 'post_info_filter' );"
+			"function post_info_filter( \\$post_info ) {",
+			"\t\\$post_info = '[post_date] by [post_author_posts_link] [post_comments] [post_edit]';",
+			"\treturn \\$post_info;",
+			"}"
 		]
 	},
 	"Genesis | Move Menu from After menu to Header right": {

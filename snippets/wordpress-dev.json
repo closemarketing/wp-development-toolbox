@@ -128,12 +128,12 @@
 		]
 	},
 	"PHP | Echo a variable": {
-		"prefix": "phpecho",
+		"prefix": "phpec",
 		"body":"<?php echo \\$${1:var}; ?>"
 	},
 
 	"PHP | Echo variable with wrap PRE": {
-		"prefix": "phpechopre",
+		"prefix": "phpep",
 		"body": [
 			"echo '<pre>';",
 			"print_r(\\$${1:var});",
@@ -168,7 +168,7 @@
 		"description": "PHP | Adds Class"
 	},
 	"PHP | DocBlocks file header": {
-		"prefix": "phpahead",
+		"prefix": "phpah",
 		"body": [
 			"/**",
 			" * ${1:Summary}.",
@@ -200,6 +200,13 @@
 		],
 		"description": "PHP | DocBlocks for Classes"
 	},
+	"PHP | Create variable with isset verification": {
+		"prefix": "phpavi",
+		"body": [
+		  "$${1:name_variable} = isset( ${2:test_variable} ) ? ${2:test_variable} : '';"
+		],
+		"description": "PHP | Create variable with isset verification"
+	},
 
 	"Developer | Loads a Composer Library": {
 		"prefix": "devtcomp",
@@ -228,7 +235,9 @@
 		  " * @author     ${4:example} <${5:email}>",
 		  " * @copyright  ${6:year} ${7:Company}",
 		  " * @version    ${8:Version}",
-		  " */"
+		  " */",
+		  "",
+		  "defined( 'ABSPATH' ) || exit;"
 		],
 		"description": "PHP | Doc Header comment"
 	},
@@ -348,5 +357,23 @@
 		  "}"
 		],
 		"description": "WordPress | Replace already registered post type"
+	},
+	"WordPress | API Get function": {
+		"prefix": "wpgfu",
+		"body": [
+			"\\$args     = array(",
+			"\t'headers' => array(",
+			"\t\t'key' => '',",
+			"\t),",
+			");",
+			"\\$response = wp_remote_get( '${1:api_url}', \\$args );",
+			"if ( 200 === \\$response['response']['code'] ) {",
+			"\t\\$body = wp_remote_retrieve_body( \\$response );",
+			"\treturn \\$body;",
+			"} else {",
+			"\treturn false;",
+			"}"
+		],
+		"description": "WordPress | API Get function"
 	}
 }

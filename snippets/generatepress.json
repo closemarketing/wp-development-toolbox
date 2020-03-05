@@ -1,0 +1,45 @@
+{
+	"GeneratePress | Filter Logo": {
+		"prefix": "gpslo",
+		"body": [
+		  "add_filter( 'generate_logo', '${1:prefix}_custom_logo' );",
+		  "/**",
+		  " * Filters Logo in GeneratePress",
+		  " *",
+		  " * @param string $logo URL of Logo.",
+		  " * @return string $logo",
+		  " */",
+		  "function ${1:prefix}_custom_logo( \\$logo ) {",
+		  "return esc_url( get_stylesheet_directory_uri() ).'/images/logo.svg';",
+		  "}"
+		],
+		"description": "GeneratePress | Filter Logo"
+	},
+	"Generate | Shows Featured image from WooCommerce to Page Hero": {
+		"prefix": "gpswc",
+		"body": [
+			"// Generate WooCommerce URL.",
+			"// from: https://gist.github.com/diggeddy/6478d0b724bf6c5d680e9f0dd25e720c",
+			"add_filter(",
+			"\t'generate_page_hero_background_image_url',",
+			"\tfunction( $url ) {",
+			"\t\tif ( ! function_exists( 'get_woocommerce_term_meta' ) ) {",
+			"\t\t\treturn $url;",
+			"\t\t}",
+			"",
+			"\t\tglobal $wp_query;",
+			"\t\t$cat              = $wp_query->get_queried_object();",
+			"\t\t$thumbnail_id     = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );",
+			"\t\t$background_image = wp_get_attachment_url( $thumbnail_id );",
+			"",
+			"\t\tif ( $background_image ) {",
+			"\t\t\t$url = $background_image;",
+			"\t\t}",
+			"",
+			"\t\treturn $url;",
+			"\t}",
+			");"
+		],
+		"description": "Generate | Shows Featured image from WooCommerce"
+	}
+}

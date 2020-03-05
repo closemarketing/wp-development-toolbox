@@ -1,5 +1,11 @@
 # Change Log
-## 1.17.0 - #, 2019
+## 1.18.0 - 5 March, 2019
+- Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
+- Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background, (gutagr) Gutenberg Adds Gradient Presets, (gutrgr) Disable Custom Gradients.
+- PHP Coding standards fixes.
+- New Snippets for API Remote access: (wpgfu) WordPress API Get function
+
+## 1.17.0 - 31 October, 2019
 - Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite, (gutasa) Adds Align style Full and Wide for Gutenberg, (sttim) Image sizes for a Storefront child theme for Storefront
 
 - Added Support for Metabox Blocks! : (mebab) Registers a new block, (mebat) Creates the block template php, (mebas) Creates the block template style
