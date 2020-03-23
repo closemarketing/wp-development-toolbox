@@ -297,7 +297,7 @@
 			"",
 			"if ( !empty( \\$images ) ) {",
 			"\tforeach ( \\$images as \\$image ) {",
-			"\techo '<img src=\"' . \\$image['url'] . '\" alt=\"' . \\$image['alt'] . '\" width=\"' . \\$image['width'] . '\" height=\"' . \\$image['height'] . '\" /></a>';",
+			"\techo '<img src=\"' . esc_url( \\$image['url'] ) . '\" alt=\"' . esc_html( \\$image['alt'] ) . '\" width=\"' . esc_html( \\$image['width'] ) . '\" height=\"' . esc_html( \\$image['height'] ) . '\" /></a>';",
 			"\t}",
 			"}"
 		]
