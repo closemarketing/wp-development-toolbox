@@ -162,6 +162,7 @@
 			"\t\t\t'hierarchical'      => true,",
 			"\t\t\t'labels'            => \\$labels,",
 			"\t\t\t'show_ui'           => true,",
+			"\t\t\t'show_in_rest'      => true,",
 			"\t\t\t'show_admin_column' => true,",
 			"\t\t\t'query_var'         => true,",
 			"\t\t\t'rewrite'           => array(",
