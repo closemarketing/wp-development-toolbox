@@ -390,5 +390,27 @@
 		  "}"
 		],
 		"description": "WordPress | Register additional menu"
+	},
+	"WordPress | Adds recurrence interval for Cron": {
+		"prefix": "wpacr",
+		"body": [
+			"add_filter( 'cron_schedules', '${1:prefix}_add_cron_recurrence_interval' );",
+			"/**",
+			" * Adds a cron Schedule",
+			" *",
+			" * @param array \\$schedules Array of Schedules.",
+			" * @return array \\$schedules",
+			" */",
+			"function ${1:prefix}_add_cron_recurrence_interval( \\$schedules ) {",
+			" ",
+			"\t\\$schedules['every_fifteen_minutes'] = array(",
+			"\t\t'interval' => 900,",
+			"\t\t'display'  => __( 'Every 3 Minutes', 'textdomain' ),",
+			"\t);",
+			"",
+			"\treturn \\$schedules;",
+			"}"
+		],
+		"description": "WordPress | Adds recurrence interval for Cron"
 	}
 }

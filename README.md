@@ -84,6 +84,7 @@ A big thanks to the people that have contributed to this project:
 | **wpssh**		|	Create a Shortcode
 | **wprpf**		|	Disables Post format for the theme
 | **wptre**		|	Replace already registered post type
+| **wpacr**		|	Adds recurrence interval for Cron
 | **API Snippets** |
 | **wpgfu**	|	API Get function
 
