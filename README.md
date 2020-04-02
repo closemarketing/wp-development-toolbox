@@ -169,6 +169,8 @@ A big thanks to the people that have contributed to this project:
 | **wootzero** 	| 	Trim Zeros in Price
 | **wooastb** 	| 	Add Settings Tab Class
 | **wooacm** 	| 	Add Column in My Account page
+| **Show in public** |
+| **woosterm** 	| 	Adds checkbox for terms and conditions in registration page
 | **Remove Elements** |
 | **woorsku** 	| 	Removes SKU in detail page
 | **woorcomp** 	| 	Remove Company name in checkout

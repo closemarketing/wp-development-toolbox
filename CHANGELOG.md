@@ -1,6 +1,7 @@
 # Change Log
 ## 1.19.0 - #, 2020
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron
+- Added snippets in WooCommerce: (woosterm) Adds checkbox for terms and conditions in registration page
 
 ## 1.18.0 - 5 March, 2020
 - Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
