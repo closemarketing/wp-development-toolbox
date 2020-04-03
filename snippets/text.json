@@ -1,6 +1,6 @@
 {
 	"WordPress | Create readme.txt": {
-		"prefix": "wparead",
+		"prefix": "wpare",
 		"body": [
 		  "=== ${1:Name Plugin} ===",
 		  "Contributors: ${2:Authors}",
@@ -27,6 +27,7 @@
 		  "",
 		  "== Links ==",
 		  "*\t[name](link_url)",
+		  "*\t[Closemarketing](https://www.closemarketing.net)",
 		  ""
 		],
 		"description": "WordPress | Create readme.txt"
@@ -153,40 +154,4 @@
 		],
 		"description": "DEV | Gitignore configuration for WordPress"
 	    },
-	"WordPress | Readme TXT for Plugins": {
-		"prefix": "wpare",
-		"body": [
-			"=== ${1:NamePlugin} ===",
-			"Contributors: ${2:contributors}",
-			"Tags: ${3:tags}",
-			"Donate link: ${4:donate-link}",
-			"Requires at least: 5.0",
-			"Tested up to: ${5:versionwp}",
-			"Stable tag: ${6:plugin-version}",
-			"Version: ${6:plugin-version}",
-			"",
-			"${7:plugin-excerpt}",
-			"",
-			"== Description ==",
-			"${8:plugin-description}",
-			"",
-			"== Installation ==",
-			"",
-			"Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your",
-			"WordPress installation and then activate the Plugin from Plugins page.",
-			"",
-			"",
-			"== Developers ==",
-			"[Official Repository Github](${9:plugin-github})",
-			"",
-			"== Changelog ==",
-			"= 0.1 =",
-			"*   First released.",
-			"",
-			"== Links ==",
-			"*   [Closemarketing](https://www.closemarketing.es/)",
-			""
-		],
-		"description": "WordPress | Readme TXT for Plugins"
-	}
 }

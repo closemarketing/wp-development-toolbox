@@ -71,7 +71,7 @@ A big thanks to the people that have contributed to this project:
 | **wpaupd** 	| 	Foces automatic updates in WordPress (in functions.php)
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
-| **wparead**	|	Create readme.txt
+| **wpare**		|	Create readme.txt for Plugins
 | **wpalpt**	|	Loads Plugin Text Domain
 | **wpagit**	|	Gitignore configuration for WordPress
 | **htacc**		|	htaccess recommended for HTPPS sites
@@ -85,7 +85,6 @@ A big thanks to the people that have contributed to this project:
 | **wprpf**		|	Disables Post format for the theme
 | **wptre**		|	Replace already registered post type
 | **wpacr**		|	Adds recurrence interval for Cron
-| **wpare**		|	Readme TXT for Plugins
 | **API Snippets** |
 | **wpgfu**	|	API Get function
 
