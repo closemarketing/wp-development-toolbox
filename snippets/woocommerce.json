@@ -58,7 +58,7 @@
 		  " * @param number \\$cols Products per loop.",
 		  " * @return number \\$cols",
 		  " */",
-		  "function ${1:prefix}_loop_shop_per_page( $cols ) {",
+		  "function ${1:prefix}_loop_shop_per_page( \\$cols ) {",
 		  "\t// $cols contains the current number of products per page based on the value stored on Options -> Reading",
 		  "\t// Return the number of products you wanna show per page.",
 		  "\t\\$cols = ${2:num_prod};",
