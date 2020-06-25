@@ -416,7 +416,7 @@
 		"prefix": "wpaprq",
 		"body": [
 		  "// Include files.",
-		  "require_once plugin_dir_path( __FILE__ ) . '/lib/##.php';"
+		  "require_once plugin_dir_path( __FILE__ ) . '/${1:folder}/${2:file}.php';"
 		],
 		"description": "WordPress | Plugin require files"
 	}
