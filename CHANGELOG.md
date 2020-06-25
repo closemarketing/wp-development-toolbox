@@ -1,6 +1,6 @@
 # Change Log
-## 1.19.0 - #, 2020
-- Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins
+## 1.19.0 - 25 Junio, 2020
+- Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
 - Added snippets in WooCommerce: (woosterm) Adds checkbox for terms and conditions in registration page
 
 ## 1.18.0 - 5 March, 2020

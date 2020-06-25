@@ -85,6 +85,7 @@ A big thanks to the people that have contributed to this project:
 | **wprpf**		|	Disables Post format for the theme
 | **wptre**		|	Replace already registered post type
 | **wpacr**		|	Adds recurrence interval for Cron
+| **wpaprq**	|	Plugin require files
 | **API Snippets** |
 | **wpgfu**	|	API Get function
 

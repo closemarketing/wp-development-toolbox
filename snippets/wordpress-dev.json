@@ -411,5 +411,13 @@
 			"}"
 		],
 		"description": "WordPress | Adds recurrence interval for Cron"
+	},
+	"WordPress | Plugin require files": {
+		"prefix": "wpaprq",
+		"body": [
+		  "// Include files.",
+		  "require_once plugin_dir_path( __FILE__ ) . '/lib/##.php';"
+		],
+		"description": "WordPress | Plugin require files"
 	}
 }
