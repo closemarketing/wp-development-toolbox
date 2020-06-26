@@ -37,7 +37,7 @@
 			"\t\t'hierarchical'       => true,",
 			"\t\t'menu_position'      => 5,",
 			"\t\t'menu_icon'          => 'dashicons-admin-users', // https://developer.wordpress.org/resource/dashicons/.",
-			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes' ),",
+			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes', 'revisions' ),",
 			"\t);",
 			"\tregister_post_type( '${2:post-type}', \\$args );",
 			"}"
@@ -81,7 +81,7 @@
 			"\t\t'hierarchical'       => false,",
 			"\t\t'menu_position'      => 5,",
 			"\t\t'menu_icon'          => 'dashicons-admin-users', // https://developer.wordpress.org/resource/dashicons/.",
-			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),",
+			"\t\t'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),",
 			"\t);",
 			"\tregister_post_type( '${2:post-type}', \\$args );",
 			"}"
