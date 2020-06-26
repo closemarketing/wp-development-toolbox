@@ -27,7 +27,7 @@ Developed By [David Perez](https://davidperezgar.com/en/).
 A big thanks to the people that have contributed to this project:
 - Fernando G.Rebolledo ([@Fgrweb](https://github.com/fgrweb)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb)
 
-- Carlos Longarela ([@Fgrweb](https://github.com/CarlosLongarela)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=CarlosLongarela)
+- Carlos Longarela ([@CarlosLongarela](https://github.com/CarlosLongarela)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=CarlosLongarela)
 
 ## List of Snippets
 
