@@ -1,6 +1,6 @@
 # Change Log
 ## 1.20.0 - #, 2020
-- Added snippets: 
+- Added snippets from Carlos Longarela: (podaget) get Pods object for current post, (podaite) Display Pods field, (podaraw) Display Pods field
   
 ## 1.19.0 - 25 Junio, 2020
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
