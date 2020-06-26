@@ -3,7 +3,8 @@
 		"prefix": "podaget",
 		"body": [
 			"// get Pods object for current post.",
-			"$$pod_${1:name} = pods( '${2:pod_name}', get_the_ID() );"
+			"$$pod_${1:name} = pods( '${2:pod_name}', get_the_ID() );",
+			""
 		]
 	},
 	"Pods | Iterate Pods object": {
@@ -15,7 +16,8 @@
 			"// Loop through the items returned.",
 			"while ( $$pod_${1:name}->fetch() ) {",
 			"\techo '<p>' . esc_html( $$pod_${1:name}->display( '${3:field_name}' ) ) . '</p>';",
-			"}"
+			"}",
+			""
 		]
 	},
 	"Pods | Display Pods field": {
@@ -23,7 +25,32 @@
 		"body": [
 			"if ( $$pod_${1:name}->display( '${2:field_name}' ) ) {",
 			"\techo esc_html( $$pod_${1:name}->display( '${2:field_name}' ) );",
-			"}"
+			"}",
+			""
+		]
+	},
+	"Pods | Add a meta group of fields": {
+		"prefix": "podametag",
+		"body": [
+			"/**",
+			" * Add my_metaboxes for the ${1:Pod_name} pod",
+			" *",
+			" * @param string $$type The type of object (post_type, taxonomy, media, user, or comment).",
+			" * @param string $$name The name of the object (pod name, post type, taxonomy name, media, user, or comment).",
+			" *",
+			" * @return void",
+			" */",
+			"function ${2:fn_prefix}_metaboxes( $$type, $$name ) {",
+			"\t// Add a new meta group for the ${1:Pod_name} post type.",
+			"\tpods_group_add( '${3:pod}', '${5:Description}', '${6:pod_field},${7:pod_field_2}' );",
+			"",
+			"\t// Add a new shared meta group to the ${1:Pod_name} and Other Books post types.",
+			"\tpods_group_add( array( '${3:pod}', '${4:pod2}' ), '${5:Description}', '${6:pod_field},${7:pod_field_2}' );",
+			"}",
+			"",
+			"// Hook into Pods Metaboxes.",
+			"add_action( 'pods_meta_groups', '${2:fn_prefix}_metaboxes', 10, 2 );",
+			""
 		]
 	}
 }
