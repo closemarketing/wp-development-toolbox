@@ -93,6 +93,10 @@
 			{
 				"language": "json",
 				"path": "./snippets/json.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/pods.json"
 			}
 		]
 	},
