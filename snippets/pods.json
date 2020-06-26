@@ -1,0 +1,29 @@
+{
+	"Pods | Get Pods object": {
+		"prefix": "podaget",
+		"body": [
+			"// get Pods object for current post.",
+			"$$pod_${1:name} = pods( '${2:pod_name}', get_the_ID() );"
+		]
+	},
+	"Pods | Iterate Pods object": {
+		"prefix": "podaite",
+		"body": [
+			"// Get the Pods object.",
+			"$$pod_${1:name} = pods( '${2:pod_name}' );",
+			"",
+			"// Loop through the items returned.",
+			"while ( $$pod_${1:name}->fetch() ) {",
+			"\techo '<p>' . esc_html( $$pod_${1:name}->display( '${3:field_name}' ) ) . '</p>';",
+			"}"
+		]
+	},
+	"Pods | Display Pods field": {
+		"prefix": "podaraw",
+		"body": [
+			"if ( $$pod_${1:name}->display( '${2:field_name}' ) ) {",
+			"\techo esc_html( $$pod_${1:name}->display( '${2:field_name}' ) );",
+			"}"
+		]
+	}
+}
