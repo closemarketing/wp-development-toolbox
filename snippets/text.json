@@ -1,6 +1,6 @@
 {
 	"WordPress | Create readme.txt": {
-		"prefix": "wparead",
+		"prefix": "wpare",
 		"body": [
 		  "=== ${1:Name Plugin} ===",
 		  "Contributors: ${2:Authors}",
@@ -27,6 +27,7 @@
 		  "",
 		  "== Links ==",
 		  "*\t[name](link_url)",
+		  "*\t[Closemarketing](https://www.closemarketing.net)",
 		  ""
 		],
 		"description": "WordPress | Create readme.txt"
@@ -152,5 +153,5 @@
 			"/googleb245262cbc0814c2.html"
 		],
 		"description": "DEV | Gitignore configuration for WordPress"
-	    }
+	    },
 }

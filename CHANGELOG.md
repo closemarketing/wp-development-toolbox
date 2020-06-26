@@ -1,5 +1,9 @@
 # Change Log
-## 1.18.0 - 5 March, 2019
+## 1.19.0 - 25 Junio, 2020
+- Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
+- Added snippets in WooCommerce: (woosterm) Adds checkbox for terms and conditions in registration page
+
+## 1.18.0 - 5 March, 2020
 - Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
 - Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background, (gutagr) Gutenberg Adds Gradient Presets, (gutrgr) Disable Custom Gradients.
 - PHP Coding standards fixes.
@@ -22,7 +26,8 @@ Added Snippets:
 
 Added Storefront Hooks and filters for developing themes in WordPress. New snippets:
 - (sttbread) Changes Storefront Breadcrum label
-- (stmbread) Move Breadcrumb from header to before footer
+- (stmbread) Move Breadcrumb from header to 
+before footer
 - (stsex) Show Excerpt instead full article in archives
 
 Added Gulp for developing themes in WordPress. New snippets:

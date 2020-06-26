@@ -3,18 +3,10 @@
 		"prefix": "wpapuh",
 		"body": [
 			"/**",
-			" * ${1:Plugin Name}",
-			" *",
-			" * @package     ${2:PluginName}",
-			" * @author      ${6:Author Name}",
-			" * @copyright   ${8:Year} ${9:Company}",
-			" * @license     GPL-2.0+",
-			" *",
-			" * @wordpress-plugin",
 			" * Plugin Name: ${1:Plugin Name}",
 			" * Plugin URI:  ${3:plugin-url}",
-			" * Description: ${4: Plugin Description}.",
-			" * Version:     ${5: Plugin Version}",
+			" * Description: ${4:Plugin Description}.",
+			" * Version:     ${5:Plugin Version}",
 			" * Author:      ${6:Author Name}",
 			" * Author URI:  ${7:Author URL}",
 			" * Text Domain: ${10:Plugin Slug}",
@@ -22,11 +14,19 @@
 			" * License:     GPL-2.0+",
 			" * License URI: http://www.gnu.org/licenses/gpl-2.0.txt",
 			" *",
+			" * @package     ${2:PluginName}",
+			" * @author      ${6:Author Name}",
+			" * @copyright   ${8:Year} ${9:Company}",
+			" * @license     GPL-2.0+",
+			" *",
+			" * @wordpress-plugin",
+			" *",
 			" * Prefix:      ${11:Plugin Functions Prefix}",
 			" */",
 			"",
 			"defined( 'ABSPATH' ) || die( 'No script kiddies please!' );",
 			"",
+			"add_action( 'plugins_loaded', '${11:Plugin Functions Prefix}_plugin_init' );",
 			"/**",
 			" * Load localization files",
 			" *",
@@ -34,8 +34,7 @@
 			" */",
 			"function ${11:Plugin Functions Prefix}_plugin_init() {",
 			"\tload_plugin_textdomain( '${10:Plugin Slug}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );",
-			"}",
-			"add_action( 'plugins_loaded', '${11:Plugin Functions Prefix}_plugin_init' );"	
+			"}"
 		]
 	},
 	"Wordpress | Comments Plugin File Header": {
@@ -375,5 +374,50 @@
 			"}"
 		],
 		"description": "WordPress | API Get function"
+	},
+	"WordPress | Register additional menu": {
+		"prefix": "wpamen",
+		"body": [
+		  "add_action( 'init', '${1:prefix}_register_additional_menu' );",
+		  "/**",
+		  " * Adds additional menu for ${2:menu-slug}",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_register_additional_menu() {",
+		  "\tregister_nav_menu( '${2:menu-slug}', '${3:menu-label}' );",
+		  "}"
+		],
+		"description": "WordPress | Register additional menu"
+	},
+	"WordPress | Adds recurrence interval for Cron": {
+		"prefix": "wpacr",
+		"body": [
+			"add_filter( 'cron_schedules', '${1:prefix}_add_cron_recurrence_interval' );",
+			"/**",
+			" * Adds a cron Schedule",
+			" *",
+			" * @param array \\$schedules Array of Schedules.",
+			" * @return array \\$schedules",
+			" */",
+			"function ${1:prefix}_add_cron_recurrence_interval( \\$schedules ) {",
+			" ",
+			"\t\\$schedules['every_fifteen_minutes'] = array(",
+			"\t\t'interval' => 900,",
+			"\t\t'display'  => __( 'Every 3 Minutes', 'textdomain' ),",
+			"\t);",
+			"",
+			"\treturn \\$schedules;",
+			"}"
+		],
+		"description": "WordPress | Adds recurrence interval for Cron"
+	},
+	"WordPress | Plugin require files": {
+		"prefix": "wpaprq",
+		"body": [
+		  "// Include files.",
+		  "require_once plugin_dir_path( __FILE__ ) . '/${1:folder}/${2:file}.php';"
+		],
+		"description": "WordPress | Plugin require files"
 	}
 }
