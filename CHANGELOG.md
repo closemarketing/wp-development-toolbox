@@ -1,6 +1,6 @@
 # Change Log
-## 1.20.0 - #, 2020
-- Added snippets from Carlos Longarela: (podaget) get Pods object for current post, (podaite) Display Pods field, (podaraw) Display Pods field
+## 1.20.0 - 26 June, 2020
+- Added Pods snippets from Carlos Longarela: (podaget) Get Pods object, (podaite) Iterate Pods object, (podadisp) Display Pods field, (podametag) Add a meta group of fields
   
 ## 1.19.0 - 25 Junio, 2020
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
@@ -29,7 +29,7 @@ Added Snippets:
 
 Added Storefront Hooks and filters for developing themes in WordPress. New snippets:
 - (sttbread) Changes Storefront Breadcrum label
-- (stmbread) Move Breadcrumb from header to 
+- (stmbread) Move Breadcrumb from header to
 before footer
 - (stsex) Show Excerpt instead full article in archives
 
@@ -42,7 +42,7 @@ Added new snippets:
 - Added for WooCommerce: (wootems) Adds Custom Styles for Emails.
 - Added for Gutenberg: (gutacpt) Adds Gutenberg support to a registered post type.
 - Fixes somes bugs in snippets
- 
+
 ## 1.13.0 - March 10, 2019
 Added new snippets:
 - Added for PHP Coding Standards: (phpahead) DocBlocks file header, (phpache) DocBlocks for Classes header, (phpacl) Adds class
