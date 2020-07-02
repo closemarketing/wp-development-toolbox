@@ -8,17 +8,17 @@
 
 ## Introduction
 
-This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations and plugins. 
+This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations and plugins.
 
 The sintaxis of the snippets is:
 * 2-3 digits - Environment as WordPress and Plugins.
 * 1 - Action: A - Adding, R - Remove, M - Move, T - Setup a setting, S - Show HTML
 * 2-3 Name of snippet
 
-For example: 
-metafun - Met is for plugin Metabox, A for adding a function and Fun is the name of the snippet. 
+For example:
+metafun - Met is for plugin Metabox, A for adding a function and Fun is the name of the snippet.
 
-All snippets will respect **WordPress Coding Standards**. 
+All snippets will respect **WordPress Coding Standards**.
 
 Developed By [David Perez](https://davidperezgar.com/en/).
 
@@ -39,7 +39,7 @@ A big thanks to the people that have contributed to this project:
 | **wpstit** 	|	Shows the entry title with permalink
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
-| **wpawid** 	|	Creates a widget	
+| **wpawid** 	|	Creates a widget
 | **wpawf** 	|	Before Widget with Full Width wrapper
 | **wpaex** 	|	Adds excerpt to pages
 | **wpamen** 	|	Register additional menu
@@ -211,7 +211,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 ### Metabox WordPress Post Types (MET) ###
 | **Rule**	|	**Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **metafun**	|	Adds Metabox Function 
+| **metafun**	|	Adds Metabox Function
 | **metapost**	| 	Adds field select for posts
 | **metatext**	| 	Adds text field
 | **metagal**	| 	Adds Images Gallery Field
@@ -289,3 +289,11 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **gfsform** 	|	GravityForms - Shows form
 | **sfsres** 	|	Results Page
 | **revrmet** 	|	Remove metabox in all post types
+
+### Pods ###
+| **Rule** | **Action** |
+| ------------------- |------------------------------------------------------------------|
+| **podaget** 	|	Get Pods object
+| **podaite** 	|	Iterate Pods object
+| **podadisp** 	|	Display Pods field
+| **podametag** 	|	Add a meta group of fields
