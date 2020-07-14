@@ -27,7 +27,7 @@
 				"path": "./snippets/metabox.json"
 			},
 			{
-				"language": "css",
+				"language": "css,scss",
 				"path": "./snippets/css.json"
 			},
 			{
