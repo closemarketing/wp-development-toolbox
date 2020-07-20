@@ -127,8 +127,8 @@
 		"prefix": "gutaim",
 		"body": [
 			"add_filter( 'image_size_names_choose', '${1:prefix}_custom_sizes' );",
-			"function ${1:prefix}_custom_sizes( $sizes ) {",
-			"\treturn array_merge( $sizes,",
+			"function ${1:prefix}_custom_sizes( \\$sizes ) {",
+			"\treturn array_merge( \\$sizes,",
 			"\t\tarray(",
 			"\t\t\t'${2:name-image-size}' => '${2:name-image-size}',",
 			"\t\t\t'${3:name-image-size}' => '${3:name-image-size}',",
