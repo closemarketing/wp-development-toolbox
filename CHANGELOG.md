@@ -1,7 +1,8 @@
 # Change Log
-## 1.20.0 - 2 July, 2020
+## 1.20.0 - 21 July, 2020
 - Added Pods snippets from Carlos Longarela: (podaget) Get Pods object, (podaite) Iterate Pods object, (podadisp) Display Pods field, (podametag) Add a meta group of fields
 - Fixed some snippets not showing correctly the variables.
+- Fixed snippets for PHPCS Compliance.
   
 ## 1.19.0 - 25 Junio, 2020
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
