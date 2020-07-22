@@ -121,6 +121,7 @@ A big thanks to the people that have contributed to this project:
 | **Shows to public** |
 | **gpslo** 	| 	Filter main logo
 | **gpswc** 	| 	Shows Featured image from WooCommerce
+| **gpspref** 	| 	Register and shows a sidebar before footer
 
 ## Genesis (GEN) ##
 | **Rule**			| **Action**	|

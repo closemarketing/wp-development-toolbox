@@ -41,5 +41,40 @@
 			");"
 		],
 		"description": "Generate | Shows Featured image from WooCommerce"
+	},
+	"GeneratePress | Register and shows a sidebar before footer": {
+		"prefix": "gpspref",
+		"body": [
+		  "/**",
+		  " * ## Register Prefooter",
+		  " * --------------------------- */",
+		  "",
+		  "// Register new sidebar.",
+		  "register_sidebar(",
+		  "\tarray(",
+		  "\t\t'id'          => 'prefooter',",
+		  "\t\t'name'        => '${2:Name of sidebar}',",
+		  "\t\t'description' => '${3:Description of sidebar}',",
+		  "\t)",
+		  ");",
+		  "add_action( 'generate_before_footer', '${1:prefix}_do_sidebar_prefooter' );",
+		  "/**",
+		  " * Shows prefooter.",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_do_sidebar_prefooter() {",
+		  "\t?>",
+		  "\t<section class=\"prefooter alignfull\">",
+		  "\t\t<div class=\"wrap\">",
+		  "\t\t\t<?php",
+		  "\t\t\tdynamic_sidebar( 'prefooter' );",
+		  "\t\t\t?>",
+		  "\t\t</div>",
+		  "\t</section>",
+		  "\t<?php",
+		  "}"
+		],
+		"description": "Genesis | Register and shows a sidebar before footer"
 	}
 }
