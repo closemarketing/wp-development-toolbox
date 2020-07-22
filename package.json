@@ -27,7 +27,11 @@
 				"path": "./snippets/metabox.json"
 			},
 			{
-				"language": "css,scss",
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
 				"path": "./snippets/css.json"
 			},
 			{
