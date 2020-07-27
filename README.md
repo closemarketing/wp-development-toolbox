@@ -47,10 +47,10 @@ A big thanks to the people that have contributed to this project:
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
 | **wpsfav**	|	Shows favicon from theme directory
-| **Querys** |
+| **Querys** 	|
 | **wpqda**		|	Query Arguments for Date
-| **wpqueul**	|	Query entries with UL wrapper
-| **wpquediv**	|	Query entries with DIV wrapper
+| **wpqul**		|	Query entries with UL wrapper
+| **wpqdiv**	|	Query entries with DIV wrapper
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
