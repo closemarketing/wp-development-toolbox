@@ -88,6 +88,8 @@ A big thanks to the people that have contributed to this project:
 | **wptre**		|	Replace already registered post type
 | **wpacr**		|	Adds recurrence interval for Cron
 | **wpaprq**	|	Plugin require files
+| **wpagt**		|	Gets environment mode
+| **wptgt**		|	Sets environment mode in config
 | **API Snippets** |
 | **wpgfu**	|	API Get function
 

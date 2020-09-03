@@ -80,7 +80,7 @@
 		  "",
 		  "define( 'FS_METHOD','direct' );",
 		  "define( 'WP_DEBUG', true );",
-		  "define( 'WP_ENVIRONMENT_TYPE', 'development' ); // production, staging, test",
+		  "define( 'WP_ENVIRONMENT_TYPE', 'local' ); // production, staging, test",
 		  "define( 'WP_POST_REVISIONS', 10 );",
 		  "",
 		  "define( 'DB_CHARSET', 'utf8' );",
@@ -420,5 +420,22 @@
 		  "require_once plugin_dir_path( __FILE__ ) . '/${1:folder}/${2:file}.php';"
 		],
 		"description": "WordPress | Plugin require files"
+	},
+	"WordPress | Get environment": {
+		"prefix": "wpagt",
+		"body": [
+		  "if ( function_exists( 'wp_get_environment_type' ) && 'local' === wp_get_environment_type() ) {",
+		  "\t// Values: local, development, staging and production",
+		  "\t",
+		  "}"
+		],
+		"description": "WordPress | Get environment"
+	},
+	"WordPress | Set environment config": {
+		"prefix": "wptgt",
+		"body": [
+		  "define( 'WP_ENVIRONMENT_TYPE', '${1:local}' ); // Values: local, development, staging and production"
+		],
+		"description": "WordPress | Set environment config"
 	}
 }
