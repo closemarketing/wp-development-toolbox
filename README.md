@@ -90,6 +90,7 @@ A big thanks to the people that have contributed to this project:
 | **wpaprq**	|	Plugin require files
 | **wpagt**		|	Gets environment mode
 | **wptgt**		|	Sets environment mode in config
+| **wptlog**	|	Customize login page
 | **API Snippets** |
 | **wpgfu**	|	API Get function
 
