@@ -71,6 +71,7 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **wpaloc** 	| 	Configuration for Local development
 | **wpaupd** 	| 	Foces automatic updates in WordPress (in functions.php)
+| **wpafpt** 	| 	Adds functions to Custom Post Type in public
 | **wpaop** 	| 	Removes CSS and JS for optimization
 | **wpapuh** 	| 	Adds Plugin Header
 | **wpare**		|	Create readme.txt for Plugins
@@ -131,7 +132,6 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **Additions** 		|
 | **genacl** 	| 	Adds classes and elements to HTML element
-| **genafpt** 	| 	Adds functions to Custom Post Type
 | **genatag** 	| 	Adds Tag Manager from Plugin Duracell
 | **Shows to public** |
 | **gensmen** 	| 	Adds HTML elements to main menu

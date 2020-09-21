@@ -1,6 +1,7 @@
 # Change Log
 ## 1.21.0 - #, 2020
 - Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page
+- Changed genafpt to wpafpt.
 
 ## 1.20.0 - 21 July, 2020
 - Added Pods snippets from Carlos Longarela: (podaget) Get Pods object, (podaite) Iterate Pods object, (podadisp) Display Pods field, (podametag) Add a meta group of fields

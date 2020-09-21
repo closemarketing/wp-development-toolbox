@@ -464,5 +464,25 @@
 		  "}"
 		],
 		"description": "WordPress | Customize login page"
-	}
+	},
+
+	"WordPress | Adds functions to Custom Post Type": {
+		"prefix": "wpafpt",
+		"body": [
+			"/**",
+			" * # Page ${2:post_type}",
+			" * ---------------------------------------------------------------------------------------------------- */",
+			"add_action( 'get_header', '${1:prefix}load_${2:post_type}_page' );",
+			"/**",
+			" * Loads functions in custom post type for ${2:post_type}",
+			" *",
+			" * @return void",
+			" */",
+			"function ${2:prefix}load_${2:post_type}_page() {",
+			"\tif ( is_singular( '${2:post_type}' ) ) {",
+			"\t\t// Custom actions.",
+			"\t}",
+			"}"
+		]
+	},
 }
