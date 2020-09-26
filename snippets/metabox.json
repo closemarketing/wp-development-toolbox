@@ -5,6 +5,7 @@
 			"add_filter( 'rwmb_meta_boxes', 'cmk_register_meta_boxes_${1:cpt}' );",
 			"/**",
 			" * Adds Metabox Function",
+			" * Needs MetaBox to work: https://www.closemarketing.es/go/metabox/",
 			" *",
 			" * @param array \\$meta_boxes Metaboxes.",
 			" * @return array \\$metaboxes",
@@ -302,11 +303,12 @@
 		]
 	},
 	"MetaBox Blocks | Registers a new block": {
-		"prefix": "mebab",
+		"prefix": "metabab",
 		"body": [
 			"add_filter( 'rwmb_meta_boxes', '${1:prefix}_register_block_${2:slug}' );",
 			"/**",
 			" * Registers the block ${3:Title of Block}",
+			" * Needs MetaBox Blocks to work: https://www.closemarketing.es/go/metablocks/",
 			" *",
 			" * @param  array \\$meta_boxes Array of registered metaboxes.",
 			" * @return array \\$meta_boxes",
@@ -391,10 +393,11 @@
 		"description": "MetaBox Blocks | Registers a new block"
 	},
 	"MetaBox Blocks | Template PHP for block": {
-		"prefix": "mebat",
+		"prefix": "metabat",
 		"body": [
 			"/**",
 			" * Block Template ${1:title}",
+			" * Needs MetaBox Blocks to work: https://www.closemarketing.es/go/metablocks/",
 			" *",
 			" * @package    WordPress",
 			" * @author     ${2:Author name} <${3:Author email}>",
