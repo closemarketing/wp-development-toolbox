@@ -104,6 +104,9 @@ A big thanks to the people that have contributed to this project:
 | **wpagt**   | Gets environment mode
 | **wptgt**   | Sets environment mode in config
 | **wptlog**  | Customize login page
+| **Enqueue** |
+| **wpaes** | Enqueue Style in Plugin
+| **wpaej** | Enqueue Javascript in Plugin
 | **API Snippets** |
 | **wpgfu**	 | API Get function
 

@@ -136,5 +136,14 @@
 			""
 		],
 		"description": "WordPress | Gulp File in theme"
+	},
+	"WordPress jQuery | Include JS in file Header": {
+		"prefix": "jsah",
+		"body": [
+		  "jQuery( function($) {",
+		  "",
+		  "});"
+		],
+		"description": "WordPress jQuery | Include JS in file Header"
 	}
 }

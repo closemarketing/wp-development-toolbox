@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.23.0 - #, 2020
+
+- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin
+
+## 1.22.0 - 26 September, 2020
+
+- Fixes not updating code
+
 ## 1.21.0 - 26 September, 2020
 
 - Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page
@@ -13,10 +21,12 @@
 - Fixed snippets for PHPCS Compliance.
   
 ## 1.19.0 - 25 Junio, 2020
+
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
 - Added snippets in WooCommerce: (woosterm) Adds checkbox for terms and conditions in registration page
 
 ## 1.18.0 - 5 March, 2020
+
 - Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
 - Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background, (gutagr) Gutenberg Adds Gradient Presets, (gutrgr) Disable Custom Gradients.
 - PHP Coding standards fixes.
