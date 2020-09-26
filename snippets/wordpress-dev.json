@@ -80,7 +80,8 @@
 		  "",
 		  "define( 'FS_METHOD','direct' );",
 		  "define( 'WP_DEBUG', true );",
-		  "define( 'WP_POST_REVISIONS', 3 );",
+		  "define( 'WP_ENVIRONMENT_TYPE', 'local' ); // production, staging, test",
+		  "define( 'WP_POST_REVISIONS', 10 );",
 		  "",
 		  "define( 'DB_CHARSET', 'utf8' );",
 		  "define( 'DB_COLLATE', '' );",
@@ -134,7 +135,7 @@
 	"PHP | Echo variable with wrap PRE": {
 		"prefix": "phpep",
 		"body": [
-			"echo '<pre>';",
+			"echo '<pre>${1:var}:';",
 			"print_r(\\$${1:var});",
 			"echo '</pre>';"
 		]
@@ -419,5 +420,69 @@
 		  "require_once plugin_dir_path( __FILE__ ) . '/${1:folder}/${2:file}.php';"
 		],
 		"description": "WordPress | Plugin require files"
-	}
+	},
+	"WordPress | Get environment": {
+		"prefix": "wpagt",
+		"body": [
+		  "if ( function_exists( 'wp_get_environment_type' ) && 'local' === wp_get_environment_type() ) {",
+		  "\t// Values: local, development, staging and production",
+		  "\t",
+		  "}"
+		],
+		"description": "WordPress | Get environment"
+	},
+	"WordPress | Set environment config": {
+		"prefix": "wptgt",
+		"body": [
+		  "define( 'WP_ENVIRONMENT_TYPE', '${1:local}' ); // Values: local, development, staging and production"
+		],
+		"description": "WordPress | Set environment config"
+	},
+	"WordPress | Customize login page": {
+		"prefix": "wptlog",
+		"body": [
+		  "remove_action( 'login_head', 'cmk_custom_login_logo' );",
+		  "add_action( 'login_head', '${1:prefix}_custom_login_logo' );",
+		  "/**",
+		  " * Customize login page.",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function ${1:prefix}_custom_login_logo() {",
+		  "\techo '<style type=\"text/css\">",
+		  "\th1 a { width: 330px !important; background-image:url(' . get_stylesheet_directory_uri() . '/images/logo.png) !important; background-size: 310px !important; }",
+		  "\tp.galogin-powered {display: none;}",
+		  "\tbody.login {background: ${2:background-color}; }",
+		  "\t.login form { border: 2px solid ${3:color-contrast}; }",
+		  "\t.login label {color: ${3:color-contrast};}",
+		  "\tinput[type=\"checkbox\"]:focus, input[type=\"color\"]:focus, input[type=\"date\"]:focus, input[type=\"datetime-local\"]:focus, input[type=\"datetime\"]:focus, input[type=\"email\"]:focus, input[type=\"month\"]:focus, input[type=\"number\"]:focus, input[type=\"password\"]:focus, input[type=\"radio\"]:focus, input[type=\"search\"]:focus, input[type=\"tel\"]:focus, input[type=\"text\"]:focus, input[type=\"time\"]:focus, input[type=\"url\"]:focus, input[type=\"week\"]:focus, select:focus, textarea:focus { border-color: ${3:color-contrast}; }",
+		  "\t.wp-core-ui .button-primary {background-color: ${3:color-contrast}; box-shadow: none; text-shadow: none; border: none;}",
+		  "\t.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {  background-color: ${3:color-contrast}; border-color: none; }",
+		  "\t.login #backtoblog a, .login #nav a, .login a { color: ${3:color-contrast}; }",
+		  "\t.login #backtoblog a:hover, .login #nav a:hover { color: ${3:color-contrast}; }",
+		  "\t</style>';",
+		  "}"
+		],
+		"description": "WordPress | Customize login page"
+	},
+
+	"WordPress | Adds functions to Custom Post Type": {
+		"prefix": "wpafpt",
+		"body": [
+			"/**",
+			" * # Page ${2:post_type}",
+			" * ---------------------------------------------------------------------------------------------------- */",
+			"add_action( 'get_header', '${1:prefix}load_${2:post_type}_page' );",
+			"/**",
+			" * Loads functions in custom post type for ${2:post_type}",
+			" *",
+			" * @return void",
+			" */",
+			"function ${2:prefix}load_${2:post_type}_page() {",
+			"\tif ( is_singular( '${2:post_type}' ) ) {",
+			"\t\t// Custom actions.",
+			"\t}",
+			"}"
+		]
+	},
 }

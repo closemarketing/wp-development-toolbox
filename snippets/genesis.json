@@ -71,26 +71,6 @@
 			"}"
 		]
 	},
-
-	"Genesis | Adds functions to Custom Post Type": {
-		"prefix": "genafpt",
-		"body": [
-			"/**",
-			" * # Page ${1:post_type}",
-			" * ---------------------------------------------------------------------------------------------------- */",
-			"add_action( 'get_header', 'cmk_load_${1:post_type}_page' );",
-			"/**",
-			" * Loads functions in custom post type for ${1:post_type}",
-			" *",
-			" * @return void",
-			" */",
-			"function cmk_load_${1:post_type}_page() {",
-			"\tif ( is_singular( '${1:post_type}' ) ) {",
-			"\t\t// Custom actions.",
-			"\t}",
-			"}"
-		]
-	},
 	"Genesis | Register Custom Sidebar": {
 		"prefix": "genasid",
 		"body": [
