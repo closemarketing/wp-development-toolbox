@@ -6,11 +6,12 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/closemarketing/wp-development-toolbox/graphs/commit-activity)
 [![GitHub contributors](https://img.shields.io/github/contributors/closemarketing/wp-development-toolbox.svg)](https://GitHub.com/closemarketing/wp-development-toolbox/graphs/contributors/)
 
-## Introduction
+# Introduction
 
 This Toolbox helps you to develop in WordPress very fast. It has a lot of snippets for a lot of situations and plugins.
 
 The sintaxis of the snippets is:
+
 * 2-3 digits - Environment as WordPress and Plugins.
 * 1 - Action: A - Adding, R - Remove, M - Move, T - Setup a setting, S - Show HTML
 * 2-3 Name of snippet
@@ -20,7 +21,11 @@ metafun - Met is for plugin Metabox, A for adding a function and Fun is the name
 
 All snippets will respect **WordPress Coding Standards**.
 
-Developed By [David Perez](https://davidperezgar.com/en/).
+<b>Support this project:</b> We placed some affiliate links in order to contribute to help to make this project sustainable.
+
+Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%20Extensions&utm_medium=enlace&utm_campaign=Readme).
+
+&nbsp;
 
 ## Contributors &#x1F64F;&#x2764;
 
@@ -29,7 +34,9 @@ A big thanks to the people that have contributed to this project:
 
 - Carlos Longarela ([@CarlosLongarela](https://github.com/CarlosLongarela)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=CarlosLongarela)
 
-## List of Snippets
+&nbsp;
+
+# List of Snippets
 
 ## WordPress (WP) ##
 | **Rule**		| **Action**	|
@@ -47,10 +54,10 @@ A big thanks to the people that have contributed to this project:
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
 | **wpsfav**	|	Shows favicon from theme directory
-| **Querys** |
+| **Querys** 	|
 | **wpqda**		|	Query Arguments for Date
-| **wpqueul**	|	Query entries with UL wrapper
-| **wpquediv**	|	Query entries with DIV wrapper
+| **wpqul**		|	Query entries with UL wrapper
+| **wpqdiv**	|	Query entries with DIV wrapper
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
@@ -58,7 +65,9 @@ A big thanks to the people that have contributed to this project:
 | **Change Settings** |
 | **wptarg**	|	Change arguments of registered post type
 
-## WordPress Functions for Custom Post Type (WP) ##
+&nbsp;
+
+## WordPress Functions for Custom Post Type (WP)
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpacptpag** 	|	Creates a new Custom Post Type for Pages
@@ -66,38 +75,51 @@ A big thanks to the people that have contributed to this project:
 | **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
-## WordPress Functions for Developer (WP) ##
+&nbsp;
+
+## WordPress Functions for Developer (WP)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpaloc** 	| 	Configuration for Local development
-| **wpaupd** 	| 	Foces automatic updates in WordPress (in functions.php)
-| **wpaop** 	| 	Removes CSS and JS for optimization
-| **wpapuh** 	| 	Adds Plugin Header
-| **wpare**		|	Create readme.txt for Plugins
-| **wpalpt**	|	Loads Plugin Text Domain
-| **wpagit**	|	Gitignore configuration for WordPress
-| **htacc**		|	htaccess recommended for HTPPS sites
-| **wpahfil**	|	Comments Plugin File Header
-| **wpadhc**	|	Doc Header comment
-| **wpafc**		|	Function comment
-| **coasec**	|	Comments for new section
-| **coassec**	|	Comments for new subsection
-| **wpajs**		|	Adds jQuery wrap
-| **wpssh**		|	Create a Shortcode
-| **wprpf**		|	Disables Post format for the theme
-| **wptre**		|	Replace already registered post type
-| **wpacr**		|	Adds recurrence interval for Cron
-| **wpaprq**	|	Plugin require files
+| **wpaloc**  | Configuration for Local development
+| **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
+| **wpafpt**  | Adds functions to Custom Post Type in public
+| **wpaop**   | Removes CSS and JS for optimization
+| **wpapuh**  | Adds Plugin Header
+| **wpare**   | Create readme.txt for Plugins
+| **wpalpt**  | Loads Plugin Text Domain
+| **wpagit**  | Gitignore configuration for WordPress
+| **htacc**   | htaccess recommended for HTPPS sites
+| **wpahfil** | Comments Plugin File Header
+| **wpadhc**  | Doc Header comment
+| **wpafc**   | Function comment
+| **coasec**  | Comments for new section
+| **coassec** | Comments for new subsection
+| **wpajs**   | Adds jQuery wrap
+| **wpssh**   | Create a Shortcode
+| **wprpf**   | Disables Post format for the theme
+| **wptre**   | Replace already registered post type
+| **wpacr**   | Adds recurrence interval for Cron
+| **wpaprq**  | Plugin require files
+| **wpagt**   | Gets environment mode
+| **wptgt**   | Sets environment mode in config
+| **wptlog**  | Customize login page
 | **API Snippets** |
-| **wpgfu**	|	API Get function
+| **wpgfu**	 | API Get function
 
-## WordPress Multisite (WPM) ##
+&nbsp;
+
+## WordPress Multisite (WPM)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wmacon** 	| 	Adds line in wpconfig
 | **wmfup** 	| 	Filter Myme types allowed in Multisite
 
-## Gutenberg (GUT) ##
+&nbsp;
+
+## Gutenberg (GUT)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **gutain** 	| 	Iniate a theme for Gutenberg
@@ -110,24 +132,36 @@ A big thanks to the people that have contributed to this project:
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 | **gutasa** 	| 	Adds Align style Full and Wide
 
-## WordPress to Show Schemas in JSON LD (SC) ##
+&nbsp;
+
+## WordPress to Show Schemas in JSON LD (SC)
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **scsscw** 	| 	Make wrap Schema for functions.php
 
-## GeneratePress (GP) ##
+&nbsp;
+
+## GeneratePress (GP)
+
+[Plugin Web](https://www.closemarketing.es/go/generatepress/) | [Documentation](https://docs.generatepress.com/)
+
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **Shows to public** |
 | **gpslo** 	| 	Filter main logo
 | **gpswc** 	| 	Shows Featured image from WooCommerce
+| **gpspref** 	| 	Register and shows a sidebar before footer
 
-## Genesis (GEN) ##
+&nbsp;
+
+## Genesis (GEN)
+
+[Plugin Web](https://www.closemarketing.es/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
+
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **Additions** 		|
 | **genacl** 	| 	Adds classes and elements to HTML element
-| **genafpt** 	| 	Adds functions to Custom Post Type
 | **genatag** 	| 	Adds Tag Manager from Plugin Duracell
 | **Shows to public** |
 | **gensmen** 	| 	Adds HTML elements to main menu
@@ -163,7 +197,12 @@ A big thanks to the people that have contributed to this project:
 | **genremem**	|	Remove Entry meta
 | **genrem**	|	Remove Entry Meta in post type
 
-## WooCommerce (WOO) ##
+&nbsp;
+
+## WooCommerce (WOO)
+
+[Web](https://www.closemarketing.es/go/woocommerce/) | [Documentation](https://docs.woocommerce.com/documentation/plugins/woocommerce/)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wootord** 	|	Creates new status for Orders
@@ -192,7 +231,9 @@ A big thanks to the people that have contributed to this project:
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
-## WooCommerce Storefront (ST) ##
+&nbsp;
+
+## WooCommerce Storefront (ST)
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrumb label
@@ -200,7 +241,9 @@ A big thanks to the people that have contributed to this project:
 | **sttim** 	|	Image sizes for a Storefront child theme
 | **stsex** 	|	Show Excerpt instead full article in archives
 
-## Gulp (GL) ##
+&nbsp;
+
+## Gulp (GL)
 In order to use Gulp for develop a theme in WordPress, you will need to have NPM installed. Create the files gulpfile.js and package.json in your theme, and run npm install. Since you have installed the node modules, now you can use gulp. It has other orders: gulp images compress the images files in folder images.
 
 | **Rule**               | **Action**     |
@@ -208,7 +251,12 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **glag** 	|	Generates the content for gulpfile.js for the theme
 | **glap** 	|	Generates the content for package.json for the theme
 
-### Metabox WordPress Post Types (MET) ###
+&nbsp;
+
+## Metabox WordPress Post Types (MET)
+
+[Plugin Web](https://www.closemarketing.es/go/metabox/) | [Documentation](https://my.studiopress.com/support/)
+
 | **Rule**	|	**Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **metafun**	|	Adds Metabox Function
@@ -231,7 +279,10 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **mebat**		| 	Creates the block template php
 | **mebas**		| 	Creates the block template style
 
-### WPML (WPML) ###
+&nbsp;
+
+## WPML (WPML)
+[Web](https://www.closemarketing.es/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wpmltdis** 	| 	Disable Javascript and CSS in front
@@ -240,20 +291,30 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **wpmlalink** 	| 	Link from ID
 | **wpmlasup** 	| 	Suppress filter for Query in array
 
-### WC Market Place (WOC) ###
+&nbsp;
+
+## WC Market Place (WOC)
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wocrrep** 	| 	Remove report abuse
 | **woctven** 	| 	Customize Name Sold by
 
-### Pods Snippets (PHP) ###
+&nbsp;
+
+## Pods Snippets (PHP)
+
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
 | **podaget** 	|	Get Pods object for current post
 | **podaite** 	|	Get the Pods object
 | **podaraw** 	|	Display Pods field
+| **podadisp** 	|	Display Pods field
+| **podametag** 	|	Add a meta group of fields
 
-### CSS (CSS) ###
+&nbsp;
+
+## CSS (CSS)
+
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
 | **cssawid** 	|	Adds Subsection for a Widget
@@ -264,12 +325,18 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **cssatw** 	|	Tweaks for Genesis CSS
 | **cssamf** 	|	Media Query mobile first
 
-### SCSS (SCSS) ###
+&nbsp;
+
+## SCSS (SCSS)
+
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
 | **scssar** 	|	Adds responsive wrapper
 
-### PHP (PHP) ###
+&nbsp;
+
+## PHP (PHP)
+
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
 | **phpec** 	|	Echo a variable
@@ -280,7 +347,10 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **phpavi** 	|	Create variable with isset verification
 | **devtcomp** 	|	Loads a Composer Library
 
-### Several Plugins ###
+&nbsp;
+
+## Several Plugins
+
 | **Rule** | **Action** |
 | ------------------- |------------------------------------------------------------------|
 | **p2pacon** 	|	Plugin Posts 2 Posts - Register Connections with post types
@@ -289,11 +359,3 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **gfsform** 	|	GravityForms - Shows form
 | **sfsres** 	|	Results Page
 | **revrmet** 	|	Remove metabox in all post types
-
-### Pods ###
-| **Rule** | **Action** |
-| ------------------- |------------------------------------------------------------------|
-| **podaget** 	|	Get Pods object
-| **podaite** 	|	Iterate Pods object
-| **podadisp** 	|	Display Pods field
-| **podametag** 	|	Add a meta group of fields
