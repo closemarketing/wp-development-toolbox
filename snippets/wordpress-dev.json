@@ -493,7 +493,7 @@
 		"description": "WordPress | Enqueue Style in Plugin"
 	},
 	"WordPress | Enqueue Javascript in Plugin": {
-		"prefix": "wpaes",
+		"prefix": "wpaej",
 		"body": [
 		  "wp_enqueue_script( '${1:slug-name}', plugins_url( '/assets/${2:filename}.js', __FILE__ ), array( 'jquery' ), ${3:version}, true );"
 		],
