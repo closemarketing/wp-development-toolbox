@@ -229,8 +229,6 @@
 		  "/**",
 		  " * ${1:Short Description}",
 		  " *",
-		  " * ${2:Long Description}",
-		  " *",
 		  " * @package    ${3:packace-name}",
 		  " * @author     ${4:example} <${5:email}>",
 		  " * @copyright  ${6:year} ${7:Company}",
