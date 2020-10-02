@@ -231,6 +231,7 @@ A big thanks to the people that have contributed to this project:
 | **woordes** 	|	Removes Description tab title
 | **woorpa** 	|	Hide prices in archive pages
 | **wooris** 	|	Remove Image in Single product
+| **woormp** 	|	Remove mandatory phone in checkout
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 

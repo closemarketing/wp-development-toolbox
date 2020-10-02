@@ -454,5 +454,22 @@
 		  ""
 		],
 		"description": "WooCommerce | Adds checkbox for terms and conditions"
+	},
+	"WooCommerce | Remove mandatory phone in checkout": {
+		"prefix": "woormp",
+		"body": [
+		  "add_filter( 'woocommerce_billing_fields', '${1:prefix}remove_filter_phone', 10, 1 );",
+		  "/**",
+		  " * Remove mandatory phone",
+		  " *",
+		  " * @param array \\$address_fields Address Fields from Checkout.",
+		  " * @return array \\$address_fields",
+		  " */",
+		  "function ${1:prefix}remove_filter_phone( \\$address_fields ) {",
+		  "	\\$address_fields['billing_phone']['required'] = false;",
+		  "	return \\$address_fields;",
+		  "}"
+		],
+		"description": "WooCommerce | Remove mandatory phone in checkout"
 	}
 }
