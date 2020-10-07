@@ -476,7 +476,7 @@
 			" *",
 			" * @return void",
 			" */",
-			"function ${2:prefix}load_${2:post_type}_page() {",
+			"function ${1:prefix}load_${2:post_type}_page() {",
 			"\tif ( is_singular( '${2:post_type}' ) ) {",
 			"\t\t// Custom actions.",
 			"\t}",
