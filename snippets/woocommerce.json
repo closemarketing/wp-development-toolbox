@@ -124,19 +124,19 @@
 	"WooCommerce | Removes SKU in detail page": {
 		"prefix": "woorsku",
 		"body": [
+			"add_filter( 'wc_product_sku_enabled', '${1:prefix}remove_product_page_skus' );",
 			"/**",
 			" * Removes SKU in detail page.",
 			" *",
 			" * @param boolean \\$enabled Value to SKU enabled or not.",
 			" * @return boolean \\$enabled",
 			" */",
-			"function cmk_remove_product_page_skus( \\$enabled ) {",
+			"function ${1:prefix}remove_product_page_skus( \\$enabled ) {",
 			"\tif ( ! is_admin() && is_product() ) {",
 			"\t\treturn false;",
 			"\t}",
 			"\treturn \\$enabled;",
-			"}",
-			"add_filter( 'wc_product_sku_enabled', 'cmk_remove_product_page_skus' );"
+			"}"
 		]
 	},
 	"WooCommerce | Remove Company name in checkout": {
