@@ -628,9 +628,8 @@
 	"Genesis | Remove the edit link": {
 		"prefix": "genred",
 		"body": [
-		  "//* Remove the edit link",
-		  "//* Snippet from Genesis Framework: https://www.closemarketing.es/go/genesis/",
-		  "add_filter ( 'genesis_edit_post_link' , '__return_false' );"
+		  "// * Remove the edit link. Snippet from Genesis Framework: https://www.closemarketing.es/go/genesis/.",
+		  "add_filter( 'genesis_edit_post_link' , '__return_false' );"
 		],
 		"description": "Genesis | Remove the edit link"
 	},
