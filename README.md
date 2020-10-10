@@ -199,6 +199,7 @@ A big thanks to the people that have contributed to this project:
 | **genrsec**	|	Remove Secondary Sidebar
 | **genremem**	|	Remove Entry meta
 | **genrem**	|	Remove Entry Meta in post type
+| **genred**	|	Remove the edit link
 
 &nbsp;
 

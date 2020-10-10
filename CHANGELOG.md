@@ -10,7 +10,7 @@
 
 ## 1.21.0 - 26 September, 2020
 
-- Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page
+- Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page, (genred) Genesis Remove the edit link
 - Changed genafpt to wpafpt.
 - Added affiliate links to make sustainable this project.
 
