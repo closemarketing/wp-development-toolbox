@@ -38,7 +38,7 @@
 			"\t\techo '<ul>';",
 			"\t\twhile ( \\$connected->have_posts() ) {",
 			"\t\t\t\\$connected->the_post();",
-			"\t\t\techo '<li><a href=\"' . get_the_permalink() . '\">' . esc_html( get_the_title() ) . '</a></li>';",
+			"\t\t\techo '<li><a href=\"' . esc_url( get_the_permalink() ) . '\">' . esc_html( get_the_title() ) . '</a></li>';",
 			"\t\t}",
 			"\t\techo '</ul>';",
 			"\t\twp_reset_postdata();",
