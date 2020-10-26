@@ -266,6 +266,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | ------------------- |------------------------------------------------------------------|
 | **metafun**	|	Adds Metabox Function
 | **metapost**	| 	Adds field select for posts
+| **metatax**	| 	Adds field select for terms in a taxonomy
 | **metatext**	| 	Adds text field
 | **metagal**	| 	Adds Images Gallery Field
 | **metaurl**	| 	Adds URL Field

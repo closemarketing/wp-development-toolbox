@@ -59,6 +59,34 @@
 			"),"
 		]
 	},
+	"MetaBox | Adds field select for terms": {
+		"prefix": "metatax",
+		"body": [
+		  "// * Get terms in array",
+		  "\\$terms_array = get_terms(",
+		  "\tarray(",
+		  "\t\t'taxonomy'   => '${1:taxonomy}',",
+		  "\t\t'hide_empty' => false,",
+		  "\t)",
+		  ");",
+		  "\\$terms_options = array();",
+		  "foreach ( \\$terms_array as \\$term_single ) {",
+		  "\t\\$terms_options[ \\$term_single->term_id ] = \\$term_single->name;",
+		  "}",
+		  "// Move to metabox",
+		  "// SELECT BOX term ${1:taxonomy}.",
+		  "array(",
+		  "\t'name'        => '${2:Name}',",
+		  "\t'id'          => \"{\\$prefix}term_${1:taxonomy}\",",
+		  "\t'type'        => 'select',",
+		  "\t'options'     => \\$terms_options,",
+		  "\t'multiple'    => false,",
+		  "\t'std'         => '',",
+		  "\t'placeholder' => '${3:Select Placeholder}',",
+		  "),"
+		],
+		"description": "MetaBox | Adds field select for terms"
+	},
 	"MetaBox | Adds Field date": {
 		"prefix": "metadate",
 		"body": [
