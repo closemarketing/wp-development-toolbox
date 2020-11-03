@@ -2,7 +2,7 @@
 
 ## 1.23.0 - #, 2020
 
-- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin, (woormp) WooCommerce Remove mandatory phone in checkout, (metatax) Adds field select for terms
+- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin, (woormp) WooCommerce Remove mandatory phone in checkout, (metatax) Adds field select for terms, (wpstiv) Shows the entry title with permalink with echo
 
 ## 1.22.0 - 26 September, 2020
 

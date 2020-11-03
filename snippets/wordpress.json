@@ -33,6 +33,16 @@
 		  "</h2>"
 		]
 	},
+	"WordPress | Shows the entry title with permalink with echo": {
+		"prefix": "wpstiv",
+		"body": [
+		  "echo '<h2 class=\"entry-title\">';",
+		  "echo '<a href=\"' . esc_url( get_the_permalink() ) . '\" rel=\"bookmark\" title=\"' . the_title_attribute( 'echo=0' ) . '\">';",
+		  "echo esc_html( get_the_title() );",
+		  "echo '</a></h2>';"
+		],
+		"description": "WordPress | Shows title in php "
+	},
 	"WordPress | WordPress Add excerpts to Pages": {
 		"prefix": "wpaex",
 		"body": [

@@ -44,6 +44,7 @@ A big thanks to the people that have contributed to this project:
 | **wptupd** 	|	Force updates and upgrades
 | **wpaac** 	|	Adds an action with function
 | **wpstit** 	|	Shows the entry title with permalink
+| **wpstiv** 	|	Shows the entry title with permalink with echo
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget
