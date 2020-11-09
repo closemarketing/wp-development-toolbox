@@ -452,5 +452,14 @@
 			"</div>"
 		],
 		"description": "MetaBox Blocks | Template PHP for block"
-	}
+	},
+	"Metabox Blocks | Gets block Field": {
+		"prefix": "mebaf",
+		"body": [
+		  "// Gets Block field ${1:field_key}.",
+		  "\\$${1:field_key} = mb_get_block_field( '${1:field_key}' );",
+		  ""
+		],
+		"description": "Metabox Blocks | Gets block Field"
+	    }
 }
