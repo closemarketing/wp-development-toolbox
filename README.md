@@ -285,7 +285,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **mebab**		| 	Registers a new block
 | **mebat**		| 	Creates the block template php
 | **mebas**		| 	Creates the block template style
-| **mebaf**		| 	Gets block Field
+| **mebaf**| Gets block Field
 
 &nbsp;
 
