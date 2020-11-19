@@ -86,11 +86,14 @@
 			" * Adds Local Font in GeneratePress",
 			" * Then you could donwload from Google Fonts using https://google-webfonts-helper.herokuapp.com/fonts",
 			" */",
-			"add_filter( 'generate_typography_default_fonts', function( \\$fonts ) {",
-			"    \\$fonts[] = '${1:font name}';",
+			"add_filter(",
+			"\t'generate_typography_default_fonts',",
+			"\tfunction( \\$fonts ) {",
+			"\t\t$fonts[] = '${1:Font name}';",
 			"",
-			"    return \\$fonts;",
-			"} );"
+			"\t\treturn \\$fonts;",
+			"\t}",
+			");"
 		],
 		"description": "GeneratePress | Adds local font"
 	}
