@@ -155,7 +155,7 @@ A big thanks to the people that have contributed to this project:
 | **gpslo** 	| 	Filter main logo
 | **gpswc** 	| 	Shows Featured image from WooCommerce
 | **gpspref** 	| 	Register and shows a sidebar before footer
-
+| **gpafon** 	| 	Adds local font
 &nbsp;
 
 ## Genesis (GEN)

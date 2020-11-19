@@ -78,5 +78,20 @@
 			"}"
 		],
 		"description": "Genesis | Register and shows a sidebar before footer"
+	},
+	"GeneratePress | Adds local font": {
+		"prefix": "gpafon",
+		"body": [
+			"/**",
+			" * Adds Local Font in GeneratePress",
+			" * Then you could donwload from Google Fonts using https://google-webfonts-helper.herokuapp.com/fonts",
+			" */",
+			"add_filter( 'generate_typography_default_fonts', function( \\$fonts ) {",
+			"    \\$fonts[] = '${1:font name}';",
+			"",
+			"    return \\$fonts;",
+			"} );"
+		],
+		"description": "GeneratePress | Adds local font"
 	}
 }
