@@ -1,6 +1,6 @@
 {
 	"WordPress | Creates a new Custom Post Type for Pages": {
-		"prefix": "wpacptpag",
+		"prefix": "wpacptpa",
 		"body": [
 			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
@@ -29,7 +29,7 @@
 			"\t\t'show_ui'            => true,",
 			"\t\t'query_var'          => true,",
 			"\t\t'rewrite'            => array(",
-			"\t\t\t'slug'       => __( '${12:slug}', '${13:textdomain}' ),",
+			"\t\t\t'slug'       => _x( '${12:slug}', '${14:scope}', '${13:textdomain}' ),",
 			"\t\t\t'with_front' => false,",
 			"\t\t),",
 			"\t\t'has_archive'        => false,",
@@ -44,7 +44,7 @@
 		]
 	},
 	"WordPress | Creates a new Custom Post Type for Posts": {
-		"prefix": "wpacptpost",
+		"prefix": "wpacptpo",
 		"body": [
 			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
@@ -73,7 +73,7 @@
 			"\t\t'show_in_rest'       => true, // Adds gutenberg support.",
 			"\t\t'query_var'          => true,",
 			"\t\t'rewrite'            => array(",
-			"\t\t\t'slug'       => __( '${12:slug}', '${13:textdomain}' ),",
+			"\t\t\t'slug'       => _x( '${12:slug}', '${14:scope}', '${13:textdomain}' ),",
 			"\t\t\t'with_front' => false,",
 			"\t\t),",
 			"\t\t'has_archive'        => false,",
@@ -88,7 +88,7 @@
 		]
 	},
 	"WordPress | Adds Custom columns in Admin Custom Post Type": {
-		"prefix": "wpacptcol",
+		"prefix": "wpacptco",
 		"body": [
 			"add_filter( 'manage_edit-${1:post_type}_columns', 'add_new_${1:post_type}_columns' );",
 			"/**",

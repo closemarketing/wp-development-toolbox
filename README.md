@@ -71,9 +71,9 @@ A big thanks to the people that have contributed to this project:
 ## WordPress Functions for Custom Post Type (WP)
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpacptpag** 	|	Creates a new Custom Post Type for Pages
-| **wpacptpost** 	|	Creates a new Custom Post Type for Posts
-| **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
+| **wpacptpa** 	|	Creates a new Custom Post Type for Pages
+| **wpacptpo** 	|	Creates a new Custom Post Type for Posts
+| **wpacptco** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
 &nbsp;
