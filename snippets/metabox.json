@@ -16,7 +16,7 @@
 			"\t// 2nd meta box",
 			"\t\\$meta_boxes[] = array(",
 			"\t\t'id'         => 'standard-${3:post-type}',",
-			"\t\t'title'      => '${2:title-metabox}',",
+			"\t\t'title'      => __( '${2:title-metabox}', '${5:textdomain}' ),",
 			"\t\t'post_types' => array( '${3:post-type}' ),",
 			"\t\t'context'    => '${4:orientation}', // side / normal. ",
 			"\t\t'priority'   => 'high',",
