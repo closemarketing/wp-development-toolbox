@@ -2,7 +2,7 @@
 
 ## 1.23.0 - #, 2020
 
-- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin, (woormp) WooCommerce Remove mandatory phone in checkout, (metatax) Adds field select for terms, (wpstiv) Shows the entry title with permalink with echo, (mebaf) Gets block Field from Metabox, (gpafon) GeneratePress Adds local font
+- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin, (woormp) WooCommerce Remove mandatory phone in checkout, (metatax) Adds field select for terms, (wpstiv) Shows the entry title with permalink with echo, (mebaf) Gets block Field from Metabox, (gpafon) GeneratePress Adds local font, (metapdf) Adds File PDF field
 - Added slug translatable for multilingual sites or plugin in Post Types (wpacptpa) and (wpacptpo). Reviewed shortcut snippets.
 
 ## 1.22.0 - 26 September, 2020
