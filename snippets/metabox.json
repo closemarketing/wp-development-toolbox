@@ -121,6 +121,21 @@
 			"),"
 		]
 	},
+	"Metabox | Adds PDF File field": {
+		"prefix": "metapdf",
+		"body": [
+		  "array(",
+		  "\t'id'               => \"{\\$prefix}${1:id}\",",
+		  "\t'name'             => __( '${2:title}', '${3:textdomain}' ),",
+		  "\t'type'             => 'file_advanced',",
+		  "\t'force_delete'     => false,",
+		  "\t'max_file_uploads' => 1,",
+		  "\t'mime_type'        => 'application/pdf',",
+		  "\t'max_status'       => 'false', // Do not show how many files uploaded/remaining.",
+		  "),"
+		],
+		"description": "Metabox | Adds PDF File field"
+	},
 	"MetaBox | Adds Icon field": {
 		"prefix": "metaicon",
 		"body": [
