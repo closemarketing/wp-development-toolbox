@@ -75,10 +75,11 @@
 	"WordPress | Shows a meta value": {
 		"prefix": "wpsgmt",
 		"body": [
-		  "$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
-		  "if ( $${1:variable} ) {",
-		  "\techo esc_html( $${1:variable} );",
-		  "}// if meta ${1:variable} ."
+			"// Shows meta value: ${1:variable} .",
+		  	"$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
+			"if ( $${1:variable} ) {",
+			"\techo esc_html( $${1:variable} );",
+			"}"
 		]
 	},
 	"WordPress | Creates a widget": {
