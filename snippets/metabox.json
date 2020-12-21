@@ -155,7 +155,7 @@
 		"body": [
 			"// NUMBER.",
 			"array(",
-			"\t'name' => '${1:name}',",
+			"\t'name' => __( '${1:title}', '${4:textdomain}' ),",
 			"\t'id'   => \"{\\$prefix}${2:slug}\",",
 			"\t'type' => 'number',",
 			"\t'min'  => 0,",
@@ -233,8 +233,8 @@
 		"body": [
 			"// CHECKBOX.",
 			"array(",
-			"\t'name'  => '${1:name}',",
-			"\t'id'    => \"{\\$prefix}${3:slug}\",",
+			"\t'name'  => __( '${1:title}', '${3:textdomain}' ),",
+			"\t'id'    => \"{\\$prefix}${2:slug}\",",
 			"\t'type'  => 'checkbox',",
 			"\t'std'   => 0, // Value can be 0 or 1.", 
 			"),"
