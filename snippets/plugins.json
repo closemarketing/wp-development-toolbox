@@ -23,8 +23,8 @@
 	"Posts 2 Posts  | Shows connected posts": {
 		"prefix": "p2pscon",
 		"body": [
-			"\t// Find connected pages.",
-			"\t$connected = new WP_Query(",
+			"\t// * Find connected pages from the plugin https://es.wordpress.org/plugins/posts-to-posts/",
+			"\t\\$connected = new WP_Query(",
 			"\t\tarray(",
 			"\t\t\t'connected_type'  => '${1:post_type_1}_to_${2:post_type_2}',",
 			"\t\t\t'connected_items' => get_queried_object(),",
