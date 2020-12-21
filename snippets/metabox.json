@@ -168,7 +168,7 @@
 		"body": [
 			"// SELECT BOX.",
 			"array(",
-			"\t'name'        => '${1:name}',",
+			"\t'name'        => __( '${1:title}', '${5:textdomain}' ),",
 			"\t'id'          => \"{\\$prefix}select\",",
 			"\t'type'        => 'select',",
 			"\t'options'     => array(",
@@ -186,10 +186,10 @@
 		"body": [
 			"// TEXT.",
 			"array(",
-			"\t'name'              => '${1:name}',",
-			"\t'label_description' => '${2:descripcion-label}',",
+			"\t'name'              => __( '${1:title}', '${5:textdomain}' ),",
+			"\t'label_description' => '__( '${2:descripcion-label}', '${5:textdomain}' ),",
 			"\t'id'                => \"{\\$prefix}${3:slug}\",",
-			"\t'desc'              => '${4:descripcion}',",
+			"\t'desc'              => '__( '${4:descripcion}', '${5:textdomain}' ),",
 			"\t'type'              => 'text',",
 			"\t'std'               => '',",
 			"\t'clone'             => false,",
@@ -201,7 +201,7 @@
 		"body": [
 			"// URL.",
 			"array(",
-			"\t'name' => '${1:name}',",
+			"\t'name' => __( '${1:title}', '${5:textdomain}' ),",
 			"\t'id'   => \"{\\$prefix}${3:slug}\",",
 			"\t'desc' => '${4:descripcion}',",
 			"\t'type' => 'url',",
