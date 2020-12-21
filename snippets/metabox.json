@@ -189,7 +189,7 @@
 			"\t'name'              => __( '${1:title}', '${5:textdomain}' ),",
 			"\t'label_description' => __( '${2:descripcion-label}', '${5:textdomain}' ),",
 			"\t'id'                => \"{\\$prefix}${3:slug}\",",
-			"\t'desc'              => '__( '${4:descripcion}', '${5:textdomain}' ),",
+			"\t'desc'              => __( '${4:descripcion}', '${5:textdomain}' ),",
 			"\t'type'              => 'text',",
 			"\t'std'               => '',",
 			"\t'clone'             => false,",
