@@ -229,8 +229,6 @@
 		  "/**",
 		  " * ${1:Short Description}",
 		  " *",
-		  " * ${2:Long Description}",
-		  " *",
 		  " * @package    ${3:packace-name}",
 		  " * @author     ${4:example} <${5:email}>",
 		  " * @copyright  ${6:year} ${7:Company}",
@@ -478,11 +476,25 @@
 			" *",
 			" * @return void",
 			" */",
-			"function ${2:prefix}load_${2:post_type}_page() {",
+			"function ${1:prefix}load_${2:post_type}_page() {",
 			"\tif ( is_singular( '${2:post_type}' ) ) {",
 			"\t\t// Custom actions.",
 			"\t}",
 			"}"
 		]
 	},
+	"WordPress | Enqueue Style in Plugin": {
+		"prefix": "wpaes",
+		"body": [
+		  "wp_enqueue_style( '${1:slug-name}', plugins_url( '/assets/${2:filename}.css', __FILE__ ), array(), ${3:version} );"
+		],
+		"description": "WordPress | Enqueue Style in Plugin"
+	},
+	"WordPress | Enqueue Javascript in Plugin": {
+		"prefix": "wpaej",
+		"body": [
+		  "wp_enqueue_script( '${1:slug-name}', plugins_url( '/assets/${2:filename}.js', __FILE__ ), array( 'jquery' ), ${3:version}, true );"
+		],
+		"description": "WordPress | Enqueue Javascript in Plugin"
+	}
 }

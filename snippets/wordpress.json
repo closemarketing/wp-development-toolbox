@@ -33,6 +33,16 @@
 		  "</h2>"
 		]
 	},
+	"WordPress | Shows the entry title with permalink with echo": {
+		"prefix": "wpstiv",
+		"body": [
+		  "echo '<h2 class=\"entry-title\">';",
+		  "echo '<a href=\"' . esc_url( get_the_permalink() ) . '\" rel=\"bookmark\" title=\"' . the_title_attribute( 'echo=0' ) . '\">';",
+		  "echo esc_html( get_the_title() );",
+		  "echo '</a></h2>';"
+		],
+		"description": "WordPress | Shows title in php "
+	},
 	"WordPress | WordPress Add excerpts to Pages": {
 		"prefix": "wpaex",
 		"body": [
@@ -65,10 +75,11 @@
 	"WordPress | Shows a meta value": {
 		"prefix": "wpsgmt",
 		"body": [
-		  "$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
-		  "if ( $${1:variable} ) {",
-		  "\techo esc_html( $${1:variable} );",
-		  "}// if meta ${1:variable} ."
+			"// Shows meta value: ${1:variable} .",
+		  	"$${1:variable} = get_post_meta( get_the_id(), '${1:variable}', true );",
+			"if ( $${1:variable} ) {",
+			"\techo esc_html( $${1:variable} );",
+			"}"
 		]
 	},
 	"WordPress | Creates a widget": {

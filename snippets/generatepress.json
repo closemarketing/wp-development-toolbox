@@ -4,7 +4,7 @@
 		"body": [
 		  "add_filter( 'generate_logo', '${1:prefix}_custom_logo' );",
 		  "/**",
-		  " * Filters Logo in GeneratePress",
+		  " * Filters Logo in GeneratePress https://www.closemarketing.es/go/wpd-generatepress/",
 		  " *",
 		  " * @param string $logo URL of Logo.",
 		  " * @return string $logo",
@@ -46,7 +46,7 @@
 		"prefix": "gpspref",
 		"body": [
 			"/**",
-			" * ## Register Prefooter",
+			" * ## Register Prefooter for GeneratePress https://www.closemarketing.es/go/wpd-generatepress/",
 			" * --------------------------- */",
 			"",
 			"// Register new sidebar.",
@@ -78,5 +78,23 @@
 			"}"
 		],
 		"description": "Genesis | Register and shows a sidebar before footer"
+	},
+	"GeneratePress | Adds local font": {
+		"prefix": "gpafon",
+		"body": [
+			"/**",
+			" * Adds Local Font in GeneratePress https://www.closemarketing.es/go/wpd-generatepress/",
+			" * Then you could donwload from Google Fonts using https://google-webfonts-helper.herokuapp.com/fonts",
+			" */",
+			"add_filter(",
+			"\t'generate_typography_default_fonts',",
+			"\tfunction( \\$fonts ) {",
+			"\t\t$fonts[] = '${1:Font name}';",
+			"",
+			"\t\treturn \\$fonts;",
+			"\t}",
+			");"
+		],
+		"description": "GeneratePress | Adds local font"
 	}
 }

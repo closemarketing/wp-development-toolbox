@@ -16,7 +16,7 @@
 			"\t// 2nd meta box",
 			"\t\\$meta_boxes[] = array(",
 			"\t\t'id'         => 'standard-${3:post-type}',",
-			"\t\t'title'      => '${2:title-metabox}',",
+			"\t\t'title'      => __( '${2:title-metabox}', '${5:textdomain}' ),",
 			"\t\t'post_types' => array( '${3:post-type}' ),",
 			"\t\t'context'    => '${4:orientation}', // side / normal. ",
 			"\t\t'priority'   => 'high',",
@@ -59,6 +59,34 @@
 			"),"
 		]
 	},
+	"MetaBox | Adds field select for terms": {
+		"prefix": "metatax",
+		"body": [
+		  "// * Get terms in array",
+		  "\\$terms_array = get_terms(",
+		  "\tarray(",
+		  "\t\t'taxonomy'   => '${1:taxonomy}',",
+		  "\t\t'hide_empty' => false,",
+		  "\t)",
+		  ");",
+		  "\\$terms_options = array();",
+		  "foreach ( \\$terms_array as \\$term_single ) {",
+		  "\t\\$terms_options[ \\$term_single->term_id ] = \\$term_single->name;",
+		  "}",
+		  "// Move to metabox",
+		  "// SELECT BOX term ${1:taxonomy}.",
+		  "array(",
+		  "\t'name'        => '${2:Name}',",
+		  "\t'id'          => \"{\\$prefix}term_${1:taxonomy}\",",
+		  "\t'type'        => 'select',",
+		  "\t'options'     => \\$terms_options,",
+		  "\t'multiple'    => false,",
+		  "\t'std'         => '',",
+		  "\t'placeholder' => '${3:Select Placeholder}',",
+		  "),"
+		],
+		"description": "MetaBox | Adds field select for terms"
+	},
 	"MetaBox | Adds Field date": {
 		"prefix": "metadate",
 		"body": [
@@ -93,6 +121,21 @@
 			"),"
 		]
 	},
+	"Metabox | Adds PDF File field": {
+		"prefix": "metapdf",
+		"body": [
+		  "array(",
+		  "\t'id'               => \"{\\$prefix}${1:id}\",",
+		  "\t'name'             => __( '${2:title}', '${3:textdomain}' ),",
+		  "\t'type'             => 'file_advanced',",
+		  "\t'force_delete'     => false,",
+		  "\t'max_file_uploads' => 1,",
+		  "\t'mime_type'        => 'application/pdf',",
+		  "\t'max_status'       => 'false', // Do not show how many files uploaded/remaining.",
+		  "),"
+		],
+		"description": "Metabox | Adds PDF File field"
+	},
 	"MetaBox | Adds Icon field": {
 		"prefix": "metaicon",
 		"body": [
@@ -112,7 +155,7 @@
 		"body": [
 			"// NUMBER.",
 			"array(",
-			"\t'name' => '${1:name}',",
+			"\t'name' => __( '${1:title}', '${4:textdomain}' ),",
 			"\t'id'   => \"{\\$prefix}${2:slug}\",",
 			"\t'type' => 'number',",
 			"\t'min'  => 0,",
@@ -125,7 +168,7 @@
 		"body": [
 			"// SELECT BOX.",
 			"array(",
-			"\t'name'        => '${1:name}',",
+			"\t'name'        => __( '${1:title}', '${5:textdomain}' ),",
 			"\t'id'          => \"{\\$prefix}select\",",
 			"\t'type'        => 'select',",
 			"\t'options'     => array(",
@@ -143,10 +186,10 @@
 		"body": [
 			"// TEXT.",
 			"array(",
-			"\t'name'              => '${1:name}',",
-			"\t'label_description' => '${2:descripcion-label}',",
+			"\t'name'              => __( '${1:title}', '${5:textdomain}' ),",
+			"\t'label_description' => __( '${2:descripcion-label}', '${5:textdomain}' ),",
 			"\t'id'                => \"{\\$prefix}${3:slug}\",",
-			"\t'desc'              => '${4:descripcion}',",
+			"\t'desc'              => __( '${4:descripcion}', '${5:textdomain}' ),",
 			"\t'type'              => 'text',",
 			"\t'std'               => '',",
 			"\t'clone'             => false,",
@@ -158,7 +201,7 @@
 		"body": [
 			"// URL.",
 			"array(",
-			"\t'name' => '${1:name}',",
+			"\t'name' => __( '${1:title}', '${5:textdomain}' ),",
 			"\t'id'   => \"{\\$prefix}${3:slug}\",",
 			"\t'desc' => '${4:descripcion}',",
 			"\t'type' => 'url',",
@@ -190,8 +233,8 @@
 		"body": [
 			"// CHECKBOX.",
 			"array(",
-			"\t'name'  => '${1:name}',",
-			"\t'id'    => \"{\\$prefix}${3:slug}\",",
+			"\t'name'  => __( '${1:title}', '${3:textdomain}' ),",
+			"\t'id'    => \"{\\$prefix}${2:slug}\",",
 			"\t'type'  => 'checkbox',",
 			"\t'std'   => 0, // Value can be 0 or 1.", 
 			"),"
@@ -424,5 +467,14 @@
 			"</div>"
 		],
 		"description": "MetaBox Blocks | Template PHP for block"
-	}
+	},
+	"Metabox Blocks | Gets block Field": {
+		"prefix": "mebaf",
+		"body": [
+		  "// Gets Block field ${1:field_key}.",
+		  "\\$${1:field_key} = mb_get_block_field( '${1:field_key}' );",
+		  ""
+		],
+		"description": "Metabox Blocks | Gets block Field"
+	    }
 }

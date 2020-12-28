@@ -44,6 +44,7 @@ A big thanks to the people that have contributed to this project:
 | **wptupd** 	|	Force updates and upgrades
 | **wpaac** 	|	Adds an action with function
 | **wpstit** 	|	Shows the entry title with permalink
+| **wpstiv** 	|	Shows the entry title with permalink with echo
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget
@@ -70,9 +71,9 @@ A big thanks to the people that have contributed to this project:
 ## WordPress Functions for Custom Post Type (WP)
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
-| **wpacptpag** 	|	Creates a new Custom Post Type for Pages
-| **wpacptpost** 	|	Creates a new Custom Post Type for Posts
-| **wpacptcol** 	|	Adds Custom columns in Admin Custom Post Type
+| **wpacptpa** 	|	Creates a new Custom Post Type for Pages
+| **wpacptpo** 	|	Creates a new Custom Post Type for Posts
+| **wpacptco** 	|	Adds Custom columns in Admin Custom Post Type
 | **wpatax** 	|	Register a taxonomy
 
 &nbsp;
@@ -104,6 +105,9 @@ A big thanks to the people that have contributed to this project:
 | **wpagt**   | Gets environment mode
 | **wptgt**   | Sets environment mode in config
 | **wptlog**  | Customize login page
+| **Enqueue** |
+| **wpaes** | Enqueue Style in Plugin
+| **wpaej** | Enqueue Javascript in Plugin
 | **API Snippets** |
 | **wpgfu**	 | API Get function
 
@@ -151,7 +155,7 @@ A big thanks to the people that have contributed to this project:
 | **gpslo** 	| 	Filter main logo
 | **gpswc** 	| 	Shows Featured image from WooCommerce
 | **gpspref** 	| 	Register and shows a sidebar before footer
-
+| **gpafon** 	| 	Adds local font
 &nbsp;
 
 ## Genesis (GEN)
@@ -196,6 +200,7 @@ A big thanks to the people that have contributed to this project:
 | **genrsec**	|	Remove Secondary Sidebar
 | **genremem**	|	Remove Entry meta
 | **genrem**	|	Remove Entry Meta in post type
+| **genred**	|	Remove the edit link
 
 &nbsp;
 
@@ -228,6 +233,8 @@ A big thanks to the people that have contributed to this project:
 | **woordes** 	|	Removes Description tab title
 | **woorpa** 	|	Hide prices in archive pages
 | **wooris** 	|	Remove Image in Single product
+| **woormp** 	|	Remove mandatory phone in checkout
+| **woorpr** 	|	Remove Price Range in product page
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
@@ -261,6 +268,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | ------------------- |------------------------------------------------------------------|
 | **metafun**	|	Adds Metabox Function
 | **metapost**	| 	Adds field select for posts
+| **metatax**	| 	Adds field select for terms in a taxonomy
 | **metatext**	| 	Adds text field
 | **metagal**	| 	Adds Images Gallery Field
 | **metaurl**	| 	Adds URL Field
@@ -272,12 +280,14 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
 | **metadate**	| 	Adds Field date
 | **metapid**	| 	Get actual post in filter function
+| **metapdf**	| 	Adds PDF field
 | **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
 | **MetaBox Blocks** |
 | **mebab**		| 	Registers a new block
 | **mebat**		| 	Creates the block template php
 | **mebas**		| 	Creates the block template style
+| **mebaf**| Gets block Field
 
 &nbsp;
 

@@ -1,8 +1,17 @@
 # Change Log
 
+## 1.23.0 - 28 December, 2020
+
+- Added snippets: (jsah) External JS Initial content to include, (wpaes) Enqueue Style in Plugin, (wpaej) Enqueue Javascript in Plugin, (woormp) WooCommerce Remove mandatory phone in checkout, (metatax) Adds field select for terms, (wpstiv) Shows the entry title with permalink with echo, (mebaf) Gets block Field from Metabox, (gpafon) GeneratePress Adds local font, (metapdf) Adds File PDF field, (woorpr) WooCommerce Remove Price Range in product page
+- Added slug translatable for multilingual sites or plugin in Post Types (wpacptpa) and (wpacptpo). Reviewed shortcut snippets.
+
+## 1.22.0 - 26 September, 2020
+
+- Fixes not updating code
+
 ## 1.21.0 - 26 September, 2020
 
-- Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page
+- Added snippets: (gpspref) GeneratePress Register and shows a sidebar before footer, (wpagt) Adds Get environment, (wptgt) Set environment, (wptlog) Customize login page, (genred) Genesis Remove the edit link
 - Changed genafpt to wpafpt.
 - Added affiliate links to make sustainable this project.
 
@@ -13,25 +22,30 @@
 - Fixed snippets for PHPCS Compliance.
   
 ## 1.19.0 - 25 Junio, 2020
+
 - Added snippets: (wpamen) Register additional menu, (wpacr) WordPress adds recurrence interval for cron, (wpare) Readme TXT for Plugins, (wpaprq) Plugin require files
 - Added snippets in WooCommerce: (woosterm) Adds checkbox for terms and conditions in registration page
 
 ## 1.18.0 - 5 March, 2020
+
 - Added GeneratePress! : (gpslo) Filter Logo, (gpswc) Shows Featured image from WooCommerce
 - Added Snippets: (wooris) Remove Image in Single product, (phpavi) Create variable with isset verification, (gensfib) Adds featured image as entry header background, (gutagr) Gutenberg Adds Gradient Presets, (gutrgr) Disable Custom Gradients.
 - PHP Coding standards fixes.
 - New Snippets for API Remote access: (wpgfu) WordPress API Get function
 
 ## 1.17.0 - 31 October, 2019
+
 - Added Snippets: (gutrfont) Removes Noto Font from Frontend in Gutenberg, (gutaim) Name Image Sizes, (wmfup) Filter Myme types allowed in Multisite, (gutasa) Adds Align style Full and Wide for Gutenberg, (sttim) Image sizes for a Storefront child theme for Storefront
 
 - Added Support for Metabox Blocks! : (mebab) Registers a new block, (mebat) Creates the block template php, (mebas) Creates the block template style
 
 ## 1.16.0 - Sep 24, 2019
+
 - Added Snippets: (cssamf) Media Query mobile first, (wprpf) Disables Post format for the theme, (wptre) Replace already registered post type, (woorpa) WooCommerce Hide prices in archive pages
 - First pull request from [Fernando G.Rebolledo](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb) Function comment (wpafc)
 
 ## 1.15.0 - Jun 2, 2019
+
 - Fixes Coding Standards for Custom Post types snippets.
 
 Added Snippets:

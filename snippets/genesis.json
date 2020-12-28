@@ -625,12 +625,21 @@
 		],
 		"description": "Genesis | Remove Entry Meta in post type"
 	},
+	"Genesis | Remove the edit link": {
+		"prefix": "genred",
+		"body": [
+		  "// * Remove the edit link. Snippet from Genesis Framework: https://www.closemarketing.es/go/genesis/.",
+		  "add_filter( 'genesis_edit_post_link' , '__return_false' );"
+		],
+		"description": "Genesis | Remove the edit link"
+	},
 	"Genesis | Customize Entry Post Info": {
 		"prefix": "genspsi",
 		"body": [
 			"add_filter( 'genesis_post_info', 'post_info_filter' );",
 			"/**",
 			" * Customize the post info function",
+			" * Snippet from Genesis Framework: https://www.closemarketing.es/go/genesis/",
 			" *",
 			" * @param [type] \\$post_info String with post info.",
 			" * @return \\$post_info Modified post info.",

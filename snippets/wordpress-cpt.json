@@ -1,6 +1,6 @@
 {
 	"WordPress | Creates a new Custom Post Type for Pages": {
-		"prefix": "wpacptpag",
+		"prefix": "wpacptpa",
 		"body": [
 			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
@@ -29,7 +29,7 @@
 			"\t\t'show_ui'            => true,",
 			"\t\t'query_var'          => true,",
 			"\t\t'rewrite'            => array(",
-			"\t\t\t'slug'       => __( '${12:slug}', '${13:textdomain}' ),",
+			"\t\t\t'slug'       => _x( '${12:slug}', '${14:scope}', '${13:textdomain}' ),",
 			"\t\t\t'with_front' => false,",
 			"\t\t),",
 			"\t\t'has_archive'        => false,",
@@ -44,7 +44,7 @@
 		]
 	},
 	"WordPress | Creates a new Custom Post Type for Posts": {
-		"prefix": "wpacptpost",
+		"prefix": "wpacptpo",
 		"body": [
 			"add_action( 'init', '${1:function prefix}_cpt_${2:post-type}' );",
 			"/**",
@@ -73,7 +73,7 @@
 			"\t\t'show_in_rest'       => true, // Adds gutenberg support.",
 			"\t\t'query_var'          => true,",
 			"\t\t'rewrite'            => array(",
-			"\t\t\t'slug'       => __( '${12:slug}', '${13:textdomain}' ),",
+			"\t\t\t'slug'       => _x( '${12:slug}', '${14:scope}', '${13:textdomain}' ),",
 			"\t\t\t'with_front' => false,",
 			"\t\t),",
 			"\t\t'has_archive'        => false,",
@@ -88,7 +88,7 @@
 		]
 	},
 	"WordPress | Adds Custom columns in Admin Custom Post Type": {
-		"prefix": "wpacptcol",
+		"prefix": "wpacptco",
 		"body": [
 			"add_filter( 'manage_edit-${1:post_type}_columns', 'add_new_${1:post_type}_columns' );",
 			"/**",
@@ -143,14 +143,14 @@
 			"function ${1:function prefix}_register_tax_${2:name-taxonomy}() {",
 			"",
 			"\t\\$labels = array(",
-			"\t\t'name'          => '${3:name taxonomy plural}',",
-			"\t\t'singular_name' => '${4:Taxonomy Name Singular}',",
-			"\t\t'search_items'  => '${5:Search} ${4:Taxonomy Name Singular}',",
-			"\t\t'all_items'     => '${6:All} ${3:name taxonomy plural}',",
-			"\t\t'edit_item'     => '${7:Edit} ${4:Taxonomy Name Singular}',",
-			"\t\t'update_item'   => '${8:Update} ${4:Taxonomy Name Singular}',",
-			"\t\t'add_new_item'  => '${9:Add New} ${4:Taxonomy Name Singular}',",
-			"\t\t'new_item_name' => '${9:Add New} ${4:Taxonomy Name Singular}',",
+			"\t\t'name'          => __( '${3:name taxonomy plural}', '${12:textdomain}' ),",
+			"\t\t'singular_name' => __( '${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
+			"\t\t'search_items'  => __( '${5:Search} ${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
+			"\t\t'all_items'     => __( '${6:All} ${3:name taxonomy plural}', '${12:textdomain}' ),",
+			"\t\t'edit_item'     => __( '${7:Edit} ${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
+			"\t\t'update_item'   => __( '${8:Update} ${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
+			"\t\t'add_new_item'  => __( '${9:Add New} ${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
+			"\t\t'new_item_name' => __( '${9:Add New} ${4:Taxonomy Name Singular}', '${12:textdomain}' ),",
 			"\t);",
 			"",
 			"\tregister_taxonomy(",
@@ -166,7 +166,7 @@
 			"\t\t\t'show_admin_column' => true,",
 			"\t\t\t'query_var'         => true,",
 			"\t\t\t'rewrite'           => array(",
-			"\t\t\t\t'slug' => '${11:slug-taxonomy}',",
+			"\t\t\t\t'slug' => __( '${11:slug}', '${12:textdomain}' ),",
 			"\t\t\t),",
 			"\t\t)",
 			"\t);",

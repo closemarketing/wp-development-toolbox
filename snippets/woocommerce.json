@@ -124,19 +124,19 @@
 	"WooCommerce | Removes SKU in detail page": {
 		"prefix": "woorsku",
 		"body": [
+			"add_filter( 'wc_product_sku_enabled', '${1:prefix}remove_product_page_skus' );",
 			"/**",
 			" * Removes SKU in detail page.",
 			" *",
 			" * @param boolean \\$enabled Value to SKU enabled or not.",
 			" * @return boolean \\$enabled",
 			" */",
-			"function cmk_remove_product_page_skus( \\$enabled ) {",
+			"function ${1:prefix}remove_product_page_skus( \\$enabled ) {",
 			"\tif ( ! is_admin() && is_product() ) {",
 			"\t\treturn false;",
 			"\t}",
 			"\treturn \\$enabled;",
-			"}",
-			"add_filter( 'wc_product_sku_enabled', 'cmk_remove_product_page_skus' );"
+			"}"
 		]
 	},
 	"WooCommerce | Remove Company name in checkout": {
@@ -225,6 +225,39 @@
 			"}"
 		],
 		"description": "WooCommerce | Hide Shipping rates when free shipping"
+	},
+	"WooCommerce | Remove Price Range in product page": {
+		"prefix": "woorpr",
+		"body": [
+		  "add_filter( 'woocommerce_variable_sale_price_html', '${1:prefix}variable_product_price', 10, 2 );",
+		  "add_filter( 'woocommerce_variable_price_html', '${1:prefix}variable_product_price', 10, 2 );",
+		  "/**",
+		  " * Hide Price Range for WooCommerce Variable Products.",
+		  " * From: https://learnwoo.com/hide-price-range-woocommerce-variable-products/",
+		  " *",
+		  " * @param array  \\$v_price Array of prices.",
+		  " * @param object \\$v_product Product object.",
+		  " * @return string",
+		  " */",
+		  "function ${1:prefix}variable_product_price( \\$v_price, \\$v_product ) {",
+		  "",
+		  "\t// Product Price.",
+		  "\t\\$prod_prices = array( \\$v_product->get_variation_price( 'min', true ), \\$v_product->get_variation_price( 'max', true ) );",
+		  "\t\\$prod_price  = \\$prod_prices[0] !== \\$prod_prices[1] ? sprintf( __( 'From: %1$s', 'woocommerce' ), wc_price( \\$prod_prices[0] ) ) : wc_price( \\$prod_prices[0] );",
+		  "",
+		  "\t// Regular Price.",
+		  "\t\\$regular_prices = array( \\$v_product->get_variation_regular_price( 'min', true ), \\$v_product->get_variation_regular_price( 'max', true ) );",
+		  "\tsort( \\$regular_prices );",
+		  "\t\\$regular_price = \\$regular_prices[0]!== \\$regular_prices[1] ? sprintf( __( 'From: %1$s', 'woocommerce' ), wc_price( \\$regular_prices[0] ) ) : wc_price( \\$regular_prices[0] );",
+		  "",
+		  "\tif ( \\$prod_price !== \\$regular_price ) {",
+		  "\t\t\\$prod_price = '<del>' . \\$regular_price . \\$v_product->get_price_suffix() . '</del> <ins>' . \\$prod_price . \\$v_product->get_price_suffix() . '</ins>';",
+		  "\t}",
+		  "\treturn \\$prod_price;",
+		  "}",
+		  ""
+		],
+		"description": "WooCommerce | Remove Price Range in product page"
 	},
 	"WooCommerce | Add Settings Tab": {
 		"prefix": "wooastb",
@@ -454,5 +487,22 @@
 		  ""
 		],
 		"description": "WooCommerce | Adds checkbox for terms and conditions"
+	},
+	"WooCommerce | Remove mandatory phone in checkout": {
+		"prefix": "woormp",
+		"body": [
+		  "add_filter( 'woocommerce_billing_fields', '${1:prefix}remove_filter_phone', 10, 1 );",
+		  "/**",
+		  " * Remove mandatory phone",
+		  " *",
+		  " * @param array \\$address_fields Address Fields from Checkout.",
+		  " * @return array \\$address_fields",
+		  " */",
+		  "function ${1:prefix}remove_filter_phone( \\$address_fields ) {",
+		  "	\\$address_fields['billing_phone']['required'] = false;",
+		  "	return \\$address_fields;",
+		  "}"
+		],
+		"description": "WooCommerce | Remove mandatory phone in checkout"
 	}
 }
