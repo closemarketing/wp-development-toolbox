@@ -226,6 +226,39 @@
 		],
 		"description": "WooCommerce | Hide Shipping rates when free shipping"
 	},
+	"WooCommerce | Remove Price Range in product page": {
+		"prefix": "woorpr",
+		"body": [
+		  "add_filter( 'woocommerce_variable_sale_price_html', '${1:prefix}variable_product_price', 10, 2 );",
+		  "add_filter( 'woocommerce_variable_price_html', '${1:prefix}variable_product_price', 10, 2 );",
+		  "/**",
+		  " * Hide Price Range for WooCommerce Variable Products.",
+		  " * From: https://learnwoo.com/hide-price-range-woocommerce-variable-products/",
+		  " *",
+		  " * @param array  \\$v_price Array of prices.",
+		  " * @param object \\$v_product Product object.",
+		  " * @return string",
+		  " */",
+		  "function ${1:prefix}variable_product_price( \\$v_price, \\$v_product ) {",
+		  "",
+		  "\t// Product Price.",
+		  "\t\\$prod_prices = array( \\$v_product->get_variation_price( 'min', true ), \\$v_product->get_variation_price( 'max', true ) );",
+		  "\t\\$prod_price  = \\$prod_prices[0] !== \\$prod_prices[1] ? sprintf( __( 'From: %1$s', 'woocommerce' ), wc_price( \\$prod_prices[0] ) ) : wc_price( \\$prod_prices[0] );",
+		  "",
+		  "\t// Regular Price.",
+		  "\t\\$regular_prices = array( \\$v_product->get_variation_regular_price( 'min', true ), \\$v_product->get_variation_regular_price( 'max', true ) );",
+		  "\tsort( \\$regular_prices );",
+		  "\t\\$regular_price = \\$regular_prices[0]!== \\$regular_prices[1] ? sprintf( __( 'From: %1$s', 'woocommerce' ), wc_price( \\$regular_prices[0] ) ) : wc_price( \\$regular_prices[0] );",
+		  "",
+		  "\tif ( \\$prod_price !== \\$regular_price ) {",
+		  "\t\t\\$prod_price = '<del>' . \\$regular_price . \\$v_product->get_price_suffix() . '</del> <ins>' . \\$prod_price . \\$v_product->get_price_suffix() . '</ins>';",
+		  "\t}",
+		  "\treturn \\$prod_price;",
+		  "}",
+		  ""
+		],
+		"description": "WooCommerce | Remove Price Range in product page"
+	},
 	"WooCommerce | Add Settings Tab": {
 		"prefix": "wooastb",
 		"body": [

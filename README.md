@@ -234,6 +234,7 @@ A big thanks to the people that have contributed to this project:
 | **woorpa** 	|	Hide prices in archive pages
 | **wooris** 	|	Remove Image in Single product
 | **woormp** 	|	Remove mandatory phone in checkout
+| **woorpr** 	|	Remove Price Range in product page
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
