@@ -2,7 +2,7 @@
 
 ## 1.24.0 - #, 2021
 
-- Added snippets: (
+- Added snippets: (woorpb) Remove Product Tabs
 
 ## 1.23.0 - 28 December, 2020
 

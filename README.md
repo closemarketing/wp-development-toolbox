@@ -235,6 +235,7 @@ A big thanks to the people that have contributed to this project:
 | **wooris** 	|	Remove Image in Single product
 | **woormp** 	|	Remove mandatory phone in checkout
 | **woorpr** 	|	Remove Price Range in product page
+| **woorpb** 	|	Remove Product Tabs
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
