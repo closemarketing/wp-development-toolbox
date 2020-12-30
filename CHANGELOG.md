@@ -2,7 +2,7 @@
 
 ## 1.24.0 - #, 2021
 
-- Added snippets: (woorpb) Remove Product Tabs
+- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS
 
 ## 1.23.0 - 28 December, 2020
 

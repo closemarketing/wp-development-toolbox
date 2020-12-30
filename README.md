@@ -135,6 +135,7 @@ A big thanks to the people that have contributed to this project:
 | **gutacpt** 	| 	Adds Gutenberg support to a registered post type
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 | **gutasa** 	| 	Adds Align style Full and Wide
+| **gutacss** 	| 	Adds Gutenberg CSS from Customizer Additional CSS
 
 &nbsp;
 
