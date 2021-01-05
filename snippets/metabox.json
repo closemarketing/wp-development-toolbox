@@ -76,7 +76,7 @@
 		  "// Move to metabox",
 		  "// SELECT BOX term ${1:taxonomy}.",
 		  "array(",
-		  "\t'name'        => '${2:Name}',",
+		  "\t'name'        => __( '${1:title}', '${3:prefix-lang}' ),",
 		  "\t'id'          => \"{\\$prefix}term_${1:taxonomy}\",",
 		  "\t'type'        => 'select',",
 		  "\t'options'     => \\$terms_options,",
@@ -92,7 +92,7 @@
 		"body": [
 		  "// DATE.",
 		  "array(",
-		  "\t'name'       => '${1:title}',",
+		  "\t'name'       => __( '${1:title}', '${3:prefix-lang}' ),",
 		  "\t'id'         => \"{\\$prefix}${2:field-name}\",",
 		  "\t'type'       => 'date',",
 		  "\t// jQuery date picker options. See here http://api.jqueryui.com/datepicker .",
@@ -112,7 +112,7 @@
 		"body": [
 			"// GALLERY IMAGE ADVANCED.",
 			"array(",
-			"\t'name'             => '${1:name}',",
+			"\t'name'             => __( '${1:title}', '${3:prefix-lang}' ),",
 			"\t'id'               => \"{\\$prefix}${2:slug}\",",
 			"\t'type'             => 'image_advanced',",
 			"\t'force_delete'     => false,",
