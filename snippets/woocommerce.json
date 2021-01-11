@@ -515,5 +515,23 @@
 		  "remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );"
 		],
 		"description": "WooCommerce | Remove Product Tabs"
-	}
+	},
+	"WooCommerce | Remove link in Image product": {
+		"prefix": "wooria",
+		"body": [
+		  "add_filter( 'woocommerce_single_product_image_thumbnail_html', '${1:prefix}remove_product_image_link', 10, 2 );",
+		  "/**",
+		  " * Removes WooCommerce Image Product Link",
+		  " * https://en.davidperezgar.com/tag/woocommerce/?utm_source=vscode",
+		  " *",
+		  " * @param string \\$html Html code for image.",
+		  " * @param string \\$post_id Post id.",
+		  " * @return string",
+		  " */",
+		  "function ${1:prefix}remove_product_image_link( \\$html, \\$post_id ) {",
+		  "\treturn preg_replace( \"!<(a|/a).*?>!\", '', \\$html );",
+		  "}"
+		],
+		"description": "WooCommerce | Remove link in Image product"
+	    }
 }

@@ -234,6 +234,7 @@ A big thanks to the people that have contributed to this project:
 | **woordes** 	|	Removes Description tab title
 | **woorpa** 	|	Hide prices in archive pages
 | **wooris** 	|	Remove Image in Single product
+| **wooria** 	|	Remove link in Image product
 | **woormp** 	|	Remove mandatory phone in checkout
 | **woorpr** 	|	Remove Price Range in product page
 | **woorpb** 	|	Remove Product Tabs
