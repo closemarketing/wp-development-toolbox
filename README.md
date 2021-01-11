@@ -286,6 +286,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metapdf**	| 	Adds PDF field
 | **Shows to public** |
 | **metsimg**	| 	Shows Gallery in public page
+| **metsfi**	| 	Shows file download
 | **MetaBox Blocks** |
 | **mebab**		| 	Registers a new block
 | **mebat**		| 	Creates the block template php

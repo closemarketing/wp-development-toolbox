@@ -336,6 +336,10 @@
 	"MetaBox | Shows Gallery in public page": {
 		"prefix": "metsimg",
 		"body": [
+			"/**",
+			" * Shows metabox image in public",
+			" * Needs MetaBox to work: https://www.closemarketing.es/go/metabox/",
+			" */",
 			"\\$images = rwmb_meta( '${1:meta_key}', 'size=${2:image_size}' ); ",
 			"",
 			"if ( ! empty( \\$images ) ) {",
@@ -344,6 +348,19 @@
 			"\t}",
 			"}"
 		]
+	},"Metabox | Shows file download": {
+		"prefix": "metsfi",
+		"body": [
+		  "/**",
+		  " * Shows metabox file in public",
+		  " * Needs MetaBox to work: https://www.closemarketing.es/go/metabox/",
+		  " */",
+		  "\\$${1:metabox_variable}s = rwmb_meta( '${1:metabox_variable}' );",
+		  "foreach ( $${1:metabox_variable}s as $${1:metabox_variable} ) {",
+		  "\techo '<a href=\"' . esc_url( $${1:metabox_variable}['url'] ) . '\">' . esc_html( $${1:metabox_variable}['name'] ) . '</a>';",
+		  "}"
+		],
+		"description": "Metabox | Shows file download"
 	},
 	"MetaBox Blocks | Registers a new block": {
 		"prefix": "metabab",

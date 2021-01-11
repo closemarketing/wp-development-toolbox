@@ -2,7 +2,7 @@
 
 ## 1.24.0 - #, 2021
 
-- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product
+- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product, (metsfi) Shows file download
 
 ## 1.23.0 - 28 December, 2020
 
