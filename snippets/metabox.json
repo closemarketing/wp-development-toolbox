@@ -177,7 +177,7 @@
 			"\t// Select multiple values, optional. Default is false.",
 			"\t'multiple'    => false,",
 			"\t'std'         => '',",
-			"\t'placeholder' => '${4:text-placeholder}',",
+			"\t'placeholder' => __( '${4:text-placeholder}', '${5:textdomain}' ),",
 			"),"
 		]
 	},
