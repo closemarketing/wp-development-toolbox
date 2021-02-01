@@ -119,6 +119,7 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **wmacon** 	| 	Adds line in wpconfig
 | **wmfup** 	| 	Filter Myme types allowed in Multisite
+| **wmant** 	| 	Network Media Library
 
 &nbsp;
 

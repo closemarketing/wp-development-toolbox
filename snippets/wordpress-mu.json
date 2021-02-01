@@ -23,5 +23,18 @@
 		  "}"
 		],
 		"description": "WordPress Multisite | Allowed Myme types"
+	},
+	"WordPress Multisite | Network Media Library": {
+		"prefix": "wmant",
+		"body": [
+		  "// Network Library in mu-plugins. Needs this plugin: https://github.com/humanmade/network-media-library",
+		  "add_filter(",
+		  "\t'network-media-library/site_id',",
+		  "\tfunction( \\$site_id ) {",
+		  "\t\treturn ${1:site_id};;",
+		  "\t}",
+		  ");"
+		],
+		"description": "WordPress Multisite | Network Media Library"
 	}
 }
