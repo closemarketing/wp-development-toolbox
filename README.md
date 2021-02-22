@@ -91,6 +91,7 @@ A big thanks to the people that have contributed to this project:
 | **wpalpt**  | Loads Plugin Text Domain
 | **wpagit**  | Gitignore configuration for WordPress
 | **htacc**   | htaccess recommended for HTPPS sites
+| **htapd**   | htaccess Protect PDF to be downloaded and indexed
 | **wpahfil** | Comments Plugin File Header
 | **wpadhc**  | Doc Header comment
 | **wpafc**   | Function comment

@@ -72,6 +72,7 @@
 		],
 		"description": "WordPress | htaccess recommended for HTPPS sites"
 	},
+
 	"DEV | Gitignore configuration for WordPress": {
 		"prefix": "wpagit",
 		"body": [
@@ -154,4 +155,18 @@
 		],
 		"description": "DEV | Gitignore configuration for WordPress"
 	    },
+	    "HTACCESS | Protect PDF to be downloaded and indexed": {
+		"prefix": "htapd",
+		"body": [
+		  "<Files ~ \"\\.pdf$\">",
+		  "  Header set X-Robots-Tag \"noindex, nofollow\"",
+		  "</Files>",
+		  "",
+		  "RewriteEngine on ",
+		  "RewriteCond %{HTTP_REFERER} !^https://(www\\.)?${1:domain-name} [NC] ",
+		  "RewriteCond %{HTTP_REFERER} !^https://(www\\.)?${1:domain-name}.*\\$ [NC] ",
+		  "RewriteRule \\.(pdf)\\$ - [F]"
+		],
+		"description": "HTACCESS | Protect PDF to be downloaded and indexed"
+	    }
 }
