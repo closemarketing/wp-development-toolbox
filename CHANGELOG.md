@@ -2,7 +2,7 @@
 
 ## 1.24.0 - #, 2021
 
-- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product, (metsfi) Shows file download, (wmant) Multisite Network Library, (htapd) Protect PDF to be downloaded and indexed
+- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product, (metsfi) Shows file download, (wmant) Multisite Network Library, (htapd) Protect PDF to be downloaded and indexed, (wpajx) Create AJAX with button
 
 ## 1.23.0 - 28 December, 2020
 
