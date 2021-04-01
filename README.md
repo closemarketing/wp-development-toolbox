@@ -113,6 +113,8 @@ A big thanks to the people that have contributed to this project:
 | **wpajx**	 | Create AJAX for class and button
 | **API Snippets** |
 | **wpgfu**	 | API Get function
+| **GitHub Actions** |
+| **wpagd**	 | Deploy GitHub Repository to WordPress (https://github.com/10up/action-wordpress-plugin-deploy)
 
 &nbsp;
 

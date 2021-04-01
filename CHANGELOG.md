@@ -1,8 +1,8 @@
 # Change Log
 
-## 1.24.0 - #, 2021
+## 2.0.0 - #, 2021
 
-- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product, (metsfi) Shows file download, (wmant) Multisite Network Library, (htapd) Protect PDF to be downloaded and indexed, (wpajx) Create AJAX with button
+- Added snippets: (woorpb) Remove Product Tabs, (gutacss) Adds Gutenberg CSS from Customizer Additional CSS, (wooria) Remove link in Image product, (metsfi) Shows file download in MetaBox, (wmant) Multisite Network Library, (htapd) Protect PDF to be downloaded and indexed, (wpajx) Create AJAX with button, (wpagd) Deploy GitHub Repository to WordPress SVN
 
 ## 1.23.0 - 28 December, 2020
 
