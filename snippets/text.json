@@ -168,29 +168,5 @@
 		  "RewriteRule \\.(pdf)\\$ - [F]"
 		],
 		"description": "HTACCESS | Protect PDF to be downloaded and indexed"
-	    },
-	    "WordPress GitHub Deploy to WordPress": {
-		"prefix": "wpagd",
-		"body": [
-		  "# Save this file in .github/workflows/deploy.yml",
-		  "# Save in GitHub Secrets SVN_PASSWORD and SVN_USERNAME",
-		  "name: Deploy to WordPress.org",
-		  "on:",
-		  "  push:",
-		  "    tags:",
-		  "    - \"*\"",
-		  "jobs:",
-		  "  tag:",
-		  "    name: New tag",
-		  "    runs-on: ubuntu-latest",
-		  "    steps:",
-		  "    - uses: actions/checkout@master",
-		  "    - name: WordPress Plugin Deploy",
-		  "      uses: 10up/action-wordpress-plugin-deploy@stable",
-		  "      env:",
-		  "        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}",
-		  "        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}"
-		],
-		"description": "WordPress GitHub Deploy to WordPress"
 	    }
 }

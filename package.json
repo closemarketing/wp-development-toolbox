@@ -101,6 +101,10 @@
 			{
 				"language": "php",
 				"path": "./snippets/pods.json"
+			},
+			{
+				"language": "yml",
+				"path": "./snippets/wordpress-yml.json"
 			}
 		]
 	},
