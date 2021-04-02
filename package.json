@@ -103,7 +103,7 @@
 				"path": "./snippets/pods.json"
 			},
 			{
-				"language": "yml",
+				"language": "yaml",
 				"path": "./snippets/wordpress-yml.json"
 			}
 		]
