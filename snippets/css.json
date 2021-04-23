@@ -240,5 +240,18 @@
 			"}"
 		],
 		"description": "MetaBox | Creates the block template style"
+	},
+	"CSS | Center position absolute": {
+		"prefix": "cssapa",
+		"body": [
+		  ".${1:css-name} {",
+		  "\\tposition:absolute;",
+		  "\\tleft:0;",
+		  "\\tright:0;",
+		  "\\tmargin-left:auto;",
+		  "\\tmargin-right:auto;",
+		  "}"
+		],
+		"description": "CSS Center position absolute"
 	}
 }

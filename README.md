@@ -344,6 +344,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **cssagrid** 	|	Adds Grid container for Columns and rows
 | **cssatw** 	|	Tweaks for Genesis CSS
 | **cssamf** 	|	Media Query mobile first
+| **cssapa** 	|	Center position absolute
 
 &nbsp;
 
