@@ -97,5 +97,25 @@
 			");"
 		],
 		"description": "GeneratePress | Adds local font"
+	},
+	"GeneratePress | Adds CPT columns filter": {
+		"prefix": "gpacc",
+		"body": [
+		  "add_filter( 'generate_blog_columns', '${1:post-type}_columns' );",
+		  "/**",
+		  " * Adds columns to Custom post Type in GeneratePress https://www.closemarketing.es/go/wpd-generatepress/",
+		  " *",
+		  " * @param boolean \\$columns Columns to filter.",
+		  " * @return boolean",
+		  " */",
+		  "function ${1:post-type}_columns( \\$columns ) {",
+		  "\tif ( is_post_type_archive( '${1:post-type}' ) ) {",
+		  "\t\treturn true;",
+		  "\t}",
+		  "",
+		  "\treturn \\$columns;",
+		  "}"
+		],
+		"description": "GeneratePress | Adds CPT columns filter"
 	}
 }

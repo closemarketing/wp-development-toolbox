@@ -1,6 +1,8 @@
 # Change Log
-# 2.1.0 - 2021
-- Added snippets: (cssapa) Center position absolute
+
+## 2.1.0 - 2021
+
+- Added snippets: (cssapa) Center position absolute, (gpacc) GeneratePress Adds CPT columns filter
 
 ## 2.0.0 - #, 2021
 
