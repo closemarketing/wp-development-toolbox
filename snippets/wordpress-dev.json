@@ -493,8 +493,24 @@
 	"WordPress | Enqueue Javascript in Plugin": {
 		"prefix": "wpaej",
 		"body": [
-		  "wp_enqueue_script( '${1:slug-name}', plugins_url( '/assets/${2:filename}.js', __FILE__ ), array( 'jquery' ), ${3:version}, true );"
-		],
+			  "add_action( 'wp_enqueue_scripts', '${1:prefix}scripts' );",
+			  "/**",
+			  " * Loads Scripts",
+			  " *",
+			  " * @return void",
+			  " */",
+			  "function ${1:prefix}scripts() {",
+			  "\twp_register_script(",
+			  "\t\t'${2:slug-name}',",
+			  "\t\tplugins_url( '/includes/js/${1:slug-name}.js', __FILE__ ),",
+			  "\t\tarray( 'jquery' ),",
+			  "\t\t${3:version},",
+			  "\t\ttrue",
+			  "\t);",
+			  "wp_enqueue_script( '${2:slug-name}' );",
+			  "}"
+			],
+	
 		"description": "WordPress | Enqueue Javascript in Plugin"
 	},
 	"WordPress | Create AJAX button": {
