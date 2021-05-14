@@ -164,6 +164,7 @@ A big thanks to the people that have contributed to this project:
 | **gpspref** 	| 	Register and shows a sidebar before footer
 | **gpafon** 	| 	Adds local font
 | **gpacc** 	| 	Adds CPT columns filter
+| **gprgf** 	| 	Remove Google Fonts
 &nbsp;
 
 ## Genesis (GEN)

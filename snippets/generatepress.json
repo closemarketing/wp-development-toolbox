@@ -117,5 +117,26 @@
 		  "}"
 		],
 		"description": "GeneratePress | Adds CPT columns filter"
+	},
+	"GeneratePress | Remove Google Fonts": {
+		"prefix": "gprgf",
+		"body": [
+			"add_action( 'admin_init', '${1:prefix}remove_google_fonts_array' );",
+			"/**",
+			" * Remove Google Fonts from GeneratePress",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}remove_google_fonts_array() {",
+			"\tadd_filter( 'generate_google_fonts_array', '__return_false' );",
+			"}",
+			"",
+			"add_action( 'wp_enqueue_scripts','${1:prefix}remove_google_fonts', 10 );",
+			"function ${1:prefix}remove_google_fonts() {",
+			"\twp_dequeue_style( 'generate-fonts' );",
+			"\twp_dequeue_style( 'generateblocks-google-fonts' );",
+			"}"
+		],
+		"description": "GeneratePress | Remove Google Fonts"
 	}
 }
