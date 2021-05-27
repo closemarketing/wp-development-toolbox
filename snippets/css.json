@@ -245,11 +245,11 @@
 		"prefix": "cssapa",
 		"body": [
 		  ".${1:css-name} {",
-		  "\tposition:absolute;",
-		  "\tleft:0;",
-		  "\tright:0;",
-		  "\tmargin-left:auto;",
-		  "\tmargin-right:auto;",
+		  "\tposition: absolute;",
+		  "\tleft: 0;",
+		  "\tright: 0;",
+		  "\tmargin-left: auto;",
+		  "\tmargin-right: auto;",
 		  "}"
 		],
 		"description": "CSS Center position absolute"
