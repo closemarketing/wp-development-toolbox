@@ -1,6 +1,6 @@
 {
 	"WordPress GitHub Deploy to WordPress": {
-		"prefix": "wpagd",
+		"prefix": "wpdgd",
 		"body": [
 		  "# Save this file in .github/workflows/deploy.yml",
 		  "# Save in GitHub Secrets SVN_PASSWORD and SVN_USERNAME",
@@ -18,9 +18,36 @@
 		  "    - name: WordPress Plugin Deploy",
 		  "      uses: 10up/action-wordpress-plugin-deploy@stable",
 		  "      env:",
-		  "        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}",
-		  "        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}"
+		  "        SVN_PASSWORD: \\${{ secrets.SVN_PASSWORD }}",
+		  "        SVN_USERNAME: \\${{ secrets.SVN_USERNAME }}"
 		],
 		"description": "WordPress GitHub Deploy to WordPress"
+	    },
+	    "WordPress GitHub Deploy FTP Push": {
+		"prefix": "wpdfp",
+		"body": [
+		  "on: push",
+		  "name: 🚀 Deploy website on push",
+		  "jobs:",
+		  "  web-deploy:",
+		  "    name: 🎉 Deploy",
+		  "    runs-on: ubuntu-latest",
+		  "    steps:",
+		  "    - name: 🚚 Get latest code",
+		  "      uses: actions/checkout@v2.3.2",
+		  "",
+		  "    - name: 📂 Sync files",
+		  "      uses: SamKirkland/FTP-Deploy-Action@4.0.0",
+		  "      with:",
+		  "        server: ${1:ftp}",
+		  "        username: ${1:user-ftp}",
+		  "        password: \\${{ secrets.password }}",
+		  "        exclude: .git*",
+		  "          - .git*/**",
+		  "          -  **/.git*/**",
+		  "          - node_modules/**",
+		  "          - node_modules/**/*"
+		],
+		"description": "WordPress GitHub Deploy FTP Push"
 	    }
 }
