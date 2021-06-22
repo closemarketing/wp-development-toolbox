@@ -40,7 +40,7 @@
 		  "      uses: SamKirkland/FTP-Deploy-Action@4.0.0",
 		  "      with:",
 		  "        server: ${1:ftp}",
-		  "        username: ${1:user-ftp}",
+		  "        username: ${2:user-ftp}",
 		  "        password: \\${{ secrets.password }}",
 		  "        exclude: .git*",
 		  "          - .git*/**",
