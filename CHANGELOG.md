@@ -1,4 +1,6 @@
 # Change Log
+## 2.2.0 - 2021
+- Added snippets: (gutrcd) Remove core default block patterns.
 
 ## 2.1.0 - 2021
 

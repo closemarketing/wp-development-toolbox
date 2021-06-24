@@ -228,5 +228,20 @@
 		  ");"
 		],
 		"description": "Gutenberg | Adds Gutenberg CSS from Customizer Additional CSS"
+	},
+	"Gutenberg | Remove core default block patterns": {
+		"prefix": "gutrcd",
+		"body": [
+		  "add_action( 'after_setup_theme', 'my_remove_patterns' );",
+		  "/**",
+		  " * Remove WordPress Core default block patterns",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function my_remove_patterns() {",
+		  "\tremove_theme_support( 'core-block-patterns' );",
+		  "}"
+		],
+		"description": "Gutenberg | Remove core default block patterns"
 	}
 }

@@ -142,6 +142,7 @@ A big thanks to the people that have contributed to this project:
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 | **gutasa** 	| 	Adds Align style Full and Wide
 | **gutacss** 	| 	Adds Gutenberg CSS from Customizer Additional CSS
+| **gutrcd** 	| 	Remove core default block patterns
 
 &nbsp;
 
