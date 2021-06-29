@@ -59,6 +59,7 @@ A big thanks to the people that have contributed to this project:
 | **wpqda**		|	Query Arguments for Date
 | **wpqul**		|	Query entries with UL wrapper
 | **wpqdiv**	|	Query entries with DIV wrapper
+| **wpqva**       |     Query entries to array variable
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
