@@ -135,7 +135,7 @@
 	"PHP | Echo variable with wrap PRE": {
 		"prefix": "phpep",
 		"body": [
-			"echo '<pre>${1:var}:';",
+			"echo '<pre style=\"margin-left:200px;\">${1:var}:';",
 			"print_r(\\$${1:var});",
 			"echo '</pre>';"
 		]
