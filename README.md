@@ -51,6 +51,7 @@ A big thanks to the people that have contributed to this project:
 | **wpawf** 	|	Before Widget with Full Width wrapper
 | **wpaex** 	|	Adds excerpt to pages
 | **wpamen** 	|	Register additional menu
+| **wpasm** 	|	Send email HTML with headers
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content

@@ -602,5 +602,17 @@
 		  "});"
 		],
 		"description": "WordPress | Create AJAX button"
+	    },
+	    "WordPress | Send email with headers": {
+		"prefix": "wpasm",
+		"body": [
+		  "\\$subject = __( '', '${1:text-domain}' );",
+		  "\\$headers = array( 'Content-Type: text/html; charset=UTF-8' );",
+		  "\\$body    = '<br/><strong>' . __( '', '${1:text-domain}' ) . '</strong> ';",
+		  "\\$body   .= '<br/><strong>' . __( '', '${1:text-domain}' ) . '</strong> ';",
+		  "\\$body   .= date_i18n( 'Y-m-d H:i:s', current_time( 'timestamp') );",
+		  "wp_mail( get_option( 'admin_email' ), \\$subject, \\$body, \\$headers );"
+		],
+		"description": "WordPress | Send email with headers"
 	    }
 }
