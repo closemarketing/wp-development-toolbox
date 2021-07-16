@@ -1,6 +1,6 @@
 # Change Log
 ## 2.2.0 - 2021
-- Added snippets: (gutrcd) Remove core default block patterns, (wpqva) Query entries to array variable, (wpasm) Send email HTML with headers, (woorsm) WooCommerce Removes Single Meta.
+- Added snippets: (gutrcd) Remove core default block patterns, (wpqva) Query entries to array variable, (wpasm) Send email HTML with headers, (woorsm) WooCommerce Removes Single Meta, (woortb) WooCommerce remove Product Tabs.
 
 ## 2.1.0 - 2021
 
