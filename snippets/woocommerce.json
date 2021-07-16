@@ -533,5 +533,13 @@
 		  "}"
 		],
 		"description": "WooCommerce | Remove link in Image product"
+	    },
+	    "WooCommerce Removes Single Meta": {
+		"prefix": "woorsm",
+		"body": [
+		  "// Removes Product single template meta.",
+		  "remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );"
+		],
+		"description": "WooCommerce Removes Single Meta"
 	    }
 }

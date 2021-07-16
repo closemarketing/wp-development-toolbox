@@ -249,6 +249,7 @@ A big thanks to the people that have contributed to this project:
 | **woormp** 	|	Remove mandatory phone in checkout
 | **woorpr** 	|	Remove Price Range in product page
 | **woorpb** 	|	Remove Product Tabs
+| **woorsm** 	|	WooCommerce Removes Single Meta
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
