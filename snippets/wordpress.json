@@ -43,6 +43,16 @@
 		],
 		"description": "WordPress | Shows title in php "
 	},
+	"WordPress | Show image with link as variable with echo": {
+		"prefix": "wpsimv",
+		"body": [
+		  "echo '<div class=\"image\">';",
+		  "echo '<a href=\"' . esc_url( get_the_permalink() ) . '\" rel=\"bookmark\" title=\"' . the_title_attribute( 'echo=0' ) . '\">';",
+		  "the_post_thumbnail();",
+		  "echo '</a></div>';"
+		],
+		"description": "WordPress | Show image with link as variable with echo"
+	},
 	"WordPress | WordPress Add excerpts to Pages": {
 		"prefix": "wpaex",
 		"body": [
