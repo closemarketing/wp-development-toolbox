@@ -128,7 +128,7 @@
 			" * @return void",
 			" */",
 			"function ${1:prefix}remove_google_fonts_array() {",
-			"\tadd_filter( 'generate_google_fonts_array', '__return_false' );",
+			"\tadd_filter( 'generate_google_fonts_array', '__return_empty_array' );",
 			"}",
 			"",
 			"add_action( 'wp_enqueue_scripts', '${1:prefix}remove_google_fonts', 10 );",
