@@ -346,7 +346,7 @@
 		  "\\$forms = wpforms()->form->get();",
 		  "if ( is_array( \\$forms ) ) {",
 		  "\tforeach( \\$forms as \\$form ) {",
-		  "\t\t$forms_options[ \\$form->ID ] = \\$form->ID . ' - ' . \\$form->post_title;",
+		  "\t\t\\$forms_options[ \\$form->ID ] = \\$form->ID . ' - ' . \\$form->post_title;",
 		  "\t}",
 		  "}",
 		  "// SELECT BOX Forms.",
