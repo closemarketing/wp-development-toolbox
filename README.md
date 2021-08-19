@@ -295,6 +295,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metasel**	| 	Adds select field
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
+| **metafwp**	| 	Get Select Field of actual Forms in WPFORMS
 | **metadate**	| 	Adds Field date
 | **metapid**	| 	Get actual post in filter function
 | **metapdf**	| 	Adds PDF field

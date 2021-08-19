@@ -333,6 +333,37 @@
 			"),"
 		]
 	},
+	"MetaBox | Get Select Field of actual Forms in WPFORMS": {
+		"prefix": "metafwp",
+		"body": [
+		  "//* Gets the forms in array WPFORMS",
+		  "\\$args = array(",
+		  "\t'post_type'      => 'wpforms',",
+		  "\t'post_status'    => 'publish',",
+		  "\t'posts_per_page' => -1,",
+		  ");",
+		  "\\$forms_options = array();",
+		  "\\$forms = wpforms()->form->get();",
+		  "if ( is_array( \\$forms ) ) {",
+		  "\tforeach( \\$forms as \\$form ) {",
+		  "\t\t$forms_options[ \\$form->ID ] = \\$form->ID . ' - ' . \\$form->post_title;",
+		  "\t}",
+		  "}",
+		  "// SELECT BOX Forms.",
+		  "array(",
+		  "\t'name'        => '${2:Title of meta}',",
+		  "\t'id'          => \"{\\$prefix}${1:slug}\",",
+		  "\t'type'        => 'select_advanced',",
+		  "\t'options'     => \\$forms_options,",
+		  "\t'multiple'    => false,",
+		  "\t'std'         => '',",
+		  "\t'placeholder' => '${2:Title of meta}',",
+		  "),",
+		  "",
+		  "  "
+		],
+		"description": "Get Select Field of actual Forms in WPFORMS"
+	    }
 	"MetaBox | Shows Gallery in public page": {
 		"prefix": "metsimg",
 		"body": [
