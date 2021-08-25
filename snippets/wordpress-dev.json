@@ -614,5 +614,28 @@
 		  "wp_mail( get_option( 'admin_email' ), \\$subject, \\$body, \\$headers );"
 		],
 		"description": "WordPress | Send email with headers"
+	    },
+	    "WordPress | Disable comments for custom post types": {
+		"prefix": "wptco",
+		"body": [
+		  "add_filter( 'comments_open', '${1:prefix}comments_open', 10 , 2 );",
+		  "/**",
+		  " * Disable comments for custom post types",
+		  " *",
+		  " * @param boolean $open Status of comment.",
+		  " * @param integer $post_id Post ID.",
+		  " * @return boolean",
+		  " */",
+		  "function ${1:prefix}comments_open( \\$open, \\$post_id ) {",
+		  "\t\\$post_type = get_post_type( \\$post_id );",
+		  "\t// allow comments for built-in post post type.",
+		  "\tif ( \\$post_type == 'post' ) {",
+		  "\t\treturn true;",
+		  "\t}",
+		  "\t// disable comments for any other post types.",
+		  "\treturn false;",
+		  "}"
+		],
+		"description": "WordPress | Disable comments for custom post types"
 	    }
 }
