@@ -4,6 +4,8 @@
 
 - Added snippets: (gutrcd) Remove core default block patterns, (wpqva) Query entries to array variable, (wpasm) Send email HTML with headers, (woorsm) WooCommerce Removes Single Meta, (woortb) WooCommerce remove Product Tabs, (wpsimv) Show image with link as variable, (metafwp) Get Select Field of actual Forms in WPFORMS, (wptco) Disable comments for custom post types.
 
+- Updated snippets: (gutain) Added style for width in post types.
+
 ## 2.1.0 - 2021
 
 - Added snippets: (cssapa) Center position absolute, (gpacc) GeneratePress Adds CPT columns filter, (gprgf) Remove Fonts

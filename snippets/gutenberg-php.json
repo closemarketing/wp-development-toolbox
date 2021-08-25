@@ -56,8 +56,8 @@
 			" */",
 			"function ${1:prefix}_gutenberg_editor_width() {",
 			"\techo '<style>",
-			"\t\t.post-type-guia .editor-styles-wrapper .wp-block {",
-			"\t\t\tmax-width: 683px;",
+			"\t\t.post-type-${2:postype_slug} .editor-styles-wrapper .wp-block {",
+			"\t\t\tmax-width: ${3:width_px}px;",
 			"\t\t}",
 			"\t</style>';",
 			"}"
