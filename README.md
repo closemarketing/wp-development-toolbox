@@ -113,6 +113,7 @@ A big thanks to the people that have contributed to this project:
 | **Enqueue** |
 | **wpaes** | Enqueue Style in Plugin
 | **wpaej** | Enqueue Javascript in Plugin
+| **wpaejt**| Enqueue Javascript in Child Theme
 | **AJAX** |
 | **wpajx**	 | Create AJAX for class and button
 | **API Snippets** |

@@ -502,7 +502,7 @@
 			  "function ${1:prefix}scripts() {",
 			  "\twp_register_script(",
 			  "\t\t'${2:slug-name}',",
-			  "\t\tplugins_url( '/includes/js/${1:slug-name}.js', __FILE__ ),",
+			  "\t\tplugins_url( '/includes/js/${2:slug-name}.js', __FILE__ ),",
 			  "\t\tarray( 'jquery' ),",
 			  "\t\t${3:version},",
 			  "\t\ttrue",
@@ -512,6 +512,29 @@
 			],
 	
 		"description": "WordPress | Enqueue Javascript in Plugin"
+	},
+	"WordPress | Enqueue Javascript in Child Theme": {
+		"prefix": "wpaejt",
+		"body": [
+			  "add_action( 'wp_enqueue_scripts', '${1:prefix}scripts' );",
+			  "/**",
+			  " * Loads Scripts",
+			  " *",
+			  " * @return void",
+			  " */",
+			  "function ${1:prefix}scripts() {",
+			  "\twp_register_script(",
+			  "\t\t'${2:slug-name}',",
+			  "\t\tget_stylesheet_directory_uri() . '/js/${2:slug-name}.js',",
+			  "\t\tarray( 'jquery' ),",
+			  "\t\t'${3:version}',",
+			  "\t\ttrue",
+			  "\t);",
+			  "\twp_enqueue_script( '${2:slug-name}' );",
+			  "}"
+			],
+	
+		"description": "WordPress | Enqueue Javascript in Theme Child"
 	},
 	"WordPress | Create AJAX button": {
 		"prefix": "wpajx",
