@@ -316,6 +316,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 
 ## WPML (WPML)
 [Web](https://www.closemarketing.es/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
+
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wpmltdis** 	| 	Disable Javascript and CSS in front
