@@ -1,6 +1,6 @@
 {
 	"WordPress GitHub Deploy to WordPress": {
-		"prefix": "wpdgd",
+		"prefix": "wpdwp",
 		"body": [
 		  "# Save this file in .github/workflows/deploy.yml",
 		  "# Save in GitHub Secrets SVN_PASSWORD and SVN_USERNAME",
@@ -26,7 +26,12 @@
 	    "WordPress GitHub Deploy FTP Push": {
 		"prefix": "wpdfp",
 		"body": [
-		  "on: push",
+		  "# Save this file in .github/workflows/deploy.yml",
+		  "# Save in GitHub Secrets FTP_PASSWORD and FTP_USERNAME",
+		  "on:",
+		  "  push:",
+		  "    branches:",
+		  "      -master",
 		  "name: 🚀 Deploy website on push",
 		  "jobs:",
 		  "  web-deploy:",
@@ -40,8 +45,11 @@
 		  "      uses: SamKirkland/FTP-Deploy-Action@4.0.0",
 		  "      with:",
 		  "        server: ${1:ftp}",
-		  "        username: ${2:user-ftp}",
-		  "        password: \\${{ secrets.password }}",
+		  "        username: \\${{ SECRETS.FTP_USERNAME }}",
+		  "        password: \\${{ SECRETS.FTP_PASSWORD }}",
+		  "        port: 21",
+		  "        protocol: ftps",
+		  "        server-dir: /",
 		  "        exclude: .git*",
 		  "          - .git*/**",
 		  "          -  **/.git*/**",
