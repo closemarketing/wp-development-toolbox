@@ -119,7 +119,8 @@ A big thanks to the people that have contributed to this project:
 | **API Snippets** |
 | **wpgfu**	 | API Get function
 | **GitHub Actions** |
-| **wpagd**	 | Deploy GitHub Repository to WordPress (https://github.com/10up/action-wordpress-plugin-deploy)
+| **wpdwp**	 | Deploy GitHub Repository to WordPress (https://github.com/10up/action-wordpress-plugin-deploy)
+| **wpdfp**	 | Deploy GitHub Repository to FTPS
 
 &nbsp;
 
@@ -171,6 +172,7 @@ A big thanks to the people that have contributed to this project:
 | **gpafon** 	| 	Adds local font
 | **gpacc** 	| 	Adds CPT columns filter
 | **gprgf** 	| 	Remove Google Fonts
+
 &nbsp;
 
 ## Genesis (GEN)
