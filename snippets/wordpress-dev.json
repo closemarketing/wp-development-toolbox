@@ -660,5 +660,18 @@
 		  "}"
 		],
 		"description": "WordPress | Disable comments for custom post types"
+	    },
+	    "WordPress DB | Get Results from table": {
+		"prefix": "wpdbget",
+		"body": [
+		  "global \\$wpdb;",
+		  "\\$rows = \\$wpdb->get_results( \"SELECT * FROM \" . \\$wpdb->base_prefix . \"${1:table} WHERE ${2:variable} = '${3:value}';\" );",
+		  "if ( \\$wpdb->last_error ) {",
+		  "\techo 'Error: ' . esc_html( \\$wpdb->last_error );",
+		  "}",
+		  "foreach ( \\$rows as \\$row ) {",
+		  "}"
+		],
+		"description": "WordPress DB | Get Results from table"
 	    }
 }

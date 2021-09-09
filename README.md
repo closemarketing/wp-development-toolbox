@@ -114,6 +114,8 @@ A big thanks to the people that have contributed to this project:
 | **wpaes** | Enqueue Style in Plugin
 | **wpaej** | Enqueue Javascript in Plugin
 | **wpaejt**| Enqueue Javascript in Child Theme
+| **DATABASE** |
+| **wpdbget**| Get results from table WordPress
 | **AJAX** |
 | **wpajx**	 | Create AJAX for class and button
 | **API Snippets** |
