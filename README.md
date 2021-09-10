@@ -39,6 +39,7 @@ A big thanks to the people that have contributed to this project:
 # List of Snippets
 
 ## WordPress (WP) ##
+
 | **Rule**		| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wptupd** 	|	Force updates and upgrades
@@ -72,6 +73,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## WordPress Functions for Custom Post Type (WP)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpacptpa** 	|	Creates a new Custom Post Type for Pages
@@ -155,6 +157,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## WordPress to Show Schemas in JSON LD (SC)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **scsscw** 	| 	Make wrap Schema for functions.php
@@ -264,6 +267,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## WooCommerce Storefront (ST)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrumb label
@@ -274,6 +278,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## Gulp (GL)
+
 In order to use Gulp for develop a theme in WordPress, you will need to have NPM installed. Create the files gulpfile.js and package.json in your theme, and run npm install. Since you have installed the node modules, now you can use gulp. It has other orders: gulp images compress the images files in folder images.
 
 | **Rule**               | **Action**     |
@@ -317,6 +322,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 &nbsp;
 
 ## WPML (WPML)
+
 [Web](https://www.closemarketing.es/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
 
 | **Rule**			  | **Action**	|
@@ -330,6 +336,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 &nbsp;
 
 ## WC Market Place (WOC)
+
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wocrrep** 	| 	Remove report abuse
