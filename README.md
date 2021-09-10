@@ -39,18 +39,21 @@ A big thanks to the people that have contributed to this project:
 # List of Snippets
 
 ## WordPress (WP) ##
+
 | **Rule**		| **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wptupd** 	|	Force updates and upgrades
 | **wpaac** 	|	Adds an action with function
 | **wpstit** 	|	Shows the entry title with permalink
 | **wpstiv** 	|	Shows the entry title with permalink with echo
+| **wpsimv** 	|	Show image with link as variable with echo
 | **wpstrtax** 	|	Shows taxonomy terms of actual entry
 | **wpsgmt** 	|	Shows a meta value
 | **wpawid** 	|	Creates a widget
 | **wpawf** 	|	Before Widget with Full Width wrapper
 | **wpaex** 	|	Adds excerpt to pages
 | **wpamen** 	|	Register additional menu
+| **wpasm** 	|	Send email HTML with headers
 | **Shows to public** |
 | **wpssoc**	|	Shows Icons Social from Yoast
 | **wpstab**	|	Show tabs for content
@@ -59,6 +62,7 @@ A big thanks to the people that have contributed to this project:
 | **wpqda**		|	Query Arguments for Date
 | **wpqul**		|	Query entries with UL wrapper
 | **wpqdiv**	|	Query entries with DIV wrapper
+| **wpqva**       |     Query entries to array variable
 | **wpqta**		|	Query entries from a taxonomy
 | **wpqtm**		|	Query Terms from a taxonomy
 | **wpqtmp**	|	Query Terms from actual post
@@ -69,6 +73,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## WordPress Functions for Custom Post Type (WP)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpacptpa** 	|	Creates a new Custom Post Type for Pages
@@ -106,15 +111,20 @@ A big thanks to the people that have contributed to this project:
 | **wpagt**   | Gets environment mode
 | **wptgt**   | Sets environment mode in config
 | **wptlog**  | Customize login page
+| **wptco**   | Disable comments for custom post types
 | **Enqueue** |
 | **wpaes** | Enqueue Style in Plugin
 | **wpaej** | Enqueue Javascript in Plugin
+| **wpaejt**| Enqueue Javascript in Child Theme
+| **DATABASE** |
+| **wpdbget**| Get results from table WordPress
 | **AJAX** |
 | **wpajx**	 | Create AJAX for class and button
 | **API Snippets** |
 | **wpgfu**	 | API Get function
 | **GitHub Actions** |
-| **wpagd**	 | Deploy GitHub Repository to WordPress (https://github.com/10up/action-wordpress-plugin-deploy)
+| **wpdwp**	 | Deploy GitHub Repository to WordPress (https://github.com/10up/action-wordpress-plugin-deploy)
+| **wpdfp**	 | Deploy GitHub Repository to FTPS
 
 &nbsp;
 
@@ -142,10 +152,12 @@ A big thanks to the people that have contributed to this project:
 | **gutrfont** 	| 	Removes Noto Font from Frontend in Gutenberg
 | **gutasa** 	| 	Adds Align style Full and Wide
 | **gutacss** 	| 	Adds Gutenberg CSS from Customizer Additional CSS
+| **gutrcd** 	| 	Remove core default block patterns
 
 &nbsp;
 
 ## WordPress to Show Schemas in JSON LD (SC)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **scsscw** 	| 	Make wrap Schema for functions.php
@@ -165,6 +177,7 @@ A big thanks to the people that have contributed to this project:
 | **gpafon** 	| 	Adds local font
 | **gpacc** 	| 	Adds CPT columns filter
 | **gprgf** 	| 	Remove Google Fonts
+
 &nbsp;
 
 ## Genesis (GEN)
@@ -246,12 +259,15 @@ A big thanks to the people that have contributed to this project:
 | **woormp** 	|	Remove mandatory phone in checkout
 | **woorpr** 	|	Remove Price Range in product page
 | **woorpb** 	|	Remove Product Tabs
+| **woorsm** 	|	Removes Single Meta
+| **woortb** 	|	WooCommerce remove Product Tabs
 | **Settings** |
 | **wootems** 	|	Adds Custom Styles for Emails
 
 &nbsp;
 
 ## WooCommerce Storefront (ST)
+
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **sttbread** 	|	Changes Storefront Breadcrumb label
@@ -262,6 +278,7 @@ A big thanks to the people that have contributed to this project:
 &nbsp;
 
 ## Gulp (GL)
+
 In order to use Gulp for develop a theme in WordPress, you will need to have NPM installed. Create the files gulpfile.js and package.json in your theme, and run npm install. Since you have installed the node modules, now you can use gulp. It has other orders: gulp images compress the images files in folder images.
 
 | **Rule**               | **Action**     |
@@ -289,6 +306,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **metasel**	| 	Adds select field
 | **metadir**	| 	Adds Address group fields
 | **metafor**	| 	Get Select Field of actual Forms in Gravity Forms
+| **metafwp**	| 	Get Select Field of actual Forms in WPFORMS
 | **metadate**	| 	Adds Field date
 | **metapid**	| 	Get actual post in filter function
 | **metapdf**	| 	Adds PDF field
@@ -304,7 +322,9 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 &nbsp;
 
 ## WPML (WPML)
+
 [Web](https://www.closemarketing.es/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
+
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wpmltdis** 	| 	Disable Javascript and CSS in front
@@ -316,6 +336,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 &nbsp;
 
 ## WC Market Place (WOC)
+
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
 | **wocrrep** 	| 	Remove report abuse

@@ -135,8 +135,8 @@
 	"PHP | Echo variable with wrap PRE": {
 		"prefix": "phpep",
 		"body": [
-			"echo '<pre>${1:var}:';",
-			"print_r(\\$${1:var});",
+			"echo '<pre style=\"margin-left:200px;\">${1:var}:';",
+			"print_r(${1:var});",
 			"echo '</pre>';"
 		]
 	},
@@ -502,7 +502,7 @@
 			  "function ${1:prefix}scripts() {",
 			  "\twp_register_script(",
 			  "\t\t'${2:slug-name}',",
-			  "\t\tplugins_url( '/includes/js/${1:slug-name}.js', __FILE__ ),",
+			  "\t\tplugins_url( '/includes/js/${2:slug-name}.js', __FILE__ ),",
 			  "\t\tarray( 'jquery' ),",
 			  "\t\t${3:version},",
 			  "\t\ttrue",
@@ -512,6 +512,29 @@
 			],
 	
 		"description": "WordPress | Enqueue Javascript in Plugin"
+	},
+	"WordPress | Enqueue Javascript in Child Theme": {
+		"prefix": "wpaejt",
+		"body": [
+			  "add_action( 'wp_enqueue_scripts', '${1:prefix}scripts' );",
+			  "/**",
+			  " * Loads Scripts",
+			  " *",
+			  " * @return void",
+			  " */",
+			  "function ${1:prefix}scripts() {",
+			  "\twp_register_script(",
+			  "\t\t'${2:slug-name}',",
+			  "\t\tget_stylesheet_directory_uri() . '/js/${2:slug-name}.js',",
+			  "\t\tarray( 'jquery' ),",
+			  "\t\t'${3:version}',",
+			  "\t\ttrue",
+			  "\t);",
+			  "\twp_enqueue_script( '${2:slug-name}' );",
+			  "}"
+			],
+	
+		"description": "WordPress | Enqueue Javascript in Theme Child"
 	},
 	"WordPress | Create AJAX button": {
 		"prefix": "wpajx",
@@ -602,5 +625,53 @@
 		  "});"
 		],
 		"description": "WordPress | Create AJAX button"
+	    },
+	    "WordPress | Send email with headers": {
+		"prefix": "wpasm",
+		"body": [
+		  "\\$subject = __( '', '${1:text-domain}' );",
+		  "\\$headers = array( 'Content-Type: text/html; charset=UTF-8' );",
+		  "\\$body    = '<br/><strong>' . __( '', '${1:text-domain}' ) . '</strong> ';",
+		  "\\$body   .= '<br/><strong>' . __( '', '${1:text-domain}' ) . '</strong> ';",
+		  "\\$body   .= date_i18n( 'Y-m-d H:i:s', current_time( 'timestamp') );",
+		  "wp_mail( get_option( 'admin_email' ), \\$subject, \\$body, \\$headers );"
+		],
+		"description": "WordPress | Send email with headers"
+	    },
+	    "WordPress | Disable comments for custom post types": {
+		"prefix": "wptco",
+		"body": [
+		  "add_filter( 'comments_open', '${1:prefix}comments_open', 10 , 2 );",
+		  "/**",
+		  " * Disable comments for custom post types",
+		  " *",
+		  " * @param boolean \\$open Status of comment.",
+		  " * @param integer \\$post_id Post ID.",
+		  " * @return boolean",
+		  " */",
+		  "function ${1:prefix}comments_open( \\$open, \\$post_id ) {",
+		  "\t\\$post_type = get_post_type( \\$post_id );",
+		  "\t// allow comments for built-in post post type.",
+		  "\tif ( 'post' === \\$post_type ) {",
+		  "\t\treturn true;",
+		  "\t}",
+		  "\t// disable comments for any other post types.",
+		  "\treturn false;",
+		  "}"
+		],
+		"description": "WordPress | Disable comments for custom post types"
+	    },
+	    "WordPress DB | Get Results from table": {
+		"prefix": "wpdbget",
+		"body": [
+		  "global \\$wpdb;",
+		  "\\$rows = \\$wpdb->get_results( \"SELECT * FROM \" . \\$wpdb->base_prefix . \"${1:table} WHERE ${2:variable} = '${3:value}';\" );",
+		  "if ( \\$wpdb->last_error ) {",
+		  "\techo 'Error: ' . esc_html( \\$wpdb->last_error );",
+		  "}",
+		  "foreach ( \\$rows as \\$row ) {",
+		  "}"
+		],
+		"description": "WordPress DB | Get Results from table"
 	    }
 }

@@ -47,13 +47,20 @@
 			"\t\t)",
 			"\t);",
 			"}",
-			"// * Adds Gutenberg CSS from Customizer Additional CSS",
-			"add_action(",
-			"\t'enqueue_block_editor_assets',",
-			"\tfunction() {",
-			"\t\twp_add_inline_style( 'generate-block-editor-styles', wp_get_custom_css_post()->post_content );",
-			"\t}",
-			");"
+			"",
+			"add_action( 'admin_footer', '${1:prefix}_gutenberg_editor_width' );",
+			"/**",
+			" * Adds style for width in the editor",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_gutenberg_editor_width() {",
+			"\techo '<style>",
+			"\t\t.post-type-${2:postype_slug} .editor-styles-wrapper .wp-block {",
+			"\t\t\tmax-width: ${3:width_px}px;",
+			"\t\t}",
+			"\t</style>';",
+			"}"
 		],
 		"description": "Gutenberg | Functions init for a theme"
 	},
@@ -228,5 +235,20 @@
 		  ");"
 		],
 		"description": "Gutenberg | Adds Gutenberg CSS from Customizer Additional CSS"
+	},
+	"Gutenberg | Remove core default block patterns": {
+		"prefix": "gutrcd",
+		"body": [
+		  "add_action( 'after_setup_theme', 'my_remove_patterns' );",
+		  "/**",
+		  " * Remove WordPress Core default block patterns",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "function my_remove_patterns() {",
+		  "\tremove_theme_support( 'core-block-patterns' );",
+		  "}"
+		],
+		"description": "Gutenberg | Remove core default block patterns"
 	}
 }
