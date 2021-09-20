@@ -112,6 +112,8 @@ A big thanks to the people that have contributed to this project:
 | **wptgt**   | Sets environment mode in config
 | **wptlog**  | Customize login page
 | **wptco**   | Disable comments for custom post types
+| **Routines** |
+| **wprout**   | Routine update metas with categories
 | **Enqueue** |
 | **wpaes** | Enqueue Style in Plugin
 | **wpaej** | Enqueue Javascript in Plugin

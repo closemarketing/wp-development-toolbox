@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.3.0 - # 2021
+
+- Added snippets: (wprout) Routine update metas with categories
+
 ## 2.2.0 - September 2021
 
 - Added snippets: (gutrcd) Remove core default block patterns, (wpqva) Query entries to array variable, (wpasm) Send email HTML with headers, (woorsm) WooCommerce Removes Single Meta, (woortb) WooCommerce remove Product Tabs, (wpsimv) Show image with link as variable, (metafwp) Get Select Field of actual Forms in WPFORMS, (wptco) Disable comments for custom post types, (wpaejt) Enqueue Javascript in Child Theme
