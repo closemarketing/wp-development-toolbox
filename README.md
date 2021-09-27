@@ -112,6 +112,7 @@ A big thanks to the people that have contributed to this project:
 | **wptgt**   | Sets environment mode in config
 | **wptlog**  | Customize login page
 | **wptco**   | Disable comments for custom post types
+| **wpacptfi**   | Create Filter to a Custom Post type based in meta value
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |
