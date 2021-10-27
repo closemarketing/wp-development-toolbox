@@ -2,7 +2,7 @@
 
 ## 2.3.0 - # 2021
 
-- Added snippets: (wprout) Routine update metas with categories, (wpacptfi) Create Filter to a Custom Post type based in meta value
+- Added snippets: (wprout) Routine update metas with categories, (wpacptfi) Create Filter to a Custom Post type based in meta value, (yorred) Yoast Premium | Disable automatic redirects
 
 ## 2.2.0 - September 2021
 
