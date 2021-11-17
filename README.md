@@ -169,7 +169,7 @@ A big thanks to the people that have contributed to this project:
 
 ## GeneratePress (GP)
 
-[Plugin Web](https://www.closemarketing.es/go/generatepress/) | [Documentation](https://docs.generatepress.com/)
+[Plugin Web](https://close.marketing/go/generatepress/) | [Documentation](https://docs.generatepress.com/)
 
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
@@ -185,7 +185,7 @@ A big thanks to the people that have contributed to this project:
 
 ## Genesis (GEN)
 
-[Plugin Web](https://www.closemarketing.es/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
+[Plugin Web](https://close.marketing/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
 
 | **Rule**			| **Action**	|
 | ------------------- |------------------------------------------------------------------|
@@ -231,7 +231,7 @@ A big thanks to the people that have contributed to this project:
 
 ## WooCommerce (WOO)
 
-[Web](https://www.closemarketing.es/go/woocommerce/) | [Documentation](https://docs.woocommerce.com/documentation/plugins/woocommerce/)
+[Web](https://close.marketing/go/woocommerce/) | [Documentation](https://docs.woocommerce.com/documentation/plugins/woocommerce/)
 
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
@@ -301,7 +301,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 
 ## Metabox WordPress Post Types (MET)
 
-[Plugin Web](https://www.closemarketing.es/go/metabox/) | [Documentation](https://my.studiopress.com/support/)
+[Plugin Web](https://close.marketing/go/metabox/) | [Documentation](https://my.studiopress.com/support/)
 
 | **Rule**	|	**Action**     |
 | ------------------- |------------------------------------------------------------------|
@@ -334,7 +334,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 
 ## WPML (WPML)
 
-[Web](https://www.closemarketing.es/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
+[Web](https://close.marketing/go/wpml/) | [Documentation](https://wpml.org/documentation/wpml-core-and-add-on-plugins/)
 
 | **Rule**			  | **Action**	|
 | ------------------- |------------------------------------------------------------------|
