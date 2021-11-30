@@ -127,7 +127,7 @@
 			"",
 			"\tswitch ( \\$column_name ) {",
 			"\t\tcase '${2:variable}':",
-			"\t\t\techo \\$${2:variable};",
+			"\t\t\techo esc_html( \\$${2:variable} );",
 			"\t\t\tbreak;",
 			"",
 			"\t\tdefault:",
