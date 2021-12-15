@@ -24,7 +24,7 @@
 			},
 			{
 				"language": "php",
-				"path": "./snippets/metabox.json"
+				"path": "./snippets/plugins-metabox.json"
 			},
 			{
 				"language": "css",
@@ -60,7 +60,7 @@
 			},
 			{
 				"language": "php",
-				"path": "./snippets/woocommerce.json"
+				"path": "./snippets/plugins-woocommerce.json"
 			},
 			{
 				"language": "php",
@@ -100,7 +100,11 @@
 			},
 			{
 				"language": "php",
-				"path": "./snippets/pods.json"
+				"path": "./snippets/plugins-pods.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/plugins-acf.json"
 			},
 			{
 				"language": "yaml",

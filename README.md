@@ -279,6 +279,15 @@ A big thanks to the people that have contributed to this project:
 | **stsex** 	|	Show Excerpt instead full article in archives
 
 &nbsp;
+## ACF Custom Fields (AC)
+
+[Web](https://close.marketing/go/acf/) | [Documentation](https://www.advancedcustomfields.com/resources/)
+
+| **Rule**               | **Action**     |
+| ------------------- |------------------------------------------------------------------|
+| **acsgmt** 	|	Shows ACF meta value
+
+&nbsp;
 
 ## Yoast SEO (YO)
 

@@ -1,0 +1,12 @@
+{
+	"ACF | Shows a meta value": {
+		"prefix": "acsgmt",
+		"body": [
+			"// Shows ACF meta value: ${1:variable} .",
+		  	"$${1:variable} = get_field( '${1:variable}' );",
+			"if ( $${1:variable} ) {",
+			"\techo esc_html( $${1:variable} );",
+			"}"
+		]
+	}
+}
