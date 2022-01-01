@@ -136,8 +136,16 @@
 		"prefix": "phpep",
 		"body": [
 			"echo '<pre style=\"margin-left:200px;\">${1:var}:';",
-			"print_r(${1:var});",
+			"print_r( ${1:var} );",
 			"echo '</pre>';"
+		]
+	},
+
+	"PHP | Echo variable with Printr": {
+		"prefix": "phper",
+		"body": [
+			"echo '${1:var}:';",
+			"print_r( ${1:var} );"
 		]
 	},
 	"PHP | Adds Class": {
