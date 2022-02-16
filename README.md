@@ -113,6 +113,7 @@ A big thanks to the people that have contributed to this project:
 | **wptlog**  | Customize login page
 | **wptco**   | Disable comments for custom post types
 | **wpacptfi**   | Create Filter to a Custom Post type based in meta value
+| **wpatag**   | Adds Google Tag Manager from Plugin Duracell
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |

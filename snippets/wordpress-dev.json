@@ -127,6 +127,23 @@
 			"}"
 		]
 	},
+	"WordPress | Adds Google Tag Manager from Plugin Duracell": {
+		"prefix": "wpatag",
+		"body": [
+			"add_action( 'wp_body_open', '${1:prefix}_tag_manager' );",
+			"/**",
+			" * Adds Tag manager to body tag",
+			" *",
+			" * @return void",
+			" */",
+			"function ${1:prefix}_tag_manager() {",
+			"\tif ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {",
+			"\t\tgtm4wp_the_gtm_tag();",
+			"\t}",
+			"}"
+		],
+		"description": "Closemarketing | Añade Tag Manager en Genesis"
+	},
 	"PHP | Echo a variable": {
 		"prefix": "phpec",
 		"body":"<?php echo \\$${1:var}; ?>"
