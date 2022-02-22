@@ -407,6 +407,7 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **phpec** 	|	Echo a variable
 | **phpep** 	|	Echo variable with wrap PRE
 | **phper** 	|	Echo variable with Printr
+| **phpel** 	|	Echo variable in error log
 | **phpah** 	|	DocBock file header as Coding Standards
 | **phpache** 	|	DocBlock DocBlocks for Classes header
 | **phpacl** 	|	Adds class
