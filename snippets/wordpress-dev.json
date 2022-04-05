@@ -168,7 +168,7 @@
 	"WordPress | Error log": {
 		"prefix": "phpel",
 		"body": [
-		  "error_log( '${1:title}' . print_r( ${1:variable}, true ) );"
+		  "error_log( '${1:title}' . print_r( ${2:variable}, true ) );"
 		],
 		"description": "WordPress | Error log"
 	},
