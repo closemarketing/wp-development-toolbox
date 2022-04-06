@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.3.0 - # 2021
+## 2.3.0 - April 2022
 
 - Added snippets: (wprout) Routine update metas with categories, (wpacptfi) Create Filter to a Custom Post type based in meta value, (yorred) Yoast Premium | Disable automatic redirects, (phper) Echo variable with Printr, (wpatag) Adds Google Tag Manager from Plugin Duracell, (phpel) PHP Error log variable
 - New ACF plugin snippets: (acsgmt) Shows ACF meta value
