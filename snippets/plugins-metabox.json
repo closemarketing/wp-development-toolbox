@@ -49,7 +49,7 @@
 			"\t\t\t\\$posts_options[ \\$post_id ] = get_the_title( \\$post_id );",
 			"\t\t}",
 			"\t\tset_transient( '${1:prefix}query_${2:post-type}_meta', \\$posts_options, MINUTE_IN_SECONDS * 3 );",
-			"}",
+			"\t}",
 			"",
 			"// SELECT BOX post type ${2:post-type}.",
 			"array(",
