@@ -42,8 +42,6 @@
 			"\t\t\\$args_query    = array(",
 			"\t\t\t'post_type'      => '${2:post-type}',",
 			"\t\t\t'posts_per_page' => -1,",
-			"\t\t\t'orderby'        => 'title', // menu_order, rand, date.",
-			"\t\t\t'order'          => 'ASC',",
 			"\t\t\t'fields'         => 'ids',",
 			"\t\t);",
 			"\t\t\\$posts_array   = get_posts( \\$args_query );",
