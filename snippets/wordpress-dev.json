@@ -677,7 +677,7 @@
 			"if ( ! \\$${2:variable} ) {",
 			"\t// Generate value for ${2:variable}.",
 			"\t\\$${2:variable} = '';",
-			"\tset_transient( '${1:prefix}query_${2:variable}', \\$${2:variable}, HOURS_IN_SECONDS * 3 );",
+			"\tset_transient( '${1:prefix}query_${2:variable}', \\$${2:variable}, HOUR_IN_SECONDS * 3 );",
 			"}"
 		],
 		"description": "WordPress | Create transient"
