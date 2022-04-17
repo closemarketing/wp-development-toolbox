@@ -682,7 +682,7 @@
 		],
 		"description": "WordPress | Create transient"
 	},
-	    "WordPress | Disable comments for custom post types": {
+	"WordPress | Disable comments for custom post types": {
 		"prefix": "wptco",
 		"body": [
 		  "add_filter( 'comments_open', '${1:prefix}comments_open', 10 , 2 );",
