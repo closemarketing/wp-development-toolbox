@@ -680,7 +680,7 @@
 			"\tset_transient( '${1:prefix}query_${2:variable}', \\$${2:variable}, HOURS_IN_SECONDS * 3 );",
 			"}"
 		],
-		"description": "WordPress | Send email with headers"
+		"description": "WordPress | Create transient"
 	},
 	    "WordPress | Disable comments for custom post types": {
 		"prefix": "wptco",
