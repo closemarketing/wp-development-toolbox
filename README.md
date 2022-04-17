@@ -114,6 +114,7 @@ A big thanks to the people that have contributed to this project:
 | **wptco**   | Disable comments for custom post types
 | **wpacptfi**   | Create Filter to a Custom Post type based in meta value
 | **wpatag**   | Adds Google Tag Manager from Plugin Duracell
+| **wpatra**   | Creates transient
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |

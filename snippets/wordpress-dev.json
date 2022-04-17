@@ -657,8 +657,8 @@
 		  "});"
 		],
 		"description": "WordPress | Create AJAX button"
-	    },
-	    "WordPress | Send email with headers": {
+	},
+	"WordPress | Send email with headers": {
 		"prefix": "wpasm",
 		"body": [
 		  "\\$subject = __( '', '${1:text-domain}' );",
@@ -669,7 +669,19 @@
 		  "wp_mail( get_option( 'admin_email' ), \\$subject, \\$body, \\$headers );"
 		],
 		"description": "WordPress | Send email with headers"
-	    },
+	},
+	"WordPress | Create transient": {
+		"prefix": "wpatra",
+		"body": [
+			"\\$${2:variable} = get_transient( '${1:prefix}query_${2:variable}' );",
+			"if ( ! \\$${2:variable} ) {",
+			"\t// Generate value for ${2:variable}.",
+			"\t\\$${2:variable} = '';",
+			"\tset_transient( '${1:prefix}query_${2:variable}', \\$${2:variable}, HOURS_IN_SECONDS * 3 );",
+			"}"
+		],
+		"description": "WordPress | Send email with headers"
+	},
 	    "WordPress | Disable comments for custom post types": {
 		"prefix": "wptco",
 		"body": [
@@ -692,7 +704,7 @@
 		  "}"
 		],
 		"description": "WordPress | Disable comments for custom post types"
-	    },
+	},
 	    "WordPress DB | Get Results from table": {
 		"prefix": "wpdbget",
 		"body": [
@@ -863,5 +875,5 @@
 		  ""
 		],
 		"description": "WordPress | Create Filter to a Custom Post type based in meta value"
-	    }
+	}
 }
