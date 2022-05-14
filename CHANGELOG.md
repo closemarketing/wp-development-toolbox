@@ -2,7 +2,8 @@
 
 ## 2.4.0 - 2022
 
-- Added snippets: (wpatra) Create transient for WordPress.
+- Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin
+- Updated snippet: (wpapuh) With Default contants.
 
 ## 2.3.0 - April 2022
 

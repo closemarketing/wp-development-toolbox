@@ -92,6 +92,7 @@ A big thanks to the people that have contributed to this project:
 | **wpafpt**  | Adds functions to Custom Post Type in public
 | **wpaop**   | Removes CSS and JS for optimization
 | **wpapuh**  | Adds Plugin Header
+| **wpadef**  | Define default constants for Plugin
 | **wpare**   | Create readme.txt for Plugins
 | **wpalpt**  | Loads Plugin Text Domain
 | **wpagit**  | Gitignore configuration for WordPress
