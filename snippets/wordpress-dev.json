@@ -26,10 +26,10 @@
 			"",
 			"defined( 'ABSPATH' ) || die( 'No script kiddies please!' );",
 			"",
-			"define( '${11:Plugin Slug Upper}_VERSION', '${2:version}' );",
-			"define( '${11:Plugin Slug Upper}_PLUGIN', __FILE__ );",
-			"define( '${11:Plugin Slug Upper}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
-			"define( '${11:Plugin Slug Upper}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );",
+			"define( '${11:PREFIX}_VERSION', '${2:version}' );",
+			"define( '${11:PREFIX}_PLUGIN', __FILE__ );",
+			"define( '${11:PREFIX}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
+			"define( '${11:PREFIX}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );",
 			"",
 			"add_action( 'plugins_loaded', '${11:Plugin Functions Prefix}_plugin_init' );",
 			"/**",
@@ -45,10 +45,10 @@
 	"WordPress Define default constants for Plugin": {
 		"prefix": "wpadef",
 		"body": [
-		  "define( '${1:prefix}_VERSION', '${2:version}' );",
-		  "define( '${1:prefix}_PLUGIN', __FILE__ );",
-		  "define( '${1:prefix}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
-		  "define( '${1:prefix}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );"
+		  "define( '${1:PREFIX}_VERSION', '${2:version}' );",
+		  "define( '${1:PREFIX}_PLUGIN', __FILE__ );",
+		  "define( '${1:PREFIX}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
+		  "define( '${1:PREFIX}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );"
 		],
 		"description": "WordPress Define default constants for Plugin"
 	},
