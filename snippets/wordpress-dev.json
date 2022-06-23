@@ -26,6 +26,11 @@
 			"",
 			"defined( 'ABSPATH' ) || die( 'No script kiddies please!' );",
 			"",
+			"define( '${11:PREFIX}_VERSION', '${2:version}' );",
+			"define( '${11:PREFIX}_PLUGIN', __FILE__ );",
+			"define( '${11:PREFIX}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
+			"define( '${11:PREFIX}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );",
+			"",
 			"add_action( 'plugins_loaded', '${11:Plugin Functions Prefix}_plugin_init' );",
 			"/**",
 			" * Load localization files",
@@ -36,6 +41,16 @@
 			"\tload_plugin_textdomain( '${10:Plugin Slug}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );",
 			"}"
 		]
+	},
+	"WordPress Define default constants for Plugin": {
+		"prefix": "wpadef",
+		"body": [
+		  "define( '${1:PREFIX}_VERSION', '${2:version}' );",
+		  "define( '${1:PREFIX}_PLUGIN', __FILE__ );",
+		  "define( '${1:PREFIX}_PLUGIN_URL', plugin_dir_url( __FILE__ ) );",
+		  "define( '${1:PREFIX}_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );"
+		],
+		"description": "WordPress Define default constants for Plugin"
 	},
 	"Wordpress | Comments Plugin File Header": {
 		"prefix": "wpahfil",
@@ -168,7 +183,7 @@
 	"WordPress | Error log": {
 		"prefix": "phpel",
 		"body": [
-		  "error_log( '${1:title}' . print_r( ${2:variable}, true ) );"
+		  "error_log( '${1:variable}: ' . print_r( ${1:variable}, true ) );"
 		],
 		"description": "WordPress | Error log"
 	},
@@ -657,8 +672,8 @@
 		  "});"
 		],
 		"description": "WordPress | Create AJAX button"
-	    },
-	    "WordPress | Send email with headers": {
+	},
+	"WordPress | Send email with headers": {
 		"prefix": "wpasm",
 		"body": [
 		  "\\$subject = __( '', '${1:text-domain}' );",
@@ -669,8 +684,20 @@
 		  "wp_mail( get_option( 'admin_email' ), \\$subject, \\$body, \\$headers );"
 		],
 		"description": "WordPress | Send email with headers"
-	    },
-	    "WordPress | Disable comments for custom post types": {
+	},
+	"WordPress | Create transient": {
+		"prefix": "wpatra",
+		"body": [
+			"\\$${2:variable} = get_transient( '${1:prefix}query_${2:variable}' );",
+			"if ( ! \\$${2:variable} ) {",
+			"\t// Generate value for ${2:variable}.",
+			"\t\\$${2:variable} = '';",
+			"\tset_transient( '${1:prefix}query_${2:variable}', \\$${2:variable}, HOUR_IN_SECONDS * 3 );",
+			"}"
+		],
+		"description": "WordPress | Create transient"
+	},
+	"WordPress | Disable comments for custom post types": {
 		"prefix": "wptco",
 		"body": [
 		  "add_filter( 'comments_open', '${1:prefix}comments_open', 10 , 2 );",
@@ -692,7 +719,7 @@
 		  "}"
 		],
 		"description": "WordPress | Disable comments for custom post types"
-	    },
+	},
 	    "WordPress DB | Get Results from table": {
 		"prefix": "wpdbget",
 		"body": [
@@ -863,5 +890,80 @@
 		  ""
 		],
 		"description": "WordPress | Create Filter to a Custom Post type based in meta value"
-	    }
+	},
+	"WordPress | Registers metabox for a post type": {
+		"prefix": "wpamet",
+		"body": [
+		  "",
+		  "// Register Meta box.",
+		  "add_action( 'add_meta_boxes', array( \\$this, 'metabox_${1:slug_post_type}' ) );",
+		  "add_action( 'save_post', array( \\$this, 'save_metaboxes_${1:slug_post_type}' ) );",
+		  "/**",
+		  " * Adds metabox",
+		  " *",
+		  " * @return void",
+		  " */",
+		  "public function metabox_${1:slug_post_type} () {",
+		  "\tadd_meta_box(",
+		  "\t\t'${1:slug_post_type}',",
+		  "\t\t__( 'Opciones del pedido', '${4:textdomain}' ),",
+		  "\t\tarray( \\$this, 'metabox_show_${1:slug_post_type}' ),",
+		  "\t\t'${1:slug_post_type}',",
+		  "\t\t'normal'",
+		  "\t);",
+		  "}",
+		  "/**",
+		  " * Metabox inputs.",
+		  " *",
+		  " * @param object \\$post Post object.",
+		  " * @return void",
+		  " */",
+		  "public function metabox_show_${1:slug_post_type} ( \\$post ) {",
+		  "\t\\$${1:slug_post_type}_${2:key1}  = get_post_meta( \\$post->ID, '${1:slug_post_type}_${2:key1}', true );",
+		  "\t\\$${1:slug_post_type}_${3:key2} = get_post_meta( \\$post->ID, '${1:slug_post_type}_${3:key2}', true );",
+		  "\t?>",
+		  "\t<table>",
+		  "\t\t<tr>",
+		  "\t\t\t<td>",
+		  "\t\t\t\t<label for=\"${1:slug_post_type}_${2:key1}\"><?php echo esc_html( 'Title ${2:key1}', '${4:textdomain}' ); ?></label>",
+		  "\t\t\t</td>",
+		  "\t\t\t<td>",
+		  "\t\t\t\t<input type=\"text\" name=\"${1:slug_post_type}_${2:key1} value=\"<?php echo esc_attr( \\$${1:slug_post_type}_${2:key1} ) ?>\">",
+		  "\t\t\t</td>",
+		  "\t\t</tr>",
+		  "\t\t<tr>",
+		  "\t\t\t<td>",
+		  "\t\t\t\t<label for=\"${1:slug_post_type}_${3:key2}\"><?php echo esc_html( 'Title ${3:key2}', '${4:textdomain}' ); ?></label>",
+		  "\t\t\t</td>",
+		  "\t\t\t<td>",
+		  "\t\t\t\t<?php ",
+		  "\t\t\t\t\\$status = array(",
+		  "\t\t\t\t\t'yes' => 'Sí',",
+		  "\t\t\t\t\t'no'  => 'No',",
+		  "\t\t\t\t);",
+		  "\t\t\t\techo isset( \\$status[ \\$${1:slug_post_type}_${3:key2} ] ) ? esc_html( \\$status[ \\$${1:slug_post_type}_${3:key2} ] ) : '';",
+		  "\t\t\t\t?>",
+		  "\t\t\t</td>",
+		  "\t\t</tr>",
+		  "\t</table>",
+		  "\t<?php",
+		  "}",
+		  "",
+		  "/**",
+		  " * Save metaboxes",
+		  " *",
+		  " * @param int \\$post_id Post id.",
+		  " * @return void",
+		  " */",
+		  "public function save_metaboxes_${1:slug_post_type}( \\$post_id ) {",
+		  "\tif ( isset( \\$_POST['${1:slug_post_type}_${2:key1}'] ) ) {",
+		  "\t\tupdate_post_meta( \\$post_id, '${1:slug_post_type}_${2:key1}', \\$_POST['${1:slug_post_type}_${2:key1}'] );",
+		  "\t}",
+		  "\tif ( isset( \\$_POST['${1:slug_post_type}_${3:key2}'] ) ) {",
+		  "\t\tupdate_post_meta( \\$post_id, '${1:slug_post_type}_${3:key2}', \\$_POST['${1:slug_post_type}_${3:key2}'] );",
+		  "\t}",
+		  "}"
+		],
+		"description": "WordPress | Registers metabox for a post type"
+	}
 }

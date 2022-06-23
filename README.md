@@ -87,11 +87,13 @@ A big thanks to the people that have contributed to this project:
 
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wpamet**  | Registers metabox for a post type
 | **wpaloc**  | Configuration for Local development
 | **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
 | **wpafpt**  | Adds functions to Custom Post Type in public
 | **wpaop**   | Removes CSS and JS for optimization
 | **wpapuh**  | Adds Plugin Header
+| **wpadef**  | Define default constants for Plugin
 | **wpare**   | Create readme.txt for Plugins
 | **wpalpt**  | Loads Plugin Text Domain
 | **wpagit**  | Gitignore configuration for WordPress
@@ -114,6 +116,7 @@ A big thanks to the people that have contributed to this project:
 | **wptco**   | Disable comments for custom post types
 | **wpacptfi**   | Create Filter to a Custom Post type based in meta value
 | **wpatag**   | Adds Google Tag Manager from Plugin Duracell
+| **wpatra**   | Creates transient
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |
