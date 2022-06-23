@@ -1,8 +1,8 @@
 # Change Log
 
-## 2.4.0 - 2022
+## 2.4.0 - June 2022
 
-- Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin
+- Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin, (wpamet) Register metabox for a Post Type.
 - Updated snippet: (wpapuh) With Default contants.
 
 ## 2.3.0 - April 2022

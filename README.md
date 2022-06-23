@@ -87,6 +87,7 @@ A big thanks to the people that have contributed to this project:
 
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wpamet**  | Registers metabox for a post type
 | **wpaloc**  | Configuration for Local development
 | **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
 | **wpafpt**  | Adds functions to Custom Post Type in public
