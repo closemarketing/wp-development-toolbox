@@ -965,5 +965,25 @@
 		  "}"
 		],
 		"description": "WordPress | Registers metabox for a post type"
-	}
+	},
+	"GravityForms PDF - Set Templates directory to Plugin": {
+		"prefix": "gfapdf",
+		"body": [
+		  "// PDF Location Templates.",
+		  "add_filter( 'gfpdf_template_location', function( \\$directory, \\$$working_folder, \\$upload_path ) {",
+		  "\t/* Make sure you include the forward slash! */",
+		  "\treturn ${1:prefix}_PLUGIN_PATH . 'includes/' . \\$$working_folder . '/';",
+		  "}, 10, 3 );",
+		  "",
+		  "/**",
+		  "* You must use the `gfpdf_template_location` filter in conjunction with the `gfpdf_template_location_uri` filter",
+		  "* Both filters should point to the same directory (one is the path and one is the URL)",
+		  "*/",
+		  "add_filter( 'gfpdf_template_location_uri', function( $url, \\$$working_folder, \\$upload_url ) {",
+		  "\t/* Make sure you include the forward slash! */",
+		  "\treturn ${1:prefix}_PLUGIN_URL . 'includes/' . \\$$working_folder . '/';",
+		  "}, 10, 3 );"
+		],
+		"description": "GravityForms PDF - Set Templates directory to Plugin"
+	 }
 }

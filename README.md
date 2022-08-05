@@ -427,5 +427,6 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **p2pscon** 	|	Shows connected posts
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
+| **gfapdf** 	|	GravityForms PDF - Set Templates directory to Plugin
 | **sfsres** 	|	Results Page
 | **revrmet** 	|	Remove metabox in all post types

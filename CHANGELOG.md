@@ -2,7 +2,7 @@
 
 ## 2.4.0 - June 2022
 
-- Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin, (wpamet) Register metabox for a Post Type.
+- Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin, (wpamet) Register metabox for a Post Type, (gfapdf) GravityForms PDF - Set Templates directory to Plugin.
 - Updated snippet: (wpapuh) With Default contants.
 
 ## 2.3.0 - April 2022
