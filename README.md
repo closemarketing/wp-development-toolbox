@@ -87,6 +87,7 @@ A big thanks to the people that have contributed to this project:
 
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wprjq**   | Removes jQuery from loading
 | **wpamet**  | Registers metabox for a post type
 | **wpaloc**  | Configuration for Local development
 | **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
@@ -184,52 +185,6 @@ A big thanks to the people that have contributed to this project:
 | **gpafon** 	| 	Adds local font
 | **gpacc** 	| 	Adds CPT columns filter
 | **gprgf** 	| 	Remove Google Fonts
-
-&nbsp;
-
-## Genesis (GEN)
-
-[Plugin Web](https://close.marketing/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
-
-| **Rule**			| **Action**	|
-| ------------------- |------------------------------------------------------------------|
-| **Additions** 		|
-| **genacl** 	| 	Adds classes and elements to HTML element
-| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
-| **Shows to public** |
-| **gensmen** 	| 	Adds HTML elements to main menu
-| **gensimgh** 	| 	Adds Header image from featured
-| **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
-| **genslf** 	| 	Loop Index i to add class first
-| **genmmh** 	| 	Move menu from Header
-| **genasid** 	| 	Register Custom Sidebar
-| **genasidf** 	| 	Custom Sidebar Function
-| **genspref** 	| 	Register and shows a sidebar before footer
-| **gensfib** 	| 	Adds featured image as entry header background
-| **Sets** |
-| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
-| **Shows to public** |
-| **genslogo**	|	Shows Logo instead Site Title and Description
-| **genspsi**	|	Customize Entry Post Info
-| **genstopbar**	|	Adds topbar with menu
-| **genswpmls**	|	Adds WPML Language selector to Footer
-| **gensaut**	|	Display author box on single posts
-| **gensrev**	|	Adds Revolution slider in home
-| **genstopb**	|	Adds a Topbar in site
-| **gensfav**	|	Adds Favicon from Child theme
-| **genshm**	|	Adds Hamburger menu animation
-| **genspref**	|	Adds an imagen in div before footer
-| **Remove elements** |
-| **genrhtit**	|	Remove Site Title in Home Page
-| **genrpi**	|	Remove Entry Post Info
-| **genrco**	|	Remove Web input field from comments
-| **genremec**	|	Remove the post content
-| **genreh**	|	Remove the entry header
-| **genrhr**	|	Remove Header Right
-| **genrsec**	|	Remove Secondary Sidebar
-| **genremem**	|	Remove Entry meta
-| **genrem**	|	Remove Entry Meta in post type
-| **genred**	|	Remove the edit link
 
 &nbsp;
 
@@ -430,3 +385,47 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **gfapdf** 	|	GravityForms PDF - Set Templates directory to Plugin
 | **sfsres** 	|	Results Page
 | **revrmet** 	|	Remove metabox in all post types
+
+## Genesis (GEN)
+
+[Plugin Web](https://close.marketing/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
+
+| **Rule**			| **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **Additions** 		|
+| **genacl** 	| 	Adds classes and elements to HTML element
+| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
+| **Shows to public** |
+| **gensmen** 	| 	Adds HTML elements to main menu
+| **gensimgh** 	| 	Adds Header image from featured
+| **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
+| **genslf** 	| 	Loop Index i to add class first
+| **genmmh** 	| 	Move menu from Header
+| **genasid** 	| 	Register Custom Sidebar
+| **genasidf** 	| 	Custom Sidebar Function
+| **genspref** 	| 	Register and shows a sidebar before footer
+| **gensfib** 	| 	Adds featured image as entry header background
+| **Sets** |
+| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
+| **Shows to public** |
+| **genslogo**	|	Shows Logo instead Site Title and Description
+| **genspsi**	|	Customize Entry Post Info
+| **genstopbar**	|	Adds topbar with menu
+| **genswpmls**	|	Adds WPML Language selector to Footer
+| **gensaut**	|	Display author box on single posts
+| **gensrev**	|	Adds Revolution slider in home
+| **genstopb**	|	Adds a Topbar in site
+| **gensfav**	|	Adds Favicon from Child theme
+| **genshm**	|	Adds Hamburger menu animation
+| **genspref**	|	Adds an imagen in div before footer
+| **Remove elements** |
+| **genrhtit**	|	Remove Site Title in Home Page
+| **genrpi**	|	Remove Entry Post Info
+| **genrco**	|	Remove Web input field from comments
+| **genremec**	|	Remove the post content
+| **genreh**	|	Remove the entry header
+| **genrhr**	|	Remove Header Right
+| **genrsec**	|	Remove Secondary Sidebar
+| **genremem**	|	Remove Entry meta
+| **genrem**	|	Remove Entry Meta in post type
+| **genred**	|	Remove the edit link
