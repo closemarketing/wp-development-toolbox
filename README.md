@@ -89,6 +89,7 @@ A big thanks to the people that have contributed to this project:
 | ------------------- |------------------------------------------------------------------|
 | **wprjq**   | Removes jQuery from loading
 | **wpamet**  | Registers metabox for a post type
+| **wpameu**  | Registers metabox for a user
 | **wpaloc**  | Configuration for Local development
 | **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
 | **wpafpt**  | Adds functions to Custom Post Type in public
