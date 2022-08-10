@@ -1098,7 +1098,7 @@
 		  "/**",
 		  " * Profile fields for users",
 		  " *",
-		  " * @param array $user",
+		  " * @param object $user",
 		  " * @return void",
 		  " */",
 		  "function ${1:prefix}extra_profile_fields( \\$user ) {",
