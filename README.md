@@ -23,7 +23,7 @@ All snippets will respect **WordPress Coding Standards**.
 
 <b>Support this project:</b> We placed some affiliate links in order to contribute to help to make this project sustainable.
 
-Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%20Extensions&utm_medium=enlace&utm_campaign=Readme).
+Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme) from [CloseTechnology](https://close.technology/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme).
 
 
 # List of Snippets
