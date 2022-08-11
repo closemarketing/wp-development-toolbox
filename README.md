@@ -3,7 +3,7 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 [![](https://vsmarketplacebadge.apphb.com/downloads/closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
 [![](https://vsmarketplacebadge.apphb.com/installs/closemarketing.wp-development-toolbox.svg)](https://marketplace.visualstudio.com/items?itemName=closemarketing.wp-development-toolbox)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/closemarketing/wp-development-toolbox/graphs/commit-activity)
+[![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 [![GitHub contributors](https://img.shields.io/github/contributors/closemarketing/wp-development-toolbox.svg)](https://GitHub.com/closemarketing/wp-development-toolbox/graphs/contributors/)
 
 # Introduction
@@ -25,16 +25,6 @@ All snippets will respect **WordPress Coding Standards**.
 
 Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%20Extensions&utm_medium=enlace&utm_campaign=Readme).
 
-&nbsp;
-
-## Contributors &#x1F64F;&#x2764;
-
-A big thanks to the people that have contributed to this project:
-- Fernando G.Rebolledo ([@Fgrweb](https://github.com/fgrweb)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb)
-
-- Carlos Longarela ([@CarlosLongarela](https://github.com/CarlosLongarela)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=CarlosLongarela)
-
-&nbsp;
 
 # List of Snippets
 
@@ -87,7 +77,9 @@ A big thanks to the people that have contributed to this project:
 
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
+| **wprjq**   | Removes jQuery from loading
 | **wpamet**  | Registers metabox for a post type
+| **wpameu**  | Registers metabox for a user
 | **wpaloc**  | Configuration for Local development
 | **wpaupd**  | Foces automatic updates in WordPress (in functions.php)
 | **wpafpt**  | Adds functions to Custom Post Type in public
@@ -184,52 +176,6 @@ A big thanks to the people that have contributed to this project:
 | **gpafon** 	| 	Adds local font
 | **gpacc** 	| 	Adds CPT columns filter
 | **gprgf** 	| 	Remove Google Fonts
-
-&nbsp;
-
-## Genesis (GEN)
-
-[Plugin Web](https://close.marketing/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
-
-| **Rule**			| **Action**	|
-| ------------------- |------------------------------------------------------------------|
-| **Additions** 		|
-| **genacl** 	| 	Adds classes and elements to HTML element
-| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
-| **Shows to public** |
-| **gensmen** 	| 	Adds HTML elements to main menu
-| **gensimgh** 	| 	Adds Header image from featured
-| **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
-| **genslf** 	| 	Loop Index i to add class first
-| **genmmh** 	| 	Move menu from Header
-| **genasid** 	| 	Register Custom Sidebar
-| **genasidf** 	| 	Custom Sidebar Function
-| **genspref** 	| 	Register and shows a sidebar before footer
-| **gensfib** 	| 	Adds featured image as entry header background
-| **Sets** |
-| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
-| **Shows to public** |
-| **genslogo**	|	Shows Logo instead Site Title and Description
-| **genspsi**	|	Customize Entry Post Info
-| **genstopbar**	|	Adds topbar with menu
-| **genswpmls**	|	Adds WPML Language selector to Footer
-| **gensaut**	|	Display author box on single posts
-| **gensrev**	|	Adds Revolution slider in home
-| **genstopb**	|	Adds a Topbar in site
-| **gensfav**	|	Adds Favicon from Child theme
-| **genshm**	|	Adds Hamburger menu animation
-| **genspref**	|	Adds an imagen in div before footer
-| **Remove elements** |
-| **genrhtit**	|	Remove Site Title in Home Page
-| **genrpi**	|	Remove Entry Post Info
-| **genrco**	|	Remove Web input field from comments
-| **genremec**	|	Remove the post content
-| **genreh**	|	Remove the entry header
-| **genrhr**	|	Remove Header Right
-| **genrsec**	|	Remove Secondary Sidebar
-| **genremem**	|	Remove Entry meta
-| **genrem**	|	Remove Entry Meta in post type
-| **genred**	|	Remove the edit link
 
 &nbsp;
 
@@ -427,5 +373,57 @@ In order to use Gulp for develop a theme in WordPress, you will need to have NPM
 | **p2pscon** 	|	Shows connected posts
 | **gfavib** 	|	GravityForms - Enable field option Visibility
 | **gfsform** 	|	GravityForms - Shows form
+| **gfapdf** 	|	GravityForms PDF - Set Templates directory to Plugin
 | **sfsres** 	|	Results Page
 | **revrmet** 	|	Remove metabox in all post types
+
+## Genesis (GEN)
+
+[Plugin Web](https://close.marketing/go/genesis/) | [Documentation](https://my.studiopress.com/support/)
+
+| **Rule**			| **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **Additions** 		|
+| **genacl** 	| 	Adds classes and elements to HTML element
+| **genatag** 	| 	Adds Tag Manager from Plugin Duracell
+| **Shows to public** |
+| **gensmen** 	| 	Adds HTML elements to main menu
+| **gensimgh** 	| 	Adds Header image from featured
+| **genssm** 	| 	Adds custom Yoast social icons html elements to the main menu
+| **genslf** 	| 	Loop Index i to add class first
+| **genmmh** 	| 	Move menu from Header
+| **genasid** 	| 	Register Custom Sidebar
+| **genasidf** 	| 	Custom Sidebar Function
+| **genspref** 	| 	Register and shows a sidebar before footer
+| **gensfib** 	| 	Adds featured image as entry header background
+| **Sets** |
+| **gentflay**	|	Forces full width layout with conditionals and WooCommerce support
+| **Shows to public** |
+| **genslogo**	|	Shows Logo instead Site Title and Description
+| **genspsi**	|	Customize Entry Post Info
+| **genstopbar**	|	Adds topbar with menu
+| **genswpmls**	|	Adds WPML Language selector to Footer
+| **gensaut**	|	Display author box on single posts
+| **gensrev**	|	Adds Revolution slider in home
+| **genstopb**	|	Adds a Topbar in site
+| **gensfav**	|	Adds Favicon from Child theme
+| **genshm**	|	Adds Hamburger menu animation
+| **genspref**	|	Adds an imagen in div before footer
+| **Remove elements** |
+| **genrhtit**	|	Remove Site Title in Home Page
+| **genrpi**	|	Remove Entry Post Info
+| **genrco**	|	Remove Web input field from comments
+| **genremec**	|	Remove the post content
+| **genreh**	|	Remove the entry header
+| **genrhr**	|	Remove Header Right
+| **genrsec**	|	Remove Secondary Sidebar
+| **genremem**	|	Remove Entry meta
+| **genrem**	|	Remove Entry Meta in post type
+| **genred**	|	Remove the edit link
+
+## Contributors &#x1F64F;&#x2764;
+
+A big thanks to the people that have contributed to this project:
+- Fernando G.Rebolledo ([@Fgrweb](https://github.com/fgrweb)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=fgrweb)
+
+- Carlos Longarela ([@CarlosLongarela](https://github.com/CarlosLongarela)) &mdash; [contributions](https://github.com/closemarketing/wp-development-toolbox/commits?author=CarlosLongarela)
