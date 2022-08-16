@@ -533,7 +533,12 @@
 	"WordPress | Enqueue Style in Plugin": {
 		"prefix": "wpaes",
 		"body": [
-		  "wp_enqueue_style( '${1:slug-name}', plugins_url( '/assets/${2:filename}.css', __FILE__ ), array(), ${3:version} );"
+			"wp_enqueue_style(",
+			"\t'${2:slug-name}',",
+			"\t${1:prefix_constant}_PLUGIN_URL . 'assets/${3:name}.css',",
+			"\tarray(),",
+			"\t${1:prefix_constant}_VERSION",
+			");"
 		],
 		"description": "WordPress | Enqueue Style in Plugin"
 	},

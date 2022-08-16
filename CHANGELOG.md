@@ -1,9 +1,13 @@
 # Change Log
 
+## 2.6.0 - # 2022
+
+- Updated snippets: (wpaes) PHPCS fixes.
+
 ## 2.5.0 - August 2022
 
 - Added snippets: (wpatra) Create transient for WordPress, (wpadef) WordPress Define default constants for Plugin, (wpamet) Register metabox for a Post Type, (gfapdf) GravityForms PDF - Set Templates directory to Plugin, (wprjq) Remove loading jQuery, (wpajxq) Ajax button with jQuery, (wpameu) Registers meta for a user
-- Updated snippet: (wpapuh) With Default contants, (wpamet) New Metabox fields, (wpajx) Updated AJAX with Javascript vanilla
+- Updated snippets: (wpapuh) With Default contants, (wpamet) New Metabox fields, (wpajx) Updated AJAX with Javascript vanilla
 
 ## 2.4.0 - April 2022
 
