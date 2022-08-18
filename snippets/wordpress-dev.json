@@ -1189,5 +1189,17 @@
 			"}"
 		],
 		"description": "Removes jQuery from loading"
+	 },
+	 "WordPress - sprintf translation": {
+		"prefix": "wpaspt",
+		"body": [
+		  "\\$${1:variable} = sprintf(",
+		  "\t/* translators: 1: ${2:key1} 2: ${3:key2} */",
+		  "\tesc_html__( 'Text %1$s, and text %2$s.', '${4:textdomain}' ),",
+		  "\t\\$${2:key_one},",
+		  "\t\\$${3:key2}",
+		  ");"
+		],
+		"description": "WordPress - sprintf translation"
 	 }
 }

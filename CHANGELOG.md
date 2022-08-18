@@ -2,6 +2,7 @@
 
 ## 2.6.0 - # 2022
 
+- Added snippets: (wpaspt) sprintf translation to variable.
 - Updated snippets: (wpaes) PHPCS fixes.
 
 ## 2.5.0 - August 2022
