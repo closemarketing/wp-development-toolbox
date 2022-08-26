@@ -59,6 +59,7 @@ Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%2
 | **wpqmc** 	|	Arguments for Query Meta value checkbox active
 | **Change Settings** |
 | **wptarg**	|	Change arguments of registered post type
+| **wptplu**	|	Detects Plugin active
 
 &nbsp;
 

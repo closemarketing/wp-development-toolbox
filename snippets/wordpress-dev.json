@@ -1201,5 +1201,22 @@
 		  ");"
 		],
 		"description": "WordPress - sprintf translation"
+	 },
+	 "WordPress | Detects Plugin active": {
+		"prefix": "wptplu",
+		"body": [
+		  "/**",
+		  " * ## Detects Plugin Active: ${1:plugin_slug}",
+		  " * ----------------------------------- */",
+		  "",
+		  "// Prevents fatal error is_plugin_active.",
+		  "if ( ! function_exists( 'is_plugin_active' ) ) {",
+		  "\tinclude_once ABSPATH . 'wp-admin/includes/plugin.php';",
+		  "}",
+		  "",
+		  "if ( ( is_plugin_active( '${1:plugin_slug}/${1:plugin_slug}.php' ) ) {",
+		  "}"
+		],
+		"description": "WordPress | Detects Plugin active"
 	 }
 }
