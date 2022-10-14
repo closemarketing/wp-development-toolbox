@@ -2,7 +2,7 @@
 
 ## 2.6.0 - # 2022
 
-- Added snippets: (wpaspt) sprintf translation to variable, (wptplu) Detects Plugin active
+- Added snippets: (wpaspt) sprintf translation to variable, (wptplu) Detects Plugin active, (wpadis) Adds Dist default file.
 - Updated snippets: (wpaes) PHPCS fixes.
 
 ## 2.5.0 - August 2022

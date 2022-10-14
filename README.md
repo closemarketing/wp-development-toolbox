@@ -111,6 +111,7 @@ Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%2
 | **wpacptfi**   | Create Filter to a Custom Post type based in meta value
 | **wpatag**   | Adds Google Tag Manager from Plugin Duracell
 | **wpatra**   | Creates transient
+| **wpadis**   | Creates distribution file
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |

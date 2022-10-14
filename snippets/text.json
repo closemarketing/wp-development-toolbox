@@ -168,5 +168,18 @@
 		  "RewriteRule \\.(pdf)\\$ - [F]"
 		],
 		"description": "HTACCESS | Protect PDF to be downloaded and indexed"
-	    }
+	    },
+		 "WordPress DIST File": {
+			"prefix": "wpadis",
+			"body": [
+			  ".distignore",
+			  ".editorconfig",
+			  ".git",
+			  ".gitignore",
+			  ".travis.yml",
+			  "circle.yml",
+			  ".DS_Store"
+			],
+			"description": "WordPress DIST File"
+		 }
 }
