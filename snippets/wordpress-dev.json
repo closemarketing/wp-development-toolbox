@@ -663,7 +663,8 @@
 			"\t\t},",
 			"\t\tbody: 'action=${1:name_ajax}&nonce=' + ajaxAction.nonce + '&post_id=' + document.getElementById('${2:name-action}').getAttribute('data-post-id'),",
 			"\t})",
-			"\t.then( response => {",
+			"\t.then( (resp) => resp.json() )",
+			"\t.then( function(data) {",
 			"\t\t//RESPONSE",
 			"\t})",
 			"\t.catch(err => console.log(err));"
