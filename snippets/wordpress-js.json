@@ -145,5 +145,14 @@
 		  "});"
 		],
 		"description": "WordPress jQuery | Include JS in file Header"
-	}
+	},
+	"WordPress | Javascript load window": {
+		"prefix": "wpajl",
+		"body": [
+		  "document.addEventListener(\"DOMContentLoaded\", function(event) {",
+		  "    //code to use after load window",
+		  "});"
+		],
+		"description": "WordPress | Javascript load window"
+	 }
 }

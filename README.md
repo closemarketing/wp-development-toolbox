@@ -118,6 +118,7 @@ Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%2
 | **wpaes** | Enqueue Style in Plugin
 | **wpaej** | Enqueue Javascript in Plugin
 | **wpaejt**| Enqueue Javascript in Child Theme
+| **wpajl**| Javascript load window
 | **DATABASE** |
 | **wpdbget**| Get results from table WordPress
 | **AJAX** |
