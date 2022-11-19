@@ -667,7 +667,8 @@
 			"\t.then( function(data) {",
 			"\t\t//RESPONSE",
 			"\t})",
-			"\t.catch(err => console.log(err));"
+			"\t.catch(err => console.log(err));",
+			"});"
 		],
 		"description": "WordPress | Create AJAX button"
 	},
