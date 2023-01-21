@@ -1224,5 +1224,27 @@
 		  "}"
 		],
 		"description": "WordPress | Detects Plugin active"
+	},
+	"WordPress | Autoloads classes": {
+		"prefix": "wpaspl",
+		"body": [
+		  "// Autoloads classes.",
+		  "spl_autoload_register(",
+		  "\tfunction ( \\$class ) {",
+		  "\t\t\\$prefix   = '${1:Vendor}\\\\${2:Client}\\\\';",
+		  "\t\t\\$base_dir = __DIR__ . '/includes/';",
+		  "\t\t\\$len      = strlen( \\$prefix );",
+		  "\t\tif ( strncmp( \\$prefix, \\$class, \\$len ) !== 0 ) {",
+		  "\t\t\treturn;",
+		  "\t\t}",
+		  "\t\t\\$relative_class = substr( \\$class, \\$len );",
+		  "\t\t\\$file           = \\$base_dir . strtolower( str_replace( '\\\\', '/', \\$relative_class ) ) . '.php';",
+		  "\t\tif ( file_exists( \\$file ) ) {",
+		  "\t\t\trequire $file;",
+		  "\t\t}",
+		  "\t}",
+		  ");",
+		],
+		"description": "WordPress | Autoloads classes"
 	 }
 }
