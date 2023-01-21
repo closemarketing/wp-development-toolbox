@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.7.0 - 2023
+
+- Added snippets:
+- Updated snippets:
+
 ## 2.6.0 - January 2023
 
 - Added snippets: (wpaspt) sprintf translation to variable, (wptplu) Detects Plugin active, (wpadis) Adds Distribution default file, (wpajl) Javascript load window, (wpaspl) Autoloads classes.
