@@ -16,6 +16,7 @@
 		"genesis",
 		"plugins"
 	],
+	"main": "./extension.js",
 	"contributes": {
 		"snippets": [
 			{
@@ -109,6 +110,12 @@
 			{
 				"language": "yaml",
 				"path": "./snippets/wordpress-yml.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.getWPLog",
+				"title": "Get WordPress Log"
 			}
 		]
 	},

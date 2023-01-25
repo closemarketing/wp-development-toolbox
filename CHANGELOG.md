@@ -1,7 +1,8 @@
 # Change Log
 
-## 2.7.0 - 2023
+## 3.0.0 - 2023
 
+- Major update.  Added command to load Debug.log.
 - Added snippets:
 - Updated snippets:
 
