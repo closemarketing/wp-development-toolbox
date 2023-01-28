@@ -4,7 +4,7 @@
 
 - Major update.  Added command to load Debug.log.
 - Added snippets:
-- Updated snippets:
+- Updated snippets: (wpamet) Added textarea.
 
 ## 2.6.0 - January 2023
 
