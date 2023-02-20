@@ -178,7 +178,11 @@
 			  ".gitignore",
 			  ".travis.yml",
 			  "circle.yml",
-			  ".DS_Store"
+			  ".DS_Store",
+			  ".github",
+				"composer.json",
+				"composer.lock",
+				".wordpress-org"
 			],
 			"description": "WordPress DIST File"
 		 }
