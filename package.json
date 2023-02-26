@@ -96,6 +96,10 @@
 				"path": "./snippets/wordpress-js.json"
 			},
 			{
+				"language": "javascript",
+				"path": "./snippets/react.json"
+			},
+			{
 				"language": "json",
 				"path": "./snippets/json.json"
 			},
@@ -117,6 +121,13 @@
 				"command": "extension.getWPLog",
 				"title": "Get WordPress Log"
 			}
+		],
+		"keybindings": [
+			 {
+				  "command": "extension.getWPLog",
+				  "key": "ctrl+shift+d",
+				  "mac": "Ctrl+shift+d"
+			 }
 		]
 	},
 	"icon": "images/icon.png",

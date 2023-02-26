@@ -2,8 +2,8 @@
 
 ## 3.0.0 - 2023
 
-- Major update.  Added command to load Debug.log.
-- Added snippets:
+- Major update.  Added command to load Debug.log with ¨KeyBinding Ctrl+Shift+D
+- Added snippets: (rafc) React Initial Component.
 - Updated snippets: (wpamet) Added textarea.
 
 ## 2.6.0 - January 2023
