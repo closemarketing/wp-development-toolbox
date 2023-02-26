@@ -1,15 +1,3 @@
 {
-	"React App - Initial Component": {
-		"prefix": "rafc",
-		"body": [
-		  "export const ${1:name_component} = () => {",
-		  "\treturn (",
-		  "\t\t<>",
-		  "\t\t\t<h1>${1:name_component}</h1>",
-		  "\t\t</>",
-		  "\t)",
-		  "}"
-		],
-		"description": "React App - Initial Component"
-	 }
+
 }
