@@ -3,8 +3,8 @@
 ## 3.0.0 - 2023
 
 - Major update.  Added command to load Debug.log with ¨KeyBinding Ctrl+Shift+D
-- Added snippets: 
-- Updated snippets: (wpamet) Added textarea.
+- Added snippets: (phpacs) Add PHP Class Static.
+- Updated snippets: (wpamet) Added textarea, (phpacl) Updated.
 
 ## 2.6.0 - January 2023
 
