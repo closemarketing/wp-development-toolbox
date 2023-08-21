@@ -145,5 +145,6 @@
 		"id": "4fe8bbee-2f65-4b99-8b7e-0399c8d8f74a",
 		"publisherDisplayName": "Closemarketing",
 		"publisherId": "ab601c69-c88a-4a7b-b722-bb2340930490"
-	}
+	},
+	"activationEvents": []
 }
