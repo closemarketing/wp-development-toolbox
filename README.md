@@ -113,6 +113,7 @@ Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%2
 | **wpatag**   | Adds Google Tag Manager from Plugin Duracell
 | **wpatra**   | Creates transient
 | **wpadis**   | Creates distribution file
+| **wpagi**   | Creates Git Ignore
 | **Routines** |
 | **wprout**   | Routine update metas with categories
 | **Enqueue** |

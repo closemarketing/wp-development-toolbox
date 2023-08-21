@@ -185,5 +185,23 @@
 				".wordpress-org"
 			],
 			"description": "WordPress DIST File"
-		 }
+		 },
+		 "WordPress Git Ignore for Plugins": {
+			"prefix": "wpagi",
+			"body": [
+				"# WordPress",
+				"vendor/",
+				"node_modules/",
+				"",
+				"# Numerous always-ignore extensions",
+				"*.log",
+				"*.zip",
+				"",
+				"# OS or Editor folders",
+				"._*.cache",
+				".DS_Store",
+				""
+			],
+			"description": "WordPress Git Ignore for Plugins"
+		}
 }
