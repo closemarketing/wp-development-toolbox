@@ -207,11 +207,10 @@
 			"\tpublic function __construct() {",
 			"\t}",
 			"",
-			"}",
-			"",
 			"\tpublic function ${4:function_name}() {",
 			"\t}",
 			"",
+			"}",
 			"new ${3:Class Name}();"
 		],
 		"description": "PHP | Adds Class"
