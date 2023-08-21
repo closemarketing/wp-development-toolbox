@@ -1,6 +1,10 @@
 # Change Log
 
-## 3.0.0 - 2023
+## 3.1.0 - 2023
+
+- Updated snippets: (wpamet) Fixed checkbox.
+
+## 3.0.0 - August 2023
 
 - Major update.  Added command to load Debug.log with ¨KeyBinding Ctrl+Shift+D
 - Added snippets: (phpacs) Add PHP Class Static, (wpagi) Add Git Ignore for plugin.
