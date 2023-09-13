@@ -2,7 +2,7 @@
 
 ## 3.1.0 - 2023
 
-- Updated snippets: (wpamet) Fixed checkbox.
+- Updated snippets: (wpamet) Fixed checkbox, (wpagit) Updated.
 
 ## 3.0.0 - August 2023
 
