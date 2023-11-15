@@ -253,5 +253,21 @@
 		  "}"
 		],
 		"description": "CSS Center position absolute"
+	},
+	"CSS | Adds Font Face": {
+		"prefix": "cssafon",
+		"body": [
+			"/* Font Face ${1:font-family} */",
+			"@font-face {",
+			"\tfont-family: '${1:font-family}';",
+			"\tfont-style: normal;",
+			"\tfont-weight: ${2:font-weight};",
+			"\tsrc: local(''),",
+			"\turl('fonts/${3:font-file}.woff2') format('woff2'),",
+			"\turl('fonts/${3:font-file}.ttf') format('truetype'),",
+			"}",
+			""
+		],
+		"description": "CSS | Adds Font Face "
 	}
 }

@@ -3,6 +3,7 @@
 ## 3.1.0 - 2023
 
 - Updated snippets: (wpamet) Fixed checkbox, (wpagi) Updated.
+- Added snippets: (cssafon) Adds Font Face in CSS.
 
 ## 3.0.0 - August 2023
 
