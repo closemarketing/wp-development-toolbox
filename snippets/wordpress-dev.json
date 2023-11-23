@@ -656,7 +656,7 @@
 			" * @return void",
 			" */",
 			"public function ${1:name_ajax}() {",
-			"\t\\$post_id = isset( \\$_POST['post_id'] ) ? esc_attr( \\$_POST['post_id'] ) : '';",
+			"\t\\$post_id = isset( \\$_POST['post_id'] ) ? sanitize_text_field( \\$_POST['post_id'] ) : '';",
 			"",
 			"\tif ( check_ajax_referer( '${1:name_ajax}_nonce', 'nonce' ) ) {",
 			"\t\t\\$html = '';",
