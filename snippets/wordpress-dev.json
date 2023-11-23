@@ -667,7 +667,7 @@
 			"}",
 			"",
 			"// in JS",
-			"document.getElementById('${2:name-action}').addEventListener('click', function(e) {",
+			"document.getElementById('${1:name_ajax}').addEventListener('click', function(e) {",
 			"\t// AJAX request.",
 			"\tfetch( ajaxAction.url, {",
 			"\t\tmethod: 'POST',",
