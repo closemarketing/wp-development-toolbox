@@ -116,7 +116,14 @@
 			  ".github",
 				"composer.json",
 				"composer.lock",
-				".wordpress-org"
+				".wordpress-org",
+				"package.json",
+				"package-lock.json",
+				"phpunit.xml.dist",
+				".wp-env.json",
+				".wordpress-org",
+				"/bin",
+				"/test"
 			],
 			"description": "WordPress DIST File"
 		 },
