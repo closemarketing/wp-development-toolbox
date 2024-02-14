@@ -77,6 +77,7 @@ Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%2
 | **Rule**               | **Action**     |
 | ------------------- |------------------------------------------------------------------|
 | **wpaspl**  | Autoloads classes
+| **wpare**  | Set Image Sizes
 | **wpaspt**  | Sprintf translation
 | **wprjq**   | Removes jQuery from loading
 | **wpamet**  | Registers metabox for a post type

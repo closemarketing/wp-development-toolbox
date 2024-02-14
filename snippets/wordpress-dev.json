@@ -1274,5 +1274,28 @@
 		  ");",
 		],
 		"description": "WordPress | Autoloads classes"
-	 }
+	},
+	"WordPress - Set Image Sizes": {
+		"prefix": "wpare",
+		"body": [
+			"add_image_size( '${2:image_crop_slug_1}', ${3:image_crop_width_1}, ${4:image_crop_height_1}, true );",
+			"add_image_size( '${6:image_crop_slug_2}', ${7:image_crop_width_2}, ${8:image_crop_height_2}, true );",
+			"",
+			"add_filter( 'image_size_names_choose', '${1:prefix}_custom_image_sizes' );",
+			"/**",
+			" * Add Custom Name Image Sizes",
+			" *",
+			" * @param array \\$size_names Size Names.",
+			" * @return array",
+			" */",
+			"function ${1:prefix}_custom_image_sizes( \\$size_names ) {",
+			"\t\\$new_sizes = array(",
+			"\t'${2:image_crop_slug_1}'   => __( '${5:image_title_1}', '${10:textdomain}' ),",
+			"\t'${6:image_crop_slug_2}'   => __( '${9:image_title_2}', '${10:textdomain}' ),",
+			"\t);",
+			"\treturn array_merge( \\$size_names, \\$new_sizes );",
+			"}"
+		],
+		"description": "WordPress - Crop Thumbnail"
+	}
 }
