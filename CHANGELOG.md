@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.1.0 - February 2023
+## 3.1.3 - February 2023
 
 - Updated snippets: (wpamet) Fixed checkbox, (wpagi) Updated, (wpadis) Added test files to clean, (wpare) Set Image Sizes.
 - Added snippets: (cssafon) Adds Font Face in CSS.
