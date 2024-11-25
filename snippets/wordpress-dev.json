@@ -994,8 +994,8 @@
 		],
 		"description": "WordPress | Create Filter to a Custom Post type based in meta value"
 	},
-	"WordPress | Registers metabox for a post type": {
-		"prefix": "wpamet",
+	"WordPress | Registers metabox for a post type (Legacy)": {
+		"prefix": "wpametl",
 		"body": [
 			"",
 			"// Register Meta box for post type ${2:slug_post_type}.",
