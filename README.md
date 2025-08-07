@@ -21,10 +21,19 @@ All snippets will respect **WordPress Coding Standards**.
 
 <b>Support this project:</b> We placed some affiliate links in order to contribute to help to make this project sustainable.
 
-Developed By [David Perez](https://en.davidperezgar.com/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme) from [CloseTechnology](https://close.technology/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme).
+Developed By [David Perez](https://davidperezgar.com/en/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme) from [CloseTechnology](https://close.technology/?utm_source=VisualCode%20Extensions&utm_medium=link&utm_campaign=Readme).
 
 
 # List of Snippets
+
+## WordPress (AI) ##
+
+Snippets specially for AI seed instructions in WordPress. Place them in: `.github/copilot-instructions.md` or in a subfolder `.github/instructions` with the sufix: `.instructions.md`.
+
+| **Rule**		| **Action**	|
+| ------------------- |------------------------------------------------------------------|
+| **wpaicp** 	|	Copilot instructions for a WordPress Plugin.
+
 
 ## WordPress (WP) ##
 

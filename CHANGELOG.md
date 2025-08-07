@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.0.0 - August 2025
+
+- Introduce seed files for AI: (wpaicp) GitHub Copilot instructions for a WordPress Plugin.
+
 ## 3.1.3 - February 2023
 
 - Updated snippets: (wpamet) Fixed checkbox, (wpagi) Updated, (wpadis) Added test files to clean, (wpare) Set Image Sizes.

@@ -24,6 +24,10 @@
 				"path": "./snippets/text.json"
 			},
 			{
+				"language": "plaintext",
+				"path": "./snippets/wordpress-ai.json"
+			},
+			{
 				"language": "php",
 				"path": "./snippets/plugins-metabox.json"
 			},
